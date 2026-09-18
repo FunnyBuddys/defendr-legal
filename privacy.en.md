@@ -28,7 +28,7 @@ website, no web dashboard and no login outside Discord.
 stored. The only exception applies when a server explicitly turns it on (off by default): for
 messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, deleted after at most
 
-90 days, earlier together with the moderation case).
+1095 days, earlier together with the moderation case).
 
 3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID.
 
@@ -75,38 +75,38 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Data class | Retention | Deletion mechanism |
 | --- | --- | --- |
 | Message content during scanning | Seconds (memory only) | not stored |
-| Detection records (ids, type, action; no message content) | 30 days | `retention.purge` |
-| Moderation cases (+ events) | Guild setting 30–730 days, default 180 | `retention.purge` |
-| Message excerpts (opt-in per server) | at most 90 days, never longer than the case | purge (sealed; crypto-shredding) |
-| Uploaded evidence (reports, appeals, rectification requests) | 90 days; report evidence 30 days after decision; record evidence with the record; legal hold suspends deletion | purge + file unlink (crypto-shredding) |
-| Reports and co-reporter links | accepted: 180 days after decision; rejected/spam: 30 days; pending: auto-closed after 90 days | purge |
-| Reporter reputation | 1 year after last report | purge |
-| False-positive signals (moderator id, case) | 90 days | purge |
+| Detection records (ids, type, action; no message content) | 1825 days | `retention.purge` |
+| Moderation cases (+ events) | 1825 days (owner-set, identical in every server) | `retention.purge` |
+| Message excerpts (opt-in per server) | at most 1095 days, never longer than the case | purge (sealed; crypto-shredding) |
+| Uploaded evidence (reports, appeals, rectification requests) | 1095 days; report evidence 1095 days after decision; record evidence with the record; legal hold suspends deletion | purge + file unlink (crypto-shredding) |
+| Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; pending: auto-closed after 90 days | purge |
+| Reporter reputation | 1825 days after last report | purge |
+| False-positive signals (moderator id, case) | 1095 days | purge |
 | Review votes and staff threads | with the reviewed item | purge (+ thread deletion) |
-| Appeals (incl. recommendations) | 1 year after decision or lapse | purge |
-| Data subject requests; processing restrictions | 3 years (accountability; content minimized and sealed); restrictions 3 years after lifting | purge |
-| Active network listing | 12 months, then re-review or expiry | status job + purge 30 days after close |
+| Appeals (incl. recommendations) | 1825 days after decision or lapse | purge |
+| Data subject requests; processing restrictions | 1825 days (accountability; content minimized and sealed); restrictions 1825 days after lifting | purge |
+| Active network listing | no automatic expiry; re-review reminder after 12 months (a status change always needs a staff decision) | re-review reminder + purge 1095 days after close |
 | Quarantined imported listings (811 + 4) | until reviewed; reminder after 6 months (OD-7) | review decision |
-| Closed Safety Records (revoked/rejected/expired) | 30 days | purge |
+| Closed Safety Records (revoked/rejected/expired) | 1095 days | purge |
 | Member flags: hijacked account / raid cohort / network hint shown | 72 hours / 7 days / 30 days | `member-flags.expire` |
 | Member flag: pending verification | at least 24 hours, as long as the server's kick-unverified delay + 1 hour | `member-flags.expire` |
 | Member flags: join-gate quarantine role / suspect role applied by Defendr | while the role is held; 30 days after leaving | reconcile jobs + `member-flags.expire` |
-| Raid cohorts | 7 days | purge |
-| Incidents | 180 days | purge |
+| Raid cohorts (metadata only) | 365 days | purge |
+| Incidents | 1825 days | purge |
 | Anti-nuke role strips / structure snapshots / deleted entities (2.1) | 30 / 7 / 14 days | purge |
-| Lockdown records | 90 days after end | purge |
+| Lockdown records | 1095 days after end | purge |
 | Verification challenges | 24 hours | purge |
 | Interactive UI state (sealed) | ≤ 24 hours | `ui_state.purge` |
 | Pending messages (outbox) | content wiped when sent or given up; rows 7 days (sent) / 30 days (failed) | purge |
 | Config revisions; preset and migration card decisions | last 100, max 1 year; decisions 90 days | purge |
-| Staff audit log (`ops_audit`, incl. evidence views) | 2 years | purge |
-| Staff membership | 2 years after deactivation | purge |
+| Staff audit log (`ops_audit`, incl. evidence views) | 1825 days | purge |
+| Staff membership | 1825 days after deactivation | purge |
 | Anonymous network signals (2.1) | 48 hours | purge |
 | Premium entitlements (2.2) | 30 days after end | purge |
-| Application logs (no content) | 14 days | rotation |
-| Error events (redacted) | 30 days | purge |
-| Statistics aggregates (no user IDs) | indefinite | — |
-| All guild data after Defendr leaves | 30 days (or immediately if configured); cancelled by re-invite | `guilds.purge` |
+| Application logs (no content) | 90 days | rotation |
+| Error events (redacted) | 365 days | purge |
+| Statistics aggregates (no user IDs): counts per day, server and metric, incl. per reason code and per detection family | indefinite | — |
+| All guild data after Defendr leaves | 90 days (or immediately if configured); cancelled by re-invite | `guilds.purge` |
 | Local backups | 14 daily / 8 weekly / 6 monthly | prune |
 | Offsite backups (encrypted) | 14 daily / 8 weekly / 12 monthly | restic forget/prune |
 | v1 history dossiers | not migrated; destroyed at v1 decommission (T+30 d, encrypted archive destroyed after 90 d) | owner runbook |

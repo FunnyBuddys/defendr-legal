@@ -25,7 +25,7 @@ Discord. Es gibt keine Website, kein Web-Dashboard und keine Anmeldung außerhal
 3.1 Nachrichteninhalte (Text, Einbettungen, Anhänge, weitergeleitete Nachrichten, Umfragen) werden kurzzeitig im
 Arbeitsspeicher geprüft und nicht gespeichert. Ausnahme nur, wenn ein Server dies ausdrücklich
 einschaltet (standardmäßig aus): Bei Nachrichten, gegen die Defendr vorgeht, wird ein gekürzter, entschärfter Auszug
-gespeichert (verschlüsselt, Löschung spätestens nach 90 Tagen, früher mit dem
+gespeichert (verschlüsselt, Löschung spätestens nach 1095 Tagen, früher mit dem
 Moderationsfall).
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID.
@@ -74,38 +74,38 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Datenkategorie | Speicherdauer | Löschmechanismus |
 | --- | --- | --- |
 | Nachrichteninhalte während der Prüfung | Sekunden (nur im Arbeitsspeicher) | wird nicht gespeichert |
-| Erkennungen (IDs, Typ, Maßnahme; keine Nachrichteninhalte) | 30 Tage | `retention.purge` |
-| Moderationsfälle (samt Ereignissen) | Server-Einstellung 30–730 Tage, Standard 180 | `retention.purge` |
-| Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 90 Tage, nie länger als der Fall | Löschung (verschlüsselt; Schlüsselvernichtung) |
-| Hochgeladene Nachweise (Meldungen, Einsprüche, Berichtigungsanfragen) | 90 Tage; Nachweise zu Meldungen 30 Tage nach der Entscheidung; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus | Löschung + Dateilöschung (Schlüsselvernichtung) |
-| Meldungen und Mitmeldende | angenommen: 180 Tage nach der Entscheidung; abgelehnt/Spam: 30 Tage; offen: automatisch geschlossen nach 90 Tagen | Löschung |
-| Verlässlichkeit meldender Personen | 1 Jahr nach der letzten Meldung | Löschung |
-| Fehlalarm-Signale (Moderator-ID, Fall) | 90 Tage | Löschung |
+| Erkennungen (IDs, Typ, Maßnahme; keine Nachrichteninhalte) | 1825 Tage | `retention.purge` |
+| Moderationsfälle (samt Ereignissen) | 1825 Tage (von Defendr festgelegt, in jedem Server gleich) | `retention.purge` |
+| Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall | Löschung (verschlüsselt; Schlüsselvernichtung) |
+| Hochgeladene Nachweise (Meldungen, Einsprüche, Berichtigungsanfragen) | 1095 Tage; Nachweise zu Meldungen 1095 Tage nach der Entscheidung; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus | Löschung + Dateilöschung (Schlüsselvernichtung) |
+| Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen: automatisch geschlossen nach 90 Tagen | Löschung |
+| Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung | Löschung |
+| Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage | Löschung |
 | Prüfstimmen und Team-Threads | mit dem geprüften Eintrag | Löschung (samt Thread) |
-| Einsprüche (samt Empfehlungen) | 1 Jahr nach Entscheidung oder Fristablauf | Löschung |
-| Betroffenenanfragen; Verarbeitungseinschränkungen | 3 Jahre (Rechenschaftspflicht; Inhalte minimiert und verschlüsselt); Einschränkungen 3 Jahre nach Aufhebung | Löschung |
-| Aktiver netzwerkweiter Sicherheitseintrag | 12 Monate, danach erneute Prüfung oder Ablauf | Status-Job + Löschung 30 Tage nach Abschluss |
+| Einsprüche (samt Empfehlungen) | 1825 Tage nach der Entscheidung oder dem Fristablauf | Löschung |
+| Betroffenenanfragen; Verarbeitungseinschränkungen | 1825 Tage (Rechenschaftspflicht; Inhalte minimiert und verschlüsselt); Einschränkungen 1825 Tage nach der Aufhebung | Löschung |
+| Aktiver netzwerkweiter Sicherheitseintrag | kein automatischer Ablauf; Erinnerung zur erneuten Prüfung nach 12 Monaten (eine Statusänderung erfordert immer eine Entscheidung des Teams) | Erinnerung zur erneuten Prüfung + Löschung 1095 Tage nach dem Abschluss |
 | Importierte Einträge in Quarantäne (811 + 4) | bis zur Prüfung (reviewed); Erinnerung nach 6 Monaten (OD-7) | Prüfentscheidung |
-| Abgeschlossene Sicherheitseinträge (aufgehoben/abgelehnt/abgelaufen) | 30 Tage | Löschung |
+| Abgeschlossene Sicherheitseinträge (aufgehoben/abgelehnt/abgelaufen) | 1095 Tage | Löschung |
 | Mitglieds-Markierungen: übernommenes Konto / Raid-Gruppe / Hinweis angezeigt | 72 Stunden / 7 Tage / 30 Tage | `member-flags.expire` |
 | Mitglieds-Markierung: Verifizierung ausstehend | mindestens 24 Stunden, so lange wie die Kick-Frist des Servers + 1 Stunde | `member-flags.expire` |
 | Mitglieds-Markierungen: Quarantäne-Rolle der Zugangsregeln / von Defendr vergebene Verdachtsrolle | solange die Rolle besteht; 30 Tage nach dem Verlassen | Abgleich-Jobs + `member-flags.expire` |
-| Raid-Gruppen | 7 Tage | Löschung |
-| Vorfälle | 180 Tage | Löschung |
+| Raid-Gruppen (nur Metadaten) | 365 Tage | Löschung |
+| Vorfälle | 1825 Tage | Löschung |
 | Anti-Nuke: entzogene Rollen / Strukturabbilder / gelöschte Objekte (2.1) | 30 / 7 / 14 Tage | Löschung |
-| Einträge zu Server-Sperren | 90 Tage nach dem Ende | Löschung |
+| Einträge zu Server-Sperren | 1095 Tage nach dem Ende | Löschung |
 | Verifizierungs-Aufgaben | 24 Stunden | Löschung |
 | Zustand interaktiver Ansichten (verschlüsselt) | höchstens 24 Stunden | `ui_state.purge` |
 | Ausstehende Nachrichten (Postausgang) | Inhalt wird beim Versand oder beim Aufgeben gelöscht; Zeilen 7 Tage (gesendet) / 30 Tage (fehlgeschlagen) | Löschung |
 | Einstellungs-Versionen; Entscheidungen zu Voreinstellungs- und Migrationskarten | letzte 100, höchstens 1 Jahr; Entscheidungen 90 Tage | Löschung |
-| Protokoll der Team-Zugriffe (`ops_audit`, samt Einsicht in Nachweise) | 2 Jahre | Löschung |
-| Team-Mitgliedschaft | 2 Jahre nach der Deaktivierung | Löschung |
+| Protokoll der Team-Zugriffe (`ops_audit`, samt Einsicht in Nachweise) | 1825 Tage | Löschung |
+| Team-Mitgliedschaft | 1825 Tage nach der Deaktivierung | Löschung |
 | Anonyme Netzwerk-Signale (2.1) | 48 Stunden | Löschung |
 | Premium-Berechtigungen (2.2) | 30 Tage nach dem Ende | Löschung |
-| Anwendungsprotokolle (ohne Nachrichteninhalte) | 14 Tage | Rotation |
-| Fehlerereignisse (bereinigt) | 30 Tage | Löschung |
-| Statistische Summen (ohne Nutzer-IDs) | unbegrenzt | — |
-| Alle Serverdaten, nachdem Defendr den Server verlassen hat | 30 Tage (oder sofort, wenn so eingestellt); durch erneute Einladung aufgehoben | `guilds.purge` |
+| Anwendungsprotokolle (ohne Nachrichteninhalte) | 90 Tage | Rotation |
+| Fehlerereignisse (bereinigt) | 365 Tage | Löschung |
+| Statistik-Kennzahlen (ohne Nutzer-IDs): Zählwerte pro Tag, Server und Kennzahl, auch je Begründungscode und je Erkennungsfamilie | unbegrenzt | — |
+| Alle Serverdaten, nachdem Defendr den Server verlassen hat | 90 Tage (oder sofort, wenn so eingestellt); durch erneute Einladung aufgehoben | `guilds.purge` |
 | Lokale Sicherungen | 14 täglich / 8 wöchentlich / 6 monatlich | Bereinigung |
 | Auswärtige Sicherungen (verschlüsselt) | 14 täglich / 8 wöchentlich / 12 monatlich | restic forget/prune |
 | Verlaufs-Dossiers aus Version 1 | nicht übernommen; bei der Abschaltung von Version 1 vernichtet (T+30 Tage, verschlüsseltes Archiv nach 90 Tagen vernichtet) | Runbook des Betreibers |
