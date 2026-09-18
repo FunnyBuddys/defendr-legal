@@ -12,7 +12,7 @@ Wegsfeld 42, 30455 Hannover, Deutschland
 
 Kontakt: E-Mail support@seismicdrop.com
 
-Zweiter schneller Kontaktweg: Discord-Support-Server https://discord.gg/defendr-support-pending
+Zweiter schneller Kontaktweg: Discord-Support-Server https://discord.gg/swUvbVWMA7
 
 
 

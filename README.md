@@ -9,13 +9,12 @@ The German version of each document is legally binding; the English file is a tr
 | --- | --- | --- | --- |
 | [privacy.de.md](privacy.de.md) | 2026-09-18 | 2026-09-25 | `sha256:6111d4dffba481fe` |
 | [privacy.en.md](privacy.en.md) | 2026-09-18 | 2026-09-25 | `sha256:31c38bfde16b526c` |
-| [terms.de.md](terms.de.md) | 2026-09-18 | 2026-09-25 | `sha256:2960f62f201408c4` |
-| [terms.en.md](terms.en.md) | 2026-09-18 | 2026-09-25 | `sha256:e70e97c74453e8ff` |
-| [impressum.de.md](impressum.de.md) | 2026-09-18 | 2026-09-25 | `sha256:c8234fa388bde893` |
+| [terms.de.md](terms.de.md) | 2026-09-18 | 2026-09-25 | `sha256:246bf99bd529acdc` |
+| [terms.en.md](terms.en.md) | 2026-09-18 | 2026-09-25 | `sha256:e3475365c5823e5b` |
+| [impressum.de.md](impressum.de.md) | 2026-09-18 | 2026-09-25 | `sha256:701b5dbcce874cae` |
 
 Previous versions: [tags](https://github.com/FunnyBuddys/defendr-legal/tags).
 
 Privacy policy (current): https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
 This repository is not a website and must not be turned into one (no Pages, no custom domain).
-
