@@ -18,3 +18,5 @@ Previous versions: [tags](https://github.com/FunnyBuddys/defendr-legal/tags).
 Privacy policy (current): https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
 This repository is not a website and must not be turned into one (no Pages, no custom domain).
+
+> **Hinweis:** AGB (Terms of Service) sind derzeit bewusst nicht veröffentlicht (ADR-077). Sie folgen, sobald Premium-Funktionen oder ein App-Directory-Eintrag geplant sind.
