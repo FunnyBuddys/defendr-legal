@@ -1,5 +1,3 @@
-> ENTWURF – anwaltliche Prüfung erforderlich / DRAFT – requires legal review
-
 # Datenschutzerklärung für Defendr
 
 Version 2026-09-19 · gültig ab 2026-09-19
@@ -54,8 +52,6 @@ Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
 - Schutz von Discord-Communities vor Betrug, Schadsoftware und Missbrauch: Art. 6 Abs. 1 lit. f DSGVO.
 - Bearbeitung von Einsprüchen und Betroffenenanfragen: Art. 6 Abs. 1 lit. c und f DSGVO.
 - Netzwerkweite Sicherheitseinträge: Art. 6 Abs. 1 lit. f DSGVO; Interessenabwägung verfügbar auf Anfrage.
-
-[Prüfhinweis Anwalt: Art. 10 DSGVO, Art. 22 DSGVO, gemeinsame Verantwortlichkeit mit Server-Betreibern (Art. 26)]
 
 ## 5. Empfänger
 

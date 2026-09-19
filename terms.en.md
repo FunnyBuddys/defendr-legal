@@ -1,8 +1,6 @@
-> ENTWURF – anwaltliche Prüfung erforderlich / DRAFT – requires legal review
-
 # Terms of Service for Defendr
 
-Version 2026-09-18 · effective 2026-09-25
+Version 2026-09-19 · effective 2026-09-19
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/terms.de.md
 
@@ -49,8 +47,6 @@ Every decision can be reviewed with /appeal.
 Liability is limited to intent and gross negligence as far as German law permits. Mandatory liability (in particular
 product liability and injury to life, body or health) is unaffected.
 
-[Lawyer review: liability clause and standard terms control]
-
 ## 9. Termination
 
 You can remove Defendr from your server at any time. Deletion of the data follows the privacy policy
@@ -59,8 +55,6 @@ You can remove Defendr from your server at any time. Deletion of the data follow
 ## 10. Governing law
 
 German law applies. Mandatory consumer protection rules of your country of residence are unaffected.
-
-[Lawyer review: choice of law towards consumers]
 
 ## 11. Contact
 

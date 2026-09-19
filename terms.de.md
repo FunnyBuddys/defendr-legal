@@ -1,8 +1,6 @@
-> ENTWURF – anwaltliche Prüfung erforderlich / DRAFT – requires legal review
-
 # Nutzungsbedingungen für Defendr
 
-Version 2026-09-18 · gültig ab 2026-09-25
+Version 2026-09-19 · gültig ab 2026-09-19
 
 ## 1. Geltungsbereich
 
@@ -50,8 +48,6 @@ Ungeprüfte Einträge lösen nie eine Maßnahme aus. Jede Entscheidung kann mit 
 Die Haftung ist auf Vorsatz und grobe Fahrlässigkeit beschränkt, soweit deutsches Recht dies zulässt. Die Haftung nach
 zwingenden Vorschriften (insbesondere Produkthaftung, Verletzung von Leben, Körper und Gesundheit) bleibt unberührt.
 
-[Prüfhinweis Anwalt: Haftungsklausel und AGB-Kontrolle]
-
 ## 9. Beendigung
 
 Du kannst Defendr jederzeit vom Server entfernen. Die Löschung der Daten richtet sich nach der Datenschutzerklärung
@@ -60,8 +56,6 @@ Du kannst Defendr jederzeit vom Server entfernen. Die Löschung der Daten richte
 ## 10. Anwendbares Recht
 
 Es gilt deutsches Recht. Zwingende Verbraucherschutzvorschriften des Aufenthaltslandes bleiben unberührt.
-
-[Prüfhinweis Anwalt: Rechtswahl gegenüber Verbrauchern]
 
 ## 11. Kontakt
 

@@ -1,5 +1,3 @@
-> ENTWURF – anwaltliche Prüfung erforderlich / DRAFT – requires legal review
-
 # Privacy Policy for Defendr
 
 Version 2026-09-19 · effective 2026-09-19
@@ -55,8 +53,6 @@ the deletion jobs read their deadlines from.
 - Protecting Discord communities against fraud, malware and abuse: Art. 6(1)(f) GDPR.
 - Handling appeals and data subject requests: Art. 6(1)(c) and (f) GDPR.
 - Network-wide Safety Records: Art. 6(1)(f) GDPR; the legitimate interest assessment is available on request.
-
-[Lawyer review: Art. 10 GDPR, Art. 22 GDPR, joint controllership with server operators (Art. 26)]
 
 ## 5. Recipients
 
