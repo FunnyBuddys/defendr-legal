@@ -7,8 +7,8 @@ The German version of each document is legally binding; the English file is a tr
 
 | Document | Version | Effective | SHA-256 |
 | --- | --- | --- | --- |
-| [privacy.de.md](privacy.de.md) | 2026-09-18 | 2026-09-25 | `sha256:58f78037f1bdda8d` |
-| [privacy.en.md](privacy.en.md) | 2026-09-18 | 2026-09-25 | `sha256:cc6c8c8af8e8cab8` |
+| [privacy.de.md](privacy.de.md) | 2026-09-19 | 2026-09-19 | `sha256:b3c31210c98e50d3` |
+| [privacy.en.md](privacy.en.md) | 2026-09-19 | 2026-09-19 | `sha256:ee5baac1c93f4fce` |
 | [terms.de.md](terms.de.md) | 2026-09-18 | 2026-09-25 | `sha256:246bf99bd529acdc` |
 | [terms.en.md](terms.en.md) | 2026-09-18 | 2026-09-25 | `sha256:e3475365c5823e5b` |
 | [impressum.de.md](impressum.de.md) | 2026-09-18 | 2026-09-25 | `sha256:701b5dbcce874cae` |

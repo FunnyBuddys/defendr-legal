@@ -2,7 +2,7 @@
 
 # Privacy Policy for Defendr
 
-Version 2026-09-18 · effective 2026-09-25
+Version 2026-09-19 · effective 2026-09-19
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -63,6 +63,13 @@ the deletion jobs read their deadlines from.
 <!-- anchor: processors -->
 
 Discord Inc. (platform), the moderators of the server concerned (their own server data only), Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, encrypted offsite backups; only if enabled (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled (OD-6)).
+
+The operator aggregates detection data from every server Defendr runs on into one
+team-internal channel on the support server. That channel holds **no message
+content** – only the server, the channel, the user id concerned, the action taken,
+the detected indicator (rendered defanged), technical checksums and the time. Its
+purpose is operating the service and countering abuse across servers; access is
+limited to the operator and the support team.
 
 ## 6. Transfers to third countries
 

@@ -2,6 +2,14 @@
 
 Document versions and effective dates of the published legal copies.
 
+## legal-2026-09-19
+
+- `privacy.de.md` — version 2026-09-19, effective 2026-09-19, sha256:b3c31210c98e50d3fba4a47db0cd8b02f798a49472fe61613e57f4196f05bc28
+- `privacy.en.md` — version 2026-09-19, effective 2026-09-19, sha256:ee5baac1c93f4fce9716550b76db240dd2af174a97ea0f71ddc6d215a13b73d8
+- `terms.de.md` — version 2026-09-18, effective 2026-09-25, sha256:246bf99bd529acdc454dafa78421c5b61febbcc026b1cf36e5324c846640a442
+- `terms.en.md` — version 2026-09-18, effective 2026-09-25, sha256:e3475365c5823e5bbdedfaad11e726bc0367eebf6a2abdd8a3755db9662ee24c
+- `impressum.de.md` — version 2026-09-18, effective 2026-09-25, sha256:701b5dbcce874caeb85d2924e669e7670e8caaaa3cd30f6c77dd8e5998c4fc6f
+
 ## legal-2026-09-18
 
 - `privacy.de.md` — version 2026-09-18, effective 2026-09-25, sha256:58f78037f1bdda8dbca0f2779b86ea52b9a524bb4e7b66292c775b45eb1b719b

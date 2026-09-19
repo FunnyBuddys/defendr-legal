@@ -2,7 +2,7 @@
 
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-18 · gültig ab 2026-09-25
+Version 2026-09-19 · gültig ab 2026-09-19
 
 ## 1. Verantwortlicher
 
@@ -62,6 +62,13 @@ Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
 <!-- anchor: processors -->
 
 Discord Inc. (Plattform), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, verschluesselte Offsite-Backups; nur wenn aktiviert (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert (OD-6)).
+
+Der Betreiber führt Erkennungsdaten aus allen Servern, auf denen Defendr läuft, in
+einem teaminternen Kanal auf dem Support-Server zusammen. Dieser Kanal enthält
+**keine Nachrichteninhalte** – nur Server, Kanal, betroffene Nutzerkennung, die
+ergriffene Maßnahme, den erkannten Indikator (entschärft dargestellt), technische
+Prüfsummen und den Zeitpunkt. Zweck ist der Betrieb und die Missbrauchsabwehr über
+alle Server hinweg; Zugriff haben ausschließlich der Betreiber und das Support-Team.
 
 ## 6. Übermittlung in Drittländer
 
