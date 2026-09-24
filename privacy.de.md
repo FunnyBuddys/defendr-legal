@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-24 · gültig ab 2026-09-24
+Version 2026-09-25 · gültig ab 2026-09-25
 
 ## 1. Verantwortlicher
 
@@ -33,6 +33,9 @@ Moderationsfall).
 
 3.4 Sicherheitseinträge (Safety Records) im Defendr-Netzwerk: Nutzer-ID, Grund-Code, Nachweise, Prüfstatus,
 Ablaufdatum. Ungeprüfte Einträge werden Moderatoren nur als Hinweis angezeigt und lösen nie automatisch Maßnahmen aus.
+Das Defendr-Team kann die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server nur mit
+angegebenem Grund nachschlagen; jede solche Abfrage wird protokolliert, und solange eine Einschränkung der Verarbeitung
+gilt, sieht das Team zu jedem Eintrag nur ID, Quelle und Status.
 
 3.5 Meldungen (auch als Mitmeldender), Einsprüche und Anfragen zu deinen Rechten: der Text, den du selbst schreibst.
 Dateien, die du mitschickst, werden nicht gespeichert: Ein gemeldetes Bild wird einmal beim Melden gehasht und statt
@@ -50,13 +53,19 @@ Anzahl über alle Server gezeigt und zusammen mit der Server-Konfiguration gelö
 3.8 Die vollständige Liste aller Datenkategorien mit ihrer Speicherdauer steht in Abschnitt 7. Sie wird aus demselben
 Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
 
-3.9 Aufsicht über den Bot selbst: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit einer Zeile je
-Aktion, die Defendr auf irgendeinem Server ausgeführt hat, und je Moderations-, Melde- und Einspruchsvorgang, der über
+3.9 Aufsicht über den Bot selbst: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit einem Eintrag
+je Aktion, die Defendr auf irgendeinem Server ausgeführt hat, und je Moderations-, Melde- und Einspruchsvorgang, der über
 Defendr abgewickelt wurde — Nutzer-, Server- und Kanal-IDs, einschließlich der ID des Moderators oder Teammitglieds, das
-gehandelt hat, die Art der Aktion oder des Vorgangs, Zählwerte und Zeiten und den Servernamen in der Zeile, die den
-Beitritt von Defendr festhält, nie den Inhalt einer Nachricht, einer Notiz, einer Meldung oder eines Einspruchs, nie wer
-wen gemeldet hat. Er existiert, damit das Team sieht, was der Bot über alle Server hinweg tut, und einen Fehler bemerkt
+gehandelt hat, die Namen, die Discord in dem Moment dafür anzeigte (Servername, Kanalname, Anzeige- oder Nutzername des
+Mitglieds und des Moderators oder Teammitglieds), die Art der Aktion oder des Vorgangs, Zählwerte und Zeiten und den
+gelisteten Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat (aus einer
+Bedrohungsliste, nie was das Mitglied geschrieben hat); nie den Inhalt einer Nachricht, einer Notiz, einer Meldung oder
+eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team sieht, was der Bot über alle Server hinweg tut, und einen Fehler bemerkt
 (berechtigtes Interesse, Abschnitt 4). Er wird aufbewahrt, bis das Team ihn löscht.
+
+3.10 Support-Tickets im Support-Server: Nutzer-ID, Thema, Betreff, Beschreibung und Formularfelder (verschlüsselt),
+der private Thread, wer das Ticket geschlossen oder wieder geöffnet hat, Ticket-Sperren. Was genau, wozu und wie
+lange, steht in Abschnitt 11.
 
 ## 4. Zwecke und Rechtsgrundlagen
 
@@ -70,6 +79,9 @@ wen gemeldet hat. Er existiert, damit das Team sieht, was der Bot über alle Ser
   ausgelassen werden.
 - Aufsicht über Defendrs eigene Aktionen und über die darüber abgewickelten Moderations-, Melde- und
   Einspruchsvorgänge (Abschnitt 3.9): Art. 6 Abs. 1 lit. f DSGVO.
+- Bearbeitung von Support-Tickets im Support-Server (Abschnitt 11): Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr
+  nach den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
+  <!-- OD-17: anwaltliche Prüfung — Rechtsgrundlage der Support-Tickets (lit. b gegenüber Nutzern, lit. f sonst) -->
 
 ## 5. Empfänger
 
@@ -104,6 +116,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage | Löschung |
 | Prüfstimmen und Team-Threads | mit dem geprüften Eintrag | Löschung (samt Thread) |
 | Einsprüche (samt Empfehlungen) | 1825 Tage nach der Entscheidung oder dem Fristablauf | Löschung |
+| Support-Tickets (Formulartext verschlüsselt; der private Thread im Support-Server) und Ticket-Sperren | 1825 Tage nach dem Schließen (Eintrag und Thread); ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung oder einer Wiederherstellung aus einer Sicherung), wird 1825 Tage nach seiner Erstellung gelöscht (bis dahin ggf. gesperrt und archiviert) – weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht das Team ihn auf einen Löschantrag hin von Hand; Ticket-Sperren bis zur Aufhebung | `support.tickets` (zuerst der Thread, dann der Eintrag; ein Thread ohne Eintrag über die Merkliste des Jobs, `kv.support.orphans`); eine Sperre wird bei der Aufhebung gelöscht |
 | Betroffenenanfragen; Verarbeitungseinschränkungen | 1825 Tage (Rechenschaftspflicht; Inhalte minimiert und verschlüsselt); Einschränkungen 1825 Tage nach der Aufhebung | Löschung |
 | Aktiver netzwerkweiter Sicherheitseintrag | kein automatischer Ablauf; Erinnerung zur erneuten Prüfung nach 12 Monaten (eine Statusänderung erfordert immer eine Entscheidung des Teams) | Erinnerung zur erneuten Prüfung + Löschung 1095 Tage nach dem Abschluss |
 | Importierte Einträge in Quarantäne (811 + 4) | bis zur Prüfung (reviewed); Erinnerung nach 6 Monaten (OD-7) | Prüfentscheidung |
@@ -124,7 +137,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Anonyme Netzwerk-Signale (2.1) | 48 Stunden | Löschung |
 | Premium-Berechtigungen (2.2) | 30 Tage nach dem Ende | Löschung |
 | Anwendungsprotokolle (ohne Nachrichteninhalte) | 90 Tage | Rotation |
-| Globaler Spiegel (#global-logs, Staff-Kanal): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs) und den Servernamen in der Zeile, die den Beitritt von Defendr festhält; nie Nachrichteninhalte | bis der Betreiber ihn löscht (vom Betreiber festgelegte Speicherdauer, Entscheidung 2026-09) | Betreiber (Discord-Kanal) |
+| Globaler Spiegel (#global-logs, Staff-Kanal): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs), die Namen, die Discord in dem Moment für den Server, den Kanal, das Mitglied und den Moderator oder das Teammitglied anzeigte, und der gelistete Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat; nie Nachrichteninhalte | bis der Betreiber ihn löscht (vom Betreiber festgelegte Speicherdauer, Entscheidung 2026-09) | Betreiber (Discord-Kanal) |
 | Fehlerereignisse (bereinigt) | 365 Tage | Löschung |
 | Statistik-Kennzahlen (ohne Nutzer-IDs): Zählwerte pro Tag, Server und Kennzahl, auch je Begründungscode und je Erkennungsfamilie | unbegrenzt | — |
 | Setup-Antwort „Wo hast du Defendr gefunden?" (pro Server, freiwillig; keiner Person zugeordnet) | mit der Server-Konfiguration: 90 Tage nachdem Defendr den Server verlassen hat (oder sofort, wenn so eingestellt) | `guilds.purge` |
@@ -144,6 +157,9 @@ Auskunft (/defendr mydata export), Löschung (/defendr mydata delete), Widerspru
 Berichtigung (/defendr mydata rectify), Einschränkung (/defendr mydata restrict), Überprüfung von Entscheidungen
 (/appeal), Beschwerde bei einer Aufsichtsbehörde (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
+Support-Tickets (Abschnitt 11) sind Teil des Exports und werden mit einer Löschung gelöscht; eine Ticket-Sperre bleibt
+bestehen (Abschnitt 11.6).
+
 ## 9. Automatisierte Entscheidungen
 
 Server-Betreiber legen fest, wie Defendr auf erkannte Bedrohungen reagiert. Defendr begrenzt
@@ -161,6 +177,57 @@ einen Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage) – nie al
 Verschlüsselung gespeicherter sensibler Daten, Zugriffsbeschränkung, Protokollierung von Mitarbeiterzugriffen,
 regelmäßige Backups.
 
-## 11. Änderungen
+## 11. Support-Tickets im Support-Server
+
+<!-- anchor: support -->
+
+11.1 Wer und was. Wenn du im Kanal `#contact-staff` des Support-Servers von Defendr und Checkout ein Ticket öffnest,
+verarbeiten wir: deine Discord-Nutzer-ID, das gewählte Thema, Betreff, Beschreibung und die weiteren Felder des
+Formulars (verschlüsselt gespeichert), den Server, um den es in der Übersicht in Abschnitt 11.2 geht, die Zeitpunkte
+des Öffnens und der letzten Aktivität, den privaten Thread mit seinen Nachrichten (er bleibt auf Discord; sehen können
+ihn du, das Support-Team von Defendr, die Team-Rolle des Servers und wer in dem Kanal Threads verwalten darf), wer das
+Ticket geschlossen oder wieder geöffnet hat, sowie Ticket-Sperren (wer sie gesetzt hat und wann). Zweck: die
+Beantwortung deiner Anfrage und die Fehlersuche. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr nach
+den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
+
+11.2 Was der Thread dem Team automatisch zeigt. Beim Öffnen stellt Defendr in den Thread nur das, was du selbst schon
+über dich sehen kannst: deine eigenen Moderationsfälle, netzwerkweiten Einträge, Einsprüche und Betroffenenanfragen,
+eine Einschränkung der Verarbeitung, die für dich gilt, und das Ergebnis der Prüfung eines Links, den du ins Formular
+geschrieben hast. Bei Themen zu einem Server zeigt es die Einrichtungsübersicht eines Servers, den du verwaltest: des
+Servers, den du auswählst, oder des einzigen, den Defendr bestätigen kann. Daten anderer Personen zeigt es nie. Alles
+darüber hinaus ist eine Abfrage durch das Team, wie in Abschnitt 3.4 beschrieben.
+
+11.3 Checkout-Themen. Defendr und Checkout sind zwei getrennte Bots mit getrennten Daten; beide betreibt der in
+Abschnitt 1 genannte Verantwortliche auf demselben Rechner. Für die beiden Checkout-Themen (Einrichtung, Fehler) liest
+Defendr aus den Dateien des Checkout-Bots die Checkout-Konfiguration des Servers, den du auswählst, deine eigenen
+Zeiterfassungswerte in diesem Server und Summenwerte dieses Servers (Anzahl erfasster Personen und Sitzungen, keine
+Werte einzelner anderer Personen) – nur lesend. Das Ergebnis erscheint nur im privaten Thread; Defendr speichert davon
+nichts.
+
+11.4 Kein Transkript. Defendr legt keine Abschrift des Threads an und wertet für das Ticket nur den Zeitpunkt der
+neuesten Nachricht aus, um ein Ticket nach sieben Tagen ohne Aktivität automatisch zu schließen (Tickets zum Thema
+Datenauskunft oder Löschung ausgenommen; sie schließt eine Person, sobald die Anfrage beantwortet ist). Wie auf jedem
+Server, den Defendr schützt, werden Nachrichten im Thread kurz im Arbeitsspeicher geprüft und nicht gespeichert
+(Abschnitt 3.1). Das Team kann ein Ticket wieder öffnen, solange der Thread besteht.
+
+11.5 Speicherdauer. Ticket und Thread werden fünf Jahre nach dem Schließen des Tickets gelöscht (Tabelle in
+Abschnitt 7). Ein offenes Ticket hat kein Ablaufdatum. Eine Ticket-Sperre gilt, bis das Team sie aufhebt. Ein
+Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung oder einer
+Wiederherstellung aus einer Sicherung), wird fünf Jahre nach seiner Erstellung gelöscht; bis dahin kann Defendr ihn
+sperren und archivieren, wenn niemand darin geschrieben hat. Weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht
+das Team ihn auf einen Löschantrag hin von Hand.
+
+11.6 Deine Rechte. Deine Tickets sind Teil deines Exports (/defendr mydata export), samt Betreff, Beschreibung und
+Formularfeldern; die Nachrichten im Thread stehen nur auf Discord und bleiben für dich sichtbar, solange der Thread
+besteht. Eine Ticket-Sperre erscheint im Export ohne die Person, die sie gesetzt hat. Eine Löschung
+(/defendr mydata delete) löscht deine Tickets und ihre Threads – auch ein offenes Ticket wird dadurch beendet; eine
+Ticket-Sperre bleibt bestehen (Schutz anderer). Am schnellsten stellst du eine Anfrage zu deinen Daten mit
+/defendr mydata: Sie hält die Anfrage und ihre Frist fest. Eine Anfrage, die du in einem Ticket zum Thema
+Datenauskunft oder Löschung stellst, behandeln wir genauso; die Frist von einem Monat (Art. 12 Abs. 3 DSGVO) läuft ab
+dem Öffnen des Tickets.
+
+<!-- OD-17: anwaltliche Prüfung — 11.3: Zweckänderung (Art. 6 Abs. 4) beim lesenden Zugriff auf Checkout-Daten, Hinweis in Checkouts Datenschutzerklärung, veralteter Checkout-Inhaber; 11.6: ein Ticket zum Thema Datenauskunft oder Löschung ist eine eingegangene Betroffenenanfrage, Fristbeginn mit dem Öffnen des Tickets; Rechte an Ticket-Sperren nach Löschung -->
+
+## 12. Änderungen
 
 Versionen: https://github.com/FunnyBuddys/defendr-legal/tags. Die jeweils geltende Fassung steht unter https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md.

@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-09-24 · effective 2026-09-24
+Version 2026-09-25 · effective 2026-09-25
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -34,7 +34,9 @@ messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, de
 pending") – for raid detection, join rules and verification.
 
 3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Unreviewed
-records are only shown to moderators as a hint and never trigger an automated action.
+records are only shown to moderators as a hint and never trigger an automated action. The Defendr team can look up one
+person's network records and the number of moderation cases per server only with a stated reason; every such lookup
+is logged, and while a processing restriction applies the team sees only each record's ID, source and status.
 
 3.5 Reports (including as a co-reporter), appeals and requests about your rights: the text you write yourself. Files
 you attach to them are not stored: an image you report is hashed once while the report is taken and the hash is kept
@@ -52,12 +54,17 @@ with the server's configuration.
 3.8 The complete list of data categories with their retention is in section 7. It is generated from the same registry
 the deletion jobs read their deadlines from.
 
-3.9 Oversight of the bot itself: the Defendr team keeps a private channel on the Defendr server with one line per action
-Defendr took on any server and per moderation, report and appeal event handled through Defendr — user, server and
-channel IDs, including the ID of the moderator or team member who acted, the type of action or event, counts and times,
-and the server's name on the line that records Defendr joining it, never the content of a message, a note, a report or
-an appeal, never who reported whom. It exists so the team can see what the bot does across all servers and notice a
+3.9 Oversight of the bot itself: the Defendr team keeps a private channel on the Defendr server with one entry per
+action Defendr took on any server and per moderation, report and appeal event handled through Defendr — user, server and
+channel IDs, including the ID of the moderator or team member who acted, the names Discord showed for them at that
+moment (the server's name, the channel's name, the display or user name of the member and of the moderator or team
+member), the type of action or event, counts and times, and for a link or invite Defendr detected the listed threat
+value it matched (from a threat list, never what the member wrote); never the content of a message, a note, a report or an
+appeal, never who reported whom. It exists so the team can see what the bot does across all servers and notice a
 mistake (legitimate interest, section 4). It is kept until the team deletes it.
+
+3.10 Support tickets in the support server: user ID, topic, subject, description and form fields (encrypted), the
+private thread, who closed or reopened the ticket, ticket bans. What exactly, why and for how long is in section 11.
 
 ## 4. Purposes and legal bases
 
@@ -70,6 +77,9 @@ mistake (legitimate interest, section 4). It is kept until the team deletes it.
   and not assigned to any person): Art. 6(1)(f) GDPR; the answer is voluntary and can be left out.
 - Oversight of Defendr's own actions and of the moderation, report and appeal events handled through it
   (section 3.9): Art. 6(1)(f) GDPR.
+- Handling support tickets in the support server (section 11): Art. 6(1)(b) GDPR where you use Defendr under the
+  terms of service, otherwise Art. 6(1)(f) GDPR.
+  <!-- OD-17: lawyer review — legal basis of support tickets (Art. 6(1)(b) towards users, (f) otherwise) -->
 
 ## 5. Recipients
 
@@ -104,6 +114,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | False-positive signals (moderator id, case) | 1095 days | purge |
 | Review votes and staff threads | with the reviewed item | purge (+ thread deletion) |
 | Appeals (incl. recommendations) | 1825 days after decision or lapse | purge |
+| Support tickets (form text sealed; the private thread in the support server) and ticket bans | 1825 days after closing (row and thread); a ticket thread left without its record (after a failed creation or a restore from a backup) is deleted 1825 days after it was created (possibly locked and archived before then) — because no record links it to a member, the team deletes it by hand on an erasure request; ticket bans until lifted | `support.tickets` (thread first, then the row; a thread without a record by the list of the job, `kv.support.orphans`); a ban is deleted when lifted |
 | Data subject requests; processing restrictions | 1825 days (accountability; content minimized and sealed); restrictions 1825 days after lifting | purge |
 | Active network listing | no automatic expiry; re-review reminder after 12 months (a status change always needs a staff decision) | re-review reminder + purge 1095 days after close |
 | Quarantined imported listings (811 + 4) | until reviewed; reminder after 6 months (OD-7) | review decision |
@@ -124,7 +135,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Anonymous network signals (2.1) | 48 hours | purge |
 | Premium entitlements (2.2) | 30 days after end | purge |
 | Application logs (no content) | 90 days | rotation |
-| Global mirror (#global-logs, staff channel): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and staff ids included), and the server's name on the line that records Defendr joining it; never message content | kept until the operator deletes it (owner-set retention, decision of 2026-09) | operator (Discord channel) |
+| Global mirror (#global-logs, staff channel): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and staff ids included), the names Discord showed for the server, the channel, the member and the moderator or staff member at that moment, and the listed threat value a link or invite Defendr detected matched; never message content | kept until the operator deletes it (owner-set retention, decision of 2026-09) | operator (Discord channel) |
 | Error events (redacted) | 365 days | purge |
 | Statistics aggregates (no user IDs): counts per day, server and metric, incl. per reason code and per detection family | indefinite | — |
 | Setup answer "Where did you find Defendr?" (per server, optional; not assigned to a person) | with the server's configuration: 90 days after Defendr leaves (or immediately if configured) | `guilds.purge` |
@@ -143,6 +154,9 @@ Access (/defendr mydata export), erasure (/defendr mydata delete), objection (/d
 (/defendr mydata rectify), restriction (/defendr mydata restrict), review of a decision (/appeal), and a complaint to a
 supervisory authority (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
+Support tickets (section 11) are part of the export and are deleted with an erasure; a ticket ban is kept
+(section 11.6).
+
 ## 9. Automated decisions
 
 Server operators decide how Defendr reacts to a detected threat. Defendr limits actions by
@@ -157,6 +171,52 @@ yourself (appeal, report, data subject request) – never as advertising or a we
 
 Encryption of stored sensitive data, restricted access, logging of staff access, regular backups.
 
-## 11. Changes
+## 11. Support tickets in the support server
+
+<!-- anchor: support -->
+
+11.1 Who and what. When you open a ticket in the `#contact-staff` channel of the Defendr & Checkout support server, we
+process: your Discord user ID, the topic you picked, the subject, the description and the other fields of the form
+(stored encrypted), the server the summary in section 11.2 is about, the times of opening and of the last
+activity, the private thread with its messages (it stays on Discord; it can be seen by you, Defendr's support staff,
+the server's team role and whoever may manage threads in that channel), who closed or reopened the ticket, and ticket
+bans (who set one and when). Purpose: answering your request and troubleshooting. Legal basis: Art. 6(1)(b) GDPR where
+you use Defendr under the terms of service, otherwise Art. 6(1)(f) GDPR.
+
+11.2 What the thread shows the team automatically. When the ticket opens, Defendr posts into the thread only what you
+could already see about yourself: your own moderation cases, network listings, appeals and data requests, a
+processing restriction that applies to you, and the result of checking a link you put into the form. For topics about
+a server it shows the setup summary of a server you administer: the one you pick, or the only one Defendr can confirm.
+It never shows other people's data. Anything beyond that is a lookup by the team as described in section 3.4.
+
+11.3 Checkout topics. Defendr and Checkout are two separate bots with separate data; both are operated by the
+controller named in section 1 on the same machine. For the two Checkout topics (setup, bug) Defendr reads from the
+Checkout bot's files the Checkout configuration of the server you pick, your own time-tracking figures in that server
+and that server's totals (number of tracked people and sessions, no figures of other individuals) – read only. The
+result appears only in the private thread; Defendr stores none of it.
+
+11.4 No transcript. Defendr keeps no copy of the thread and, for the ticket, uses only the time of the newest message
+in order to close a ticket automatically after seven days without activity (tickets of the data-access-or-deletion
+topic are exempt; a person closes them once the request has been answered). As on every server Defendr protects,
+messages in the thread are checked in memory for a moment and not stored (section 3.1). The team can reopen a ticket
+as long as the thread exists.
+
+11.5 Retention. The ticket and the thread are deleted five years after the ticket was closed (table in section 7). An
+open ticket has no expiry date. A ticket ban lasts until the team lifts it. A ticket thread left without its record
+(after a failed creation or a restore from a backup) is deleted five years after it was created; until then Defendr
+may lock and archive it if nobody wrote in it. Because no record links it to a member, the team deletes it by hand on
+an erasure request.
+
+11.6 Your rights. Your tickets are part of your export (/defendr mydata export), including the subject, the
+description and the form fields; the messages in the thread exist only on Discord and stay visible to you as long as
+the thread exists. A ticket ban appears in the export without the person who set it. An erasure (/defendr mydata
+delete) deletes your tickets and their threads – an open ticket is ended by it too; a ticket ban is kept (protection
+of others). The fastest way to make a request about your data is /defendr mydata: it records the request and its
+deadline. A request you make in a ticket of the data-access-or-deletion topic is handled just the same; the one-month
+deadline (Art. 12(3) GDPR) runs from the opening of the ticket.
+
+<!-- OD-17: lawyer review — 11.3: change of purpose (Art. 6(4)) for the read-only access to Checkout data, a sentence in Checkout's privacy notice, stale Checkout owner; 11.6: a ticket of the data-access-or-deletion topic is a received data-subject request, the deadline runs from the opening of the ticket; ticket bans survive an erasure -->
+
+## 12. Changes
 
 Versions: https://github.com/FunnyBuddys/defendr-legal/tags. The current English text is at https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.en.md.
