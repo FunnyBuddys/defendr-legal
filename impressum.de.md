@@ -2,7 +2,7 @@
 
 Angaben gemäß § 5 DDG
 
-Version 2026-09-19 · gültig ab 2026-09-19
+Version 2026-09-23 · gültig ab 2026-09-23
 
 Samuel Sakli
 
@@ -10,7 +10,7 @@ Wegsfeld 42, 30455 Hannover, Deutschland
 
 Kontakt: E-Mail support@seismicdrop.com
 
-Zweiter schneller Kontaktweg: Discord-Support-Server https://discord.gg/swUvbVWMA7
+Zweiter schneller Kontaktweg: Discord-Support-Server https://discord.gg/vtPXf6t6jd
 
 
 

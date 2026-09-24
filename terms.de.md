@@ -1,6 +1,6 @@
 # Nutzungsbedingungen für Defendr
 
-Version 2026-09-19 · gültig ab 2026-09-19
+Version 2026-09-23 · gültig ab 2026-09-23
 
 ## 1. Geltungsbereich
 
@@ -59,6 +59,6 @@ Es gilt deutsches Recht. Zwingende Verbraucherschutzvorschriften des Aufenthalts
 
 ## 11. Kontakt
 
-E-Mail: support@seismicdrop.com · Support-Server: https://discord.gg/swUvbVWMA7 · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
+E-Mail: support@seismicdrop.com · Support-Server: https://discord.gg/vtPXf6t6jd · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
 
 Frühere Fassungen: https://github.com/FunnyBuddys/defendr-legal/tags

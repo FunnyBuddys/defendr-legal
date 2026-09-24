@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-09-19 · effective 2026-09-19
+Version 2026-09-24 · effective 2026-09-24
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -36,15 +36,28 @@ pending") – for raid detection, join rules and verification.
 3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Unreviewed
 records are only shown to moderators as a hint and never trigger an automated action.
 
-3.5 Reports (including as a co-reporter), appeals and requests about your rights: the content and files you submit
-yourself.
+3.5 Reports (including as a co-reporter), appeals and requests about your rights: the text you write yourself. Files
+you attach to them are not stored: an image you report is hashed once while the report is taken and the hash is kept
+instead of the picture, and of every other attachment only the fact that you offered it is noted (how many, and what
+type Discord declared) so that the person handling your case can ask you for it.
 
 3.6 Server settings: role and channel IDs, IDs of the admins and moderators who change settings or take decisions.
+If an admin answers the optional question "Where did you find Defendr?" in `/setup`, one of six fixed answers (for
+example "top.gg" or "A friend") is stored for the server and not assigned to any person. It is used only to understand
+how servers find Defendr, is shown to the Defendr team only as a count across all servers, and is deleted together
+with the server's configuration.
 
 3.7 No IP addresses, no device data, no profiling, no training of AI models.
 
 3.8 The complete list of data categories with their retention is in section 7. It is generated from the same registry
 the deletion jobs read their deadlines from.
+
+3.9 Oversight of the bot itself: the Defendr team keeps a private channel on the Defendr server with one line per action
+Defendr took on any server and per moderation, report and appeal event handled through Defendr — user, server and
+channel IDs, including the ID of the moderator or team member who acted, the type of action or event, counts and times,
+and the server's name on the line that records Defendr joining it, never the content of a message, a note, a report or
+an appeal, never who reported whom. It exists so the team can see what the bot does across all servers and notice a
+mistake (legitimate interest, section 4). It is kept until the team deletes it.
 
 ## 4. Purposes and legal bases
 
@@ -53,6 +66,10 @@ the deletion jobs read their deadlines from.
 - Protecting Discord communities against fraud, malware and abuse: Art. 6(1)(f) GDPR.
 - Handling appeals and data subject requests: Art. 6(1)(c) and (f) GDPR.
 - Network-wide Safety Records: Art. 6(1)(f) GDPR; the legitimate interest assessment is available on request.
+- Understanding how servers find Defendr (the optional setup answer "Where did you find Defendr?", stored per server
+  and not assigned to any person): Art. 6(1)(f) GDPR; the answer is voluntary and can be left out.
+- Oversight of Defendr's own actions and of the moderation, report and appeal events handled through it
+  (section 3.9): Art. 6(1)(f) GDPR.
 
 ## 5. Recipients
 
@@ -81,7 +98,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Detection records (ids, type, action; no message content) | 1825 days | `retention.purge` |
 | Moderation cases (+ events) | 1825 days (owner-set, identical in every server) | `retention.purge` |
 | Message excerpts (opt-in per server) | at most 1095 days, never longer than the case | purge (sealed; crypto-shredding) |
-| Uploaded evidence (reports, appeals, rectification requests) | 1095 days; report evidence 1095 days after decision; record evidence with the record; legal hold suspends deletion | purge + file unlink (crypto-shredding) |
+| Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; nothing a member attaches is stored | purge + file unlink (crypto-shredding) |
 | Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; pending: auto-closed after 90 days | purge |
 | Reporter reputation | 1825 days after last report | purge |
 | False-positive signals (moderator id, case) | 1095 days | purge |
@@ -107,8 +124,10 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Anonymous network signals (2.1) | 48 hours | purge |
 | Premium entitlements (2.2) | 30 days after end | purge |
 | Application logs (no content) | 90 days | rotation |
+| Global mirror (#global-logs, staff channel): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and staff ids included), and the server's name on the line that records Defendr joining it; never message content | kept until the operator deletes it (owner-set retention, decision of 2026-09) | operator (Discord channel) |
 | Error events (redacted) | 365 days | purge |
 | Statistics aggregates (no user IDs): counts per day, server and metric, incl. per reason code and per detection family | indefinite | — |
+| Setup answer "Where did you find Defendr?" (per server, optional; not assigned to a person) | with the server's configuration: 90 days after Defendr leaves (or immediately if configured) | `guilds.purge` |
 | All guild data after Defendr leaves | 90 days (or immediately if configured); cancelled by re-invite | `guilds.purge` |
 | Local backups | 14 daily / 8 weekly / 6 monthly | prune |
 | Offsite backups (encrypted) | 14 daily / 8 weekly / 12 monthly | restic forget/prune |

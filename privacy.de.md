@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-19 · gültig ab 2026-09-19
+Version 2026-09-24 · gültig ab 2026-09-24
 
 ## 1. Verantwortlicher
 
@@ -34,16 +34,29 @@ Moderationsfall).
 3.4 Sicherheitseinträge (Safety Records) im Defendr-Netzwerk: Nutzer-ID, Grund-Code, Nachweise, Prüfstatus,
 Ablaufdatum. Ungeprüfte Einträge werden Moderatoren nur als Hinweis angezeigt und lösen nie automatisch Maßnahmen aus.
 
-3.5 Meldungen (auch als Mitmeldender), Einsprüche und Anfragen zu deinen Rechten: Inhalte und Dateien, die du selbst
-übermittelst.
+3.5 Meldungen (auch als Mitmeldender), Einsprüche und Anfragen zu deinen Rechten: der Text, den du selbst schreibst.
+Dateien, die du mitschickst, werden nicht gespeichert: Ein gemeldetes Bild wird einmal beim Melden gehasht und statt
+des Bildes wird nur der Hash behalten, von jedem anderen Anhang wird nur vermerkt, dass du ihn angeboten hast (wie
+viele, und als was Discord sie ausgibt), damit die bearbeitende Person danach fragen kann.
 
 3.6 Server-Einstellungen: Rollen- und Kanal-IDs, IDs der Admins und Moderatoren, die Einstellungen ändern oder
-Entscheidungen treffen.
+Entscheidungen treffen. Beantwortet ein Admin in `/setup` die freiwillige Frage „Wo hast du Defendr gefunden?", wird
+eine von sechs festen Antworten (zum Beispiel „top.gg" oder „Freunde oder Bekannte") für den Server gespeichert und
+keiner Person zugeordnet. Sie dient nur dazu, zu verstehen, wie Server Defendr finden, wird dem Defendr-Team nur als
+Anzahl über alle Server gezeigt und zusammen mit der Server-Konfiguration gelöscht.
 
 3.7 Keine IP-Adressen, keine Geräte-Daten, keine Profile, kein Training von KI-Modellen.
 
 3.8 Die vollständige Liste aller Datenkategorien mit ihrer Speicherdauer steht in Abschnitt 7. Sie wird aus demselben
 Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
+
+3.9 Aufsicht über den Bot selbst: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit einer Zeile je
+Aktion, die Defendr auf irgendeinem Server ausgeführt hat, und je Moderations-, Melde- und Einspruchsvorgang, der über
+Defendr abgewickelt wurde — Nutzer-, Server- und Kanal-IDs, einschließlich der ID des Moderators oder Teammitglieds, das
+gehandelt hat, die Art der Aktion oder des Vorgangs, Zählwerte und Zeiten und den Servernamen in der Zeile, die den
+Beitritt von Defendr festhält, nie den Inhalt einer Nachricht, einer Notiz, einer Meldung oder eines Einspruchs, nie wer
+wen gemeldet hat. Er existiert, damit das Team sieht, was der Bot über alle Server hinweg tut, und einen Fehler bemerkt
+(berechtigtes Interesse, Abschnitt 4). Er wird aufbewahrt, bis das Team ihn löscht.
 
 ## 4. Zwecke und Rechtsgrundlagen
 
@@ -52,6 +65,11 @@ Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
 - Schutz von Discord-Communities vor Betrug, Schadsoftware und Missbrauch: Art. 6 Abs. 1 lit. f DSGVO.
 - Bearbeitung von Einsprüchen und Betroffenenanfragen: Art. 6 Abs. 1 lit. c und f DSGVO.
 - Netzwerkweite Sicherheitseinträge: Art. 6 Abs. 1 lit. f DSGVO; Interessenabwägung verfügbar auf Anfrage.
+- Verstehen, wie Server Defendr finden (die freiwillige Setup-Antwort „Wo hast du Defendr gefunden?", pro Server
+  gespeichert und keiner Person zugeordnet): Art. 6 Abs. 1 lit. f DSGVO; die Antwort ist freiwillig und kann
+  ausgelassen werden.
+- Aufsicht über Defendrs eigene Aktionen und über die darüber abgewickelten Moderations-, Melde- und
+  Einspruchsvorgänge (Abschnitt 3.9): Art. 6 Abs. 1 lit. f DSGVO.
 
 ## 5. Empfänger
 
@@ -80,7 +98,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Erkennungen (IDs, Typ, Maßnahme; keine Nachrichteninhalte) | 1825 Tage | `retention.purge` |
 | Moderationsfälle (samt Ereignissen) | 1825 Tage (von Defendr festgelegt, in jedem Server gleich) | `retention.purge` |
 | Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall | Löschung (verschlüsselt; Schlüsselvernichtung) |
-| Hochgeladene Nachweise (Meldungen, Einsprüche, Berichtigungsanfragen) | 1095 Tage; Nachweise zu Meldungen 1095 Tage nach der Entscheidung; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus | Löschung + Dateilöschung (Schlüsselvernichtung) |
+| Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nicht gespeichert | Löschung + Dateilöschung (Schlüsselvernichtung) |
 | Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen: automatisch geschlossen nach 90 Tagen | Löschung |
 | Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung | Löschung |
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage | Löschung |
@@ -106,8 +124,10 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Anonyme Netzwerk-Signale (2.1) | 48 Stunden | Löschung |
 | Premium-Berechtigungen (2.2) | 30 Tage nach dem Ende | Löschung |
 | Anwendungsprotokolle (ohne Nachrichteninhalte) | 90 Tage | Rotation |
+| Globaler Spiegel (#global-logs, Staff-Kanal): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs) und den Servernamen in der Zeile, die den Beitritt von Defendr festhält; nie Nachrichteninhalte | bis der Betreiber ihn löscht (vom Betreiber festgelegte Speicherdauer, Entscheidung 2026-09) | Betreiber (Discord-Kanal) |
 | Fehlerereignisse (bereinigt) | 365 Tage | Löschung |
 | Statistik-Kennzahlen (ohne Nutzer-IDs): Zählwerte pro Tag, Server und Kennzahl, auch je Begründungscode und je Erkennungsfamilie | unbegrenzt | — |
+| Setup-Antwort „Wo hast du Defendr gefunden?" (pro Server, freiwillig; keiner Person zugeordnet) | mit der Server-Konfiguration: 90 Tage nachdem Defendr den Server verlassen hat (oder sofort, wenn so eingestellt) | `guilds.purge` |
 | Alle Serverdaten, nachdem Defendr den Server verlassen hat | 90 Tage (oder sofort, wenn so eingestellt); durch erneute Einladung aufgehoben | `guilds.purge` |
 | Lokale Sicherungen | 14 täglich / 8 wöchentlich / 6 monatlich | Bereinigung |
 | Auswärtige Sicherungen (verschlüsselt) | 14 täglich / 8 wöchentlich / 12 monatlich | restic forget/prune |

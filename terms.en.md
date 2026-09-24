@@ -1,6 +1,6 @@
 # Terms of Service for Defendr
 
-Version 2026-09-19 · effective 2026-09-19
+Version 2026-09-23 · effective 2026-09-23
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/terms.de.md
 
@@ -58,6 +58,6 @@ German law applies. Mandatory consumer protection rules of your country of resid
 
 ## 11. Contact
 
-E-mail: support@seismicdrop.com · Support server: https://discord.gg/swUvbVWMA7 · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
+E-mail: support@seismicdrop.com · Support server: https://discord.gg/vtPXf6t6jd · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
 
 Previous versions: https://github.com/FunnyBuddys/defendr-legal/tags
