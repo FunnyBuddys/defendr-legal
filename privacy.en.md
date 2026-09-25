@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-09-25 · effective 2026-09-25
+Version 2026-09-26 · effective 2026-09-26
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -164,8 +164,10 @@ how reliable the evidence is (for example, never a ban on an external list alone
 records never take effect without human review. Every decision can be reviewed with /appeal: a server's moderators
 decide about its own cases, the Defendr team about network-wide records.
 
-Defendr only sends a direct message when an action concerns you or when you started a flow
-yourself (appeal, report, data subject request) – never as advertising or a welcome.
+Defendr only sends a direct message when an action concerns you, when you started a flow
+yourself (appeal, report, data subject request), or – if you own a server – once per incident when Defendr cannot
+show an anti-nuke alarm in your server (who did what and when, and a button to restore deleted channels and roles) –
+never as advertising or a welcome.
 
 ## 10. Security
 

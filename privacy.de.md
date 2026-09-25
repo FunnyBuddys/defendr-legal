@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-25 · gültig ab 2026-09-25
+Version 2026-09-26 · gültig ab 2026-09-26
 
 ## 1. Verantwortlicher
 
@@ -169,8 +169,10 @@ Netzwerkweite Einträge wirken nie ohne menschliche Prüfung. Jede Entscheidung 
 /appeal überprüft werden: Über Fälle eines Servers entscheiden dessen Moderatoren, über netzwerkweite Einträge das
 Defendr-Team.
 
-Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft oder wenn du selbst
-einen Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage) – nie als Werbung oder Begrüßung.
+Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft, wenn du selbst einen
+Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage) oder – wenn dir ein Server gehört – einmal pro
+Vorfall, wenn Defendr einen Anti-Nuke-Alarm nicht in deinem Server zeigen kann (wer wann was getan hat, und ein Knopf
+zum Wiederherstellen gelöschter Kanäle und Rollen) – nie als Werbung oder Begrüßung.
 
 ## 10. Sicherheit
 
