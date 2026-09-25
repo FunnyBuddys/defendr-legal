@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-09-26 · effective 2026-09-26
+Version 2026-09-27 · effective 2026-09-27
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -23,10 +23,12 @@ website, no web dashboard and no login outside Discord.
 <!-- anchor: data -->
 
 3.1 Message content (text, embeds, attachments, forwarded messages, polls) is checked in memory for a moment and not
-stored. The only exception applies when a server explicitly turns it on (off by default): for
-messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, deleted after at most
-
-1095 days, earlier together with the moderation case).
+stored. One exception applies when a server explicitly turns it on (off by default): for
+messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, deleted after at
+most 1095 days, earlier together with the moderation case). A second exception: what
+you write to Defendr in a direct message (text, file names and links) is kept in a private channel of the Defendr
+support server (#ops-chat) so the Defendr team can read and answer it, until 1825 days after the last message of the
+conversation or until you ask for erasure (see 3.11).
 
 3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID.
 
@@ -35,8 +37,13 @@ pending") – for raid detection, join rules and verification.
 
 3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Unreviewed
 records are only shown to moderators as a hint and never trigger an automated action. The Defendr team can look up one
-person's network records and the number of moderation cases per server only with a stated reason; every such lookup
-is logged, and while a processing restriction applies the team sees only each record's ID, source and status.
+person's network records and the number of moderation cases per server only with a stated reason; every such lookup is
+logged, and while a processing restriction applies the team sees only each record's ID, source and status. The operator
+of Defendr can also make a network record active personally, without a second review and also without evidence, based on
+the operator's own decision or on reports from the ScammerAlert community list. Such a record is marked as an owner
+decision wherever it is shown; Defendr stores when and by whom it was decided and how many evidence items the record
+held at that moment. It stays a hint for moderators and never triggers an automated action. A record decided this way
+without evidence that rests on the ScammerAlert list is removed automatically when ScammerAlert removes the entry.
 
 3.5 Reports (including as a co-reporter), appeals and requests about your rights: the text you write yourself. Files
 you attach to them are not stored: an image you report is hashed once while the report is taken and the hash is kept
@@ -66,6 +73,13 @@ mistake (legitimate interest, section 4). It is kept until the team deletes it.
 3.10 Support tickets in the support server: user ID, topic, subject, description and form fields (encrypted), the
 private thread, who closed or reopened the ticket, ticket bans. What exactly, why and for how long is in section 11.
 
+3.11 Direct messages to Defendr: if you send Defendr a direct message, the Defendr team sees it (text, file names and
+links, time) in a private channel of the support server so that it can answer you; answers reach you as direct messages
+from Defendr. Defendr itself stores only that a conversation exists (your user ID, the post in that channel, the time of
+the last message and whether the team muted it), never the text of your messages or of the answers. The conversation
+(the post and this record) is deleted 1825 days after the last message; /defendr mydata delete deletes it within an
+hour, and /defendr mydata export shows it. Legal basis: Art. 6(1)(f) GDPR (answering people who contact us).
+
 ## 4. Purposes and legal bases
 
 <!-- anchor: purposes -->
@@ -80,6 +94,7 @@ private thread, who closed or reopened the ticket, ticket bans. What exactly, wh
 - Handling support tickets in the support server (section 11): Art. 6(1)(b) GDPR where you use Defendr under the
   terms of service, otherwise Art. 6(1)(f) GDPR.
   <!-- OD-17: lawyer review — legal basis of support tickets (Art. 6(1)(b) towards users, (f) otherwise) -->
+- Answering direct messages to Defendr (section 3.11): Art. 6(1)(f) GDPR.
 
 ## 5. Recipients
 
@@ -164,10 +179,16 @@ how reliable the evidence is (for example, never a ban on an external list alone
 records never take effect without human review. Every decision can be reviewed with /appeal: a server's moderators
 decide about its own cases, the Defendr team about network-wide records.
 
-Defendr only sends a direct message when an action concerns you, when you started a flow
-yourself (appeal, report, data subject request), or – if you own a server – once per incident when Defendr cannot
-show an anti-nuke alarm in your server (who did what and when, and a button to restore deleted channels and roles) –
-never as advertising or a welcome.
+Defendr only sends a direct message when an action concerns you, when you started a flow yourself
+(appeal, report, data subject request), when you wrote to Defendr and the Defendr team answers you, or – if you own a
+server – once per incident when Defendr cannot show an anti-nuke alarm in your server (who did what and when, and a
+button to restore deleted channels and roles) – never as advertising or a welcome.
+
+When a network record about you becomes active, Defendr sends you one direct message, but only if you share a server
+with Defendr, in that server's Defendr language. It states the reason, what the record means and how to appeal. If such
+a record is later removed because ScammerAlert withdrew it, you get one short message about the removal. Defendr stores
+only whether and when these messages were sent, refused or could not be delivered. A record that rests only on the
+ScammerAlert list is appealed at ScammerAlert; your data subject rights against Defendr (/defendr mydata) remain.
 
 ## 10. Security
 

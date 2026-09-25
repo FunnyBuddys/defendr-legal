@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-26 · gültig ab 2026-09-26
+Version 2026-09-27 · gültig ab 2026-09-27
 
 ## 1. Verantwortlicher
 
@@ -21,21 +21,30 @@ Discord. Es gibt keine Website, kein Web-Dashboard und keine Anmeldung außerhal
 <!-- anchor: data -->
 
 3.1 Nachrichteninhalte (Text, Einbettungen, Anhänge, weitergeleitete Nachrichten, Umfragen) werden kurzzeitig im
-Arbeitsspeicher geprüft und nicht gespeichert. Ausnahme nur, wenn ein Server dies ausdrücklich
-einschaltet (standardmäßig aus): Bei Nachrichten, gegen die Defendr vorgeht, wird ein gekürzter, entschärfter Auszug
-gespeichert (verschlüsselt, Löschung spätestens nach 1095 Tagen, früher mit dem
-Moderationsfall).
+Arbeitsspeicher geprüft und nicht gespeichert. Eine Ausnahme gilt, wenn ein Server dies
+ausdrücklich einschaltet (standardmäßig aus): Bei Nachrichten, gegen die Defendr vorgeht, wird ein gekürzter,
+entschärfter Auszug gespeichert (verschlüsselt, Löschung spätestens nach 1095 Tagen,
+früher mit dem Moderationsfall). Eine zweite Ausnahme: Was du Defendr per Direktnachricht schreibst (Text, Dateinamen
+und Links), bleibt in einem privaten Kanal des Defendr-Support-Servers (#ops-chat), damit das Defendr-Team es lesen und
+dir antworten kann – bis 1825 Tage nach der letzten Nachricht der Unterhaltung oder bis zu deinem Löschantrag (siehe
+3.11).
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID.
 
 3.3 Beitritte: Nutzer-ID, Konto-Erstellungsdatum, Avatar vorhanden ja/nein, zeitlich begrenzte Markierungen
 (z. B. „Verifizierung ausstehend") – für Raid-Erkennung, Zugangsregeln und Verifizierung.
 
-3.4 Sicherheitseinträge (Safety Records) im Defendr-Netzwerk: Nutzer-ID, Grund-Code, Nachweise, Prüfstatus,
-Ablaufdatum. Ungeprüfte Einträge werden Moderatoren nur als Hinweis angezeigt und lösen nie automatisch Maßnahmen aus.
-Das Defendr-Team kann die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server nur mit
-angegebenem Grund nachschlagen; jede solche Abfrage wird protokolliert, und solange eine Einschränkung der Verarbeitung
-gilt, sieht das Team zu jedem Eintrag nur ID, Quelle und Status.
+3.4 Sicherheitseinträge (Safety Records) im Defendr-Netzwerk: Nutzer-ID, Grund-Code, Nachweise, Prüfstatus, Ablaufdatum.
+Ungeprüfte Einträge werden Moderatoren nur als Hinweis angezeigt und lösen nie automatisch Maßnahmen aus. Das
+Defendr-Team kann die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server nur mit angegebenem
+Grund nachschlagen; jede solche Abfrage wird protokolliert, und solange eine Einschränkung der Verarbeitung gilt, sieht
+das Team zu jedem Eintrag nur ID, Quelle und Status. Der Betreiber von Defendr kann einen Netzwerk-Eintrag auch selbst
+aktivieren, ohne zweite Prüfung und auch ohne Nachweise, aufgrund eigener Entscheidung oder der Meldungen der
+ScammerAlert-Community-Liste. Ein solcher Eintrag ist überall, wo er angezeigt wird, als Entscheidung des Inhabers
+gekennzeichnet; Defendr speichert, wann und von wem entschieden wurde und wie viele Nachweise der Eintrag zu diesem
+Zeitpunkt hatte. Er bleibt für Moderatoren ein Hinweis und löst nie eine automatische Maßnahme aus. Ein so ohne
+Nachweise entschiedener Eintrag, der auf der ScammerAlert-Liste beruht, wird automatisch entfernt, wenn ScammerAlert den
+Eintrag streicht.
 
 3.5 Meldungen (auch als Mitmeldender), Einsprüche und Anfragen zu deinen Rechten: der Text, den du selbst schreibst.
 Dateien, die du mitschickst, werden nicht gespeichert: Ein gemeldetes Bild wird einmal beim Melden gehasht und statt
@@ -67,6 +76,14 @@ eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team sieht, 
 der private Thread, wer das Ticket geschlossen oder wieder geöffnet hat, Ticket-Sperren. Was genau, wozu und wie
 lange, steht in Abschnitt 11.
 
+3.11 Direktnachrichten an Defendr: Wenn du Defendr eine Direktnachricht schickst, sieht das Defendr-Team sie (Text,
+Dateinamen und Links, Zeitpunkt) in einem privaten Kanal des Support-Servers, damit es dir antworten kann; Antworten
+erreichen dich als Direktnachricht von Defendr. Defendr selbst speichert nur, dass es eine Unterhaltung gibt (deine
+Nutzer-ID, den Beitrag in diesem Kanal, den Zeitpunkt der letzten Nachricht und ob das Team sie stummgeschaltet hat),
+nie den Text deiner Nachrichten oder der Antworten. Die Unterhaltung (Beitrag und Eintrag) wird 1825 Tage nach der
+letzten Nachricht gelöscht; mit /defendr mydata delete wird sie innerhalb einer Stunde gelöscht, /defendr mydata export
+zeigt sie an. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfragen an uns).
+
 ## 4. Zwecke und Rechtsgrundlagen
 
 <!-- anchor: purposes -->
@@ -82,6 +99,7 @@ lange, steht in Abschnitt 11.
 - Bearbeitung von Support-Tickets im Support-Server (Abschnitt 11): Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr
   nach den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
   <!-- OD-17: anwaltliche Prüfung — Rechtsgrundlage der Support-Tickets (lit. b gegenüber Nutzern, lit. f sonst) -->
+- Beantwortung von Direktnachrichten an Defendr (Abschnitt 3.11): Art. 6 Abs. 1 lit. f DSGVO.
 
 ## 5. Empfänger
 
@@ -170,9 +188,17 @@ Netzwerkweite Einträge wirken nie ohne menschliche Prüfung. Jede Entscheidung 
 Defendr-Team.
 
 Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft, wenn du selbst einen
-Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage) oder – wenn dir ein Server gehört – einmal pro
-Vorfall, wenn Defendr einen Anti-Nuke-Alarm nicht in deinem Server zeigen kann (wer wann was getan hat, und ein Knopf
-zum Wiederherstellen gelöschter Kanäle und Rollen) – nie als Werbung oder Begrüßung.
+Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage), wenn du Defendr geschrieben hast und das Defendr-Team
+dir antwortet, oder – wenn dir ein Server gehört – einmal pro Vorfall, wenn Defendr einen Anti-Nuke-Alarm nicht in
+deinem Server zeigen kann (wer wann was getan hat, und ein Knopf zum Wiederherstellen gelöschter Kanäle und Rollen) –
+nie als Werbung oder Begrüßung.
+
+Wird ein Netzwerk-Eintrag über dich aktiv, schickt dir Defendr eine Direktnachricht, aber nur, wenn du einen Server mit
+Defendr teilst, und zwar in der Defendr-Sprache dieses Servers. Sie nennt den Grund, die Bedeutung des Eintrags und den
+Weg zum Einspruch. Wird ein solcher Eintrag später entfernt, weil ScammerAlert ihn zurückgezogen hat, bekommst du eine
+kurze Nachricht über die Entfernung. Defendr speichert nur, ob und wann diese Nachrichten gesendet, abgelehnt oder nicht
+zustellbar waren. Gegen einen Eintrag, der nur auf der ScammerAlert-Liste beruht, legst du Einspruch bei ScammerAlert
+ein; deine Betroffenenrechte gegenüber Defendr (/defendr mydata) bleiben bestehen.
 
 ## 10. Sicherheit
 
