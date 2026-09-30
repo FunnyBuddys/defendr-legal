@@ -2,13 +2,13 @@
 
 Angaben gemäß § 5 DDG
 
-Version 2026-09-23 · gültig ab 2026-09-23
+Version 2026-09-30 · gültig ab 2026-09-30
 
 Samuel Sakli
 
-Wegsfeld 42, 30455 Hannover, Deutschland
+c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland
 
-Kontakt: E-Mail support@seismicdrop.com
+Kontakt: E-Mail contact@defendr.live
 
 Zweiter schneller Kontaktweg: Discord-Support-Server https://discord.gg/vtPXf6t6jd
 

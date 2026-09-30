@@ -1,12 +1,12 @@
 # Terms of Service for Defendr
 
-Version 2026-09-23 · effective 2026-09-23
+Version 2026-09-30 · effective 2026-09-30
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/terms.de.md
 
 ## 1. Scope
 
-These terms apply to the use of the Discord app "Defendr" (Samuel Sakli, Wegsfeld 42, 30455 Hannover, Deutschland). Protection by
+These terms apply to the use of the Discord app "Defendr" (Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland). Protection by
 Defendr is free of charge. Optional convenience features may later be offered for a fee through Discord; they never
 extend the protection, only the convenience.
 
@@ -38,9 +38,11 @@ can be reported with the **False positive** button on the log card.
 
 ## 7. Reports, network listings and appeals
 
-Reports are reviewed. Network-wide Safety Records follow a published scope policy; trade disputes, personal conflicts
-and off-platform behaviour are out of scope. Unreviewed records never trigger an action.
-Every decision can be reviewed with /appeal.
+Reports are reviewed. Network-wide Safety Records that Defendr creates itself follow a published scope policy; trade
+disputes, personal conflicts and off-platform behaviour are out of scope. Entries that Defendr takes over automatically
+from the ScammerAlert community lists follow ScammerAlert's own criteria, are marked as a third-party list not checked by
+Defendr and end when ScammerAlert withdraws or deletes them. Unreviewed records never trigger
+an automated action; they only show moderators a warning. Every decision can be reviewed with /appeal.
 
 ## 8. Liability
 
@@ -58,6 +60,6 @@ German law applies. Mandatory consumer protection rules of your country of resid
 
 ## 11. Contact
 
-E-mail: support@seismicdrop.com · Support server: https://discord.gg/vtPXf6t6jd · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
+E-mail: contact@defendr.live · Support server: https://discord.gg/vtPXf6t6jd · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
 
 Previous versions: https://github.com/FunnyBuddys/defendr-legal/tags

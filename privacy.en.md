@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-09-27 · effective 2026-09-27
+Version 2026-09-30 · effective 2026-09-30
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -8,7 +8,7 @@ The German version is legally binding. This English translation is provided for 
 
 <!-- anchor: contact -->
 
-Samuel Sakli, Wegsfeld 42, 30455 Hannover, Deutschland, e-mail: support@seismicdrop.com. Contact inside Discord: /defendr support.
+Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland, e-mail: contact@defendr.live. Contact inside Discord: /defendr support.
 
 ## 2. What is Defendr?
 
@@ -35,9 +35,18 @@ conversation or until you ask for erasure (see 3.11).
 3.3 Joins: user ID, account creation date, avatar present yes/no, time-limited flags (for example "verification
 pending") – for raid detection, join rules and verification.
 
-3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Unreviewed
-records are only shown to moderators as a hint and never trigger an automated action. The Defendr team can look up one
-person's network records and the number of moderation cases per server only with a stated reason; every such lookup is
+3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Records that
+nobody at Defendr has reviewed are only shown to moderators as a warning and never trigger an automated action on their
+own. This includes the entries that Defendr takes over automatically from the ScammerAlert community lists: since
+version 2.0.9 they become active network records without an individual review, unless the operator has switched this
+off or a safety limit holds them back. They are marked with the list they come from ("known scam accounts", "deal with
+caution" or, for older entries, "list not recorded") and as not checked by Defendr. The card moderators get when such a
+person joins their server also shows the reason ScammerAlert states for the entry, but only in a log channel that not
+everyone on the server can see. They are withdrawn automatically as soon as ScammerAlert strikes through or deletes the
+entry. If a person at Defendr closed an earlier record about you (for example after an appeal), a new ScammerAlert entry
+about you does not become active by itself. A server can switch these warnings off. A moderator who sees such a warning
+may decide to act on it; that is the moderator's own decision and is recorded as a case of that moderator. The Defendr
+team can look up one person's network records and the number of moderation cases per server only with a stated reason; every such lookup is
 logged, and while a processing restriction applies the team sees only each record's ID, source and status. The operator
 of Defendr can also make a network record active personally, without a second review and also without evidence, based on
 the operator's own decision or on reports from the ScammerAlert community list. Such a record is marked as an owner
@@ -100,7 +109,7 @@ hour, and /defendr mydata export shows it. Legal basis: Art. 6(1)(f) GDPR (answe
 
 <!-- anchor: processors -->
 
-Discord Inc. (platform), the moderators of the server concerned (their own server data only), Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, encrypted offsite backups; only if enabled (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled (OD-6)).
+Discord Inc. (platform), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, running the server Defendr runs on, in a data centre in Frankfurt am Main); Cloudflare, Inc. (Email Routing) (US, forwarding e-mails sent to the @defendr.live addresses); Google (Gmail) (EU/US, the mailbox these e-mails arrive in); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, encrypted offsite backups; only if enabled (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled (OD-6)).
 
 The operator aggregates detection data from every server Defendr runs on into one
 team-internal channel on the support server. That channel holds **no message
@@ -111,7 +120,7 @@ limited to the operator and the support team.
 
 ## 6. Transfers to third countries
 
-Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. There are no other transfers to third countries; a processor located in EU/US is used only once the owner decision named next to it enables it.
+Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you e-mail Defendr, your message and your e-mail address are forwarded by Cloudflare, Inc. (USA) and stored by Google (Gmail), also in the USA. Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). There are no other transfers to third countries; a recipient that is not active is used only once the owner decision named next to it enables it.
 
 ## 7. Retention
 
@@ -176,8 +185,10 @@ Support tickets (section 11) are part of the export and are deleted with an eras
 
 Server operators decide how Defendr reacts to a detected threat. Defendr limits actions by
 how reliable the evidence is (for example, never a ban on an external list alone). Network
-records never take effect without human review. Every decision can be reviewed with /appeal: a server's moderators
-decide about its own cases, the Defendr team about network-wide records.
+records never trigger an automated action: entries taken over from external lists without a review, and every other
+network record for now, only show moderators a warning, and the moderators decide themselves whether to act. Every
+decision can be reviewed with /appeal: a server's moderators decide about its own cases, the Defendr team about
+network-wide records.
 
 Defendr only sends a direct message when an action concerns you, when you started a flow yourself
 (appeal, report, data subject request), when you wrote to Defendr and the Defendr team answers you, or – if you own a
@@ -186,9 +197,11 @@ button to restore deleted channels and roles) – never as advertising or a welc
 
 When a network record about you becomes active, Defendr sends you one direct message, but only if you share a server
 with Defendr, in that server's Defendr language. It states the reason, what the record means and how to appeal. If such
-a record is later removed because ScammerAlert withdrew it, you get one short message about the removal. Defendr stores
-only whether and when these messages were sent, refused or could not be delivered. A record that rests only on the
-ScammerAlert list is appealed at ScammerAlert; your data subject rights against Defendr (/defendr mydata) remain.
+a record is later removed because ScammerAlert withdrew or deleted the entry, you get one short message about the
+removal; no such message is sent when Defendr stops taking over a list as a whole. Defendr stores only whether and when
+these messages were sent, refused or could not be delivered. A record that rests only on the ScammerAlert list is
+appealed at ScammerAlert; while it is active you can also appeal it to the Defendr team with /appeal new, and a person
+at Defendr decides. Your data subject rights against Defendr (/defendr mydata) remain.
 
 ## 10. Security
 

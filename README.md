@@ -7,11 +7,11 @@ The German version of each document is legally binding; the English file is a tr
 
 | Document | Version | Effective | SHA-256 |
 | --- | --- | --- | --- |
-| [privacy.de.md](privacy.de.md) | 2026-09-27 | 2026-09-27 | `sha256:c47c2c6fb65aafd5` |
-| [privacy.en.md](privacy.en.md) | 2026-09-27 | 2026-09-27 | `sha256:b8bc9a2371a57127` |
-| [terms.de.md](terms.de.md) | 2026-09-23 | 2026-09-23 | `sha256:0c4f4d58ebf816f5` |
-| [terms.en.md](terms.en.md) | 2026-09-23 | 2026-09-23 | `sha256:2c32c1e91575a293` |
-| [impressum.de.md](impressum.de.md) | 2026-09-23 | 2026-09-23 | `sha256:04f51948f42c3fa4` |
+| [privacy.de.md](privacy.de.md) | 2026-09-30 | 2026-09-30 | `sha256:458704c89825dba7` |
+| [privacy.en.md](privacy.en.md) | 2026-09-30 | 2026-09-30 | `sha256:035c9993a882d5a7` |
+| [terms.de.md](terms.de.md) | 2026-09-30 | 2026-09-30 | `sha256:65a33e0c54656f39` |
+| [terms.en.md](terms.en.md) | 2026-09-30 | 2026-09-30 | `sha256:b658abcd9ec2204b` |
+| [impressum.de.md](impressum.de.md) | 2026-09-30 | 2026-09-30 | `sha256:c3cfbfb7f07339d8` |
 
 Previous versions: [tags](https://github.com/FunnyBuddys/defendr-legal/tags).
 

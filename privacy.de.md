@@ -1,12 +1,12 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-27 · gültig ab 2026-09-27
+Version 2026-09-30 · gültig ab 2026-09-30
 
 ## 1. Verantwortlicher
 
 <!-- anchor: contact -->
 
-Samuel Sakli, Wegsfeld 42, 30455 Hannover, Deutschland, E-Mail: support@seismicdrop.com. Kontakt in Discord: /defendr support.
+Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland, E-Mail: contact@defendr.live. Kontakt in Discord: /defendr support.
 
 ## 2. Was ist Defendr?
 
@@ -35,8 +35,18 @@ dir antworten kann – bis 1825 Tage nach der letzten Nachricht der Unterhaltung
 (z. B. „Verifizierung ausstehend") – für Raid-Erkennung, Zugangsregeln und Verifizierung.
 
 3.4 Sicherheitseinträge (Safety Records) im Defendr-Netzwerk: Nutzer-ID, Grund-Code, Nachweise, Prüfstatus, Ablaufdatum.
-Ungeprüfte Einträge werden Moderatoren nur als Hinweis angezeigt und lösen nie automatisch Maßnahmen aus. Das
-Defendr-Team kann die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server nur mit angegebenem
+Einträge, die niemand bei Defendr geprüft hat, werden Moderatoren nur als Warnung angezeigt und lösen von sich aus nie
+eine automatische Maßnahme aus. Dazu gehören die Einträge, die Defendr automatisch aus den ScammerAlert-Community-Listen
+übernimmt: Seit Version 2.0.9 werden sie ohne Einzelprüfung zu aktiven Netzwerk-Einträgen, außer der Betreiber hat das
+abgeschaltet oder eine Sicherheitsgrenze hält sie zurück. Sie sind mit der Liste gekennzeichnet, aus der sie stammen
+(„bekannte Betrugskonten“, „Vorsicht“ oder, bei älteren Einträgen, „Liste nicht erfasst“), und als von Defendr nicht
+geprüft. Die Karte, die Moderatoren beim Beitritt einer solchen Person auf ihren Server bekommen, zeigt außerdem den
+Grund, den ScammerAlert für den Eintrag angibt, aber nur in einem Protokollkanal, den nicht alle auf dem Server sehen
+können. Sie werden automatisch zurückgenommen, sobald ScammerAlert den Eintrag durchstreicht oder löscht. Hat ein Mensch
+bei Defendr einen früheren Eintrag über dich geschlossen (etwa nach einem Einspruch), wird ein neuer ScammerAlert-Eintrag
+über dich nicht von selbst aktiv. Ein Server kann diese Warnungen abschalten. Ein Moderator, der eine solche Warnung
+sieht, kann selbst entscheiden, deshalb etwas zu unternehmen; das ist seine eigene Entscheidung und wird als sein Fall
+festgehalten. Das Defendr-Team kann die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server nur mit angegebenem
 Grund nachschlagen; jede solche Abfrage wird protokolliert, und solange eine Einschränkung der Verarbeitung gilt, sieht
 das Team zu jedem Eintrag nur ID, Quelle und Status. Der Betreiber von Defendr kann einen Netzwerk-Eintrag auch selbst
 aktivieren, ohne zweite Prüfung und auch ohne Nachweise, aufgrund eigener Entscheidung oder der Meldungen der
@@ -105,7 +115,7 @@ zeigt sie an. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfr
 
 <!-- anchor: processors -->
 
-Discord Inc. (Plattform), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, verschluesselte Offsite-Backups; nur wenn aktiviert (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert (OD-6)).
+Discord Inc. (Plattform), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, Betrieb des Servers, auf dem Defendr läuft, im Rechenzentrum Frankfurt am Main); Cloudflare, Inc. (Email Routing) (US, Weiterleitung von E-Mails an die Adressen @defendr.live); Google (Gmail) (EU/US, Postfach, in dem diese E-Mails ankommen); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, verschluesselte Offsite-Backups; nur wenn aktiviert (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert (OD-6)).
 
 Der Betreiber führt Erkennungsdaten aus allen Servern, auf denen Defendr läuft, in
 einem teaminternen Kanal auf dem Support-Server zusammen. Dieser Kanal enthält
@@ -116,7 +126,7 @@ alle Server hinweg; Zugriff haben ausschließlich der Betreiber und das Support-
 
 ## 6. Übermittlung in Drittländer
 
-Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschutzerklärung. Discord Inc. verarbeitet Daten auch in den USA. Weitere Uebermittlungen in Drittlaender finden nicht statt; Auftragsverarbeiter mit Standort EU/US werden erst eingesetzt, wenn die jeweilige Owner-Entscheidung sie freigibt.
+Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschutzerklärung. Discord Inc. verarbeitet Daten auch in den USA. Schreibst du Defendr eine E-Mail, werden deine Nachricht und deine E-Mail-Adresse über Cloudflare, Inc. (USA) weitergeleitet und bei Google (Gmail) gespeichert, auch in den USA. Beide Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO). Weitere Übermittlungen in Drittländer finden nicht statt; ein nicht aktiver Empfänger wird erst eingesetzt, wenn die daneben genannte Owner-Entscheidung ihn freigibt.
 
 ## 7. Speicherdauer
 
@@ -183,9 +193,10 @@ bestehen (Abschnitt 11.6).
 Server-Betreiber legen fest, wie Defendr auf erkannte Bedrohungen reagiert. Defendr begrenzt
 Maßnahmen nach der Verlässlichkeit des Nachweises (z. B. nie Bann allein aufgrund externer Listen).
 
-Netzwerkweite Einträge wirken nie ohne menschliche Prüfung. Jede Entscheidung kann mit
-/appeal überprüft werden: Über Fälle eines Servers entscheiden dessen Moderatoren, über netzwerkweite Einträge das
-Defendr-Team.
+Netzwerkweite Einträge lösen nie eine automatische Maßnahme aus: Einträge, die ohne Prüfung
+aus externen Listen übernommen werden, und derzeit auch alle anderen Netzwerk-Einträge zeigen Moderatoren nur eine
+Warnung, und die Moderatoren entscheiden selbst, ob sie etwas unternehmen. Jede Entscheidung kann mit /appeal überprüft
+werden: Über Fälle eines Servers entscheiden dessen Moderatoren, über netzwerkweite Einträge das Defendr-Team.
 
 Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft, wenn du selbst einen
 Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage), wenn du Defendr geschrieben hast und das Defendr-Team
@@ -195,10 +206,12 @@ nie als Werbung oder Begrüßung.
 
 Wird ein Netzwerk-Eintrag über dich aktiv, schickt dir Defendr eine Direktnachricht, aber nur, wenn du einen Server mit
 Defendr teilst, und zwar in der Defendr-Sprache dieses Servers. Sie nennt den Grund, die Bedeutung des Eintrags und den
-Weg zum Einspruch. Wird ein solcher Eintrag später entfernt, weil ScammerAlert ihn zurückgezogen hat, bekommst du eine
-kurze Nachricht über die Entfernung. Defendr speichert nur, ob und wann diese Nachrichten gesendet, abgelehnt oder nicht
-zustellbar waren. Gegen einen Eintrag, der nur auf der ScammerAlert-Liste beruht, legst du Einspruch bei ScammerAlert
-ein; deine Betroffenenrechte gegenüber Defendr (/defendr mydata) bleiben bestehen.
+Weg zum Einspruch. Wird ein solcher Eintrag später entfernt, weil ScammerAlert ihn zurückgezogen oder gelöscht hat,
+bekommst du eine kurze Nachricht über die Entfernung; keine solche Nachricht gibt es, wenn Defendr eine Liste insgesamt
+nicht mehr übernimmt. Defendr speichert nur, ob und wann diese Nachrichten gesendet, abgelehnt oder nicht zustellbar
+waren. Gegen einen Eintrag, der nur auf der ScammerAlert-Liste beruht, legst du Einspruch bei ScammerAlert ein; solange
+er aktiv ist, kannst du mit /appeal new auch beim Defendr-Team Einspruch einlegen, und ein Mensch bei Defendr
+entscheidet. Deine Betroffenenrechte gegenüber Defendr (/defendr mydata) bleiben bestehen.
 
 ## 10. Sicherheit
 

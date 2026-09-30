@@ -1,10 +1,10 @@
 # Nutzungsbedingungen für Defendr
 
-Version 2026-09-23 · gültig ab 2026-09-23
+Version 2026-09-30 · gültig ab 2026-09-30
 
 ## 1. Geltungsbereich
 
-Diese Bedingungen gelten für die Nutzung der Discord-App „Defendr" (Samuel Sakli, Wegsfeld 42, 30455 Hannover, Deutschland). Der Schutz
+Diese Bedingungen gelten für die Nutzung der Discord-App „Defendr" (Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland). Der Schutz
 durch Defendr ist kostenlos. Optionale Komfortfunktionen können künftig kostenpflichtig über Discord angeboten werden;
 sie erweitern nie den Schutz, sondern nur den Komfort.
 
@@ -37,11 +37,14 @@ Fehlalarme können über die Schaltfläche „Fehlalarm" an der Log-Karte gemeld
 
 ## 7. Meldungen, netzwerkweite Einträge und Einsprüche
 
-Meldungen werden geprüft. Netzwerkweite Sicherheitseinträge folgen einer veröffentlichten Aufnahmepolitik; Streit über
-Handel, persönliche Konflikte und Verhalten außerhalb der Plattform sind ausgenommen.
+Meldungen werden geprüft. Netzwerkweite Sicherheitseinträge, die Defendr selbst anlegt, folgen einer veröffentlichten
+Aufnahmepolitik; Streit über Handel, persönliche Konflikte und Verhalten außerhalb der Plattform sind ausgenommen.
+Einträge, die Defendr automatisch aus den ScammerAlert-Community-Listen übernimmt, folgen den Kriterien von ScammerAlert,
+sind als fremde, von Defendr nicht geprüfte Liste gekennzeichnet und enden, wenn ScammerAlert sie zurückzieht oder
+löscht.
 
-Ungeprüfte Einträge lösen nie eine Maßnahme aus. Jede Entscheidung kann mit /appeal
-überprüft werden.
+Ungeprüfte Einträge lösen nie eine automatische Maßnahme aus; sie zeigen Moderatoren nur eine
+Warnung. Jede Entscheidung kann mit /appeal überprüft werden.
 
 ## 8. Haftung
 
@@ -59,6 +62,6 @@ Es gilt deutsches Recht. Zwingende Verbraucherschutzvorschriften des Aufenthalts
 
 ## 11. Kontakt
 
-E-Mail: support@seismicdrop.com · Support-Server: https://discord.gg/vtPXf6t6jd · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
+E-Mail: contact@defendr.live · Support-Server: https://discord.gg/vtPXf6t6jd · Impressum: https://github.com/FunnyBuddys/defendr-legal/blob/main/impressum.de.md
 
 Frühere Fassungen: https://github.com/FunnyBuddys/defendr-legal/tags
