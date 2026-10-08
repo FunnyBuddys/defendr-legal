@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-09-30 · gültig ab 2026-09-30
+Version 2026-10-08 · gültig ab 2026-10-08
 
 ## 1. Verantwortlicher
 
@@ -14,7 +14,8 @@ Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyers
 
 Defendr ist ein Sicherheits-Bot für Discord-Server. Er erkennt Phishing-Links, Schadsoftware-Links, betrügerische
 Bilder, QR-Codes zur Übernahme von Discord-Konten, Spam, Raids und übernommene Konten. Defendr läuft ausschließlich in
-Discord. Es gibt keine Website, kein Web-Dashboard und keine Anmeldung außerhalb von Discord.
+Discord. Unter defendr.live gibt es bis zum Start der Website nur eine Hinweisseite (Abschnitt 12); ein Web-Dashboard
+und eine Anmeldung außerhalb von Discord gibt es nicht.
 
 ## 3. Welche Daten wir verarbeiten
 
@@ -67,7 +68,8 @@ eine von sechs festen Antworten (zum Beispiel „top.gg" oder „Freunde oder Be
 keiner Person zugeordnet. Sie dient nur dazu, zu verstehen, wie Server Defendr finden, wird dem Defendr-Team nur als
 Anzahl über alle Server gezeigt und zusammen mit der Server-Konfiguration gelöscht.
 
-3.7 Keine IP-Adressen, keine Geräte-Daten, keine Profile, kein Training von KI-Modellen.
+3.7 Defendr speichert keine IP-Adressen und keine Geräte-Daten, erstellt keine Profile und
+trainiert keine KI-Modelle. Was beim Aufruf von defendr.live technisch verarbeitet wird, steht in Abschnitt 12.
 
 3.8 Die vollständige Liste aller Datenkategorien mit ihrer Speicherdauer steht in Abschnitt 7. Sie wird aus demselben
 Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
@@ -110,12 +112,13 @@ zeigt sie an. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfr
   nach den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
   <!-- OD-17: anwaltliche Prüfung — Rechtsgrundlage der Support-Tickets (lit. b gegenüber Nutzern, lit. f sonst) -->
 - Beantwortung von Direktnachrichten an Defendr (Abschnitt 3.11): Art. 6 Abs. 1 lit. f DSGVO.
+- Auslieferung und Schutz der Hinweisseite defendr.live (Abschnitt 12): Art. 6 Abs. 1 lit. f DSGVO.
 
 ## 5. Empfänger
 
 <!-- anchor: processors -->
 
-Discord Inc. (Plattform), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, Betrieb des Servers, auf dem Defendr läuft, im Rechenzentrum Frankfurt am Main); Cloudflare, Inc. (Email Routing) (US, Weiterleitung von E-Mails an die Adressen @defendr.live); Google (Gmail) (EU/US, Postfach, in dem diese E-Mails ankommen); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, verschluesselte Offsite-Backups; nur wenn aktiviert (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert (OD-6)).
+Discord Inc. (Plattform), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, Betrieb des Servers, auf dem Defendr läuft, im Rechenzentrum Frankfurt am Main); Cloudflare, Inc. (Email Routing, Workers) (US, Weiterleitung von E-Mails an die Adressen @defendr.live; Auslieferung und Schutz der Hinweisseite defendr.live (Abschnitt 12)); Google (Gmail) (EU/US, Postfach, in dem diese E-Mails ankommen); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, verschluesselte Offsite-Backups; nur wenn aktiviert (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert (OD-6)).
 
 Der Betreiber führt Erkennungsdaten aus allen Servern, auf denen Defendr läuft, in
 einem teaminternen Kanal auf dem Support-Server zusammen. Dieser Kanal enthält
@@ -126,7 +129,7 @@ alle Server hinweg; Zugriff haben ausschließlich der Betreiber und das Support-
 
 ## 6. Übermittlung in Drittländer
 
-Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschutzerklärung. Discord Inc. verarbeitet Daten auch in den USA. Schreibst du Defendr eine E-Mail, werden deine Nachricht und deine E-Mail-Adresse über Cloudflare, Inc. (USA) weitergeleitet und bei Google (Gmail) gespeichert, auch in den USA. Beide Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO). Weitere Übermittlungen in Drittländer finden nicht statt; ein nicht aktiver Empfänger wird erst eingesetzt, wenn die daneben genannte Owner-Entscheidung ihn freigibt.
+Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschutzerklärung. Discord Inc. verarbeitet Daten auch in den USA. Schreibst du Defendr eine E-Mail, werden deine Nachricht und deine E-Mail-Adresse über Cloudflare, Inc. (USA) weitergeleitet und bei Google (Gmail) gespeichert, auch in den USA. Rufst du defendr.live auf, verarbeitet Cloudflare, Inc. die Daten des Aufrufs (Abschnitt 12) in ihrem weltweiten Netzwerk, auch in den USA. Beide Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO); für Cloudflare gelten ergänzend die Standardvertragsklauseln im Auftragsverarbeitungsvertrag (Art. 46 Abs. 2 lit. c DSGVO). Weitere Übermittlungen in Drittländer finden nicht statt; ein nicht aktiver Empfänger wird erst eingesetzt, wenn die daneben genannte Owner-Entscheidung ihn freigibt.
 
 ## 7. Speicherdauer
 
@@ -269,6 +272,31 @@ dem Öffnen des Tickets.
 
 <!-- OD-17: anwaltliche Prüfung — 11.3: Zweckänderung (Art. 6 Abs. 4) beim lesenden Zugriff auf Checkout-Daten, Hinweis in Checkouts Datenschutzerklärung, veralteter Checkout-Inhaber; 11.6: ein Ticket zum Thema Datenauskunft oder Löschung ist eine eingegangene Betroffenenanfrage, Fristbeginn mit dem Öffnen des Tickets; Rechte an Ticket-Sperren nach Löschung -->
 
-## 12. Änderungen
+## 12. Hinweisseite defendr.live
+
+12.1 Was die Seite ist. Bis zum Start der Website zeigt defendr.live nur eine Hinweisseite: dass die neue Website bald
+kommt, und Links zum Einladen des Bots, zum Support-Server, zu diesen Rechtstexten und zur Kontaktadresse. Die Seite
+hat keine Anmeldung, setzt selbst keine Cookies, lädt keine Skripte und keine Inhalte Dritter und enthält keine Analyse-
+oder Tracking-Werkzeuge.
+
+12.2 Welche Daten. Beim Aufruf überträgt dein Browser technisch notwendig deine IP-Adresse, den Zeitpunkt, die
+aufgerufene Adresse, die Browser-Kennung (User-Agent) und deine bevorzugten Sprachen. Die Sprachangabe dient nur dazu,
+die Seite auf Deutsch oder Englisch anzuzeigen.
+
+12.3 Wer sie verarbeitet. Cloudflare, Inc. liefert die Seite als unser Auftragsverarbeiter aus und schützt sie vor
+Angriffen (Abschnitte 5 und 6). Die Seite selbst schreibt kein Protokoll, und wir speichern diese Daten nicht bei uns.
+Cloudflare hält Aufrufe mit IP-Adresse, Zeitpunkt, aufgerufener Adresse, Browser-Kennung und gegebenenfalls der
+ausgelösten Schutzregel in Analyse- und Sicherheitsprotokollen fest, die wir in unserem Cloudflare-Konto einsehen
+können; Cloudflare löscht sie nach 31 Tagen. Bei Verdacht auf einen Angriff kann Cloudflare vor der Seite eine
+Browserprüfung zeigen; besteht dein Browser sie, setzt Cloudflare dafür ein technisch notwendiges Cookie
+(`cf_clearance`).
+
+12.4 Links. Die Links zu Discord und GitHub führen zu deren Diensten; dort gelten deren eigene
+Datenschutzerklärungen. Die Seite gibt beim Klick keine Herkunftsadresse weiter.
+
+12.5 Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, unter unserer Domain erreichbar
+zu sein, auf den Bot und diese Rechtstexte zu verweisen und die Seite vor Angriffen zu schützen.
+
+## 13. Änderungen
 
 Versionen: https://github.com/FunnyBuddys/defendr-legal/tags. Die jeweils geltende Fassung steht unter https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md.

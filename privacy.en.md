@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-09-30 · effective 2026-09-30
+Version 2026-10-08 · effective 2026-10-08
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -15,8 +15,9 @@ Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyers
 <!-- anchor: summary -->
 
 Defendr is a security bot for Discord servers. It detects phishing links, malware links, scam images, QR codes that
-take over Discord accounts, spam, raids and hijacked accounts. Defendr runs entirely inside Discord. There is no
-website, no web dashboard and no login outside Discord.
+take over Discord accounts, spam, raids and hijacked accounts. Defendr runs entirely inside Discord. Until the
+website launches, defendr.live shows only a notice page (section 12); there is no web dashboard and no login outside
+Discord.
 
 ## 3. What we process
 
@@ -65,7 +66,8 @@ example "top.gg" or "A friend") is stored for the server and not assigned to any
 how servers find Defendr, is shown to the Defendr team only as a count across all servers, and is deleted together
 with the server's configuration.
 
-3.7 No IP addresses, no device data, no profiling, no training of AI models.
+3.7 Defendr stores no IP addresses and no device data, builds no profiles and trains no AI models.
+What is processed technically when you open defendr.live is described in section 12.
 
 3.8 The complete list of data categories with their retention is in section 7. It is generated from the same registry
 the deletion jobs read their deadlines from.
@@ -104,12 +106,13 @@ hour, and /defendr mydata export shows it. Legal basis: Art. 6(1)(f) GDPR (answe
   terms of service, otherwise Art. 6(1)(f) GDPR.
   <!-- OD-17: lawyer review — legal basis of support tickets (Art. 6(1)(b) towards users, (f) otherwise) -->
 - Answering direct messages to Defendr (section 3.11): Art. 6(1)(f) GDPR.
+- Delivering and protecting the defendr.live notice page (section 12): Art. 6(1)(f) GDPR.
 
 ## 5. Recipients
 
 <!-- anchor: processors -->
 
-Discord Inc. (platform), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, running the server Defendr runs on, in a data centre in Frankfurt am Main); Cloudflare, Inc. (Email Routing) (US, forwarding e-mails sent to the @defendr.live addresses); Google (Gmail) (EU/US, the mailbox these e-mails arrive in); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, encrypted offsite backups; only if enabled (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled (OD-6)).
+Discord Inc. (platform), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, running the server Defendr runs on, in a data centre in Frankfurt am Main); Cloudflare, Inc. (Email Routing, Workers) (US, forwarding e-mails sent to the @defendr.live addresses; delivering and protecting the defendr.live notice page (section 12)); Google (Gmail) (EU/US, the mailbox these e-mails arrive in); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, encrypted offsite backups; only if enabled (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled (OD-6)).
 
 The operator aggregates detection data from every server Defendr runs on into one
 team-internal channel on the support server. That channel holds **no message
@@ -120,7 +123,7 @@ limited to the operator and the support team.
 
 ## 6. Transfers to third countries
 
-Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you e-mail Defendr, your message and your e-mail address are forwarded by Cloudflare, Inc. (USA) and stored by Google (Gmail), also in the USA. Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR). There are no other transfers to third countries; a recipient that is not active is used only once the owner decision named next to it enables it.
+Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you e-mail Defendr, your message and your e-mail address are forwarded by Cloudflare, Inc. (USA) and stored by Google (Gmail), also in the USA. If you open defendr.live, Cloudflare, Inc. processes the data of the request (section 12) in its worldwide network, also in the USA. Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR); for Cloudflare, the standard contractual clauses in the data processing agreement apply in addition (Art. 46(2)(c) GDPR). There are no other transfers to third countries; a recipient that is not active is used only once the owner decision named next to it enables it.
 
 ## 7. Retention
 
@@ -253,6 +256,30 @@ deadline (Art. 12(3) GDPR) runs from the opening of the ticket.
 
 <!-- OD-17: lawyer review — 11.3: change of purpose (Art. 6(4)) for the read-only access to Checkout data, a sentence in Checkout's privacy notice, stale Checkout owner; 11.6: a ticket of the data-access-or-deletion topic is a received data-subject request, the deadline runs from the opening of the ticket; ticket bans survive an erasure -->
 
-## 12. Changes
+## 12. The defendr.live notice page
+
+12.1 What the page is. Until the website launches, defendr.live shows only a notice page: that the new website is
+coming soon, and links to invite the bot, to the support server, to these legal documents and to the contact address.
+The page has no login, sets no cookies of its own, loads no scripts and no third-party content and contains no
+analytics or tracking tools.
+
+12.2 What data. When you open it, your browser necessarily transmits your IP address, the time, the address requested,
+the browser identifier (user agent) and your preferred languages. The language preference is only used to show the
+page in German or English.
+
+12.3 Who processes it. Cloudflare, Inc. delivers the page as our processor and protects it against attacks (sections 5
+and 6). The page itself keeps no log, and we do not store this data ourselves. Cloudflare records requests with the IP
+address, time, address requested, browser identifier and, where applicable, the protection rule that fired in
+analytics and security logs that we can view in our Cloudflare account; Cloudflare deletes them after 31 days. If it
+suspects an attack, Cloudflare can show a browser check before the page; if your browser passes it, Cloudflare sets a
+technically necessary cookie for it (`cf_clearance`).
+
+12.4 Links. The links to Discord and GitHub lead to their services, where their own privacy policies apply. The page
+does not pass on where you came from when you click a link.
+
+12.5 The legal basis is Art. 6(1)(f) GDPR. Our legitimate interest is to be reachable under our domain, to point to the
+bot and these legal documents, and to protect the page against attacks.
+
+## 13. Changes
 
 Versions: https://github.com/FunnyBuddys/defendr-legal/tags. The current English text is at https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.en.md.
