@@ -1,6 +1,6 @@
 # Terms of Service for Defendr
 
-Version 2026-09-30 · effective 2026-09-30
+Version 2026-10-13 · effective 2026-10-13
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/terms.de.md
 
@@ -27,7 +27,7 @@ attack Defendr, and systematically scraping Defendr's output.
 
 ## 5. Availability and changes
 
-No particular availability is promised. Changes are announced through the release notes (/changelog).
+No particular availability is promised. Changes are announced through the release notes (/defendr › Changelog).
 
 Updated presets never escalate enforcement without the server's consent.
 

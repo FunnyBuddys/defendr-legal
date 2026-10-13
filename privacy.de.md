@@ -1,12 +1,12 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-08 · gültig ab 2026-10-08
+Version 2026-10-13 · gültig ab 2026-10-13
 
 ## 1. Verantwortlicher
 
 <!-- anchor: contact -->
 
-Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland, E-Mail: contact@defendr.live. Kontakt in Discord: /defendr support.
+Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland, E-Mail: contact@defendr.live. Kontakt in Discord: /defendr › Support.
 
 ## 2. Was ist Defendr?
 
@@ -93,8 +93,8 @@ Dateinamen und Links, Zeitpunkt) in einem privaten Kanal des Support-Servers, da
 erreichen dich als Direktnachricht von Defendr. Defendr selbst speichert nur, dass es eine Unterhaltung gibt (deine
 Nutzer-ID, den Beitrag in diesem Kanal, den Zeitpunkt der letzten Nachricht und ob das Team sie stummgeschaltet hat),
 nie den Text deiner Nachrichten oder der Antworten. Die Unterhaltung (Beitrag und Eintrag) wird 1825 Tage nach der
-letzten Nachricht gelöscht; mit /defendr mydata delete wird sie innerhalb einer Stunde gelöscht, /defendr mydata export
-zeigt sie an. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfragen an uns).
+letzten Nachricht gelöscht; mit /defendr › Meine Daten › Meine Daten löschen wird sie innerhalb einer Stunde gelöscht,
+/defendr › Meine Daten › Exportieren zeigt sie an. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfragen an uns).
 
 ## 4. Zwecke und Rechtsgrundlagen
 
@@ -184,9 +184,9 @@ der Tabelle.
 
 <!-- anchor: rights -->
 
-Auskunft (/defendr mydata export), Löschung (/defendr mydata delete), Widerspruch (/defendr mydata object),
-Berichtigung (/defendr mydata rectify), Einschränkung (/defendr mydata restrict), Überprüfung von Entscheidungen
-(/appeal), Beschwerde bei einer Aufsichtsbehörde (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
+Auskunft, Löschung, Widerspruch, Berichtigung und Einschränkung auf der Seite Meine Daten von /defendr (Exportieren,
+Meine Daten löschen, Widersprechen, Berichtigen, Einschränken; direkt: /defendr page:mydata), Überprüfung von
+Entscheidungen (/appeal), Beschwerde bei einer Aufsichtsbehörde (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
 Support-Tickets (Abschnitt 11) sind Teil des Exports und werden mit einer Löschung gelöscht; eine Ticket-Sperre bleibt
 bestehen (Abschnitt 11.6).
@@ -213,8 +213,8 @@ Weg zum Einspruch. Wird ein solcher Eintrag später entfernt, weil ScammerAlert 
 bekommst du eine kurze Nachricht über die Entfernung; keine solche Nachricht gibt es, wenn Defendr eine Liste insgesamt
 nicht mehr übernimmt. Defendr speichert nur, ob und wann diese Nachrichten gesendet, abgelehnt oder nicht zustellbar
 waren. Gegen einen Eintrag, der nur auf der ScammerAlert-Liste beruht, legst du Einspruch bei ScammerAlert ein; solange
-er aktiv ist, kannst du mit /appeal new auch beim Defendr-Team Einspruch einlegen, und ein Mensch bei Defendr
-entscheidet. Deine Betroffenenrechte gegenüber Defendr (/defendr mydata) bleiben bestehen.
+er aktiv ist, kannst du mit /appeal auch beim Defendr-Team Einspruch einlegen, und ein Mensch bei Defendr
+entscheidet. Deine Betroffenenrechte gegenüber Defendr (/defendr › Meine Daten) bleiben bestehen.
 
 ## 10. Sicherheit
 
@@ -261,12 +261,12 @@ Wiederherstellung aus einer Sicherung), wird fünf Jahre nach seiner Erstellung 
 sperren und archivieren, wenn niemand darin geschrieben hat. Weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht
 das Team ihn auf einen Löschantrag hin von Hand.
 
-11.6 Deine Rechte. Deine Tickets sind Teil deines Exports (/defendr mydata export), samt Betreff, Beschreibung und
-Formularfeldern; die Nachrichten im Thread stehen nur auf Discord und bleiben für dich sichtbar, solange der Thread
-besteht. Eine Ticket-Sperre erscheint im Export ohne die Person, die sie gesetzt hat. Eine Löschung
-(/defendr mydata delete) löscht deine Tickets und ihre Threads – auch ein offenes Ticket wird dadurch beendet; eine
-Ticket-Sperre bleibt bestehen (Schutz anderer). Am schnellsten stellst du eine Anfrage zu deinen Daten mit
-/defendr mydata: Sie hält die Anfrage und ihre Frist fest. Eine Anfrage, die du in einem Ticket zum Thema
+11.6 Deine Rechte. Deine Tickets sind Teil deines Exports (/defendr › Meine Daten › Exportieren), samt Betreff,
+Beschreibung und Formularfeldern; die Nachrichten im Thread stehen nur auf Discord und bleiben für dich sichtbar,
+solange der Thread besteht. Eine Ticket-Sperre erscheint im Export ohne die Person, die sie gesetzt hat. Eine Löschung
+(/defendr › Meine Daten › Meine Daten löschen) löscht deine Tickets und ihre Threads – auch ein offenes Ticket wird
+dadurch beendet; eine Ticket-Sperre bleibt bestehen (Schutz anderer). Am schnellsten stellst du eine Anfrage zu deinen
+Daten auf der Seite Meine Daten von /defendr (/defendr page:mydata): Sie hält die Anfrage und ihre Frist fest. Eine Anfrage, die du in einem Ticket zum Thema
 Datenauskunft oder Löschung stellst, behandeln wir genauso; die Frist von einem Monat (Art. 12 Abs. 3 DSGVO) läuft ab
 dem Öffnen des Tickets.
 

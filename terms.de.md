@@ -1,6 +1,6 @@
 # Nutzungsbedingungen für Defendr
 
-Version 2026-09-30 · gültig ab 2026-09-30
+Version 2026-10-13 · gültig ab 2026-10-13
 
 ## 1. Geltungsbereich
 
@@ -27,7 +27,7 @@ anzugreifen, sowie das systematische Auslesen von Ausgaben von Defendr.
 ## 5. Verfügbarkeit und Änderungen
 
 Eine bestimmte Verfügbarkeit wird nicht zugesichert. Änderungen werden über die Release-Notes angekündigt
-(/changelog). Aktualisierte Voreinstellungen verschärfen Maßnahmen nie ohne Zustimmung des
+(/defendr › Changelog). Aktualisierte Voreinstellungen verschärfen Maßnahmen nie ohne Zustimmung des
 Servers.
 
 ## 6. Erkennung und Grenzen

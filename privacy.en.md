@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-08 · effective 2026-10-08
+Version 2026-10-13 · effective 2026-10-13
 
 The German version is legally binding. This English translation is provided for convenience: https://github.com/FunnyBuddys/defendr-legal/blob/main/privacy.de.md
 
@@ -8,7 +8,7 @@ The German version is legally binding. This English translation is provided for 
 
 <!-- anchor: contact -->
 
-Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland, e-mail: contact@defendr.live. Contact inside Discord: /defendr support.
+Samuel Sakli, c/o Autorenglück #66851, Albert-Einstein-Straße 47, 02977 Hoyerswerda, Deutschland, e-mail: contact@defendr.live. Contact inside Discord: /defendr › Support.
 
 ## 2. What is Defendr?
 
@@ -88,8 +88,8 @@ private thread, who closed or reopened the ticket, ticket bans. What exactly, wh
 links, time) in a private channel of the support server so that it can answer you; answers reach you as direct messages
 from Defendr. Defendr itself stores only that a conversation exists (your user ID, the post in that channel, the time of
 the last message and whether the team muted it), never the text of your messages or of the answers. The conversation
-(the post and this record) is deleted 1825 days after the last message; /defendr mydata delete deletes it within an
-hour, and /defendr mydata export shows it. Legal basis: Art. 6(1)(f) GDPR (answering people who contact us).
+(the post and this record) is deleted 1825 days after the last message; /defendr › My data › Delete my data deletes it
+within an hour, and /defendr › My data › Export shows it. Legal basis: Art. 6(1)(f) GDPR (answering people who contact us).
 
 ## 4. Purposes and legal bases
 
@@ -177,8 +177,8 @@ Deletion inside backups happens through their rotation; the maximum backup reten
 
 <!-- anchor: rights -->
 
-Access (/defendr mydata export), erasure (/defendr mydata delete), objection (/defendr mydata object), rectification
-(/defendr mydata rectify), restriction (/defendr mydata restrict), review of a decision (/appeal), and a complaint to a
+Access, erasure, objection, rectification and restriction on the My data page of /defendr (Export, Delete my data,
+Object, Correct, Restrict; directly: /defendr page:mydata), review of a decision (/appeal), and a complaint to a
 supervisory authority (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
 Support tickets (section 11) are part of the export and are deleted with an erasure; a ticket ban is kept
@@ -203,8 +203,8 @@ with Defendr, in that server's Defendr language. It states the reason, what the 
 a record is later removed because ScammerAlert withdrew or deleted the entry, you get one short message about the
 removal; no such message is sent when Defendr stops taking over a list as a whole. Defendr stores only whether and when
 these messages were sent, refused or could not be delivered. A record that rests only on the ScammerAlert list is
-appealed at ScammerAlert; while it is active you can also appeal it to the Defendr team with /appeal new, and a person
-at Defendr decides. Your data subject rights against Defendr (/defendr mydata) remain.
+appealed at ScammerAlert; while it is active you can also appeal it to the Defendr team with /appeal, and a person
+at Defendr decides. Your data subject rights against Defendr (/defendr › My data) remain.
 
 ## 10. Security
 
@@ -246,12 +246,12 @@ open ticket has no expiry date. A ticket ban lasts until the team lifts it. A ti
 may lock and archive it if nobody wrote in it. Because no record links it to a member, the team deletes it by hand on
 an erasure request.
 
-11.6 Your rights. Your tickets are part of your export (/defendr mydata export), including the subject, the
+11.6 Your rights. Your tickets are part of your export (/defendr › My data › Export), including the subject, the
 description and the form fields; the messages in the thread exist only on Discord and stay visible to you as long as
-the thread exists. A ticket ban appears in the export without the person who set it. An erasure (/defendr mydata
-delete) deletes your tickets and their threads – an open ticket is ended by it too; a ticket ban is kept (protection
-of others). The fastest way to make a request about your data is /defendr mydata: it records the request and its
-deadline. A request you make in a ticket of the data-access-or-deletion topic is handled just the same; the one-month
+the thread exists. A ticket ban appears in the export without the person who set it. An erasure (/defendr › My data ›
+Delete my data) deletes your tickets and their threads – an open ticket is ended by it too; a ticket ban is kept
+(protection of others). The fastest way to make a request about your data is the My data page of /defendr
+(/defendr page:mydata): it records the request and its deadline. A request you make in a ticket of the data-access-or-deletion topic is handled just the same; the one-month
 deadline (Art. 12(3) GDPR) runs from the opening of the ticket.
 
 <!-- OD-17: lawyer review — 11.3: change of purpose (Art. 6(4)) for the read-only access to Checkout data, a sentence in Checkout's privacy notice, stale Checkout owner; 11.6: a ticket of the data-access-or-deletion topic is a received data-subject request, the deadline runs from the opening of the ticket; ticket bans survive an erasure -->
