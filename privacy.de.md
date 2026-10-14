@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-14 · gültig ab 2026-10-14
+Version 2026-10-18 · gültig ab 2026-10-18
 
 ## 1. Verantwortlicher
 
@@ -32,8 +32,8 @@ Arbeitsspeicher geprüft und nicht gespeichert. Eine Ausnahme gilt, wenn ein Ser
 ausdrücklich einschaltet (standardmäßig aus): Bei Nachrichten, gegen die Defendr vorgeht, wird ein gekürzter,
 entschärfter Auszug gespeichert (verschlüsselt, Löschung spätestens nach 1095 Tagen,
 früher mit dem Moderationsfall). Eine zweite Ausnahme: Was du Defendr per Direktnachricht schreibst (Text, Dateinamen
-und Links), bleibt in einem privaten Kanal des Defendr-Support-Servers (#ops-chat), damit das Defendr-Team es lesen und
-dir antworten kann – bis 1825 Tage nach der letzten Nachricht der Unterhaltung
+und Links), bleibt in einem privaten Kanal des Defendr-Support-Servers, damit das Defendr-Team es lesen und dir
+antworten kann – bis 1825 Tage nach der letzten Nachricht der Unterhaltung
 oder bis zu deinem Löschantrag (siehe 3.11).
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID.
@@ -42,22 +42,21 @@ oder bis zu deinem Löschantrag (siehe 3.11).
 (z. B. „Verifizierung ausstehend") – für Raid-Erkennung, Zugangsregeln und Verifizierung.
 
 3.4 Sicherheitseinträge (Safety Records) im Defendr-Netzwerk: Nutzer-ID, Grund-Code, Nachweise, Prüfstatus, Ablaufdatum.
-Einträge, die niemand bei Defendr geprüft hat, werden Moderatoren nur als Warnung angezeigt und lösen von sich aus nie
-eine automatische Maßnahme aus. Dazu gehören die Einträge, die Defendr automatisch aus den ScammerAlert-Community-Listen
-übernimmt: Seit Version 2.0.9 werden sie ohne Einzelprüfung zu aktiven Netzwerk-Einträgen, außer der Betreiber hat das
-abgeschaltet oder eine Sicherheitsgrenze hält sie zurück. Sie sind mit der Liste gekennzeichnet, aus der sie stammen
-(„bekannte Betrugskonten“, „Vorsicht“ oder, bei älteren Einträgen, „Liste nicht erfasst“), und als von Defendr nicht
-geprüft. Die Karte, die Moderatoren beim Beitritt einer solchen Person auf ihren Server bekommen, zeigt außerdem den
+Einträge aus externen Listen und Einträge, die noch auf ihre Prüfung warten, werden Moderatoren nur als Warnung
+angezeigt und lösen von sich aus nie eine automatische Maßnahme aus. Dazu gehören die Einträge, die Defendr automatisch
+aus den ScammerAlert-Community-Listen übernimmt: Seit Version 2.0.9 werden sie automatisch zu aktiven
+Netzwerk-Einträgen, außer der Betreiber hat das abgeschaltet oder eine Sicherheitsgrenze hält sie zurück. Sie sind mit
+der Liste gekennzeichnet, aus der sie stammen („bekannte Betrugskonten“, „Vorsicht“ oder, bei älteren Einträgen, „Liste
+nicht erfasst“), und als externe Liste. Die Karte, die Moderatoren beim Beitritt einer solchen Person auf ihren Server bekommen, zeigt außerdem den
 Grund, den ScammerAlert für den Eintrag angibt, aber nur in einem Protokollkanal, den nicht alle auf dem Server sehen
 können. Sie werden automatisch zurückgenommen, sobald ScammerAlert den Eintrag durchstreicht oder löscht. Hat ein Mensch
 bei Defendr einen früheren Eintrag über dich geschlossen (etwa nach einem Einspruch), wird ein neuer ScammerAlert-Eintrag
 über dich nicht von selbst aktiv. Ein Server kann diese Warnungen abschalten. Ein Moderator, der eine solche Warnung
 sieht, kann selbst entscheiden, deshalb etwas zu unternehmen; das ist seine eigene Entscheidung und wird als sein Fall
-festgehalten. Das Defendr-Team kann die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server nur
-mit angegebenem Grund nachschlagen; jede solche Abfrage wird protokolliert, und solange eine Einschränkung der
-Verarbeitung gilt, sieht das Team zu jedem Eintrag nur ID, Quelle und Status. Der Betreiber von Defendr kann einen
-Netzwerk-Eintrag auch selbst aktivieren, ohne zweite Prüfung und auch ohne Nachweise, aufgrund eigener Entscheidung oder
-der Meldungen der ScammerAlert-Community-Liste. Ein solcher Eintrag ist überall, wo er angezeigt wird, als Entscheidung
+festgehalten. Das Defendr-Team schlägt die Netzwerk-Einträge einer Person und die Zahl der Moderationsfälle pro Server
+nach, um Meldungen, Einsprüche und Anfragen zu bearbeiten. Der Betreiber von Defendr kann einen Netzwerk-Eintrag auch
+selbst aktivieren, aufgrund seiner eigenen Einschätzung oder der Meldungen der ScammerAlert-Community-Liste, auch ohne
+Nachweise. Ein solcher Eintrag ist überall, wo er angezeigt wird, als Entscheidung
 des Inhabers gekennzeichnet; Defendr speichert, wann und von wem entschieden wurde und wie viele Nachweise der Eintrag
 zu diesem Zeitpunkt hatte. Er bleibt für Moderatoren ein Hinweis und löst nie eine automatische Maßnahme aus. Ein so
 ohne Nachweise entschiedener Eintrag, der auf der ScammerAlert-Liste beruht, wird automatisch entfernt, wenn
@@ -77,21 +76,22 @@ Anzahl über alle Server gezeigt und zusammen mit der Server-Konfiguration gelö
 3.7 Defendr speichert keine IP-Adressen in seiner Datenbank, erstellt keine Gerätefingerabdrücke
 und keine verhaltensbezogenen Profile und trainiert keine KI-Modelle. Beim Aufruf der Webseite wird deine IP-Adresse
 technisch verarbeitet: Unser Webserver hält sie nur kurz im Arbeitsspeicher, und Cloudflare als unser
-Auftragsverarbeiter hält sie in Analyse- und Sicherheitsprotokollen fest. Was dabei genau geschieht, steht in
-Abschnitt 12.
+Auftragsverarbeiter hält sie in Analyse- und Sicherheitsprotokollen fest. Auf den Seiten nach der Anmeldung erhält
+auch Discord sie, wenn dein Browser dort Profilbilder und Server-Symbole von Discord lädt. Was dabei genau geschieht,
+steht in Abschnitt 12.
 
-3.8 Die vollständige Liste aller Datenkategorien mit ihrer Speicherdauer steht in Abschnitt 7. Sie wird aus demselben
-Verzeichnis erzeugt, aus dem die Löschjobs ihre Fristen lesen.
+3.8 Die vollständige Liste aller Datenkategorien mit ihrer Speicherdauer steht in Abschnitt 7. Sie wird automatisch aus
+denselben Einstellungen erzeugt, nach denen Defendr die Daten löscht.
 
-3.9 Aufsicht über den Bot selbst: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit einem Eintrag
+3.9 Übersicht über die Aktionen von Defendr: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit einem Eintrag
 je Aktion, die Defendr auf irgendeinem Server ausgeführt hat, und je Moderations-, Melde- und Einspruchsvorgang, der über
 Defendr abgewickelt wurde — Nutzer-, Server- und Kanal-IDs, einschließlich der ID des Moderators oder Teammitglieds, das
 gehandelt hat, die Namen, die Discord in dem Moment dafür anzeigte (Servername, Kanalname, Anzeige- oder Nutzername des
 Mitglieds und des Moderators oder Teammitglieds), die Art der Aktion oder des Vorgangs, Zählwerte und Zeiten und den
 gelisteten Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat (aus einer
 Bedrohungsliste, nie was das Mitglied geschrieben hat); nie den Inhalt einer Nachricht, einer Notiz, einer Meldung oder
-eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team sieht, was der Bot über alle Server hinweg tut,
-und einen Fehler bemerkt (berechtigtes Interesse, Abschnitt 4). Er wird aufbewahrt, bis das Team ihn löscht.
+eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team sieht, was Defendr über alle Server hinweg tut,
+und Fehler schnell beheben kann (berechtigtes Interesse, Abschnitt 4). Er wird aufbewahrt, bis das Team ihn löscht.
 
 3.10 Support-Tickets im Support-Server: Nutzer-ID, Thema, Betreff, Beschreibung und Formularfelder (verschlüsselt),
 der private Thread, wer das Ticket geschlossen oder wieder geöffnet hat, Ticket-Sperren. Was genau, wozu und wie
@@ -106,8 +106,8 @@ nie den Text deiner Nachrichten oder der Antworten. Die Unterhaltung (Beitrag un
 Meine Daten löschen wird sie innerhalb einer Stunde gelöscht, /defendr › Meine Daten › Exportieren zeigt sie an.
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfragen an uns).
 
-3.12 Webseite: Aufruf der Seiten, Protokolle, Anmeldung mit Discord, Sitzungen, Anmeldeverlauf, persönliche
-Einstellungen und was du dort tust. Einzelheiten stehen in Abschnitt 12, Cookies und Speicher im Browser in
+3.12 Webseite: Aufruf der Seiten, Protokolle, Anmeldung mit Discord, Profilbilder und Server-Symbole von Discord nach
+der Anmeldung, Sitzungen, Anmeldeverlauf, persönliche Einstellungen und was du dort tust. Einzelheiten stehen in Abschnitt 12, Cookies und Speicher im Browser in
 Abschnitt 13.
 
 ## 4. Zwecke und Rechtsgrundlagen
@@ -120,11 +120,10 @@ Abschnitt 13.
 - Verstehen, wie Server Defendr finden (die freiwillige Setup-Antwort „Wo hast du Defendr gefunden?", pro Server
   gespeichert und keiner Person zugeordnet): Art. 6 Abs. 1 lit. f DSGVO; die Antwort ist freiwillig und kann
   ausgelassen werden.
-- Aufsicht über Defendrs eigene Aktionen und über die darüber abgewickelten Moderations-, Melde- und
+- Übersicht über die Aktionen von Defendr und über die darüber abgewickelten Moderations-, Melde- und
   Einspruchsvorgänge (Abschnitt 3.9): Art. 6 Abs. 1 lit. f DSGVO.
 - Bearbeitung von Support-Tickets im Support-Server (Abschnitt 11): Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr
   nach den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
-  <!-- OD-17 (Restrisiko, kein Anwalt nach E-37): owner-checklist.de.md R8 -->
 - Beantwortung von Direktnachrichten an Defendr (Abschnitt 3.11): Art. 6 Abs. 1 lit. f DSGVO.
 - Bereitstellung und Absicherung der Webseite und der Statusseite, Protokolle zur Fehlersuche und Angriffsabwehr
   (Abschnitt 12.1, 12.2 und 12.7): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist eine sichere,
@@ -132,6 +131,9 @@ Abschnitt 13.
 - Anmeldung mit Discord, persönlicher Bereich, Server-Verwaltung und deine persönlichen Einstellungen
   (Abschnitt 12.3, 12.5 und 12.6): Art. 6 Abs. 1 lit. b DSGVO; du nutzt diese Funktionen auf deinen Wunsch nach den
   Nutzungsbedingungen.
+- Dein Profilbild und die Symbole deiner Server von Discord auf den Seiten nach der Anmeldung (Abschnitt 12.9): Art. 6
+  Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, dir dein Konto und deine Server mit den Bildern zu zeigen, die
+  du aus Discord kennst, damit du sie auf einen Blick wiedererkennst.
 - Anmeldeverlauf deines Kontos (Abschnitt 12.4): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, dass
   du und wir Anmeldungen und Abmeldungen deines Kontos nachvollziehen und fremde Anmeldungen erkennen können.
 - Protokoll der Aktionen auf der Webseite (Abschnitt 12.6): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse
@@ -146,78 +148,72 @@ Abschnitt 13.
 
 <!-- anchor: processors -->
 
-Discord Inc. (Plattform), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, gemieteter Server im Rechenzentrum Frankfurt am Main, auf dem Defendr und die Webseite laufen und die Datenbank liegt (Abschnitt 12.1)); Cloudflare, Inc. (US, Auslieferung und Schutz der Webseite (Netzwerk, verschlüsselter Tunnel zu unserem Server, Angriffsabwehr, Analyse- und Sicherheitsprotokolle), Betrieb der Statusseite und Weiterleitung von E-Mails an die Adressen @defendr.live (Abschnitt 12)); Google Ireland Limited (Gmail) (EU/US, Postfach, in dem E-Mails an unsere Adressen ankommen; Google verarbeitet sie nach eigenen Bedingungen als eigener Verantwortlicher, nicht als unser Auftragsverarbeiter (Abschnitt 12.8)); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, verschlüsselte Offsite-Backups; nur wenn aktiviert (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert (OD-6)).
+Discord Inc. (Plattform; auf den Seiten der Webseite nach der Anmeldung auch beim Laden von Profilbildern und
+Server-Symbolen, Abschnitt 12.9), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, gemieteter Server im Rechenzentrum Frankfurt am Main, auf dem Defendr und die Webseite laufen und die Datenbank liegt (Abschnitt 12.1)); Cloudflare, Inc. (US, Auslieferung und Schutz der Webseite (Netzwerk, verschlüsselter Tunnel zu unserem Server, Angriffsabwehr, Analyse- und Sicherheitsprotokolle), Betrieb der Statusseite und Weiterleitung von E-Mails an die Adressen @defendr.live (Abschnitt 12)); Google Ireland Limited (Gmail) (EU/US, Postfach, in dem E-Mails an unsere Adressen ankommen; Google verarbeitet sie nach eigenen Bedingungen als eigener Verantwortlicher, nicht als unser Auftragsverarbeiter (Abschnitt 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert).
 
-Der Betreiber führt Erkennungsdaten aus allen Servern, auf denen Defendr läuft, in
-einem teaminternen Kanal auf dem Support-Server zusammen. Dieser Kanal enthält
-**keine Nachrichteninhalte** – nur Server, Kanal, betroffene Nutzerkennung, die
-ergriffene Maßnahme, den erkannten Indikator (entschärft dargestellt), technische
-Prüfsummen und den Zeitpunkt. Zweck ist der Betrieb und die Missbrauchsabwehr über
-alle Server hinweg; Zugriff haben ausschließlich der Betreiber und das Support-Team.
+Empfänger der Übersicht über die Aktionen von Defendr (Abschnitt 3.9) sind der Betreiber und das Support-Team von
+Defendr; sie enthält keine Nachrichteninhalte.
 
 Als Auftragsverarbeiter (Art. 28 DSGVO) arbeitet Cloudflare nur nach unserer Weisung und auf Grundlage des Vertrags
 zur Auftragsverarbeitung.
 
 ## 6. Übermittlung in Drittländer
 
-Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschutzerklärung. Discord Inc. verarbeitet Daten auch in den USA. Rufst du die Webseite auf, verarbeitet Cloudflare, Inc. (USA) die Daten des Aufrufs (Abschnitt 12) in ihrem weltweiten Netzwerk, auch in den USA. Schreibst du uns eine E-Mail, werden deine Nachricht und deine E-Mail-Adresse über Cloudflare, Inc. weitergeleitet und in unserem Postfach bei Gmail gespeichert; Google speichert und verarbeitet sie auch in den USA (Google LLC). Beide Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO); für Cloudflare gelten ergänzend die Standardvertragsklauseln im Auftragsverarbeitungsvertrag (Art. 46 Abs. 2 lit. c DSGVO). Weitere Übermittlungen in Drittländer finden nicht statt; ein nicht aktiver Empfänger wird erst eingesetzt, wenn die daneben genannte Owner-Entscheidung ihn freigibt.
+Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschutzerklärung. Discord Inc. verarbeitet Daten auch in den USA. Rufst du die Webseite auf, verarbeitet Cloudflare, Inc. (USA) die Daten des Aufrufs (Abschnitt 12) in ihrem weltweiten Netzwerk, auch in den USA. Schreibst du uns eine E-Mail, werden deine Nachricht und deine E-Mail-Adresse über Cloudflare, Inc. weitergeleitet und in unserem Postfach bei Gmail gespeichert; Google speichert und verarbeitet sie auch in den USA (Google LLC). Beide Unternehmen sind nach dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO); für Cloudflare gelten ergänzend die Standardvertragsklauseln im Auftragsverarbeitungsvertrag (Art. 46 Abs. 2 lit. c DSGVO). Weitere Übermittlungen in Drittländer finden nicht statt; ein Empfänger mit dem Vermerk „nur wenn aktiviert“ erhält Daten erst, wenn wir die Funktion einschalten.
 
 ## 7. Speicherdauer
 
 <!-- anchor: retention -->
 
-| Datenkategorie | Speicherdauer | Löschmechanismus |
-| --- | --- | --- |
-| Vorübergehende persönliche Web-Exportkopien und Status des einmaligen Downloads | Zugriff höchstens 15 Minuten; Schlüssel bei Abschluss oder Widerruf sofort entfernt; verschlüsselte Kopien anschließend in begrenzten Bereinigungsschritten gelöscht | Löschung des Export-Schlüssels bei Abschluss, Fehler, Abmeldung, Datenlöschung oder Wiederherstellung; Ablaufprüfung und begrenzte Bereinigung |
-| Zugriffsprotokolle der Webseite (Zeit, Pfadvorlage, Status, Dauer, zufällige Anfrage-ID; ohne Adressen oder Inhalte) | 14 Tage, früher, wenn der Speicherplatz für die Protokolle voll ist; die Protokolle eines angehaltenen Webservers löscht eine tägliche Aufgabe, bis zu einen Tag später | Löschung durch den Webserver bei seinem Start und danach jede Minute; bei einem angehaltenen Webserver durch die tägliche Aufgabe `-PruneLogs` |
-| Ereignisprotokoll der Webseite (Serverfehler nach Seite und Fehlerart, fehlende Texte, Ausfälle und Ablehnungen zwischen Webseite und Defendr, fehlgeschlagene Anmeldungen nach Grund, Zahl der verworfenen Einträge und der vorzeitig gelöschten Dateien des Zugriffsprotokolls mit der Minute, ab der ihre Einträge beginnen; keine Person, Adresse, URL, Cookies, Inhalte oder Sitzung) | 14 Tage, früher über 4 MiB (die ältesten zuerst); das Protokoll eines angehaltenen Webservers löscht eine tägliche Aufgabe, bis zu einen Tag später | Löschung durch den Webserver bei seinem Start und danach jede Minute; bei einem angehaltenen Webserver durch die tägliche Aufgabe `-PruneLogs` |
-| Tunnel-Protokoll auf unserem Server (cloudflared): nur Fehler, die den Verbinder selbst beenden (Protokollstufe fatal), und Warnungen zu seiner eigenen Verbindung zu Cloudflare (Transport-Protokollstufe warn); keine Anfragen, aufgerufenen Adressen oder IP-Adressen von Besuchern | derzeit keine automatische Löschung nach einer festen Frist | Löschung von Hand durch den Betreiber |
-| E-Mails an die Adressen @defendr.live (contact@, privacy@, security@, auch Meldungen zu Sicherheitslücken; Postfach bei Gmail) | sobald für die Anfrage nicht mehr gebraucht, spätestens drei Jahre nach Abschluss der Anfrage, außer eine gesetzliche Pflicht verlangt länger | Löschung von Hand im Postfach |
-| Web-Sitzungen und verschlüsselte Discord-Zugangstoken | 7 Tage ohne Aktivität; höchstens 30 Tage | Abmeldung, Ungültigmachung bei Löschung oder Wiederherstellung und `retention.purge` |
-| Sicherheitsereignisse der Webseite (Anmeldung, Abmeldung, Abmeldung überall, Beenden einer einzelnen anderen Sitzung, eine von Defendr rückgängig gemachte Anmeldung, die Discord schon bestätigt hatte; Gerätekategorie und Zeitpunkt; ohne Adressen) | 365 Tage | `retention.purge`; Löschung der Kontodaten |
-| Belege für Aktionen auf der Webseite (Aktion, Status, Ergebniscode, Zeitpunkte; die Anfrage und ihr Schlüssel gegen doppelte Ausführung nur als Hashes) | 365 Tage nach dem Abschluss der Aktion | `retention.purge`; Löschung der Kontodaten; `guilds.purge` für Aktionen an einem Server |
-| Einstellungen der Webseite und des Kontos (Sprache, ob Nachrichten von Defendr ihr folgen, Lesemarke des Postfachs, Farbschema, Akzent, Dichte, Bewegung) | bis zur Löschung der Kontodaten (ohne feste Frist); auf Wunsch entfernt | Löschung der Kontodaten |
-| Verlauf des Sicherheitswerts je Server (wöchentlicher Wert und Teilwerte, keine Nutzer-IDs) | unbegrenzt (Kennzahlen); mit den Serverdaten, nachdem Defendr den Server verlassen hat | `guilds.purge` |
-| Nachrichteninhalte während der Prüfung | Sekunden (nur im Arbeitsspeicher) | wird nicht gespeichert |
-| Erkennungen (IDs, Typ, Maßnahme; keine Nachrichteninhalte) | 1825 Tage | `retention.purge` |
-| Moderationsfälle (samt Ereignissen) | 1825 Tage (von Defendr festgelegt, in jedem Server gleich) | `retention.purge` |
-| Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall | Löschung (verschlüsselt; Schlüsselvernichtung) |
-| Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nicht gespeichert | Löschung + Dateilöschung (Schlüsselvernichtung) |
-| Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen: automatisch geschlossen nach 90 Tagen | Löschung |
-| Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung | Löschung |
-| Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage | Löschung |
-| Prüfstimmen und Team-Threads | mit dem geprüften Eintrag | Löschung (samt Thread) |
-| Einsprüche (samt Empfehlungen) | 1825 Tage nach der Entscheidung oder dem Fristablauf | Löschung |
-| Support-Tickets (Formulartext verschlüsselt; der private Thread im Support-Server) und Ticket-Sperren | 1825 Tage nach dem Schließen (Eintrag und Thread); ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung oder einer Wiederherstellung aus einer Sicherung), wird 1825 Tage nach seiner Erstellung gelöscht (bis dahin ggf. gesperrt und archiviert) – weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht das Team ihn auf einen Löschantrag hin von Hand; Ticket-Sperren bis zur Aufhebung | `support.tickets` (zuerst der Thread, dann der Eintrag; ein Thread ohne Eintrag über die Merkliste des Jobs, `kv.support.orphans`); eine Sperre wird bei der Aufhebung gelöscht |
-| Unterhaltungen per Direktnachricht mit Defendr (Nutzer-ID, der Beitrag im Team-Kanal, Zeitpunkt der letzten Nachricht, stummgeschaltet ja/nein; nie der Text) | 1825 Tage nach der letzten Nachricht; innerhalb einer Stunde nach einer Löschung | `ops.dm-chats` (zuerst der Beitrag, dann der Eintrag) |
-| Betroffenenanfragen; Verarbeitungseinschränkungen | 1825 Tage (Rechenschaftspflicht; Inhalte minimiert und verschlüsselt); Einschränkungen 1825 Tage nach der Aufhebung | Löschung |
-| Aktiver netzwerkweiter Sicherheitseintrag | kein automatischer Ablauf; Erinnerung zur erneuten Prüfung nach 12 Monaten (eine Statusänderung erfordert immer eine Entscheidung des Teams) | Erinnerung zur erneuten Prüfung + Löschung 1095 Tage nach dem Abschluss |
-| Importierte Einträge in Quarantäne (811 + 4) | bis zur Prüfung (reviewed); Erinnerung nach 6 Monaten (OD-7) | Prüfentscheidung |
-| Abgeschlossene Sicherheitseinträge (aufgehoben/abgelehnt/abgelaufen) | 1095 Tage | Löschung |
-| Mitglieds-Markierungen: übernommenes Konto / Raid-Gruppe / Hinweis angezeigt | 72 Stunden / 7 Tage / 30 Tage | `member-flags.expire` |
-| Mitglieds-Markierung: Verifizierung ausstehend | mindestens 24 Stunden, so lange wie die Kick-Frist des Servers + 1 Stunde | `member-flags.expire` |
-| Mitglieds-Markierungen: Quarantäne-Rolle der Zugangsregeln / von Defendr vergebene Verdachtsrolle | solange die Rolle besteht; 30 Tage nach dem Verlassen | Abgleich-Jobs + `member-flags.expire` |
-| Raid-Gruppen (nur Metadaten) | 365 Tage | Löschung |
-| Vorfälle | 1825 Tage | Löschung |
-| Anti-Nuke: entzogene Rollen / Strukturabbilder / gelöschte Objekte (2.1) | 30 / 7 / 14 Tage | Löschung |
-| Einträge zu Server-Sperren | 1095 Tage nach dem Ende | Löschung |
-| Verifizierungs-Aufgaben | 24 Stunden | Löschung |
-| Zustand interaktiver Ansichten (verschlüsselt) | höchstens 24 Stunden | `ui_state.purge` |
-| Ausstehende Nachrichten (Postausgang) | Inhalt wird beim Versand oder beim Aufgeben gelöscht; Zeilen 7 Tage (gesendet) / 30 Tage (fehlgeschlagen) | Löschung |
-| Einstellungs-Versionen; Entscheidungen zu Voreinstellungs- und Migrationskarten | letzte 100, höchstens 1 Jahr; Entscheidungen 90 Tage | Löschung |
-| Protokoll (`ops_audit`): Zugriffe des Teams samt Einsicht in Nachweise und jede Aktion auf der Webseite (Nutzer-ID, Aktion, Server, Zeitpunkt, Ergebnis, Beleg- und Anfrage-ID) | 1825 Tage; bleibt bei einer Löschung bestehen (Rechenschaftspflicht) | Löschung |
-| Team-Mitgliedschaft | 1825 Tage nach der Deaktivierung | Löschung |
-| Anonyme Netzwerk-Signale (2.1) | 48 Stunden | Löschung |
-| Premium-Berechtigungen (2.2) | 30 Tage nach dem Ende | Löschung |
-| Anwendungsprotokolle (ohne Nachrichteninhalte) | 90 Tage | Rotation |
-| Globaler Spiegel (#global-logs, Staff-Kanal): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs), die Namen, die Discord in dem Moment für den Server, den Kanal, das Mitglied und den Moderator oder das Teammitglied anzeigte, und der gelistete Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat; nie Nachrichteninhalte | bis der Betreiber ihn löscht (vom Betreiber festgelegte Speicherdauer, Entscheidung 2026-09) | Betreiber (Discord-Kanal) |
-| Fehlerereignisse (bereinigt) | 365 Tage | Löschung |
-| Statistik-Kennzahlen (ohne Nutzer-IDs): Zählwerte pro Tag, Server und Kennzahl, auch je Begründungscode und je Erkennungsfamilie | unbegrenzt | — |
-| Setup-Antwort „Wo hast du Defendr gefunden?" (pro Server, freiwillig; keiner Person zugeordnet) | mit der Server-Konfiguration: 90 Tage nachdem Defendr den Server verlassen hat (oder sofort, wenn so eingestellt) | `guilds.purge` |
-| Alle Serverdaten, nachdem Defendr den Server verlassen hat | 90 Tage (oder sofort, wenn so eingestellt); durch erneute Einladung aufgehoben | `guilds.purge` |
-| Lokale Sicherungen | 14 täglich / 8 wöchentlich / 6 monatlich | Bereinigung |
-| Auswärtige Sicherungen (verschlüsselt) | 14 täglich / 8 wöchentlich / 12 monatlich | restic forget/prune |
-| Verlaufs-Dossiers aus Version 1 | nicht übernommen; bei der Abschaltung von Version 1 vernichtet (T+30 Tage, verschlüsseltes Archiv nach 90 Tagen vernichtet) | Runbook des Betreibers |
+| Datenkategorie | Speicherdauer |
+| --- | --- |
+| Vorübergehende persönliche Web-Exportkopien und Status des einmaligen Downloads | Zugriff höchstens 15 Minuten; Schlüssel bei Abschluss oder Widerruf sofort entfernt; verschlüsselte Kopien anschließend in begrenzten Bereinigungsschritten gelöscht |
+| Zugriffsprotokolle der Webseite (Zeit, Pfadvorlage, Status, Dauer, zufällige Anfrage-ID; ohne Adressen oder Inhalte) | 14 Tage, früher, wenn der Speicherplatz für die Protokolle voll ist; die Protokolle eines angehaltenen Webservers löscht eine tägliche Aufgabe, bis zu einen Tag später |
+| Ereignisprotokoll der Webseite (Serverfehler nach Seite und Fehlerart, fehlende Texte, Ausfälle und Ablehnungen zwischen Webseite und Defendr, fehlgeschlagene Anmeldungen nach Grund, Zahl der verworfenen Einträge und der vorzeitig gelöschten Dateien des Zugriffsprotokolls mit der Minute, ab der ihre Einträge beginnen; keine Person, Adresse, URL, Cookies, Inhalte oder Sitzung) | 14 Tage, früher über 4 MiB (die ältesten zuerst); das Protokoll eines angehaltenen Webservers löscht eine tägliche Aufgabe, bis zu einen Tag später |
+| Tunnel-Protokoll auf unserem Server (cloudflared): nur Fehler, die den Verbinder selbst beenden (Protokollstufe fatal), und Warnungen zu seiner eigenen Verbindung zu Cloudflare (Transport-Protokollstufe warn); keine Anfragen, aufgerufenen Adressen oder IP-Adressen von Besuchern | Löschung von Hand durch den Betreiber, nicht automatisch nach einer festen Frist |
+| E-Mails an die Adressen @defendr.live (contact@, privacy@, security@, auch Meldungen zu Sicherheitslücken; Postfach bei Gmail) | sobald für die Anfrage nicht mehr gebraucht, spätestens drei Jahre nach Abschluss der Anfrage, außer eine gesetzliche Pflicht verlangt länger |
+| Web-Sitzungen und verschlüsselte Discord-Zugangstoken | 7 Tage ohne Aktivität; höchstens 30 Tage |
+| Sicherheitsereignisse der Webseite (Anmeldung, Abmeldung, Abmeldung überall, Beenden einer einzelnen anderen Sitzung, eine von Defendr rückgängig gemachte Anmeldung, die Discord schon bestätigt hatte; Gerätekategorie und Zeitpunkt; ohne Adressen) | 365 Tage |
+| Belege für Aktionen auf der Webseite (Aktion, Status, Ergebniscode, Zeitpunkte; die Anfrage und ihr Schlüssel gegen doppelte Ausführung nur als Hashes) | 365 Tage nach dem Abschluss der Aktion |
+| Einstellungen der Webseite und des Kontos (Sprache, ob Nachrichten von Defendr ihr folgen, Lesemarke des Postfachs, Farbschema, Akzent, Dichte, Bewegung) | bis zur Löschung der Kontodaten (ohne feste Frist); auf Wunsch entfernt |
+| Verlauf des Sicherheitswerts je Server (wöchentlicher Wert und Teilwerte, keine Nutzer-IDs) | unbegrenzt (Kennzahlen); mit den Serverdaten, nachdem Defendr den Server verlassen hat |
+| Nachrichteninhalte während der Prüfung | Sekunden (nur im Arbeitsspeicher) |
+| Erkennungen (IDs, Typ, Maßnahme; keine Nachrichteninhalte) | 1825 Tage |
+| Moderationsfälle (samt Ereignissen) | 1825 Tage (von Defendr festgelegt, in jedem Server gleich) |
+| Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall |
+| Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nicht gespeichert |
+| Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen: automatisch geschlossen nach 90 Tagen |
+| Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung |
+| Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage |
+| Prüfstimmen und Team-Threads | mit dem geprüften Eintrag |
+| Einsprüche (samt Empfehlungen) | 1825 Tage nach der Entscheidung oder dem Fristablauf |
+| Support-Tickets (Formulartext verschlüsselt; der private Thread im Support-Server) und Ticket-Sperren | 1825 Tage nach dem Schließen (Eintrag und Thread); ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung oder einer Wiederherstellung aus einer Sicherung), wird 1825 Tage nach seiner Erstellung gelöscht (bis dahin ggf. gesperrt und archiviert) – weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht das Team ihn auf einen Löschantrag hin von Hand; Ticket-Sperren bis zur Aufhebung |
+| Unterhaltungen per Direktnachricht mit Defendr (Nutzer-ID, der Beitrag im Team-Kanal, Zeitpunkt der letzten Nachricht, stummgeschaltet ja/nein; nie der Text) | 1825 Tage nach der letzten Nachricht; innerhalb einer Stunde nach einer Löschung |
+| Betroffenenanfragen; Verarbeitungseinschränkungen | 1825 Tage (Rechenschaftspflicht; Inhalte minimiert und verschlüsselt); Einschränkungen 1825 Tage nach der Aufhebung |
+| Aktiver netzwerkweiter Sicherheitseintrag | kein automatischer Ablauf; Erinnerung zur erneuten Prüfung nach 12 Monaten (eine Statusänderung erfordert immer eine Entscheidung des Teams) |
+| Importierte Einträge, die auf ihre Prüfung warten | bis zur Prüfung; Erinnerung nach 6 Monaten |
+| Abgeschlossene Sicherheitseinträge (aufgehoben/abgelehnt/abgelaufen) | 1095 Tage |
+| Mitglieds-Markierungen: übernommenes Konto / Raid-Gruppe / Hinweis angezeigt | 72 Stunden / 7 Tage / 30 Tage |
+| Mitglieds-Markierung: Verifizierung ausstehend | mindestens 24 Stunden, so lange wie die Kick-Frist des Servers + 1 Stunde |
+| Mitglieds-Markierungen: Quarantäne-Rolle der Zugangsregeln / von Defendr vergebene Verdachtsrolle | solange die Rolle besteht; 30 Tage nach dem Verlassen |
+| Raid-Gruppen (nur Metadaten) | 365 Tage |
+| Vorfälle | 1825 Tage |
+| Anti-Nuke: entzogene Rollen / Strukturabbilder / gelöschte Objekte (2.1) | 30 / 7 / 14 Tage |
+| Einträge zu Server-Sperren | 1095 Tage nach dem Ende |
+| Verifizierungs-Aufgaben | 24 Stunden |
+| Zustand interaktiver Ansichten (verschlüsselt) | höchstens 24 Stunden |
+| Ausstehende Nachrichten (Postausgang) | Inhalt wird beim Versand oder beim Aufgeben gelöscht; Zeilen 7 Tage (gesendet) / 30 Tage (fehlgeschlagen) |
+| Einstellungs-Versionen; Entscheidungen zu Voreinstellungs- und Migrationskarten | letzte 100, höchstens 1 Jahr; Entscheidungen 90 Tage |
+| Aktionsprotokoll: Zugriffe des Teams auf Einträge und Nachweise und jede Aktion auf der Webseite (Nutzer-ID, Aktion, Server, Zeitpunkt, Ergebnis, Beleg- und Anfrage-ID) | 1825 Tage; bleibt bei einer Löschung bestehen (Rechenschaftspflicht) |
+| Team-Mitgliedschaft | 1825 Tage nach der Deaktivierung |
+| Anwendungsprotokolle (ohne Nachrichteninhalte) | 90 Tage |
+| Übersicht über die Aktionen von Defendr (Abschnitt 3.9): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs), die Namen, die Discord in dem Moment für den Server, den Kanal, das Mitglied und den Moderator oder das Teammitglied anzeigte, und der gelistete Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat; nie Nachrichteninhalte | bis der Betreiber sie löscht |
+| Fehlerereignisse (bereinigt) | 365 Tage |
+| Statistik-Kennzahlen (ohne Nutzer-IDs): Zählwerte pro Tag, Server und Kennzahl, auch je Begründungscode und je Erkennungsfamilie | unbegrenzt |
+| Setup-Antwort „Wo hast du Defendr gefunden?" (pro Server, freiwillig; keiner Person zugeordnet) | mit der Server-Konfiguration: 90 Tage nachdem Defendr den Server verlassen hat (oder sofort, wenn so eingestellt) |
+| Alle Serverdaten, nachdem Defendr den Server verlassen hat | 90 Tage (oder sofort, wenn so eingestellt); durch erneute Einladung aufgehoben |
+| Lokale Sicherungen | 14 täglich / 8 wöchentlich / 6 monatlich |
+| Verlaufsakten aus Defendr 1 (Freitext) | nicht übernommen; gelöscht 30 Tage nach der Abschaltung von Defendr 1, das verschlüsselte Archiv nach 90 Tagen |
 
 Löschungen innerhalb von Sicherungen erfolgen durch deren Rotation; die maximale Aufbewahrung der Sicherungen steht in
 der Tabelle.
@@ -249,9 +245,9 @@ bestehen (Abschnitt 11.6). Eine Löschung deiner Daten beendet auch alle deine S
 Server-Betreiber legen fest, wie Defendr auf erkannte Bedrohungen reagiert. Defendr begrenzt
 Maßnahmen nach der Verlässlichkeit des Nachweises (z. B. nie Bann allein aufgrund externer Listen).
 
-Netzwerkweite Einträge lösen nie eine automatische Maßnahme aus: Einträge, die ohne Prüfung
-aus externen Listen übernommen werden, und derzeit auch alle anderen Netzwerk-Einträge zeigen Moderatoren nur eine
-Warnung, und die Moderatoren entscheiden selbst, ob sie etwas unternehmen. Jede Entscheidung kann mit /appeal überprüft
+Netzwerkweite Einträge lösen nie eine automatische Maßnahme aus: Einträge aus externen
+Listen und auch alle anderen Netzwerk-Einträge zeigen Moderatoren nur eine Warnung, und die Moderatoren entscheiden
+selbst, ob sie etwas unternehmen. Jede Entscheidung kann mit /appeal überprüft
 werden: Über Fälle eines Servers entscheiden dessen Moderatoren, über netzwerkweite Einträge das Defendr-Team.
 
 Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft, wenn du selbst einen
@@ -273,11 +269,12 @@ Die Webseite trifft keine eigenen Entscheidungen: Jede Aktion dort prüft Defend
 
 ## 10. Sicherheit
 
-Verschlüsselung gespeicherter sensibler Daten, Zugriffsbeschränkung, Protokollierung von Mitarbeiterzugriffen,
-regelmäßige Backups. Für die Webseite zusätzlich: Verbindungen nur verschlüsselt (HTTPS), Sitzungs-Cookies nur für
-genau eine Adresse, nicht per Skript lesbar und nur über HTTPS gesendet; der Server speichert nur einen Hash der
-Sitzungskennung; Discord-Zugangstoken verschlüsselt; Schutz gegen gefälschte Anfragen von fremden Seiten; keine Inhalte
-von Dritten auf den Seiten. Die Webseite hat keinen Zugriff auf die Datenbank; sie fragt Defendr über eine signierte,
+Verschlüsselung gespeicherter sensibler Daten, Zugriffskontrolle und Protokollierung der Zugriffe, regelmäßige
+Backups. Für die Webseite zusätzlich: Verbindungen nur verschlüsselt (HTTPS), Sitzungs-Cookies nur für genau eine
+Adresse, nicht per Skript lesbar und nur über HTTPS gesendet; der Server speichert nur einen Hash der Sitzungskennung;
+Discord-Zugangstoken verschlüsselt; Schutz gegen gefälschte Anfragen von fremden Seiten; auf den öffentlichen Seiten
+keine Inhalte von Dritten, nach der Anmeldung nur Profilbilder und Server-Symbole von Discord (Abschnitt 12.9). Die
+Webseite hat keinen Zugriff auf die Datenbank; sie fragt Defendr über eine signierte,
 nur intern erreichbare Schnittstelle.
 
 ## 11. Support-Tickets im Support-Server
@@ -328,8 +325,6 @@ dadurch beendet; eine Ticket-Sperre bleibt bestehen (Schutz anderer). Am schnell
 Daten auf der Seite Meine Daten von /defendr (/defendr page:mydata): Sie hält die Anfrage und ihre Frist fest. Eine
 Anfrage, die du in einem Ticket zum Thema Datenauskunft oder Löschung stellst, behandeln wir genauso; die Frist von
 einem Monat (Art. 12 Abs. 3 DSGVO) läuft ab dem Öffnen des Tickets.
-
-<!-- OD-17 (Restrisiken, kein Anwalt nach E-37): 11.3 owner-checklist.de.md R22; 11.6 R23 und R24 -->
 
 ## 12. Webseite
 
@@ -399,7 +394,8 @@ Defendr weitergibt, und wir fragen nur zwei Berechtigungen an: „identify“ un
 Discord-Nutzer-ID, deinen Nutzer- bzw. Anzeigenamen, die Kennung deines Avatars, die Spracheinstellung deines
 Discord-Kontos, ob die Zwei-Faktor-Authentifizierung aktiv ist, eine befristete Zugangsberechtigung von Discord
 (Zugangstoken) und die Liste deiner Server mit deinen Rechten dort. Deine E-Mail-Adresse und dein Passwort erhalten wir
-nicht. Gespeichert wird eine Sitzung: Nutzer-ID, Anzeigename, Avatar-Kennung, Sprache, Zwei-Faktor ja/nein, die
+nicht. Mit der Kennung deines Avatars und den Angaben zu deinen Servern zeigt dir die Webseite dein Profilbild und die
+Symbole deiner Server; dein Browser lädt diese Bilder direkt von Discord (Abschnitt 12.9). Gespeichert wird eine Sitzung: Nutzer-ID, Anzeigename, Avatar-Kennung, Sprache, Zwei-Faktor ja/nein, die
 Gerätekategorie Desktop oder Mobil (einmal beim Anmelden aus dem Browser-Hinweis „Sec-CH-UA-Mobile“ abgeleitet;
 sendet dein Browser ihn nicht, gilt Desktop; die Browser-Kennung selbst speichern wir nicht), Zeitpunkte, ein Hash der
 Sitzungskennung und das Zugangstoken (verschlüsselt). Ein Erneuerungstoken speichern wir nicht. Deine Serverliste
@@ -446,7 +442,7 @@ bis 3.6, 8 und 11); dafür gelten dieselben Grenzen, Rechte und Löschfristen. Z
 und Ergebnis; die Anfrage selbst nur als Prüfwert, einen Hash), damit ein doppelter Klick nichts doppelt ausführt und
 du den Stand sehen kannst. Der Beleg selbst wird 365 Tage nach dem Abschluss der
 Aktion gelöscht, mit einer Löschung deiner Daten früher. Zusätzlich halten wir jede Aktion auf der Webseite, die etwas
-auslöst, ändert oder exportiert, im Protokoll `ops_audit` fest: deine Nutzer-ID, die Art der Aktion, worauf sie sich
+auslöst, ändert oder exportiert, in unserem Aktionsprotokoll fest: deine Nutzer-ID, die Art der Aktion, worauf sie sich
 bezieht (etwa den Server, einen Fall oder ein Ticket), den Zeitpunkt, das Ergebnis, die Beleg- und die Anfrage-ID und
 kurze Bezugsangaben wie die Versionsnummer geänderter Server-Einstellungen; bei deinen persönlichen Einstellungen nur,
 welche du geändert hast, nie die Werte. Eine Aktion, die Defendr erst später ausführt, bekommt einen Eintrag bei der
@@ -474,11 +470,22 @@ oder Pseudonym, zum Beispiel im Changelog des Sicherheits-Updates, nur wenn du e
 DSGVO). Du kannst die Einwilligung jederzeit mit einer E-Mail an security@defendr.live widerrufen; wir entfernen
 die Nennung dann, soweit wir das können. Der Widerruf berührt nicht die Rechtmäßigkeit der Nennung bis dahin.
 
-12.9 Keine Analyse, keine Werbung, keine Inhalte Dritter. Die Webseite nutzt keine Analyse- oder Statistikdienste,
-keine Zählpixel, keine Werbung und keine Social-Media-Plugins, und unsere Seiten enthalten kein Captcha; nur Cloudflare
-kann bei Verdacht auf einen Angriff eine automatische Browserprüfung vorschalten (Abschnitt 12.1 und 13). Schriften,
-Skripte und Bilder kommen von unserem eigenen Server; Videos, Discord-Widgets oder Avatare von Discord bindet die
-Webseite nicht ein. Links zu fremden Seiten, etwa zu Discord (Einladung, Anmeldung, Support-Server) oder zu GitHub
+12.9 Keine Analyse, keine Werbung; Bilder von Discord nur nach der Anmeldung. Die Webseite nutzt keine Analyse- oder
+Statistikdienste, keine Zählpixel, keine Werbung und keine Social-Media-Plugins, und unsere Seiten enthalten kein
+Captcha; nur Cloudflare kann bei Verdacht auf einen Angriff eine automatische Browserprüfung vorschalten (Abschnitt 12.1
+und 13). Schriften, Skripte und unsere eigenen Bilder kommen von unserem eigenen Server; die einzigen Bilder von
+anderswo sind die unten beschriebenen Bilder von Discord. Videos oder Discord-Widgets bindet die Webseite nicht ein, und
+die öffentlichen Seiten laden nichts von Discord.
+
+Auf den Seiten nach der Anmeldung (app.defendr.live) zeigt die Webseite dein Profilbild und die Symbole deiner Server,
+wie du sie aus Discord kennst. Dein Browser lädt diese Bilder direkt aus dem Content-Delivery-Netzwerk von Discord
+(cdn.discordapp.com, das Cloudflare für Discord betreibt). Discord Inc. erhält dabei deine IP-Adresse, die
+Browser-Kennung (User-Agent), den Zeitpunkt und die Adresse des Bildes, in der deine Nutzer-ID oder die ID des Servers
+steht. Eine Herkunftsadresse sendet dein Browser dabei nicht, und für diese Anfragen sendet er keine Cookies und nimmt
+keine an. Discord verarbeitet diese Daten als eigener Verantwortlicher nach seiner eigenen Datenschutzerklärung, auch
+in den USA (Abschnitt 5 und 6). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
+
+Links zu fremden Seiten, etwa zu Discord (Einladung, Anmeldung, Support-Server) oder zu GitHub
 (frühere Fassungen dieser Texte), führen dich auf deren Seiten, wo deren eigene Datenschutzerklärungen gelten; unsere
 Seiten geben dabei keine Herkunftsadresse weiter.
 

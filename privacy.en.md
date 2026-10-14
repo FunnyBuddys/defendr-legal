@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-14 · effective 2026-10-14
+Version 2026-10-18 · effective 2026-10-18
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -34,7 +34,7 @@ stored. One exception applies when a server explicitly turns it on (off by defau
 messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, deleted after at
 most 1095 days, earlier together with the moderation case). A second exception: what
 you write to Defendr in a direct message (text, file names and links) is kept in a private channel of the Defendr
-support server (#ops-chat) so the Defendr team can read and answer it, until
+support server so the Defendr team can read and answer it, until
 1825 days after the last message of the conversation or until you ask for
 erasure (see 3.11).
 
@@ -43,22 +43,20 @@ erasure (see 3.11).
 3.3 Joins: user ID, account creation date, avatar present yes/no, time-limited flags (for example "verification
 pending") – for raid detection, join rules and verification.
 
-3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Records that
-nobody at Defendr has reviewed are only shown to moderators as a warning and never trigger an automated action on their
-own. This includes the entries that Defendr takes over automatically from the ScammerAlert community lists: since
-version 2.0.9 they become active network records without an individual review, unless the operator has switched this
-off or a safety limit holds them back. They are marked with the list they come from ("known scam accounts", "deal with
-caution" or, for older entries, "list not recorded") and as not checked by Defendr. The card moderators get when such a
+3.4 Safety Records in the Defendr network: user ID, reason code, evidence, review status, expiry date. Records from
+external lists, and records still awaiting review, are only shown to moderators as a warning and never trigger an
+automated action on their own. This includes the entries that Defendr takes over automatically from the ScammerAlert
+community lists: since version 2.0.9 they become active network records automatically, unless the operator has switched
+this off or a safety limit holds them back. They are marked with the list they come from ("known scam accounts", "deal
+with caution" or, for older entries, "list not recorded") and as an external list. The card moderators get when such a
 person joins their server also shows the reason ScammerAlert states for the entry, but only in a log channel that not
 everyone on the server can see. They are withdrawn automatically as soon as ScammerAlert strikes through or deletes the
 entry. If a person at Defendr closed an earlier record about you (for example after an appeal), a new ScammerAlert entry
 about you does not become active by itself. A server can switch these warnings off. A moderator who sees such a warning
 may decide to act on it; that is the moderator's own decision and is recorded as a case of that moderator. The Defendr
-team can look up one person's network records and the number of moderation cases per server only with a stated
-reason; every such lookup is logged, and while a processing restriction applies the team sees only each record's ID,
-source and status. The operator of Defendr can also make a network record active personally, without a second review
-and also without evidence, based on the operator's own decision or on reports from the ScammerAlert community list.
-Such a record is marked as an owner decision wherever it is shown; Defendr stores when and by whom it was decided and
+team looks up one person's network records and the number of moderation cases per server to handle reports, appeals
+and requests. The operator of Defendr can also activate a network record personally, based on the operator's own
+assessment or on reports from the ScammerAlert community list, also without evidence. Such a record is marked as an owner decision wherever it is shown; Defendr stores when and by whom it was decided and
 how many evidence items the record held at that moment. It stays a hint for moderators and never triggers an automated
 action. A record decided this way without evidence that rests on the ScammerAlert list is removed automatically when
 ScammerAlert removes the entry.
@@ -77,19 +75,20 @@ with the server's configuration.
 3.7 Defendr stores no IP addresses in its database, builds no device fingerprints and no
 behavioural profiles, and trains no AI models. When you open the website your IP address is processed for the
 connection: our web server keeps it in memory only for a short time, and Cloudflare, as our processor, records it in
-analytics and security logs. What exactly happens is described in section 12.
+analytics and security logs. On the pages after you sign in, Discord receives it too when your browser loads profile
+pictures and server icons from Discord there. What exactly happens is described in section 12.
 
-3.8 The complete list of data categories with their retention is in section 7. It is generated from the same registry
-the deletion jobs read their deadlines from.
+3.8 The complete list of data categories with their retention is in section 7. It is created automatically from the
+same settings Defendr uses to delete the data.
 
-3.9 Oversight of the bot itself: the Defendr team keeps a private channel on the Defendr server with one entry per
+3.9 Overview of Defendr's actions: the Defendr team keeps a private channel on the Defendr server with one entry per
 action Defendr took on any server and per moderation, report and appeal event handled through Defendr — user, server and
 channel IDs, including the ID of the moderator or team member who acted, the names Discord showed for them at that
 moment (the server's name, the channel's name, the display or user name of the member and of the moderator or team
 member), the type of action or event, counts and times, and for a link or invite Defendr detected the listed threat
 value it matched (from a threat list, never what the member wrote); never the content of a message, a note, a report or
-an appeal, never who reported whom. It exists so the team can see what the bot does across all servers and notice a
-mistake (legitimate interest, section 4). It is kept until the team deletes it.
+an appeal, never who reported whom. It exists so the team can see what Defendr does across all servers and fix
+mistakes quickly (legitimate interest, section 4). It is kept until the team deletes it.
 
 3.10 Support tickets in the support server: user ID, topic, subject, description and form fields (encrypted), the
 private thread, who closed or reopened the ticket, ticket bans. What exactly, why and for how long is in section 11.
@@ -102,8 +101,8 @@ the last message and whether the team muted it), never the text of your messages
 /defendr › My data › Delete my data deletes it within an hour, and /defendr › My data › Export shows it. Legal basis:
 Art. 6(1)(f) GDPR (answering people who contact us).
 
-3.12 Website: opening pages, logs, sign-in with Discord, sessions, sign-in history, personal settings and what you do
-there. The details are in section 12, cookies and browser storage in section 13.
+3.12 Website: opening pages, logs, sign-in with Discord, profile pictures and server icons from Discord after you sign
+in, sessions, sign-in history, personal settings and what you do there. The details are in section 12, cookies and browser storage in section 13.
 
 ## 4. Purposes and legal bases
 
@@ -114,11 +113,10 @@ there. The details are in section 12, cookies and browser storage in section 13.
 - Network-wide Safety Records: Art. 6(1)(f) GDPR; the legitimate interest assessment is available on request.
 - Understanding how servers find Defendr (the optional setup answer "Where did you find Defendr?", stored per server
   and not assigned to any person): Art. 6(1)(f) GDPR; the answer is voluntary and can be left out.
-- Oversight of Defendr's own actions and of the moderation, report and appeal events handled through it
+- The overview of Defendr's actions and of the moderation, report and appeal events handled through it
   (section 3.9): Art. 6(1)(f) GDPR.
 - Handling support tickets in the support server (section 11): Art. 6(1)(b) GDPR where you use Defendr under the
   terms of service, otherwise Art. 6(1)(f) GDPR.
-  <!-- OD-17 (residual risk, no lawyer under E-37): owner-checklist.de.md R8 -->
 - Answering direct messages to Defendr (section 3.11): Art. 6(1)(f) GDPR.
 - Providing and protecting the website and the status page, logs for troubleshooting and attack defence
   (sections 12.1, 12.2 and 12.7): Art. 6(1)(f) GDPR. Our legitimate interest is a secure, available and working
@@ -126,6 +124,9 @@ there. The details are in section 12, cookies and browser storage in section 13.
 - Sign-in with Discord, the personal area, server administration and your personal settings
   (sections 12.3, 12.5 and 12.6): Art. 6(1)(b) GDPR; you use these features at your request under the terms of
   service.
+- Your profile picture and your servers' icons from Discord on the pages after you sign in (section 12.9):
+  Art. 6(1)(f) GDPR. Our legitimate interest is showing you your account and your servers with the pictures you know
+  from Discord, so that you recognise them at a glance.
 - The sign-in history of your account (section 12.4): Art. 6(1)(f) GDPR. Our legitimate interest is that you and we
   can trace the sign-ins and sign-outs of your account and recognise sign-ins by someone else.
 - The log of actions on the website (section 12.6): Art. 6(1)(f) GDPR. Our legitimate interest is being able to show
@@ -139,77 +140,71 @@ there. The details are in section 12, cookies and browser storage in section 13.
 
 <!-- anchor: processors -->
 
-Discord Inc. (platform), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, rented server in a data centre in Frankfurt am Main that runs Defendr and the website and holds the database (section 12.1)); Cloudflare, Inc. (US, delivering and protecting the website (network, encrypted tunnel to our server, attack protection, analytics and security logs), running the status page and forwarding e-mail sent to the @defendr.live addresses (section 12)); Google Ireland Limited (Gmail) (EU/US, the mailbox e-mail to our addresses arrives in; Google processes it under its own terms as a controller of its own, not as our processor (section 12.8)); Offsite-Backup-Anbieter (noch nicht festgelegt, OD-12) (EU, encrypted offsite backups; only if enabled (OD-12)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled (OD-6)).
+Discord Inc. (platform; on the pages of the website after you sign in also when profile pictures and server icons
+load, section 12.9), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, rented server in a data centre in Frankfurt am Main that runs Defendr and the website and holds the database (section 12.1)); Cloudflare, Inc. (US, delivering and protecting the website (network, encrypted tunnel to our server, attack protection, analytics and security logs), running the status page and forwarding e-mail sent to the @defendr.live addresses (section 12)); Google Ireland Limited (Gmail) (EU/US, the mailbox e-mail to our addresses arrives in; Google processes it under its own terms as a controller of its own, not as our processor (section 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled).
 
-The operator aggregates detection data from every server Defendr runs on into one
-team-internal channel on the support server. That channel holds **no message
-content** – only the server, the channel, the user id concerned, the action taken,
-the detected indicator (rendered defanged), technical checksums and the time. Its
-purpose is operating the service and countering abuse across servers; access is
-limited to the operator and the support team.
+The recipients of the overview of Defendr's actions (section 3.9) are the operator and the Defendr support team; it
+holds no message content.
 
 As a processor (Art. 28 GDPR), Cloudflare acts only on our instructions and under the data processing agreement.
 
 ## 6. Transfers to third countries
 
-Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you open the website, Cloudflare, Inc. (USA) processes the data of the request (section 12) in its worldwide network, also in the USA. If you e-mail us, your message and your e-mail address are forwarded by Cloudflare, Inc. and stored in our mailbox at Gmail; Google stores and processes them also in the USA (Google LLC). Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR); for Cloudflare, the standard contractual clauses in the data processing agreement apply in addition (Art. 46(2)(c) GDPR). There are no other transfers to third countries; a recipient that is not active is used only once the owner decision named next to it enables it.
+Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you open the website, Cloudflare, Inc. (USA) processes the data of the request (section 12) in its worldwide network, also in the USA. If you e-mail us, your message and your e-mail address are forwarded by Cloudflare, Inc. and stored in our mailbox at Gmail; Google stores and processes them also in the USA (Google LLC). Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR); for Cloudflare, the standard contractual clauses in the data processing agreement apply in addition (Art. 46(2)(c) GDPR). There are no other transfers to third countries; a recipient marked "only if enabled" receives data only once we switch the feature on.
 
 ## 7. Retention
 
 <!-- anchor: retention -->
 
-| Data class | Retention | Deletion mechanism |
-| --- | --- | --- |
-| Temporary personal web-export copies and one-use delivery state | At most 15 minutes of access; keys removed immediately on completion or revocation; encrypted copies removed later in bounded cleanup batches | per-export key disposal on completion, failure, logout, erasure or restore; expiry checks and bounded cleanup |
-| Website access logs (time, path template, status, duration, random request ID; no addresses or content) | 14 days, earlier when the storage budget is full; a stopped web server's logs are deleted by a daily task, up to one day later | pruning by the web server at its start and every minute; for a stopped web server the daily task `-PruneLogs` |
-| Website event log (server errors by page and error type, missing texts, failures and refusals between the website and Defendr, failed sign-ins by reason, counts of access-log records dropped, and of access-log files deleted early with the minute their records start; no person, address, URL, cookie, content or session) | 14 days, earlier beyond 4 MiB (the oldest first); a stopped web server's log is deleted by a daily task, up to one day later | pruning by the web server at its start and every minute; for a stopped web server the daily task `-PruneLogs` |
-| Website tunnel log on our server (cloudflared): only errors that stop the connector itself (log level fatal) and warnings about its own connection to Cloudflare (transport log level warn); no requests, requested addresses or IP addresses of visitors | no automatic deletion after a fixed period yet | manual deletion by the operator |
-| E-mails to the @defendr.live addresses (contact@, privacy@, security@, including vulnerability reports; Gmail mailbox) | deleted once no longer needed for the request, at the latest three years after the request is closed, unless a legal duty requires longer | manual deletion in the mailbox |
-| Website sessions and encrypted OAuth access tokens | 7 days without activity; at most 30 days | logout, erasure/restore invalidation and `retention.purge` |
-| Website security events (sign-in, sign-out, sign out everywhere, ending one other session, a sign-in Defendr undid after Discord had confirmed it; device category and time; no addresses) | 365 days | `retention.purge`; erasure |
-| Receipts of website actions (route, state, result code, times; the request and its idempotency key only as hashes) | 365 days after the action finished | `retention.purge`; erasure; `guilds.purge` for server actions |
-| Website and account preferences (language, whether Defendr messages follow it, inbox read marker, theme, accent, density, motion) | until the account data is deleted (no time limit); removed on request | erasure |
-| Security score history per server (weekly score and part scores, no user IDs) | indefinite (aggregates); with the server's data after Defendr leaves | `guilds.purge` |
-| Message content during scanning | Seconds (memory only) | not stored |
-| Detection records (ids, type, action; no message content) | 1825 days | `retention.purge` |
-| Moderation cases (+ events) | 1825 days (owner-set, identical in every server) | `retention.purge` |
-| Message excerpts (opt-in per server) | at most 1095 days, never longer than the case | purge (sealed; crypto-shredding) |
-| Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; nothing a member attaches is stored | purge + file unlink (crypto-shredding) |
-| Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; pending: auto-closed after 90 days | purge |
-| Reporter reputation | 1825 days after last report | purge |
-| False-positive signals (moderator id, case) | 1095 days | purge |
-| Review votes and staff threads | with the reviewed item | purge (+ thread deletion) |
-| Appeals (incl. recommendations) | 1825 days after decision or lapse | purge |
-| Support tickets (form text sealed; the private thread in the support server) and ticket bans | 1825 days after closing (row and thread); a ticket thread left without its record (after a failed creation or a restore from a backup) is deleted 1825 days after it was created (possibly locked and archived before then) — because no record links it to a member, the team deletes it by hand on an erasure request; ticket bans until lifted | `support.tickets` (thread first, then the row; a thread without a record by the list of the job, `kv.support.orphans`); a ban is deleted when lifted |
-| Direct-message conversations with Defendr (user ID, the post in the staff channel, time of the last message, muted or not; never the text) | 1825 days after the last message; within an hour of an erasure | `ops.dm-chats` (the post first, then the row) |
-| Data subject requests; processing restrictions | 1825 days (accountability; content minimized and sealed); restrictions 1825 days after lifting | purge |
-| Active network listing | no automatic expiry; re-review reminder after 12 months (a status change always needs a staff decision) | re-review reminder + purge 1095 days after close |
-| Quarantined imported listings (811 + 4) | until reviewed; reminder after 6 months (OD-7) | review decision |
-| Closed Safety Records (revoked/rejected/expired) | 1095 days | purge |
-| Member flags: hijacked account / raid cohort / network hint shown | 72 hours / 7 days / 30 days | `member-flags.expire` |
-| Member flag: pending verification | at least 24 hours, as long as the server's kick-unverified delay + 1 hour | `member-flags.expire` |
-| Member flags: join-gate quarantine role / suspect role applied by Defendr | while the role is held; 30 days after leaving | reconcile jobs + `member-flags.expire` |
-| Raid cohorts (metadata only) | 365 days | purge |
-| Incidents | 1825 days | purge |
-| Anti-nuke role strips / structure snapshots / deleted entities (2.1) | 30 / 7 / 14 days | purge |
-| Lockdown records | 1095 days after end | purge |
-| Verification challenges | 24 hours | purge |
-| Interactive UI state (sealed) | ≤ 24 hours | `ui_state.purge` |
-| Pending messages (outbox) | content wiped when sent or given up; rows 7 days (sent) / 30 days (failed) | purge |
-| Config revisions; preset and migration card decisions | last 100, max 1 year; decisions 90 days | purge |
-| Audit log (`ops_audit`): staff access incl. evidence views, and each website action (user ID, action, server, time, outcome, receipt and request ID) | 1825 days; kept on erasure (accountability) | purge |
-| Staff membership | 1825 days after deactivation | purge |
-| Anonymous network signals (2.1) | 48 hours | purge |
-| Premium entitlements (2.2) | 30 days after end | purge |
-| Application logs (no content) | 90 days | rotation |
-| Global mirror (#global-logs, staff channel): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and staff ids included), the names Discord showed for the server, the channel, the member and the moderator or staff member at that moment, and the listed threat value a link or invite Defendr detected matched; never message content | kept until the operator deletes it (owner-set retention, decision of 2026-09) | operator (Discord channel) |
-| Error events (redacted) | 365 days | purge |
-| Statistics aggregates (no user IDs): counts per day, server and metric, incl. per reason code and per detection family | indefinite | — |
-| Setup answer "Where did you find Defendr?" (per server, optional; not assigned to a person) | with the server's configuration: 90 days after Defendr leaves (or immediately if configured) | `guilds.purge` |
-| All guild data after Defendr leaves | 90 days (or immediately if configured); cancelled by re-invite | `guilds.purge` |
-| Local backups | 14 daily / 8 weekly / 6 monthly | prune |
-| Offsite backups (encrypted) | 14 daily / 8 weekly / 12 monthly | restic forget/prune |
-| v1 history dossiers | not migrated; destroyed at v1 decommission (T+30 d, encrypted archive destroyed after 90 d) | owner runbook |
+| Data class | Retention |
+| --- | --- |
+| Temporary personal web-export copies and one-use delivery state | At most 15 minutes of access; keys removed immediately on completion or revocation; encrypted copies removed later in bounded cleanup batches |
+| Website access logs (time, path template, status, duration, random request ID; no addresses or content) | 14 days, earlier when the storage budget is full; a stopped web server's logs are deleted by a daily task, up to one day later |
+| Website event log (server errors by page and error type, missing texts, failures and refusals between the website and Defendr, failed sign-ins by reason, counts of access-log records dropped, and of access-log files deleted early with the minute their records start; no person, address, URL, cookie, content or session) | 14 days, earlier beyond 4 MiB (the oldest first); a stopped web server's log is deleted by a daily task, up to one day later |
+| Website tunnel log on our server (cloudflared): only errors that stop the connector itself (log level fatal) and warnings about its own connection to Cloudflare (transport log level warn); no requests, requested addresses or IP addresses of visitors | deleted by hand by the operator, not automatically after a fixed period |
+| E-mails to the @defendr.live addresses (contact@, privacy@, security@, including vulnerability reports; Gmail mailbox) | deleted once no longer needed for the request, at the latest three years after the request is closed, unless a legal duty requires longer |
+| Website sessions and encrypted OAuth access tokens | 7 days without activity; at most 30 days |
+| Website security events (sign-in, sign-out, sign out everywhere, ending one other session, a sign-in Defendr undid after Discord had confirmed it; device category and time; no addresses) | 365 days |
+| Receipts of website actions (route, state, result code, times; the request and its idempotency key only as hashes) | 365 days after the action finished |
+| Website and account preferences (language, whether Defendr messages follow it, inbox read marker, theme, accent, density, motion) | until the account data is deleted (no time limit); removed on request |
+| Security score history per server (weekly score and part scores, no user IDs) | indefinite (aggregates); with the server's data after Defendr leaves |
+| Message content during scanning | Seconds (memory only) |
+| Detection records (ids, type, action; no message content) | 1825 days |
+| Moderation cases (+ events) | 1825 days (owner-set, identical in every server) |
+| Message excerpts (opt-in per server) | at most 1095 days, never longer than the case |
+| Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; nothing a member attaches is stored |
+| Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; pending: auto-closed after 90 days |
+| Reporter reputation | 1825 days after last report |
+| False-positive signals (moderator id, case) | 1095 days |
+| Review votes and staff threads | with the reviewed item |
+| Appeals (incl. recommendations) | 1825 days after decision or lapse |
+| Support tickets (form text sealed; the private thread in the support server) and ticket bans | 1825 days after closing (row and thread); a ticket thread left without its record (after a failed creation or a restore from a backup) is deleted 1825 days after it was created (possibly locked and archived before then) — because no record links it to a member, the team deletes it by hand on an erasure request; ticket bans until lifted |
+| Direct-message conversations with Defendr (user ID, the post in the staff channel, time of the last message, muted or not; never the text) | 1825 days after the last message; within an hour of an erasure |
+| Data subject requests; processing restrictions | 1825 days (accountability; content minimized and sealed); restrictions 1825 days after lifting |
+| Active network listing | no automatic expiry; re-review reminder after 12 months (a status change always needs a staff decision) |
+| Imported listings awaiting review | until reviewed; reminder after 6 months |
+| Closed Safety Records (revoked/rejected/expired) | 1095 days |
+| Member flags: hijacked account / raid cohort / network hint shown | 72 hours / 7 days / 30 days |
+| Member flag: pending verification | at least 24 hours, as long as the server's kick-unverified delay + 1 hour |
+| Member flags: join-gate quarantine role / suspect role applied by Defendr | while the role is held; 30 days after leaving |
+| Raid cohorts (metadata only) | 365 days |
+| Incidents | 1825 days |
+| Anti-nuke role strips / structure snapshots / deleted entities (2.1) | 30 / 7 / 14 days |
+| Lockdown records | 1095 days after end |
+| Verification challenges | 24 hours |
+| Interactive UI state (sealed) | ≤ 24 hours |
+| Pending messages (outbox) | content wiped when sent or given up; rows 7 days (sent) / 30 days (failed) |
+| Config revisions; preset and migration card decisions | last 100, max 1 year; decisions 90 days |
+| Action log: team access to records and evidence, and each website action (user ID, action, server, time, outcome, receipt and request ID) | 1825 days; kept on erasure (accountability) |
+| Staff membership | 1825 days after deactivation |
+| Application logs (no content) | 90 days |
+| Overview of Defendr's actions (section 3.9): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and team member ids included), the names Discord showed for the server, the channel, the member and the moderator or team member at that moment, and the listed threat value a link or invite Defendr detected matched; never message content | kept until the operator deletes it |
+| Error events (redacted) | 365 days |
+| Statistics aggregates (no user IDs): counts per day, server and metric, incl. per reason code and per detection family | indefinite |
+| Setup answer "Where did you find Defendr?" (per server, optional; not assigned to a person) | with the server's configuration: 90 days after Defendr leaves (or immediately if configured) |
+| All guild data after Defendr leaves | 90 days (or immediately if configured); cancelled by re-invite |
+| Local backups | 14 daily / 8 weekly / 6 monthly |
+| Free-text history files from Defendr 1 | not carried over; deleted 30 days after Defendr 1 is shut down, its encrypted archive after 90 days |
 
 Deletion inside backups happens through their rotation; the maximum backup retention is in the table.
 
@@ -238,9 +233,8 @@ Support tickets (section 11) are part of the export and are deleted with an eras
 Server operators decide how Defendr reacts to a detected threat. Defendr limits actions by
 how reliable the evidence is (for example, never a ban on an external list alone).
 
-Network records never trigger an automated action: entries taken over from external lists
-without a review, and every other network record for now, only show moderators a warning, and the moderators decide
-themselves whether to act. Every decision can be reviewed with /appeal: a server's moderators decide about its own
+Network records never trigger an automated action: entries from external lists and all
+other network records only show moderators a warning, and the moderators decide themselves whether to act. Every decision can be reviewed with /appeal: a server's moderators decide about its own
 cases, the Defendr team about network-wide records.
 
 Defendr only sends a direct message when an action concerns you, when you started a flow yourself
@@ -260,10 +254,11 @@ The website makes no decisions of its own: Defendr checks every action there by 
 
 ## 10. Security
 
-Encryption of stored sensitive data, restricted access, logging of staff access, regular backups. For the website in
-addition: encrypted connections only (HTTPS); session cookies bound to exactly one address, not readable by scripts and
-sent only over HTTPS; the server stores only a hash of the session identifier; Discord access tokens encrypted;
-protection against forged requests from other sites; no third-party content on the pages. The website has no access to
+Encryption of stored sensitive data, access control and access logging, regular backups. For the website in addition:
+encrypted connections only (HTTPS); session cookies bound to exactly one address, not readable by scripts and sent only
+over HTTPS; the server stores only a hash of the session identifier; Discord access tokens encrypted; protection
+against forged requests from other sites; no third-party content on the public pages, and after you sign in only
+profile pictures and server icons from Discord (section 12.9). The website has no access to
 the database; it asks Defendr through a signed interface that is reachable only inside the server.
 
 ## 11. Support tickets in the support server
@@ -310,8 +305,6 @@ Delete my data) deletes your tickets and their threads – an open ticket is end
 (/defendr page:mydata): it records the request and its deadline. A request you make in a ticket of the
 data-access-or-deletion topic is handled just the same; the one-month deadline (Art. 12(3) GDPR) runs from the opening
 of the ticket.
-
-<!-- OD-17 (residual risks, no lawyer under E-37): 11.3 owner-checklist.de.md R22; 11.6 R23 and R24 -->
 
 ## 12. Website
 
@@ -375,7 +368,9 @@ Discord (OAuth2); Discord shows you beforehand what it passes on to Defendr, and
 "identify" and "guilds". Through them we receive your Discord user ID, your user or display name, the identifier of
 your avatar, the language setting of your Discord account, whether two-factor authentication is on, a time-limited
 access permission from Discord (access token) and the list of your servers with your permissions there. We do not
-receive your e-mail address or your password. We store one session: user ID, display name, avatar identifier,
+receive your e-mail address or your password. With your avatar identifier and the details of your servers the website
+shows you your profile picture and your servers' icons; your browser loads these pictures directly from Discord
+(section 12.9). We store one session: user ID, display name, avatar identifier,
 language, two-factor yes/no, the device category desktop or mobile (derived once at sign-in from the browser hint
 "Sec-CH-UA-Mobile"; if your browser does not send it, desktop is recorded; we do not store the browser identifier
 itself), times, a hash of the session identifier and the access token (encrypted). We do not store a refresh token.
@@ -417,7 +412,7 @@ limits, rights and retention apply. For actions that start or change something w
 (reference number, type of action, server concerned, times, status and result; the request itself only as a check
 value, a hash) so that a double click does not do anything twice and you can see the state. The receipt itself is
 deleted 365 days after the action finished, earlier with an erasure of your data.
-In addition, we record every action on the website that starts, changes or exports something in the log `ops_audit`:
+In addition, we record every action on the website that starts, changes or exports something in our action log:
 your user ID, the type of action, what it concerns (such as the server, a case or a ticket), the time, the result, the
 receipt and request ID and short reference details such as the revision number of changed server settings; for your
 personal settings only which ones you changed, never the values. An action Defendr carries out later gets one entry
@@ -444,11 +439,21 @@ only if you consent (Art. 6(1)(a) GDPR). You can withdraw your consent at any ti
 security@defendr.live; we then remove the mention as far as we can. The withdrawal does not affect the lawfulness
 of the mention until then.
 
-12.9 No analytics, no advertising, no third-party content. The website uses no analytics or statistics services, no
-tracking pixels, no advertising and no social media plugins, and our pages contain no captcha; only Cloudflare may put
-an automatic browser check in front of a page if an attack is suspected (sections 12.1 and 13). Fonts, scripts and
-images come from our own server; the website does not embed videos, Discord widgets or avatars from Discord. Links to
-other sites, such as Discord (invite, sign-in, support server) or GitHub (previous versions of these texts), take you to
+12.9 No analytics, no advertising; pictures from Discord only after you sign in. The website uses no analytics or
+statistics services, no tracking pixels, no advertising and no social media plugins, and our pages contain no captcha;
+only Cloudflare may put an automatic browser check in front of a page if an attack is suspected (sections 12.1 and 13).
+Fonts, scripts and our own images come from our own server; the only pictures from elsewhere are the Discord pictures
+described below. The website does not embed videos or Discord widgets, and the public pages load nothing from Discord.
+
+On the pages after you sign in (app.defendr.live) the website shows your profile picture and your servers' icons as
+you know them from Discord. Your browser loads these pictures directly from Discord's content delivery network
+(cdn.discordapp.com, run for Discord by Cloudflare). Discord Inc. then receives your IP address, the browser
+identifier (user agent), the time and the address of the picture, which contains your user ID or the server's ID. Your
+browser sends no referrer with these requests, and it sends and accepts no cookies for them. Discord processes these
+data as a controller of its own under its own privacy policy, also in the USA (sections 5 and 6). Legal basis:
+Art. 6(1)(f) GDPR (section 4).
+
+Links to other sites, such as Discord (invite, sign-in, support server) or GitHub (previous versions of these texts), take you to
 their pages, where their own privacy policies apply; our pages do not pass on where you came from.
 
 ## 13. Cookies and browser storage

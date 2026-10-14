@@ -1,6 +1,6 @@
 # Terms of Service for Defendr
 
-Version 2026-10-14 · effective 2026-10-14
+Version 2026-10-18 · effective 2026-10-18
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/terms
 
@@ -51,10 +51,11 @@ can be reported with the **False positive** button on the log card.
 
 Reports are reviewed. Network-wide Safety Records that Defendr creates itself follow a published scope policy; trade
 disputes, personal conflicts and off-platform behaviour are out of scope. Entries that Defendr takes over automatically
-from the ScammerAlert community lists follow ScammerAlert's own criteria, are marked as a third-party list not checked by
-Defendr and end when ScammerAlert withdraws or deletes them.
+from the ScammerAlert community lists follow ScammerAlert's own criteria, are marked with their source and end when
+ScammerAlert withdraws or deletes them.
 
-Unreviewed records never trigger an automated action; they only show moderators a warning.
+Records from external lists, and records still awaiting review, never trigger an automated
+action; they only show moderators a warning.
 Every decision can be reviewed with /appeal or on the website under "My Defendr".
 
 ## 8. Liability

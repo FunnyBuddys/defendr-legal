@@ -1,6 +1,6 @@
 # Nutzungsbedingungen für Defendr
 
-Version 2026-10-14 · gültig ab 2026-10-14
+Version 2026-10-18 · gültig ab 2026-10-18
 
 ## 1. Geltungsbereich
 
@@ -51,11 +51,10 @@ Fehlalarme können über die Schaltfläche „Fehlalarm" an der Log-Karte gemeld
 Meldungen werden geprüft. Netzwerkweite Sicherheitseinträge, die Defendr selbst anlegt, folgen einer veröffentlichten
 Aufnahmepolitik; Streit über Handel, persönliche Konflikte und Verhalten außerhalb der Plattform sind ausgenommen.
 Einträge, die Defendr automatisch aus den ScammerAlert-Community-Listen übernimmt, folgen den Kriterien von ScammerAlert,
-sind als fremde, von Defendr nicht geprüfte Liste gekennzeichnet und enden, wenn ScammerAlert sie zurückzieht oder
-löscht.
+sind mit ihrer Quelle gekennzeichnet und enden, wenn ScammerAlert sie zurückzieht oder löscht.
 
-Ungeprüfte Einträge lösen nie eine automatische Maßnahme aus; sie zeigen Moderatoren nur eine
-Warnung. Jede Entscheidung kann mit /appeal oder auf der Webseite unter „Mein Defendr“ überprüft werden.
+Einträge aus externen Listen und Einträge, die noch auf ihre Prüfung warten, lösen nie eine
+automatische Maßnahme aus; sie zeigen Moderatoren nur eine Warnung. Jede Entscheidung kann mit /appeal oder auf der Webseite unter „Mein Defendr“ überprüft werden.
 
 ## 8. Haftung
 
