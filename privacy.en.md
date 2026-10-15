@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-15 · effective 2026-10-15
+Version 2026-10-19 · effective 2026-10-19
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -36,7 +36,9 @@ most 1095 days, earlier together with the moderation case). A second exception: 
 you write to Defendr in a direct message (text, file names and links) is kept in a private channel of the Defendr
 support server so the Defendr team can read and answer it, until
 1825 days after the last message of the conversation or until you ask for
-erasure (see 3.11).
+erasure (see 3.11). A third exception applies only in Defendr's own support server: the messages in support ticket
+threads (private threads between you and Defendr's support team) are stored encrypted as the ticket's transcript, so
+that you and the team can also read and answer the ticket on the website (see section 11.4).
 
 3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID.
 
@@ -91,7 +93,10 @@ an appeal, never who reported whom. It exists so the team can see what Defendr d
 mistakes quickly (legitimate interest, section 4). It is kept until the team deletes it.
 
 3.10 Support tickets in the support server: user ID, topic, subject, description and form fields (encrypted), the
-private thread, who closed or reopened the ticket, ticket bans. What exactly, why and for how long is in section 11.
+private thread and the transcript of its messages (text encrypted; of attachments only the name, size, type, picture
+dimensions and the spoiler mark; who wrote a message with which Discord name and profile picture, when it was written or
+edited, whether in Discord or on the website, and which message it replies to), replies sent from the website, who
+closed or reopened the ticket, ticket bans. What exactly, why and for how long is in section 11.
 
 3.11 Direct messages to Defendr: if you send Defendr a direct message, the Defendr team sees it (text, file names and
 links, time) in a private channel of the support server so that it can answer you; answers reach you as direct messages
@@ -102,7 +107,9 @@ the last message and whether the team muted it), never the text of your messages
 Art. 6(1)(f) GDPR (answering people who contact us).
 
 3.12 Website: opening pages, logs, sign-in with Discord, profile pictures and server icons from Discord after you sign
-in, sessions, sign-in history, personal settings and what you do there. The details are in section 12, cookies and browser storage in section 13.
+in (on the pages of your support tickets also the profile pictures of the other people in the ticket), sessions,
+sign-in history, personal settings and what you do there, such as reading and answering your support tickets. The
+details are in sections 11 and 12, cookies and browser storage in section 13.
 
 ## 4. Purposes and legal bases
 
@@ -115,8 +122,10 @@ in, sessions, sign-in history, personal settings and what you do there. The deta
   and not assigned to any person): Art. 6(1)(f) GDPR; the answer is voluntary and can be left out.
 - The overview of Defendr's actions and of the moderation, report and appeal events handled through it
   (section 3.9): Art. 6(1)(f) GDPR.
-- Handling support tickets in the support server (section 11): Art. 6(1)(b) GDPR where you use Defendr under the
-  terms of service, otherwise Art. 6(1)(f) GDPR.
+- Handling support tickets in the support server, with the stored transcript and the replies from the website
+  (section 11): Art. 6(1)(b) GDPR where you use Defendr under the terms of service, otherwise, and for the messages of
+  other people in the thread, Art. 6(1)(f) GDPR. Our legitimate interest is answering requests completely and
+  traceably, in Discord and on the website.
 - Answering direct messages to Defendr (section 3.11): Art. 6(1)(f) GDPR.
 - Providing and protecting the website and the status page, logs for troubleshooting and attack defence
   (sections 12.1, 12.2 and 12.7): Art. 6(1)(f) GDPR. Our legitimate interest is a secure, available and working
@@ -124,9 +133,10 @@ in, sessions, sign-in history, personal settings and what you do there. The deta
 - Sign-in with Discord, the personal area, server administration and your personal settings
   (sections 12.3, 12.5 and 12.6): Art. 6(1)(b) GDPR; you use these features at your request under the terms of
   service.
-- Your profile picture and your servers' icons from Discord on the pages after you sign in (section 12.9):
-  Art. 6(1)(f) GDPR. Our legitimate interest is showing you your account and your servers with the pictures you know
-  from Discord, so that you recognise them at a glance.
+- Your profile picture and your servers' icons from Discord on the pages after you sign in, and on the pages of your
+  support tickets the profile pictures of the other people who wrote in the ticket (section 12.9): Art. 6(1)(f) GDPR.
+  Our legitimate interest is showing you your account, your servers and the people in the ticket with the pictures you
+  know from Discord, so that you recognise them at a glance.
 - The sign-in history of your account (section 12.4): Art. 6(1)(f) GDPR. Our legitimate interest is that you and we
   can trace the sign-ins and sign-outs of your account and recognise sign-ins by someone else.
 - The log of actions on the website (section 12.6): Art. 6(1)(f) GDPR. Our legitimate interest is being able to show
@@ -141,7 +151,8 @@ in, sessions, sign-in history, personal settings and what you do there. The deta
 <!-- anchor: processors -->
 
 Discord Inc. (platform; on the pages of the website after you sign in also when profile pictures and server icons
-load, section 12.9), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, rented server in a data centre in Frankfurt am Main that runs Defendr and the website and holds the database (section 12.1)); Cloudflare, Inc. (US, delivering and protecting the website (network, encrypted tunnel to our server, attack protection, analytics and security logs), running the status page and forwarding e-mail sent to the @defendr.live addresses (section 12)); Google Ireland Limited (Gmail) (EU/US, the mailbox e-mail to our addresses arrives in; Google processes it under its own terms as a controller of its own, not as our processor (section 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled).
+load, section 12.9; for a reply from the website Discord receives the text with your name and the address of your
+profile picture, section 11.5), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, rented server in a data centre in Frankfurt am Main that runs Defendr and the website and holds the database (section 12.1)); Cloudflare, Inc. (US, delivering and protecting the website (network, encrypted tunnel to our server, attack protection, analytics and security logs), running the status page and forwarding e-mail sent to the @defendr.live addresses (section 12)); Google Ireland Limited (Gmail) (EU/US, the mailbox e-mail to our addresses arrives in; Google processes it under its own terms as a controller of its own, not as our processor (section 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled).
 
 The recipients of the overview of Defendr's actions (section 3.9) are the operator and the Defendr support team; it
 holds no message content.
@@ -166,7 +177,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Website sessions and encrypted OAuth access tokens | 7 days without activity; at most 30 days |
 | Website security events (sign-in, sign-out, sign out everywhere, ending one other session, a sign-in Defendr undid after Discord had confirmed it; device category and time; no addresses) | 365 days |
 | Receipts of website actions (route, state, result code, times; the request and its idempotency key only as hashes) | 365 days after the action finished |
-| Website and account preferences (language, whether Defendr messages follow it, inbox read marker, theme, accent, density, motion) | until the account data is deleted (no time limit); removed on request |
+| Website and account preferences (language, whether Defendr messages follow it, inbox read marker, whether the note on ticket replies was seen, theme, accent, density, motion) | until the account data is deleted (no time limit); removed on request |
 | Security score history per server (weekly score and part scores, no user IDs) | indefinite (aggregates); with the server's data after Defendr leaves |
 | Message content during scanning | Seconds (memory only) |
 | Detection records (ids, type, action; no message content) | 1825 days |
@@ -178,7 +189,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | False-positive signals (moderator id, case) | 1095 days |
 | Review votes and staff threads | with the reviewed item |
 | Appeals (incl. recommendations) | 1825 days after decision or lapse |
-| Support tickets (form text sealed; the private thread in the support server) and ticket bans | 1825 days after closing (row and thread); a ticket thread left without its record (after a failed creation or a restore from a backup) is deleted 1825 days after it was created (possibly locked and archived before then) — because no record links it to a member, the team deletes it by hand on an erasure request; ticket bans until lifted |
+| Support tickets (form text and thread messages sealed; the private thread in the support server) and ticket bans | 1825 days after closing (row, thread and stored messages, also when the thread was deleted by hand before); a ticket thread left without its record (after a failed creation or a restore from a backup) is deleted 1825 days after it was created (possibly locked and archived before then) — because no record links it to a member, the team deletes it by hand on an erasure request; ticket bans until lifted |
 | Direct-message conversations with Defendr (user ID, the post in the staff channel, time of the last message, muted or not; never the text) | 1825 days after the last message; within an hour of an erasure |
 | Data subject requests; processing restrictions | 1825 days (accountability; content minimized and sealed); restrictions 1825 days after lifting |
 | Active network listing | no automatic expiry; re-review reminder after 12 months (a status change always needs a staff decision) |
@@ -225,8 +236,8 @@ unless we can demonstrate compelling legitimate grounds which override your inte
 processing serves the establishment, exercise or defence of legal claims. You object with /defendr › My data › Object,
 in the personal area of the website or by e-mail to privacy@defendr.live.
 
-Support tickets (section 11) are part of the export and are deleted with an erasure; a ticket ban is kept
-(section 11.6). An erasure of your data also ends all your website sessions.
+Support tickets (section 11) are part of the export together with their transcript and are deleted with an erasure;
+a ticket ban is kept (section 11.7). An erasure of your data also ends all your website sessions.
 
 ## 9. Automated decisions
 
@@ -268,10 +279,12 @@ the database; it asks Defendr through a signed interface that is reachable only 
 11.1 Who and what. When you open a ticket in the `#contact-staff` channel of the Defendr & Checkout support server or on
 the website under "My Defendr", we process: your Discord user ID, the topic you picked, the subject, the description
 and the other fields of the form (stored encrypted), the server the summary in section 11.2 is about, the times of
-opening and of the last activity, the private thread with its messages (it stays on Discord; it can be seen by you,
-Defendr's support staff, the server's team role and whoever may manage threads in that channel), who closed or
-reopened the ticket, and ticket bans (who set one and when). Purpose: answering your request and troubleshooting.
-Legal basis: Art. 6(1)(b) GDPR where you use Defendr under the terms of service, otherwise Art. 6(1)(f) GDPR.
+opening and of the last activity, the private thread (in Discord it can be seen by you, Defendr's support staff, the
+server's team role and whoever may manage threads in that channel), the transcript of its messages (section 11.4; on
+the website only you, Defendr's support staff and the operator of Defendr see it, everyone else in the thread reads it
+in Discord), who closed or reopened the ticket, and ticket bans (who set one and when). Purpose: answering your
+request, in Discord and on the website, and troubleshooting. Legal basis: Art. 6(1)(b) GDPR where you use Defendr under
+the terms of service, otherwise Art. 6(1)(f) GDPR.
 
 11.2 What the thread shows the team automatically. When the ticket opens, Defendr posts into the thread only what you
 could already see about yourself: your own moderation cases, network listings, appeals and data requests, a
@@ -285,23 +298,57 @@ Checkout bot's files the Checkout configuration of the server you pick, your own
 and that server's totals (number of tracked people and sessions, no figures of other individuals) – read only. The
 result appears only in the private thread; Defendr stores none of it.
 
-11.4 No transcript. Defendr keeps no copy of the thread and, for the ticket, uses only the time of the newest message
-in order to close a ticket automatically after seven days without activity (tickets of the data-access-or-deletion
-topic are exempt; a person closes them once the request has been answered). As on every server Defendr protects,
-messages in the thread are checked in memory for a moment and not stored (section 3.1). The team can reopen a ticket
-as long as the thread exists.
+<!-- anchor: support-transcript -->
 
-11.5 Retention. The ticket and the thread are deleted 5 years after the
-ticket was closed (table in section 7). An open ticket has no expiry date. A ticket ban lasts until the team lifts it.
+11.4 Transcript. Defendr stores every message in the thread of your ticket encrypted as the ticket's transcript, so
+that you and the support team can also read and answer the ticket on the website. It stores the text, of attachments
+only the name, size, type, for pictures their width and height, and whether the attachment is marked as a spoiler (the
+files themselves stay in Discord and open there), who wrote the message (Discord user ID, display name, username and
+the profile picture identifier at that time), when it was written and last edited, whether it was written in Discord or
+on the website, which message it replies to, and how many embeds, stickers, polls and forwarded messages it contains
+(only the number, not their content). Of the posts Defendr itself puts into the thread (such as the summary of
+section 11.2 or a status line) it stores only their type. When a message is edited, the new version replaces the stored one.
+When it is deleted in Discord, Defendr deletes its content from the transcript too; only an empty placeholder stays in
+its place. This happens right away while Defendr is running. If a message is edited or deleted while Defendr is briefly
+not running (for example during an update), Defendr checks the newest 100 messages of every open ticket at its next
+start; for older messages and for closed tickets, the last stored version then stays in the transcript. Ticket threads that already existed when this feature started are copied once
+from Discord with their earlier messages; the same applies to them. Defendr does not store messages in the other
+channels of the support server. As on every server Defendr protects, all messages are also checked for threats in
+memory for a moment (section 3.1). Defendr closes a ticket automatically after seven days without activity (tickets of
+the data-access-or-deletion topic are exempt; a person closes them once the request has been answered). The team can
+reopen a ticket as long as the thread exists.
+
+11.5 Reading and answering on the website. Under "My Defendr" you can read the transcript of your tickets and answer
+them. The website never shows you more than Discord: you see a ticket as long as you are on the support server; if the
+ticket is closed or you are timed out on the support server right now, you can read it but not answer; a thread that
+was deleted in Discord is no longer shown on the website. While a ticket page is open, it checks for new messages about
+every ten seconds. Before your reply is sent, Defendr checks it for dangerous links, like every message in Discord. Then
+it appears in the thread in Discord, sent through a Defendr webhook under the name "display name (@username)" and with
+your profile picture; for that Discord receives the text, this name and the address of your profile picture. A small
+line "via the website" under the reply names your account without notifying you, and mentions in your reply notify
+nobody. The name parts "Defendr", "Team", "Staff" and "Mod" are reserved for the Defendr team: if your display name
+contains one of them, Defendr uses your username, and if that contains one too, the name "Member". If Defendr cannot
+use a webhook in the channel, Defendr posts your reply into the thread itself, with your name, the line "via the
+website" and your profile picture as a small image. You can delete replies you wrote on the website there while the
+ticket is open. Defendr's support staff and the operator read and answer tickets on the website in the same way.
+
+11.6 Retention. The ticket, the thread and the transcript are deleted
+5 years after the ticket was closed (table in section 7). An open
+ticket has no expiry date. If a ticket thread is deleted by hand in Discord, the stored transcript is kept until the
+ticket's retention ends (5 years after closing). A ticket ban lasts
+until the team lifts it.
 A ticket thread left without its record (after a failed creation or a restore from a backup) is deleted
 5 years after it was created; until then Defendr may lock and archive
 it if nobody wrote in it. Because no record links it to a member, the team deletes it by hand on an erasure request.
 
-11.6 Your rights. Your tickets are part of your export (/defendr › My data › Export), including the subject, the
-description and the form fields; the messages in the thread exist only on Discord and stay visible to you as long as
-the thread exists. A ticket ban appears in the export without the person who set it. An erasure (/defendr › My data ›
-Delete my data) deletes your tickets and their threads – an open ticket is ended by it too; a ticket ban is kept
-(protection of others). The fastest way to make a request about your data is the My data page of /defendr
+11.7 Your rights. Your tickets are part of your export (/defendr › My data › Export), including the subject, the
+description, the form fields and the transcript: your own messages in full, the answers of the support team with the
+sender "staff" (without the name of the person who answered), and of other people's messages only their number. This also applies to a ticket whose thread
+was deleted in Discord. A ticket ban appears in the export without the person who set it. An erasure (/defendr › My
+data › Delete my data) deletes your tickets with their transcripts and their threads – an open ticket is ended by it
+too; a ticket ban is kept (protection of others). If you wrote in another person's ticket, an erasure removes your user
+ID and your name from that ticket's transcript; the text stays as part of the ticket, as it does in the thread in
+Discord. The fastest way to make a request about your data is the My data page of /defendr
 (/defendr page:mydata): it records the request and its deadline. A request you make in a ticket of the
 data-access-or-deletion topic is handled just the same; the one-month deadline (Art. 12(3) GDPR) runs from the opening
 of the ticket.
@@ -400,7 +447,8 @@ you are signed in right now and can sign them out. The entries are deleted autom
 in your browser (section 13). If you save them while signed in under "Preferences", we store them, together with your
 choice whether Defendr's direct messages follow the language of the website, with Defendr under your Discord ID; at
 your next sign-in on another device they then apply there too. We also store up to which entry you have marked your
-inbox in the personal area as read. You can change the settings at any time. We keep the stored settings without a
+inbox in the personal area as read, and whether you have seen the note that your replies to a ticket appear in Discord
+under your name (section 11.5). You can change the settings at any time. We keep the stored settings without a
 fixed period, until you ask us to erase your data, so that they apply again on your next visit; an erasure deletes
 them. We do not store when you last used them; the settings record only when you last saved them, and every save is in
 the log of section 12.6 with its time and which settings changed (without the values). Revoking Defendr's access in
@@ -416,7 +464,9 @@ In addition, we record every action on the website that starts, changes or expor
 your user ID, the type of action, what it concerns (such as the server, a case or a ticket), the time, the result, the
 receipt and request ID and short reference details such as the revision number of changed server settings; for your
 personal settings only which ones you changed, never the values. An action Defendr carries out later gets one entry
-when it is accepted and one when it finishes. The entry serves accountability (Art. 6(1)(f) GDPR, Art. 5(2) GDPR), is
+when it is accepted and one when it finishes. When you send or delete a reply in a ticket (section 11.5), the entry
+names the ticket number, the type and the time, never the text; we keep no receipt for it. When Defendr's support
+staff answer or act on the website, this is recorded in the action log in the same way. The entry serves accountability (Art. 6(1)(f) GDPR, Art. 5(2) GDPR), is
 kept for 1825 days, is part of your export and is kept when your data is erased. Changes
 you make to a server through the website appear, as in Discord, with your user ID in the server's history and log
 channel, there with the note "via the website". A link you enter in the link checker is checked as with /check in
@@ -446,10 +496,12 @@ Fonts, scripts and our own images come from our own server; the only pictures fr
 described below. The website does not embed videos or Discord widgets, and the public pages load nothing from Discord.
 
 On the pages after you sign in (app.defendr.live) the website shows your profile picture and your servers' icons as
-you know them from Discord. Your browser loads these pictures directly from Discord's content delivery network
-(cdn.discordapp.com, run for Discord by Cloudflare). Discord Inc. then receives your IP address, the browser
-identifier (user agent), the time and the address of the picture, which contains your user ID or the server's ID. Your
-browser sends no referrer with these requests, and it sends and accepts no cookies for them. Discord processes these
+you know them from Discord, and on the pages of your support tickets the profile pictures of the people who wrote in
+the ticket. Your browser loads these pictures directly from Discord's content delivery network (cdn.discordapp.com, run
+for Discord by Cloudflare). Discord Inc. then receives your IP address, the browser identifier (user agent), the time
+and the address of the picture, which contains your user ID, the server's ID or the user ID of the person in the
+picture. For another person's profile picture, Discord thus learns that their picture was loaded from your IP address.
+Your browser sends no referrer with these requests, and it sends and accepts no cookies for them. Discord processes these
 data as a controller of its own under its own privacy policy, also in the USA (sections 5 and 6). Legal basis:
 Art. 6(1)(f) GDPR (section 4).
 

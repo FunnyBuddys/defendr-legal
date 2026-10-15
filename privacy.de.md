@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-15 · gültig ab 2026-10-15
+Version 2026-10-19 · gültig ab 2026-10-19
 
 ## 1. Verantwortlicher
 
@@ -34,7 +34,10 @@ entschärfter Auszug gespeichert (verschlüsselt, Löschung spätestens nach 109
 früher mit dem Moderationsfall). Eine zweite Ausnahme: Was du Defendr per Direktnachricht schreibst (Text, Dateinamen
 und Links), bleibt in einem privaten Kanal des Defendr-Support-Servers, damit das Defendr-Team es lesen und dir
 antworten kann – bis 1825 Tage nach der letzten Nachricht der Unterhaltung
-oder bis zu deinem Löschantrag (siehe 3.11).
+oder bis zu deinem Löschantrag (siehe 3.11). Eine dritte Ausnahme gilt nur im Support-Server von Defendr: Die
+Nachrichten in Support-Ticket-Threads (private Threads zwischen dir und dem Support-Team von Defendr) werden
+verschlüsselt als Verlauf des Tickets gespeichert, damit du und das Team das Ticket auch auf der Webseite lesen und
+beantworten könnt (siehe Abschnitt 11.4).
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID.
 
@@ -94,8 +97,11 @@ eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team sieht, 
 und Fehler schnell beheben kann (berechtigtes Interesse, Abschnitt 4). Er wird aufbewahrt, bis das Team ihn löscht.
 
 3.10 Support-Tickets im Support-Server: Nutzer-ID, Thema, Betreff, Beschreibung und Formularfelder (verschlüsselt),
-der private Thread, wer das Ticket geschlossen oder wieder geöffnet hat, Ticket-Sperren. Was genau, wozu und wie
-lange, steht in Abschnitt 11.
+der private Thread und der Verlauf seiner Nachrichten (Text verschlüsselt; von Anhängen nur Name, Größe, Typ, Bildmaße
+und die Spoiler-Markierung; wer eine Nachricht mit welchem Discord-Namen und Profilbild geschrieben hat, wann sie
+geschrieben oder geändert wurde, ob in Discord oder auf der Webseite, und auf welche Nachricht sie antwortet), Antworten,
+die über die Webseite gesendet wurden, wer das Ticket geschlossen oder wieder geöffnet hat, Ticket-Sperren. Was genau,
+wozu und wie lange, steht in Abschnitt 11.
 
 3.11 Direktnachrichten an Defendr: Wenn du Defendr eine Direktnachricht schickst, sieht das Defendr-Team sie (Text,
 Dateinamen und Links, Zeitpunkt) in einem privaten Kanal des Support-Servers, damit es dir antworten kann; Antworten
@@ -107,8 +113,9 @@ Meine Daten löschen wird sie innerhalb einer Stunde gelöscht, /defendr › Mei
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Beantwortung von Anfragen an uns).
 
 3.12 Webseite: Aufruf der Seiten, Protokolle, Anmeldung mit Discord, Profilbilder und Server-Symbole von Discord nach
-der Anmeldung, Sitzungen, Anmeldeverlauf, persönliche Einstellungen und was du dort tust. Einzelheiten stehen in Abschnitt 12, Cookies und Speicher im Browser in
-Abschnitt 13.
+der Anmeldung (auf den Seiten deiner Support-Tickets auch die Profilbilder der anderen Personen im Ticket), Sitzungen,
+Anmeldeverlauf, persönliche Einstellungen und was du dort tust, etwa deine Support-Tickets lesen und beantworten.
+Einzelheiten stehen in Abschnitt 11 und 12, Cookies und Speicher im Browser in Abschnitt 13.
 
 ## 4. Zwecke und Rechtsgrundlagen
 
@@ -122,8 +129,10 @@ Abschnitt 13.
   ausgelassen werden.
 - Übersicht über die Aktionen von Defendr und über die darüber abgewickelten Moderations-, Melde- und
   Einspruchsvorgänge (Abschnitt 3.9): Art. 6 Abs. 1 lit. f DSGVO.
-- Bearbeitung von Support-Tickets im Support-Server (Abschnitt 11): Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr
-  nach den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
+- Bearbeitung von Support-Tickets im Support-Server, mit dem gespeicherten Verlauf und den Antworten über die Webseite
+  (Abschnitt 11): Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr nach den Nutzungsbedingungen nutzt, sonst und für die
+  Nachrichten anderer Personen im Thread Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, Anfragen
+  vollständig und nachvollziehbar zu beantworten, in Discord und auf der Webseite.
 - Beantwortung von Direktnachrichten an Defendr (Abschnitt 3.11): Art. 6 Abs. 1 lit. f DSGVO.
 - Bereitstellung und Absicherung der Webseite und der Statusseite, Protokolle zur Fehlersuche und Angriffsabwehr
   (Abschnitt 12.1, 12.2 und 12.7): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist eine sichere,
@@ -131,9 +140,10 @@ Abschnitt 13.
 - Anmeldung mit Discord, persönlicher Bereich, Server-Verwaltung und deine persönlichen Einstellungen
   (Abschnitt 12.3, 12.5 und 12.6): Art. 6 Abs. 1 lit. b DSGVO; du nutzt diese Funktionen auf deinen Wunsch nach den
   Nutzungsbedingungen.
-- Dein Profilbild und die Symbole deiner Server von Discord auf den Seiten nach der Anmeldung (Abschnitt 12.9): Art. 6
-  Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, dir dein Konto und deine Server mit den Bildern zu zeigen, die
-  du aus Discord kennst, damit du sie auf einen Blick wiedererkennst.
+- Dein Profilbild und die Symbole deiner Server von Discord auf den Seiten nach der Anmeldung, auf den Seiten deiner
+  Support-Tickets auch die Profilbilder der anderen Personen, die im Ticket geschrieben haben (Abschnitt 12.9): Art. 6
+  Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, dir dein Konto, deine Server und die Personen im Ticket mit
+  den Bildern zu zeigen, die du aus Discord kennst, damit du sie auf einen Blick wiedererkennst.
 - Anmeldeverlauf deines Kontos (Abschnitt 12.4): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse ist, dass
   du und wir Anmeldungen und Abmeldungen deines Kontos nachvollziehen und fremde Anmeldungen erkennen können.
 - Protokoll der Aktionen auf der Webseite (Abschnitt 12.6): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse
@@ -149,7 +159,8 @@ Abschnitt 13.
 <!-- anchor: processors -->
 
 Discord Inc. (Plattform; auf den Seiten der Webseite nach der Anmeldung auch beim Laden von Profilbildern und
-Server-Symbolen, Abschnitt 12.9), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, gemieteter Server im Rechenzentrum Frankfurt am Main, auf dem Defendr und die Webseite laufen und die Datenbank liegt (Abschnitt 12.1)); Cloudflare, Inc. (US, Auslieferung und Schutz der Webseite (Netzwerk, verschlüsselter Tunnel zu unserem Server, Angriffsabwehr, Analyse- und Sicherheitsprotokolle), Betrieb der Statusseite und Weiterleitung von E-Mails an die Adressen @defendr.live (Abschnitt 12)); Google Ireland Limited (Gmail) (EU/US, Postfach, in dem E-Mails an unsere Adressen ankommen; Google verarbeitet sie nach eigenen Bedingungen als eigener Verantwortlicher, nicht als unser Auftragsverarbeiter (Abschnitt 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert).
+Server-Symbolen, Abschnitt 12.9; bei einer Antwort über die Webseite erhält Discord den Text mit deinem Namen und der
+Adresse deines Profilbilds, Abschnitt 11.5), Moderatoren des jeweiligen Servers (nur eigene Serverdaten), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, gemieteter Server im Rechenzentrum Frankfurt am Main, auf dem Defendr und die Webseite laufen und die Datenbank liegt (Abschnitt 12.1)); Cloudflare, Inc. (US, Auslieferung und Schutz der Webseite (Netzwerk, verschlüsselter Tunnel zu unserem Server, Angriffsabwehr, Analyse- und Sicherheitsprotokolle), Betrieb der Statusseite und Weiterleitung von E-Mails an die Adressen @defendr.live (Abschnitt 12)); Google Ireland Limited (Gmail) (EU/US, Postfach, in dem E-Mails an unsere Adressen ankommen; Google verarbeitet sie nach eigenen Bedingungen als eigener Verantwortlicher, nicht als unser Auftragsverarbeiter (Abschnitt 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, Abfrage einzelner URLs gegen die Google-Web-Risk-Liste; nur wenn aktiviert).
 
 Empfänger der Übersicht über die Aktionen von Defendr (Abschnitt 3.9) sind der Betreiber und das Support-Team von
 Defendr; sie enthält keine Nachrichteninhalte.
@@ -175,7 +186,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Web-Sitzungen und verschlüsselte Discord-Zugangstoken | 7 Tage ohne Aktivität; höchstens 30 Tage |
 | Sicherheitsereignisse der Webseite (Anmeldung, Abmeldung, Abmeldung überall, Beenden einer einzelnen anderen Sitzung, eine von Defendr rückgängig gemachte Anmeldung, die Discord schon bestätigt hatte; Gerätekategorie und Zeitpunkt; ohne Adressen) | 365 Tage |
 | Belege für Aktionen auf der Webseite (Aktion, Status, Ergebniscode, Zeitpunkte; die Anfrage und ihr Schlüssel gegen doppelte Ausführung nur als Hashes) | 365 Tage nach dem Abschluss der Aktion |
-| Einstellungen der Webseite und des Kontos (Sprache, ob Nachrichten von Defendr ihr folgen, Lesemarke des Postfachs, Farbschema, Akzent, Dichte, Bewegung) | bis zur Löschung der Kontodaten (ohne feste Frist); auf Wunsch entfernt |
+| Einstellungen der Webseite und des Kontos (Sprache, ob Nachrichten von Defendr ihr folgen, Lesemarke des Postfachs, ob der Hinweis zu Ticket-Antworten gesehen wurde, Farbschema, Akzent, Dichte, Bewegung) | bis zur Löschung der Kontodaten (ohne feste Frist); auf Wunsch entfernt |
 | Verlauf des Sicherheitswerts je Server (wöchentlicher Wert und Teilwerte, keine Nutzer-IDs) | unbegrenzt (Kennzahlen); mit den Serverdaten, nachdem Defendr den Server verlassen hat |
 | Nachrichteninhalte während der Prüfung | Sekunden (nur im Arbeitsspeicher) |
 | Erkennungen (IDs, Typ, Maßnahme; keine Nachrichteninhalte) | 1825 Tage |
@@ -187,7 +198,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage |
 | Prüfstimmen und Team-Threads | mit dem geprüften Eintrag |
 | Einsprüche (samt Empfehlungen) | 1825 Tage nach der Entscheidung oder dem Fristablauf |
-| Support-Tickets (Formulartext verschlüsselt; der private Thread im Support-Server) und Ticket-Sperren | 1825 Tage nach dem Schließen (Eintrag und Thread); ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung oder einer Wiederherstellung aus einer Sicherung), wird 1825 Tage nach seiner Erstellung gelöscht (bis dahin ggf. gesperrt und archiviert) – weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht das Team ihn auf einen Löschantrag hin von Hand; Ticket-Sperren bis zur Aufhebung |
+| Support-Tickets (Formulartext und Thread-Nachrichten verschlüsselt; der private Thread im Support-Server) und Ticket-Sperren | 1825 Tage nach dem Schließen (Eintrag, Thread und gespeicherte Nachrichten, auch wenn der Thread vorher von Hand gelöscht wurde); ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung oder einer Wiederherstellung aus einer Sicherung), wird 1825 Tage nach seiner Erstellung gelöscht (bis dahin ggf. gesperrt und archiviert) – weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht das Team ihn auf einen Löschantrag hin von Hand; Ticket-Sperren bis zur Aufhebung |
 | Unterhaltungen per Direktnachricht mit Defendr (Nutzer-ID, der Beitrag im Team-Kanal, Zeitpunkt der letzten Nachricht, stummgeschaltet ja/nein; nie der Text) | 1825 Tage nach der letzten Nachricht; innerhalb einer Stunde nach einer Löschung |
 | Betroffenenanfragen; Verarbeitungseinschränkungen | 1825 Tage (Rechenschaftspflicht; Inhalte minimiert und verschlüsselt); Einschränkungen 1825 Tage nach der Aufhebung |
 | Aktiver netzwerkweiter Sicherheitseintrag | kein automatischer Ablauf; Erinnerung zur erneuten Prüfung nach 12 Monaten (eine Statusänderung erfordert immer eine Entscheidung des Teams) |
@@ -237,8 +248,8 @@ Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung dient der G
 Verteidigung von Rechtsansprüchen. Den Widerspruch erklärst du mit /defendr › Meine Daten › Widersprechen, im
 persönlichen Bereich der Webseite oder per E-Mail an privacy@defendr.live.
 
-Support-Tickets (Abschnitt 11) sind Teil des Exports und werden mit einer Löschung gelöscht; eine Ticket-Sperre bleibt
-bestehen (Abschnitt 11.6). Eine Löschung deiner Daten beendet auch alle deine Sitzungen auf der Webseite.
+Support-Tickets (Abschnitt 11) sind samt ihrem Verlauf Teil des Exports und werden mit einer Löschung gelöscht; eine
+Ticket-Sperre bleibt bestehen (Abschnitt 11.7). Eine Löschung deiner Daten beendet auch alle deine Sitzungen auf der Webseite.
 
 ## 9. Automatisierte Entscheidungen
 
@@ -284,11 +295,13 @@ nur intern erreichbare Schnittstelle.
 11.1 Wer und was. Wenn du im Kanal `#contact-staff` des Support-Servers von Defendr und Checkout oder auf der Webseite
 unter „Mein Defendr“ ein Ticket öffnest, verarbeiten wir: deine Discord-Nutzer-ID, das gewählte Thema, Betreff,
 Beschreibung und die weiteren Felder des Formulars (verschlüsselt gespeichert), den Server, um den es in der Übersicht
-in Abschnitt 11.2 geht, die Zeitpunkte des Öffnens und der letzten Aktivität, den privaten Thread mit seinen
-Nachrichten (er bleibt auf Discord; sehen können ihn du, das Support-Team von Defendr, die Team-Rolle des Servers und
-wer in dem Kanal Threads verwalten darf), wer das Ticket geschlossen oder wieder geöffnet hat, sowie Ticket-Sperren (wer
-sie gesetzt hat und wann). Zweck: die Beantwortung deiner Anfrage und die Fehlersuche. Rechtsgrundlage: Art. 6 Abs. 1
-lit. b DSGVO, soweit du Defendr nach den Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
+in Abschnitt 11.2 geht, die Zeitpunkte des Öffnens und der letzten Aktivität, den privaten Thread (in Discord sehen
+ihn du, das Support-Team von Defendr, die Team-Rolle des Servers und wer in dem Kanal Threads verwalten darf), den
+Verlauf seiner Nachrichten (Abschnitt 11.4; auf der Webseite sehen ihn nur du, das Support-Team von Defendr und der
+Betreiber von Defendr, alle anderen im Thread lesen ihn in Discord), wer das Ticket geschlossen oder wieder geöffnet hat,
+sowie Ticket-Sperren (wer sie gesetzt hat und wann). Zweck: die Beantwortung deiner Anfrage, in Discord und auf der
+Webseite, und die Fehlersuche. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO, soweit du Defendr nach den
+Nutzungsbedingungen nutzt, sonst Art. 6 Abs. 1 lit. f DSGVO.
 
 11.2 Was der Thread dem Team automatisch zeigt. Beim Öffnen stellt Defendr in den Thread nur das, was du selbst schon
 über dich sehen kannst: deine eigenen Moderationsfälle, netzwerkweiten Einträge, Einsprüche und Betroffenenanfragen,
@@ -304,24 +317,61 @@ Zeiterfassungswerte in diesem Server und Summenwerte dieses Servers (Anzahl erfa
 Werte einzelner anderer Personen) – nur lesend. Das Ergebnis erscheint nur im privaten Thread; Defendr speichert davon
 nichts.
 
-11.4 Kein Transkript. Defendr legt keine Abschrift des Threads an und wertet für das Ticket nur den Zeitpunkt der
-neuesten Nachricht aus, um ein Ticket nach sieben Tagen ohne Aktivität automatisch zu schließen (Tickets zum Thema
-Datenauskunft oder Löschung ausgenommen; sie schließt eine Person, sobald die Anfrage beantwortet ist). Wie auf jedem
-Server, den Defendr schützt, werden Nachrichten im Thread kurz im Arbeitsspeicher geprüft und nicht gespeichert
-(Abschnitt 3.1). Das Team kann ein Ticket wieder öffnen, solange der Thread besteht.
+<!-- anchor: support-transcript -->
 
-11.5 Speicherdauer. Ticket und Thread werden 5 Jahre nach dem Schließen
-des Tickets gelöscht (Tabelle in Abschnitt 7). Ein offenes Ticket hat kein Ablaufdatum. Eine Ticket-Sperre gilt, bis
-das Team sie aufhebt. Ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung
+11.4 Verlauf (Transkript). Defendr speichert jede Nachricht im Thread deines Tickets verschlüsselt als Verlauf des
+Tickets, damit du und das Support-Team das Ticket auch auf der Webseite lesen und beantworten könnt. Gespeichert werden
+der Text, von Anhängen nur Name, Größe, Typ, bei Bildern Breite und Höhe und ob der Anhang als Spoiler markiert ist (die
+Dateien selbst bleiben in Discord und lassen sich dort öffnen), wer die Nachricht geschrieben hat (Discord-Nutzer-ID,
+Anzeige- und Nutzername und die Kennung des Profilbilds zu diesem Zeitpunkt), wann sie geschrieben und zuletzt geändert
+wurde, ob sie in Discord oder auf der Webseite geschrieben wurde, auf welche Nachricht sie antwortet und wie viele
+Einbettungen, Sticker, Umfragen und weitergeleitete Nachrichten sie enthält (nur die Zahl, nicht deren Inhalt). Von
+Beiträgen, die Defendr selbst in den Thread stellt (etwa die Übersicht aus Abschnitt 11.2 oder eine Statuszeile),
+speichert Defendr nur ihre Art. Wird eine Nachricht bearbeitet, ersetzt die neue Fassung die gespeicherte. Wird sie in
+Discord gelöscht, löscht Defendr ihren Inhalt auch aus dem Verlauf; an ihrer Stelle bleibt nur ein leerer Platzhalter.
+Das geschieht sofort, während Defendr läuft. Wird eine Nachricht bearbeitet oder gelöscht, während Defendr kurz nicht
+läuft (etwa während eines Updates), gleicht Defendr beim nächsten Start die neuesten 100 Nachrichten jedes offenen
+Tickets ab; bei älteren Nachrichten und bei geschlossenen Tickets bleibt in diesem Fall die zuletzt gespeicherte Fassung
+im Verlauf. Ticket-Threads, die es schon gab, als diese Funktion startete, übernimmt Defendr einmalig mit
+ihren bisherigen Nachrichten aus Discord; für sie gilt dasselbe. Nachrichten in anderen Kanälen des Support-Servers
+speichert Defendr nicht. Wie auf jedem Server, den Defendr schützt, werden alle Nachrichten außerdem kurz im
+Arbeitsspeicher auf Gefahren geprüft (Abschnitt 3.1). Ein Ticket ohne Aktivität schließt Defendr nach sieben Tagen
+automatisch (Tickets zum Thema Datenauskunft oder Löschung ausgenommen; sie schließt eine Person, sobald die Anfrage
+beantwortet ist). Das Team kann ein Ticket wieder öffnen, solange der Thread besteht.
+
+11.5 Lesen und Antworten auf der Webseite. Unter „Mein Defendr“ kannst du den Verlauf deiner Tickets lesen und darauf
+antworten. Die Webseite zeigt dir dabei nie mehr als Discord: Du siehst ein Ticket, solange du auf dem Support-Server
+bist; ist das Ticket geschlossen oder bist du auf dem Support-Server gerade stummgeschaltet (Timeout), kannst du es
+lesen, aber nicht antworten; einen Thread, der in Discord gelöscht wurde, zeigt die Webseite nicht mehr an. Solange eine
+Ticket-Seite offen ist, fragt sie etwa alle zehn Sekunden nach neuen Nachrichten. Deine Antwort prüft Defendr vor dem
+Senden auf gefährliche Links, wie jede Nachricht in Discord. Danach erscheint sie im Thread in Discord, gesendet über
+einen Webhook von Defendr unter dem Namen „Anzeigename (@Nutzername)“ und mit deinem Profilbild; Discord erhält dafür
+den Text, diesen Namen und die Adresse deines Profilbilds. Eine kleine Zeile „via the website“ („über die Webseite“)
+unter der Antwort nennt dein Konto, ohne dich zu benachrichtigen, und Erwähnungen in deiner Antwort benachrichtigen
+niemanden. Die Namensbestandteile „Defendr“, „Team“, „Staff“ und „Mod“ stehen nur dem Defendr-Team zu: Enthält dein
+Anzeigename einen davon, nutzt Defendr deinen Nutzernamen, und enthält auch dieser einen, den Namen „Member“. Kann
+Defendr in dem Kanal keinen Webhook nutzen, stellt Defendr deine Antwort selbst in den Thread, mit deinem Namen, der
+Zeile „via the website“ und deinem Profilbild als kleinem Bild. Antworten, die du auf der Webseite geschrieben hast,
+kannst du dort löschen, solange das Ticket offen ist. Das Support-Team von Defendr und der Betreiber lesen und
+beantworten Tickets auf der Webseite auf dieselbe Weise.
+
+11.6 Speicherdauer. Ticket, Thread und Verlauf werden 5 Jahre nach dem
+Schließen des Tickets gelöscht (Tabelle in Abschnitt 7). Ein offenes Ticket hat kein Ablaufdatum. Wird ein Ticket-Thread
+in Discord von Hand gelöscht, bleibt der gespeicherte Verlauf erhalten, bis die Speicherdauer des Tickets endet
+(5 Jahre nach dem Schließen). Eine Ticket-Sperre gilt, bis das Team sie
+aufhebt. Ein Ticket-Thread, der ohne seinen Eintrag zurückbleibt (nach einer fehlgeschlagenen Erstellung
 oder einer Wiederherstellung aus einer Sicherung), wird 5 Jahre nach
 seiner Erstellung gelöscht; bis dahin kann Defendr ihn sperren und archivieren, wenn niemand darin geschrieben hat.
 Weil kein Eintrag ihn mit einem Mitglied verknüpft, löscht das Team ihn auf einen Löschantrag hin von Hand.
 
-11.6 Deine Rechte. Deine Tickets sind Teil deines Exports (/defendr › Meine Daten › Exportieren), samt Betreff,
-Beschreibung und Formularfeldern; die Nachrichten im Thread stehen nur auf Discord und bleiben für dich sichtbar,
-solange der Thread besteht. Eine Ticket-Sperre erscheint im Export ohne die Person, die sie gesetzt hat. Eine Löschung
-(/defendr › Meine Daten › Meine Daten löschen) löscht deine Tickets und ihre Threads – auch ein offenes Ticket wird
-dadurch beendet; eine Ticket-Sperre bleibt bestehen (Schutz anderer). Am schnellsten stellst du eine Anfrage zu deinen
+11.7 Deine Rechte. Deine Tickets sind Teil deines Exports (/defendr › Meine Daten › Exportieren), samt Betreff,
+Beschreibung, Formularfeldern und Verlauf: deine eigenen Nachrichten vollständig, die Antworten des Support-Teams mit
+dem Absender „staff“ (ohne den Namen der Person, die geantwortet hat) und von Nachrichten anderer Personen nur ihre Anzahl. Das gilt auch für ein Ticket, dessen
+Thread in Discord gelöscht wurde. Eine Ticket-Sperre erscheint im Export ohne die Person, die sie gesetzt hat. Eine
+Löschung (/defendr › Meine Daten › Meine Daten löschen) löscht deine Tickets samt Verlauf und ihre Threads – auch ein
+offenes Ticket wird dadurch beendet; eine Ticket-Sperre bleibt bestehen (Schutz anderer). Hast du im Ticket einer
+anderen Person geschrieben, entfernt eine Löschung deine Nutzer-ID und deinen Namen aus dem Verlauf dieses Tickets; der
+Text bleibt als Teil des Tickets erhalten, wie auch im Thread in Discord. Am schnellsten stellst du eine Anfrage zu deinen
 Daten auf der Seite Meine Daten von /defendr (/defendr page:mydata): Sie hält die Anfrage und ihre Frist fest. Eine
 Anfrage, die du in einem Ticket zum Thema Datenauskunft oder Löschung stellst, behandeln wir genauso; die Frist von
 einem Monat (Art. 12 Abs. 3 DSGVO) läuft ab dem Öffnen des Tickets.
@@ -428,8 +478,9 @@ automatisch gelöscht und mit einer Löschung deiner Daten.
 in deinem Browser (Abschnitt 13). Speicherst du sie angemeldet unter „Meine Einstellungen“, legen wir sie zusammen mit
 deiner Wahl, ob Direktnachrichten von Defendr der Sprache der Webseite folgen, bei Defendr zu deiner Discord-ID ab; bei
 deiner nächsten Anmeldung auf einem anderen Gerät gelten sie dann auch dort. Außerdem speichern wir, bis zu welchem
-Eintrag du dein Postfach im persönlichen Bereich als gelesen markiert hast. Du kannst die Einstellungen jederzeit
-ändern. Die gespeicherten Einstellungen bewahren wir ohne feste Frist auf, bis du die Löschung deiner Daten verlangst,
+Eintrag du dein Postfach im persönlichen Bereich als gelesen markiert hast, und ob du den Hinweis gesehen hast, dass
+deine Antworten auf ein Ticket in Discord unter deinem Namen erscheinen (Abschnitt 11.5). Du kannst die Einstellungen
+jederzeit ändern. Die gespeicherten Einstellungen bewahren wir ohne feste Frist auf, bis du die Löschung deiner Daten verlangst,
 damit sie beim nächsten Besuch wieder gelten; eine Löschung entfernt sie. Wann du sie zuletzt genutzt hast, speichern
 wir nicht; bei den Einstellungen steht nur, wann du sie zuletzt gespeichert hast, und jedes Speichern steht mit dem
 Zeitpunkt und den geänderten Einstellungen (ohne die Werte) im Protokoll aus Abschnitt 12.6. Entziehst du Defendr in
@@ -446,7 +497,9 @@ auslöst, ändert oder exportiert, in unserem Aktionsprotokoll fest: deine Nutze
 bezieht (etwa den Server, einen Fall oder ein Ticket), den Zeitpunkt, das Ergebnis, die Beleg- und die Anfrage-ID und
 kurze Bezugsangaben wie die Versionsnummer geänderter Server-Einstellungen; bei deinen persönlichen Einstellungen nur,
 welche du geändert hast, nie die Werte. Eine Aktion, die Defendr erst später ausführt, bekommt einen Eintrag bei der
-Annahme und einen beim Abschluss. Der Eintrag dient der Nachvollziehbarkeit (Art. 6 Abs. 1 lit. f DSGVO, Art. 5 Abs. 2
+Annahme und einen beim Abschluss. Sendest oder löschst du eine Antwort in einem Ticket (Abschnitt 11.5), nennt der
+Eintrag die Ticketnummer, die Art und den Zeitpunkt, nie den Text; einen Beleg legen wir dafür nicht an. Antwortet oder handelt das Support-Team von Defendr über die Webseite, wird das ebenso im
+Aktionsprotokoll festgehalten. Der Eintrag dient der Nachvollziehbarkeit (Art. 6 Abs. 1 lit. f DSGVO, Art. 5 Abs. 2
 DSGVO), wird 1825 Tage aufbewahrt, ist Teil deines Exports und bleibt bei einer Löschung deiner
 Daten bestehen. Änderungen, die du über die Webseite an einem Server vornimmst,
 stehen wie in Discord mit deiner Nutzer-ID im Verlauf und im Log-Kanal des Servers, dort mit dem Hinweis „über die
@@ -478,10 +531,12 @@ anderswo sind die unten beschriebenen Bilder von Discord. Videos oder Discord-Wi
 die öffentlichen Seiten laden nichts von Discord.
 
 Auf den Seiten nach der Anmeldung (app.defendr.live) zeigt die Webseite dein Profilbild und die Symbole deiner Server,
-wie du sie aus Discord kennst. Dein Browser lädt diese Bilder direkt aus dem Content-Delivery-Netzwerk von Discord
+wie du sie aus Discord kennst, und auf den Seiten deiner Support-Tickets die Profilbilder der Personen, die im Ticket
+geschrieben haben. Dein Browser lädt diese Bilder direkt aus dem Content-Delivery-Netzwerk von Discord
 (cdn.discordapp.com, das Cloudflare für Discord betreibt). Discord Inc. erhält dabei deine IP-Adresse, die
-Browser-Kennung (User-Agent), den Zeitpunkt und die Adresse des Bildes, in der deine Nutzer-ID oder die ID des Servers
-steht. Eine Herkunftsadresse sendet dein Browser dabei nicht, und für diese Anfragen sendet er keine Cookies und nimmt
+Browser-Kennung (User-Agent), den Zeitpunkt und die Adresse des Bildes, in der deine Nutzer-ID, die ID des Servers oder
+die Nutzer-ID der Person auf dem Bild steht. Beim Profilbild einer anderen Person erfährt Discord so, dass ihr Bild von
+deiner IP-Adresse aus geladen wurde. Eine Herkunftsadresse sendet dein Browser dabei nicht, und für diese Anfragen sendet er keine Cookies und nimmt
 keine an. Discord verarbeitet diese Daten als eigener Verantwortlicher nach seiner eigenen Datenschutzerklärung, auch
 in den USA (Abschnitt 5 und 6). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
 
