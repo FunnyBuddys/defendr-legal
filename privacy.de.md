@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-19 · gültig ab 2026-10-19
+Version 2026-10-20 · gültig ab 2026-10-20
 
 ## 1. Verantwortlicher
 
@@ -183,8 +183,8 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Ereignisprotokoll der Webseite (Serverfehler nach Seite und Fehlerart, fehlende Texte, Ausfälle und Ablehnungen zwischen Webseite und Defendr, fehlgeschlagene Anmeldungen nach Grund, Zahl der verworfenen Einträge und der vorzeitig gelöschten Dateien des Zugriffsprotokolls mit der Minute, ab der ihre Einträge beginnen; keine Person, Adresse, URL, Cookies, Inhalte oder Sitzung) | 14 Tage, früher über 4 MiB (die ältesten zuerst); das Protokoll eines angehaltenen Webservers löscht eine tägliche Aufgabe, bis zu einen Tag später |
 | Tunnel-Protokoll auf unserem Server (cloudflared): nur Fehler, die den Verbinder selbst beenden (Protokollstufe fatal), und Warnungen zu seiner eigenen Verbindung zu Cloudflare (Transport-Protokollstufe warn); keine Anfragen, aufgerufenen Adressen oder IP-Adressen von Besuchern | Löschung von Hand durch den Betreiber, nicht automatisch nach einer festen Frist |
 | E-Mails an die Adressen @defendr.live (contact@, privacy@, security@, auch Meldungen zu Sicherheitslücken; Postfach bei Gmail) | sobald für die Anfrage nicht mehr gebraucht, spätestens drei Jahre nach Abschluss der Anfrage, außer eine gesetzliche Pflicht verlangt länger |
-| Web-Sitzungen und verschlüsselte Discord-Zugangstoken | 7 Tage ohne Aktivität; höchstens 30 Tage |
-| Sicherheitsereignisse der Webseite (Anmeldung, Abmeldung, Abmeldung überall, Beenden einer einzelnen anderen Sitzung, eine von Defendr rückgängig gemachte Anmeldung, die Discord schon bestätigt hatte; Gerätekategorie und Zeitpunkt; ohne Adressen) | 365 Tage |
+| Web-Sitzungen und verschlüsselte Discord-Zugangstoken | 7 Tage ohne Aktivität; höchstens 30 Tage; nachdem in ihr die Team-Konsole geöffnet wurde, 30 Minuten ohne Aktivität |
+| Sicherheitsereignisse der Webseite (Anmeldung, Abmeldung, Abmeldung überall, Beenden einer einzelnen anderen Sitzung, eine von Defendr rückgängig gemachte Anmeldung, die Discord schon bestätigt hatte; beim Defendr-Team außerdem das Öffnen der Team-Konsole, die Abmeldung dort nach Inaktivität und das Ende aller Sitzungen beim Verlassen des Teams; Gerätekategorie und Zeitpunkt; ohne Adressen) | 365 Tage |
 | Belege für Aktionen auf der Webseite (Aktion, Status, Ergebniscode, Zeitpunkte; die Anfrage und ihr Schlüssel gegen doppelte Ausführung nur als Hashes) | 365 Tage nach dem Abschluss der Aktion |
 | Einstellungen der Webseite und des Kontos (Sprache, ob Nachrichten von Defendr ihr folgen, Lesemarke des Postfachs, ob der Hinweis zu Ticket-Antworten gesehen wurde, Farbschema, Akzent, Dichte, Bewegung) | bis zur Löschung der Kontodaten (ohne feste Frist); auf Wunsch entfernt |
 | Verlauf des Sicherheitswerts je Server (wöchentlicher Wert und Teilwerte, keine Nutzer-IDs) | unbegrenzt (Kennzahlen); mit den Serverdaten, nachdem Defendr den Server verlassen hat |
@@ -469,7 +469,9 @@ Defendr die Anmeldung danach rückgängig gemacht hat, weil die Sitzung nicht zu
 ab oder scheitert sie, bevor bekannt ist, wer sich anmeldet, bleibt davon nur eine anonyme Zählung nach dem Grund, im
 Ereignisprotokoll aus Abschnitt 12.2 und, wenn Defendr schon gefragt wurde, im eigenen Protokoll von Defendr, nie mit
 einer Person. Brichst du die Anmeldung auf der Bestätigungsseite von Discord ab, halten wir dazu keine fehlgeschlagene
-Anmeldung fest.
+Anmeldung fest. Gehörst du zum Defendr-Team, steht im Verlauf außerdem, wann du die Team-Konsole nach einer Anmeldung
+geöffnet hast, wann du dort nach 30 Minuten ohne Aktivität abgemeldet wurdest
+und wann alle deine Sitzungen endeten, weil du das Team verlassen hast (Abschnitt 12.10).
 Der Verlauf ist Teil deines Exports (Abschnitt 8); im persönlichen Bereich siehst du außerdem, auf welchen Geräten du
 gerade angemeldet bist, und kannst sie abmelden. Die Einträge werden nach 365 Tagen
 automatisch gelöscht und mit einer Löschung deiner Daten.
@@ -543,6 +545,21 @@ in den USA (Abschnitt 5 und 6). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abs
 Links zu fremden Seiten, etwa zu Discord (Einladung, Anmeldung, Support-Server) oder zu GitHub
 (frühere Fassungen dieser Texte), führen dich auf deren Seiten, wo deren eigene Datenschutzerklärungen gelten; unsere
 Seiten geben dabei keine Herkunftsadresse weiter.
+
+<!-- anchor: team-console -->
+
+12.10 Team-Konsole. Für das Defendr-Team gibt es auf der Webseite unter app.defendr.live eine Team-Konsole. Sie zeigt
+dem Team dieselben Angaben, die es in Discord mit den Team-Befehlen von Defendr ohnehin sieht, mit denselben Rechten und
+nur zum Lesen: Ändern lässt sich dort nichts, und über die Personen und Server, die sie zeigt, erhebt sie keine weiteren
+Daten. Öffnen können sie nur der Betreiber von Defendr und aktive Mitglieder des Defendr-Teams. Öffnet ein
+Teammitglied die Team-Konsole nach einer Anmeldung, schickt Defendr dem Team einen kurzen Hinweis mit dem Namen, der
+Gerätekategorie aus Abschnitt 12.3, den Bereichen des Teammitglieds und dem Zeitpunkt (ohne IP-Adresse und ohne
+Browser-Kennung), damit jedes Teammitglied eine Anmeldung bemerkt, die nicht von ihm stammt. Wurde die Team-Konsole in
+einer Sitzung geöffnet, endet diese Sitzung nach 30 Minuten ohne Aktivität, und
+verlässt jemand das Team, enden alle seine Sitzungen auf der Webseite. Das Öffnen der Team-Konsole, die Abmeldung nach
+Inaktivität und das Ende der Sitzungen beim Verlassen des Teams stehen im Anmeldeverlauf des Teammitglieds (Abschnitt
+12.4) und werden nach 365 Tagen gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. f
+DSGVO (Sicherheit der Arbeit des Teams und der Daten, mit denen es arbeitet).
 
 ## 13. Cookies und Speicher im Browser
 

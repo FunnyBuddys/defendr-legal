@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-19 · effective 2026-10-19
+Version 2026-10-20 · effective 2026-10-20
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -174,8 +174,8 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Website event log (server errors by page and error type, missing texts, failures and refusals between the website and Defendr, failed sign-ins by reason, counts of access-log records dropped, and of access-log files deleted early with the minute their records start; no person, address, URL, cookie, content or session) | 14 days, earlier beyond 4 MiB (the oldest first); a stopped web server's log is deleted by a daily task, up to one day later |
 | Website tunnel log on our server (cloudflared): only errors that stop the connector itself (log level fatal) and warnings about its own connection to Cloudflare (transport log level warn); no requests, requested addresses or IP addresses of visitors | deleted by hand by the operator, not automatically after a fixed period |
 | E-mails to the @defendr.live addresses (contact@, privacy@, security@, including vulnerability reports; Gmail mailbox) | deleted once no longer needed for the request, at the latest three years after the request is closed, unless a legal duty requires longer |
-| Website sessions and encrypted OAuth access tokens | 7 days without activity; at most 30 days |
-| Website security events (sign-in, sign-out, sign out everywhere, ending one other session, a sign-in Defendr undid after Discord had confirmed it; device category and time; no addresses) | 365 days |
+| Website sessions and encrypted OAuth access tokens | 7 days without activity; at most 30 days; once the team console was opened in it, 30 minutes without activity |
+| Website security events (sign-in, sign-out, sign out everywhere, ending one other session, a sign-in Defendr undid after Discord had confirmed it; for the Defendr team also opening the team console, the sign-out there after inactivity and the end of all sessions on leaving the team; device category and time; no addresses) | 365 days |
 | Receipts of website actions (route, state, result code, times; the request and its idempotency key only as hashes) | 365 days after the action finished |
 | Website and account preferences (language, whether Defendr messages follow it, inbox read marker, whether the note on ticket replies was seen, theme, accent, density, motion) | until the account data is deleted (no time limit); removed on request |
 | Security score history per server (weekly score and part scores, no user IDs) | indefinite (aggregates); with the server's data after Defendr leaves |
@@ -439,7 +439,10 @@ case only: when Discord had already confirmed you and Defendr then undid the sig
 set up. If Discord refuses a sign-in or it fails before it is known who is signing in, only an anonymous count by
 reason is kept, in the event log of section 12.2 and, where Defendr was already asked, in Defendr's own log, never with
 a person. If you cancel on
-Discord's consent screen, no failed sign-in is recorded for it. The history is part of your export (section 8); in the personal area you also see on which devices
+Discord's consent screen, no failed sign-in is recorded for it. If you belong to the Defendr team, the history also
+holds when you opened the team console after a sign-in, when you were signed out there after
+30 minutes without activity, and when all your sessions ended because you left
+the team (section 12.10). The history is part of your export (section 8); in the personal area you also see on which devices
 you are signed in right now and can sign them out. The entries are deleted automatically after
 365 days, and with an erasure of your data.
 
@@ -507,6 +510,21 @@ Art. 6(1)(f) GDPR (section 4).
 
 Links to other sites, such as Discord (invite, sign-in, support server) or GitHub (previous versions of these texts), take you to
 their pages, where their own privacy policies apply; our pages do not pass on where you came from.
+
+<!-- anchor: team-console -->
+
+12.10 Team console. For the Defendr team there is a team console on the website at app.defendr.live. It shows the
+team the same information the team already sees in Discord with Defendr's team commands, with the same rights and for
+reading only: nothing can be changed there, and it collects no further data about the people and servers it shows.
+Only the operator of Defendr and active members of the Defendr team can open it. When a team member opens the team
+console after signing in, Defendr sends the team a short notice with who it is, the device category of section 12.3,
+the team member's areas and the time (no IP address and no browser identifier), so that every team member notices a
+sign-in that was not their own. Once the team console has been opened in a session, that session ends after
+30 minutes without activity, and when someone leaves the team, all of their
+sessions on the website end. Opening the team console, the sign-out after inactivity and the end of the sessions on
+leaving the team are kept in the team member's sign-in history (section 12.4) and deleted after
+365 days. Legal basis: Art. 6(1)(f) GDPR (the security of the team's work and of the
+data it works with).
 
 ## 13. Cookies and browser storage
 
