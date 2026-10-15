@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-18 · effective 2026-10-18
+Version 2026-10-15 · effective 2026-10-15
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 

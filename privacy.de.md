@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-18 · gültig ab 2026-10-18
+Version 2026-10-15 · gültig ab 2026-10-15
 
 ## 1. Verantwortlicher
 
