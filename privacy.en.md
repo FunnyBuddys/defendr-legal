@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-25 · effective 2026-10-25
+Version 2026-10-22 · effective 2026-10-22
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -111,6 +111,52 @@ in (on the pages of your support tickets also the profile pictures of the other 
 sign-in history, personal settings and what you do there, such as reading and answering your support tickets. The
 details are in sections 11 and 12, cookies and browser storage in section 13.
 
+<!-- anchor: web-risk -->
+
+3.13 Checking links with Google Web Risk: on servers that use Web Risk (on by default in the "Recommended" and
+"Strict" setups; servers that already use one of these setups get it switched on with this update; any server can
+switch it off in its settings), Defendr asks Google Web Risk about a link in a message
+that Defendr's own lists do not know yet. For this, Defendr's server sends Google only the link without the part after
+"?" or "#" (scheme, address and path), and Google sees our server's IP address. Defendr never sends the message text,
+your user ID or the IDs of the server, the channel or the message. Google answers whether the link is on its list of
+dangerous websites (phishing, malware, unwanted software). If it is, Defendr handles the link like any other dangerous
+link and the server's settings decide what happens (for example, the message is deleted); like for any other dangerous
+link, the record of what Defendr did names the link without the part after "?" or "#", made unclickable. The note
+"Advisory provided by Google" shows where the warning comes from. Defendr keeps the answer under a hash of the link,
+never the link itself: a match for as long as Google says, at most 24 hours, an answer without a match for 1 hour. For
+the daily limit it counts the checks per server and in total for the current day and, only in working memory, the
+checks per website address under a hash. Google Cloud EMEA Limited acts as our
+processor (Art. 28 GDPR) and uses the links only to answer the request (sections 5 and 6).
+
+<!-- anchor: shortener-unfurl -->
+
+3.14 Resolving short links: on servers that turned it on (on by default in the "Strict" setup), Defendr finds out
+where a short link of these services leads: bit.ly, cutt.ly, rebrand.ly, ow.ly, rb.gy, buff.ly, lnkd.in, t.co, goo.gl, forms.gle, we.tl, qrco.de. Defendr's server asks the short-link service for
+the destination (first with a HEAD request, then with a GET request if needed) and follows at most five forwardings
+within these services; it never opens the destination itself. The service receives the short link as it was posted,
+our server's IP address and the program name "DefendrBot/2" with the address of our website; no cookies and no user,
+server, channel or message IDs. The service can count the request like a click. Defendr checks the destination against its
+lists; a known dangerous destination is handled like the dangerous link itself, and when the short-link service itself
+warns about the link (as X does), Defendr handles it the same way for this message. So that each server can check the
+destination against its own lists, Defendr keeps the result with the destination in working memory for up to one hour,
+or for 10 minutes when the service could not answer at that moment or answered with an error; in its database it keeps,
+for the same time, only a hash of the short link and, when the service warned, a hash of the destination's host name.
+To protect the services, Defendr counts the requests of the current day in total and, only in working memory, the short
+links resolved per server for the current day and per author and per message for about ten minutes. Each service
+processes the request as a controller of its own under its own privacy policy (sections 5 and 6).
+
+<!-- anchor: network-signals -->
+
+3.15 Anonymous network signals: when Defendr stops a hijacked account that posts the same scam in a burst, or someone
+writes in a server's trap channel, Defendr notes an anonymous signal, unless the server switched this off in its
+settings (on by default). The signal holds only hash values made with a secret key that never leaves Defendr's
+server: one of a fingerprint of the message (not the text), one of each website address in the message that is not on
+an allow list (at most five) and one of the server under a key that changes every month. It holds no user ID, no message ID, no server
+ID, no text and no website address in plain form, and it is deleted after 48 hours.
+When the same website address comes from at least three servers within six hours, a person at Defendr reviews it;
+until then it only marks matching links for that review and triggers no action in any server. A signal never acts on
+its own. Nothing of the signal itself leaves Defendr's server.
+
 ## 4. Purposes and legal bases
 
 <!-- anchor: purposes -->
@@ -145,6 +191,10 @@ details are in sections 11 and 12, cookies and browser storage in section 13.
   about your rights Art. 6(1)(c) GDPR.
 - Thanking you in public with your name or pseudonym for a reported vulnerability (section 12.8): Art. 6(1)(a) GDPR
   (your consent, which you can withdraw at any time).
+- Checking links with Google Web Risk, resolving short links and the anonymous network signals (sections 3.13 to
+  3.15): Art. 6(1)(f) GDPR. Our legitimate interest, and that of the servers, is recognising phishing and malware
+  links quickly, also new ones and those hidden behind a short link, and noticing a scam campaign that hits several
+  servers at once.
 
 ## 5. Recipients
 
@@ -152,16 +202,22 @@ details are in sections 11 and 12, cookies and browser storage in section 13.
 
 Discord Inc. (platform; on the pages of the website after you sign in also when profile pictures and server icons
 load, section 12.9; for a reply from the website Discord receives the text with your name and the address of your
-profile picture, section 11.5), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, rented server in a data centre in Frankfurt am Main that runs Defendr and the website and holds the database (section 12.1)); Cloudflare, Inc. (US, delivering and protecting the website (network, encrypted tunnel to our server, attack protection, analytics and security logs), running the status page and forwarding e-mail sent to the @defendr.live addresses (section 12)); Google Ireland Limited (Gmail) (EU/US, the mailbox e-mail to our addresses arrives in; Google processes it under its own terms as a controller of its own, not as our processor (section 12.8)); Google Ireland Ltd. (Web Risk) (EU/US, URL lookups against the Google Web Risk list; only if enabled).
+profile picture, section 11.5), the moderators of the server concerned (their own server data only), ZAP-Hosting GmbH, Hafenweg 8, 48155 Münster (DE, rented server in a data centre in Frankfurt am Main that runs Defendr and the website and holds the database (section 12.1)); Cloudflare, Inc. (US, delivering and protecting the website (network, encrypted tunnel to our server, attack protection, analytics and security logs), running the status page and forwarding e-mail sent to the @defendr.live addresses (section 12)); Google Ireland Limited (Gmail) (EU/US, the mailbox e-mail to our addresses arrives in; Google processes it under its own terms as a controller of its own, not as our processor (section 12.8)); Google Cloud EMEA Limited, Dublin (Google Web Risk) (EU/US, checking unknown links against Google’s list of dangerous websites, for the servers that use Web Risk; Google acts as our processor (section 3.13)).
 
 The recipients of the overview of Defendr's actions (section 3.9) are the operator and the Defendr support team; it
 holds no message content.
 
-As a processor (Art. 28 GDPR), Cloudflare acts only on our instructions and under the data processing agreement.
+On the servers that resolve short links, the operator of the short-link service receives the short link and our
+server's IP address (section 3.14): Bitly (bit.ly), Cutt.ly (cutt.ly), Rebrandly (rebrand.ly, rb.gy), Hootsuite
+(ow.ly), Buffer (buff.ly), LinkedIn (lnkd.in), X (t.co), Google (goo.gl, forms.gle), WeTransfer (we.tl) and QR Code
+Generator (qrco.de). Each of them processes the request as a controller of its own.
+
+As processors (Art. 28 GDPR), Cloudflare and Google Cloud EMEA Limited act only on our instructions and under their
+data processing terms.
 
 ## 6. Transfers to third countries
 
-Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you open the website, Cloudflare, Inc. (USA) processes the data of the request (section 12) in its worldwide network, also in the USA. If you e-mail us, your message and your e-mail address are forwarded by Cloudflare, Inc. and stored in our mailbox at Gmail; Google stores and processes them also in the USA (Google LLC). Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR); for Cloudflare, the standard contractual clauses in the data processing agreement apply in addition (Art. 46(2)(c) GDPR). There are no other transfers to third countries; a recipient marked "only if enabled" receives data only once we switch the feature on.
+Discord (USA) – using Discord is subject to Discord's own privacy policy. Discord Inc. also processes data in the United States. If you open the website, Cloudflare, Inc. (USA) processes the data of the request (section 12) in its worldwide network, also in the USA. If you e-mail us, your message and your e-mail address are forwarded by Cloudflare, Inc. and stored in our mailbox at Gmail; Google stores and processes them also in the USA (Google LLC). Both companies are certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR); for Cloudflare, the standard contractual clauses in the data processing agreement apply in addition (Art. 46(2)(c) GDPR). For the link check with Google Web Risk (section 3.13), our processor Google Cloud EMEA Limited also uses Google LLC (USA); Google LLC is certified under the EU-US Data Privacy Framework, and Google Cloud’s data processing terms contain the standard contractual clauses in addition (Art. 46(2)(c) GDPR). When Defendr resolves a short link (section 3.14), the operator of the short-link service receives the request. For the operators in the USA (Bitly, Inc.; Buffer, Inc.; LinkedIn Corporation; X Corp.; Google LLC) the transfer rests on their certification under the EU-US Data Privacy Framework, for Hootsuite Inc. (Canada) on the adequacy decision for Canada (both Art. 45 GDPR). There are no other transfers to third countries.
 
 ## 7. Retention
 
@@ -180,7 +236,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Website and account preferences (language, whether Defendr messages follow it, inbox read marker, whether the note on ticket replies was seen, theme, accent, density, motion) | until the account data is deleted (no time limit); removed on request |
 | Security score history per server (weekly score and part scores, no user IDs) | indefinite (aggregates); with the server's data after Defendr leaves |
 | Message content during scanning | Seconds (memory only) |
-| Detection records (ids, type, action; no message content) | 1825 days |
+| Detection records (ids, type, action and the matched link or address, made unclickable; no message text) | 1825 days |
 | Moderation cases (+ events) | 1825 days (owner-set, identical in every server) |
 | Message excerpts (opt-in per server) | at most 1095 days, never longer than the case |
 | Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; nothing a member attaches is stored |
@@ -208,6 +264,9 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Config revisions; preset and migration card decisions | last 100, max 1 year; decisions 90 days |
 | Action log: team access to records and evidence, and each website action (user ID, action, server, time, outcome, receipt and request ID) | 1825 days; kept on erasure (accountability) |
 | Staff membership | 1825 days after deactivation |
+| Anonymous network signals (keyed hashes only; no user, message or server ID, no text) | 48 hours |
+| Link check results (Web Risk and short links): a hash of the checked link, the answer and, for a short link, a hash of the destination's host name; no link, no user, message or server ID | at most 24 hours; a Web Risk answer without a match and a short link at most 1 hour; a short link the service could not answer at that moment or answered with an error 10 minutes |
+| Daily counters of the link checks (Web Risk checks per server and in total, short-link requests in total) | until the next day's count replaces it |
 | Application logs (no content) | 90 days |
 | Overview of Defendr's actions (section 3.9): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and team member ids included), the names Discord showed for the server, the channel, the member and the moderator or team member at that moment, and the listed threat value a link or invite Defendr detected matched; never message content | kept until the operator deletes it |
 | Error events (redacted) | 365 days |
@@ -544,4 +603,4 @@ switched the protection feature concerned on:
 ## 14. Changes
 
 Versions: https://github.com/FunnyBuddys/defendr-legal/tags. The current English text is at https://defendr.live/en/privacy. We announce significant changes in
-advance in the changelog (/defendr › Changelog) and on the website.
+the changelog (/defendr › Changelog) and on the website, at the latest on the day they apply.
