@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-22 · gültig ab 2026-10-22
+Version 2026-10-23 · gültig ab 2026-10-23
 
 ## 1. Verantwortlicher
 
@@ -37,7 +37,9 @@ antworten kann – bis 1825 Tage nach der letzten Nachricht der Unterhaltung
 oder bis zu deinem Löschantrag (siehe 3.11). Eine dritte Ausnahme gilt nur im Support-Server von Defendr: Die
 Nachrichten in Support-Ticket-Threads (private Threads zwischen dir und dem Support-Team von Defendr) werden
 verschlüsselt als Verlauf des Tickets gespeichert, damit du und das Team das Ticket auch auf der Webseite lesen und
-beantworten könnt (siehe Abschnitt 11.4).
+beantworten könnt (siehe Abschnitt 11.4). Eine vierte Ausnahme: Meldet jemand eine Nachricht an das Defendr-Team,
+speichert Defendr eine versiegelte Kopie dieser Nachricht, damit das Team die Meldung prüfen kann (siehe 3.16). Beim
+Wortfilter prüft Discord die Nachrichten selbst (siehe 3.17).
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID.
 
@@ -66,9 +68,11 @@ ohne Nachweise entschiedener Eintrag, der auf der ScammerAlert-Liste beruht, wir
 ScammerAlert den Eintrag streicht.
 
 3.5 Meldungen (auch als Mitmeldender), Einsprüche und Anfragen zu deinen Rechten: der Text, den du selbst schreibst.
-Dateien, die du mitschickst, werden nicht gespeichert: Ein gemeldetes Bild wird einmal beim Melden gehasht und statt
-des Bildes wird nur der Hash behalten, von jedem anderen Anhang wird nur vermerkt, dass du ihn angeboten hast (wie
-viele, und als was Discord sie ausgibt), damit die bearbeitende Person danach fragen kann.
+Dateien, die du mitschickst, werden nicht gespeichert, mit einer Ausnahme: Bilder, die du einer Meldung an das
+Defendr-Team anhängst, behält Defendr als neu erzeugte Kopie ohne Metadaten (siehe 3.16). Ein gemeldetes Bild wird
+einmal beim Melden gehasht und der Hash behalten; von jedem anderen Anhang wird nur vermerkt, dass du ihn angeboten
+hast (wie viele, als was Discord sie ausgibt und wie groß), damit die bearbeitende Person danach fragen kann. Bei Meldungen an
+die Moderatoren eines Servers, bei Einsprüchen und bei Anfragen zu deinen Rechten speichert Defendr keine Bilder.
 
 3.6 Server-Einstellungen: Rollen- und Kanal-IDs, IDs der Admins und Moderatoren, die Einstellungen ändern oder
 Entscheidungen treffen. Beantwortet ein Admin in `/setup` die freiwillige Frage „Wo hast du Defendr gefunden?", wird
@@ -168,6 +172,78 @@ dieselbe Webseiten-Adresse innerhalb von sechs Stunden von mindestens drei Serve
 bis dahin markiert sie nur passende Links für diese Prüfung und löst in keinem Server eine Maßnahme aus. Ein Signal
 handelt nie von selbst. Nichts vom Signal selbst verlässt Defendrs Server.
 
+<!-- anchor: report-capture -->
+
+3.16 Meldungen an das Defendr-Team: Meldest du eine Nachricht über „Report“ im Menü der Nachricht (Apps › Report) an
+das Defendr-Team, speichert Defendr eine Kopie der Nachricht, so wie du sie in diesem Moment siehst. So kann das Team
+die Meldung sicher prüfen und entscheiden, auch wenn die Nachricht später bearbeitet oder gelöscht wird oder in einer
+Direktnachricht steht. Discord übermittelt die Nachricht dafür beim Klick auf „Report“ an Defendr; Defendr liest nichts
+nach. Die Kopie enthält den Text (bis 4.000 Zeichen), die Links darin (bei Links hinter einem anderen Text auch diesen
+Text), die Liste der Anhänge (Name, Typ, Größe, Bildmaße und Spoiler-Markierung, nicht die Dateien selbst), den
+sichtbaren Text von Einbettungen und Link-Vorschauen, bei einer weitergeleiteten Nachricht deren Inhalt, die Namen von
+Stickern, den Text einer Umfrage, die Zahl der Erwähnungen (und ob alle erwähnt wurden), den Nutzer- und Anzeigenamen der Person, die die Nachricht
+geschrieben hat, zu diesem Zeitpunkt und ob es ein Bot oder Webhook war, die Zeitpunkte der Nachricht und die IDs der
+Nachricht, des Kanals, des Servers und der Person. Bis du das Meldeformular abschickst, liegt die Kopie versiegelt
+bereit und ist höchstens 15 Minuten verwendbar. Brichst du ab oder schickst du die Meldung stattdessen an die
+Moderatoren des Servers, wird sie nicht verwendet und spätestens nach einer halben Stunde gelöscht. Melden mehrere Personen dieselbe Nachricht, wird sie
+einmal gespeichert; wurde sie inzwischen bearbeitet, zusätzlich die neue Fassung (höchstens fünf Fassungen je Meldung).
+Bei Meldungen an die Moderatoren eines Servers speichert Defendr keine Kopie.
+
+Bilder, die du einer Meldung an das Defendr-Team anhängst (PNG, JPEG, GIF oder WebP, bis zu drei, je bis 8 MB),
+speichert Defendr nicht im Original, sondern als neu erzeugte Kopie im Format WebP: höchstens 1600 Pixel an der
+längsten Seite, bei bewegten Bildern nur das erste Bild, ohne Metadaten wie Kamera, Aufnahmeort oder Aufnahmezeit. Dazu
+speichert Defendr Typ, Größe und eine Prüfsumme der Kopie, den Zeitpunkt und dass das Bild von dir kommt. Das Original
+verarbeitet Defendr nur kurz im Arbeitsspeicher und holt es nur bei Discord ab, wo du es hochgeladen hast. Andere
+Dateien (etwa PDFs oder Videos) werden nicht gespeichert, nur ihr Typ und ihre Größe. Ebenso wenig gespeichert wird ein
+Bild, das zu groß ist, das einem bekannten Bild mit sensiblem Inhalt entspricht oder das ankommt, während die
+Bildverarbeitung voll ausgelastet ist.
+
+Kopie und Bilder sind verschlüsselt gespeichert, jedes Bild mit einem eigenen Schlüssel. Sehen können sie nur
+Mitglieder des Defendr-Teams, die Meldungen prüfen, in Discord und auf der Webseite; jede Ansicht wird festgehalten.
+Server-Moderatoren, andere Melder und die Öffentlichkeit sehen sie nicht, und Defendr gibt sie an niemanden weiter. Sie
+dienen nur der Prüfung der Meldung und dem Nachweis der Entscheidung, nicht für automatische Entscheidungen,
+Erkennungsregeln oder Profile. Defendr löscht sie 90 Tage nach der
+Entscheidung über die Meldung. Eine offene Meldung schließt Defendr spätestens nach
+90 Tagen, so dass Kopie und Bilder höchstens
+180 Tage nach der Meldung gelöscht sind. Länger bleiben sie nur, solange wir
+sie wegen einer rechtlichen Pflicht oder für Rechtsansprüche aufbewahren müssen (etwa für die Anfrage einer Behörde),
+oder solange die Verarbeitung auf Verlangen eingeschränkt ist; in diesem Fall werden sie nicht mehr angezeigt.
+
+Deine Rechte dazu: Hast du die gemeldete Nachricht geschrieben, steht sie in deinem Export (/defendr › Meine Daten ›
+Exportieren), mit ihrem Inhalt und ihren Zeitpunkten, aber ohne Angaben zur Meldung (etwa wann oder wo gemeldet wurde),
+damit niemand, der meldet, dadurch erkennbar wird. Verlangst du die Löschung, prüft das Defendr-Team den Antrag: Ist
+über die Meldung schon entschieden, wird die Kopie gelöscht, sonst mit der Entscheidung. Hast du gemeldet, nennt dein
+Export deine Meldungen und zu jedem angehängten Bild, ob es gespeichert wurde, mit Typ, Größe und Zeitpunkt; eine Kopie
+deiner gespeicherten Bilder schicken wir dir auf Anfrage an privacy@defendr.live. Verlangst du die Löschung deiner
+Daten, löscht Defendr deine Bilder sofort; die Kopie der gemeldeten Nachricht bleibt bis zu ihrer Frist, denn sie
+gehört zu den Daten der Person, die sie geschrieben hat. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
+
+<!-- anchor: word-filter -->
+
+3.17 Wortfilter: Auf Servern, die den Wortfilter eingeschaltet haben (für neue Server mit der Einstellung „Streng“ von
+Anfang an eingeschaltet; jeder Server kann ihn ein- und ausschalten), legt Defendr im Server eigene AutoMod-Regeln von
+Discord an („Defendr · …“). Sie enthalten Wörter aus den Bereichen, die der Server gewählt hat (Hassrede, sexuelle
+Inhalte, Schimpfwörter), und die eigenen Wörter des Servers. Die Prüfung selbst übernimmt Discord: Discord vergleicht
+jede gesendete oder bearbeitete Nachricht mit diesen Regeln und hält eine passende Nachricht zurück, bevor jemand sie
+sieht. Discord verarbeitet die Nachricht dabei als Anbieter von AutoMod nach seiner eigenen Datenschutzerklärung.
+
+Zu jeder zurückgehaltenen Nachricht schickt Discord Defendr eine Meldung mit der Server-, Kanal- und Nutzer-ID, der
+Regel, dem passenden Wort der Regel und dem Text der Nachricht. Den von Discord markierten passenden Teil verwirft
+Defendr sofort. Den Text nutzt Defendr im Arbeitsspeicher, um eine Nachricht, die mehrere Regeln trifft, nur einmal zu
+zählen (als Hashwert, drei Sekunden lang). Gespeichert wird er nur, wenn der Server Auszüge eingeschaltet hat (3.1): dann
+als gekürzter, entschärfter Auszug von höchstens 300 Zeichen im Moderationsfall. Zu jeder zurückgehaltenen Nachricht
+legt Defendr einen Moderationsfall an (Nutzer-ID, Kanal, Grund-Code, Bereich, Wortliste und Sprache; das Wort der Regel
+nur entschärft und nur mit eingeschalteten Auszügen), gegen den das Mitglied Einspruch einlegen kann (/appeal). Hält
+Discord von derselben Person innerhalb von zehn Minuten drei Nachrichten zurück, schaltet Defendr sie für zehn Minuten
+stumm (Timeout), außer der Server hat das ausgeschaltet; dafür zählt Defendr die gespeicherten Fälle und merkt sich nur
+im Arbeitsspeicher und höchstens zehn Minuten, wann es zuletzt so gehandelt hat. Die Fälle werden wie alle
+Moderationsfälle gelöscht (Abschnitt 7).
+
+Für seine Regeln speichert Defendr je Server nur ihre Kennung, ihren Zustand und Prüfwerte, keine Nutzerdaten. Die
+Einstellungen des Filters, auch die eigenen Wörter des Servers, gehören zur Server-Konfiguration und werden mit ihr
+gelöscht. Die Daten des Wortfilters dienen nur ihm: nicht für Netzwerk-Einträge oder Signale, und Defendr gibt nichts
+davon weiter außer an AutoMod von Discord und an den Server selbst.
+
 ## 4. Zwecke und Rechtsgrundlagen
 
 <!-- anchor: purposes -->
@@ -208,6 +284,13 @@ handelt nie von selbst. Nichts vom Signal selbst verlässt Defendrs Server.
   Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das der Server ist, Phishing- und Schadsoftware-Links
   schnell zu erkennen, auch neue und solche hinter einem Kurzlink, und eine Betrugswelle zu bemerken, die mehrere
   Server zugleich trifft.
+- Kopie gemeldeter Nachrichten und Bilder bei Meldungen an das Defendr-Team (Abschnitt 3.16): Art. 6 Abs. 1 lit. f
+  DSGVO. Unser berechtigtes Interesse und das der Nutzer der Server ist, Meldungen über Betrug, Phishing und
+  Schadsoftware zuverlässig zu prüfen, auch wenn die Nachricht inzwischen bearbeitet oder gelöscht wurde, und jede
+  Entscheidung belegen zu können.
+- Wortfilter (Abschnitt 3.17): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das des Servers ist,
+  Hassrede, sexuelle Inhalte und Schimpfwörter nach den Regeln des Servers zurückzuhalten und jede Maßnahme
+  überprüfbar zu machen.
 
 ## 5. Empfänger
 
@@ -252,7 +335,8 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Erkennungen (IDs, Typ, Maßnahme und der erkannte Link oder die erkannte Adresse, unklickbar gemacht; kein Nachrichtentext) | 1825 Tage |
 | Moderationsfälle (samt Ereignissen) | 1825 Tage (von Defendr festgelegt, in jedem Server gleich) |
 | Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall |
-| Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nicht gespeichert |
+| Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nur als neu erzeugte Bildkopie für das Defendr-Team gespeichert (nächste Zeile) |
+| Meldungen an das Defendr-Team: die versiegelte Kopie der gemeldeten Nachricht (Text, Links, Liste der Anhänge, Text von Einbettungen, Namen der Person, die sie geschrieben hat, zu diesem Zeitpunkt) und neu erzeugte Kopien der Bilder, die der Melder angehängt hat (WebP ohne Metadaten) | 90 Tage nach der Entscheidung; solange unentschieden höchstens 180 Tage nach der Meldung; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
 | Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen: automatisch geschlossen nach 90 Tagen |
 | Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung |
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage |
@@ -312,7 +396,8 @@ Verteidigung von Rechtsansprüchen. Den Widerspruch erklärst du mit /defendr �
 persönlichen Bereich der Webseite oder per E-Mail an privacy@defendr.live.
 
 Support-Tickets (Abschnitt 11) sind samt ihrem Verlauf Teil des Exports und werden mit einer Löschung gelöscht; eine
-Ticket-Sperre bleibt bestehen (Abschnitt 11.7). Eine Löschung deiner Daten beendet auch alle deine Sitzungen auf der Webseite.
+Ticket-Sperre bleibt bestehen (Abschnitt 11.7). Was für die Kopie einer gemeldeten Nachricht und für Bilder in Meldungen
+an das Defendr-Team gilt, steht in Abschnitt 3.16. Eine Löschung deiner Daten beendet auch alle deine Sitzungen auf der Webseite.
 
 ## 9. Automatisierte Entscheidungen
 
@@ -338,6 +423,11 @@ nicht mehr übernimmt. Defendr speichert nur, ob und wann diese Nachrichten gese
 waren. Gegen einen Eintrag, der nur auf der ScammerAlert-Liste beruht, legst du Einspruch bei ScammerAlert ein; solange
 er aktiv ist, kannst du mit /appeal auch beim Defendr-Team Einspruch einlegen, und ein Mensch bei Defendr
 entscheidet. Deine Betroffenenrechte gegenüber Defendr (/defendr › Meine Daten) bleiben bestehen.
+
+Beim Wortfilter (Abschnitt 3.17) hält Discord Nachrichten nach den Regeln zurück, die der Server eingeschaltet hat;
+den Timeout von zehn Minuten nach drei zurückgehaltenen Nachrichten führt Defendr automatisch aus, wenn der Server ihn
+nicht ausgeschaltet hat. Gegen jeden dieser Fälle kannst du Einspruch einlegen (/appeal); wird ein Timeout aufgehoben,
+endet er sofort.
 
 Die Webseite trifft keine eigenen Entscheidungen: Jede Aktion dort prüft Defendr nach denselben Regeln wie in Discord.
 

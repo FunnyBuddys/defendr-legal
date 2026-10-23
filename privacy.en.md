@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-22 · effective 2026-10-22
+Version 2026-10-23 · effective 2026-10-23
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -38,7 +38,9 @@ support server so the Defendr team can read and answer it, until
 1825 days after the last message of the conversation or until you ask for
 erasure (see 3.11). A third exception applies only in Defendr's own support server: the messages in support ticket
 threads (private threads between you and Defendr's support team) are stored encrypted as the ticket's transcript, so
-that you and the team can also read and answer the ticket on the website (see section 11.4).
+that you and the team can also read and answer the ticket on the website (see section 11.4). A fourth exception: when
+someone reports a message to the Defendr team, Defendr keeps a sealed copy of that message so the team can review the
+report (see 3.16). With the word filter, Discord checks the messages itself (see 3.17).
 
 3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID.
 
@@ -64,9 +66,11 @@ action. A record decided this way without evidence that rests on the ScammerAler
 ScammerAlert removes the entry.
 
 3.5 Reports (including as a co-reporter), appeals and requests about your rights: the text you write yourself. Files
-you attach to them are not stored: an image you report is hashed once while the report is taken and the hash is kept
-instead of the picture, and of every other attachment only the fact that you offered it is noted (how many, and what
-type Discord declared) so that the person handling your case can ask you for it.
+you attach to them are not stored, with one exception: images you attach to a report to the Defendr team are kept as a
+newly made copy without metadata (see 3.16). An image you report is hashed once while the report is taken and the hash
+is kept; of every other attachment only the fact that you offered it is noted (how many, what type Discord
+declared and how large) so that the person handling your case can ask you for it. For reports to a server's moderators, appeals and
+requests about your rights, Defendr stores no images.
 
 3.6 Server settings: role and channel IDs, IDs of the admins and moderators who change settings or take decisions.
 If an admin answers the optional question "Where did you find Defendr?" in `/setup`, one of six fixed answers (for
@@ -157,6 +161,73 @@ When the same website address comes from at least three servers within six hours
 until then it only marks matching links for that review and triggers no action in any server. A signal never acts on
 its own. Nothing of the signal itself leaves Defendr's server.
 
+<!-- anchor: report-capture -->
+
+3.16 Reports to the Defendr team: when you report a message to the Defendr team with "Report" in the message's menu
+(Apps › Report), Defendr keeps a copy of the message as you see it at that moment. This way the team can review and
+decide the report reliably, also when the message is edited or deleted later or sits in a direct message. Discord sends
+the message to Defendr when you click "Report"; Defendr reads nothing afterwards. The copy holds the text (up to 4,000
+characters), the links in it (for a link behind other text, that text too), the list of attachments (name, type, size,
+picture dimensions and spoiler mark, not the files themselves), the visible text of embeds and link previews, the
+content of a forwarded message, sticker names, the text of a poll, the number of mentions (and whether everyone was
+mentioned), the username and display name of the person who wrote the message at that time and whether it was a bot or
+webhook, the times of the message and the IDs of the message, the channel, the server and the person. Until you send
+the report form, the copy waits sealed and can be used for at most 15 minutes. If you cancel or send the report to the
+server's moderators instead, it is not used and is deleted within half an hour at the latest. When several people
+report the same message, it is kept once; if it was edited in the meantime, the new version is kept as well (at most
+five versions per report). For reports to a server's moderators, Defendr keeps no copy.
+
+Images you attach to a report to the Defendr team (PNG, JPEG, GIF or WebP, up to three, up to 8 MB each) are not kept
+as the original but as a newly made copy in WebP format: at most 1600 pixels on the longest side, only the first frame
+of a moving image, without metadata such as camera, location or time taken. With it Defendr keeps the type, size and a
+checksum of the copy, the time and that the image came from you. Defendr processes the original only briefly in memory
+and fetches it only from Discord, where you uploaded it. Other files (such as PDFs or videos) are not stored, only their
+type and size. An image that is too large, matches a known image with sensitive content, or arrives while the image
+processing is fully busy is not stored either.
+
+The copy and the images are stored encrypted, each image with a key of its own. Only members of the Defendr team who
+review reports can see them, in Discord and on the website; every view is recorded. Server moderators, other reporters
+and the public do not see them, and Defendr passes them on to no one. They serve only to review the report and to
+document the decision, not for automated decisions, detection rules or profiles. Defendr deletes them
+90 days after the decision on the report. Defendr closes an open report
+after at most 90 days, so the copy and the images are deleted at the latest
+180 days after the report. They stay longer only while we must keep them
+because of a legal duty or for legal claims (for example for a request from an authority), or while processing is
+restricted on request, in which case they are no longer shown.
+
+Your rights here: if you wrote the reported message, it is in your export (/defendr › My data › Export), with its
+content and times but without details of the report (such as when or where it was reported), so that nobody who reports
+can be recognised from it. If you ask for erasure, the Defendr team checks the request: if the report has already been
+decided, the copy is deleted, otherwise with the decision. If you reported, your export lists your reports and, for
+each attached image, whether it was stored, with type, size and time; we send you a copy of your stored images on
+request to privacy@defendr.live. If you ask for erasure of your data, Defendr deletes your images at once; the copy
+of the reported message stays until its deadline, because it belongs to the data of the person who wrote it. Legal
+basis: Art. 6(1)(f) GDPR (section 4).
+
+<!-- anchor: word-filter -->
+
+3.17 Word filter: on servers that turned the word filter on (on from the start for new servers with the "Strict"
+setup; every server can turn it on and off), Defendr creates Discord AutoMod rules of its own in the server
+("Defendr · …"). They hold words from the areas the server chose (hate speech, sexual content, profanity) and the
+server's own words. Discord does the checking itself: Discord compares every sent or edited message with these rules
+and holds back a matching message before anyone sees it. Discord processes the message as the provider of AutoMod under
+its own privacy policy.
+
+For every message it holds back, Discord sends Defendr a notice with the server, channel and user IDs, the rule, the
+matched word of the rule and the text of the message. Defendr discards the matched part Discord marks at once. Defendr
+uses the text in memory to count a message that hits several rules only once (as a hash value, for three seconds). It is
+stored only if the server turned excerpts on (3.1): then as a shortened, defanged excerpt of at most 300 characters in
+the moderation case. For every message held back, Defendr opens a moderation case (user ID, channel, reason code, area,
+word list and language; the word of the rule only defanged and only with excerpts on), which the member can appeal
+(/appeal). When Discord holds back three messages of the same person within ten minutes, Defendr times them out for ten
+minutes, unless the server turned that off; for this Defendr counts the stored cases and remembers only in memory, for
+at most ten minutes, when it last did so. The cases are deleted like all moderation cases (section 7).
+
+For its rules Defendr keeps per server only their ID, their state and check values, no user data. The filter's
+settings, including the server's own words, are part of the server configuration and are deleted with it. The word
+filter's data serve only the filter: not network records or signals, and Defendr passes none of it on to
+anyone beyond Discord's AutoMod and the server itself.
+
 ## 4. Purposes and legal bases
 
 <!-- anchor: purposes -->
@@ -195,6 +266,11 @@ its own. Nothing of the signal itself leaves Defendr's server.
   3.15): Art. 6(1)(f) GDPR. Our legitimate interest, and that of the servers, is recognising phishing and malware
   links quickly, also new ones and those hidden behind a short link, and noticing a scam campaign that hits several
   servers at once.
+- The copy of reported messages and images in reports to the Defendr team (section 3.16): Art. 6(1)(f) GDPR. Our
+  legitimate interest, and that of the servers' users, is reviewing reports of fraud, phishing and malware reliably,
+  also when the message was edited or deleted in the meantime, and being able to document every decision.
+- The word filter (section 3.17): Art. 6(1)(f) GDPR. Our legitimate interest, and that of the server, is holding back
+  hate speech, sexual content and profanity by the server's rules and keeping every action open to review.
 
 ## 5. Recipients
 
@@ -239,7 +315,8 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Detection records (ids, type, action and the matched link or address, made unclickable; no message text) | 1825 days |
 | Moderation cases (+ events) | 1825 days (owner-set, identical in every server) |
 | Message excerpts (opt-in per server) | at most 1095 days, never longer than the case |
-| Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; nothing a member attaches is stored |
+| Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; what a member attaches is stored only as a re-encoded image copy for the Defendr team (next row) |
+| Reports to the Defendr team: the sealed copy of the reported message (text, links, attachment list, embed text, author's names at the time) and re-encoded images the reporter attached (WebP without metadata) | 90 days after the decision; while undecided at most 180 days after the report; legal hold suspends deletion |
 | Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; pending: auto-closed after 90 days |
 | Reporter reputation | 1825 days after last report |
 | False-positive signals (moderator id, case) | 1095 days |
@@ -296,7 +373,8 @@ processing serves the establishment, exercise or defence of legal claims. You ob
 in the personal area of the website or by e-mail to privacy@defendr.live.
 
 Support tickets (section 11) are part of the export together with their transcript and are deleted with an erasure;
-a ticket ban is kept (section 11.7). An erasure of your data also ends all your website sessions.
+a ticket ban is kept (section 11.7). What applies to the copy of a reported message and to images in reports to the
+Defendr team is in section 3.16. An erasure of your data also ends all your website sessions.
 
 ## 9. Automated decisions
 
@@ -319,6 +397,10 @@ removal; no such message is sent when Defendr stops taking over a list as a whol
 these messages were sent, refused or could not be delivered. A record that rests only on the ScammerAlert list is
 appealed at ScammerAlert; while it is active you can also appeal it to the Defendr team with /appeal, and a person
 at Defendr decides. Your data subject rights against Defendr (/defendr › My data) remain.
+
+With the word filter (section 3.17), Discord holds back messages by the rules the server turned on; Defendr carries out
+the ten-minute timeout after three held-back messages automatically, unless the server turned it off. You can appeal
+every one of these cases (/appeal); a timeout that is lifted ends at once.
 
 The website makes no decisions of its own: Defendr checks every action there by the same rules as in Discord.
 
