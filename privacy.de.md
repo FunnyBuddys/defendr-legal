@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-23 · gültig ab 2026-10-23
+Version 2026-10-24 · gültig ab 2026-10-24
 
 ## 1. Verantwortlicher
 
@@ -126,14 +126,15 @@ Einzelheiten stehen in Abschnitt 11 und 12, Cookies und Speicher im Browser in A
 3.13 Linkprüfung mit Google Web Risk: Auf Servern, die Web Risk nutzen (in den Einstellungen „Empfohlen“ und „Streng“
 von Anfang an eingeschaltet; Server, die eine dieser Einstellungen schon nutzen, bekommen es mit diesem Update
 eingeschaltet; jeder Server kann es in seinen Einstellungen ausschalten), fragt Defendr bei Google Web Risk
-nach einem Link aus einer Nachricht, den Defendrs eigene Listen noch nicht kennen. Dafür sendet Defendrs Server an
+nach einem Link aus einer Nachricht, den Defendrs eigene Listen noch nicht kennen. Auf Servern, die auch Kurzlinks
+auflösen (3.14), gehört dazu das Ziel, zu dem ein Kurzlink aus der Nachricht führt. Dafür sendet Defendrs Server an
 Google nur den Link ohne den Teil nach „?“ oder „#“ (Schema, Adresse und Pfad), und Google sieht die IP-Adresse
 unseres Servers. Den Text der Nachricht, deine Nutzer-ID und die IDs des Servers, des Kanals oder der Nachricht sendet
 Defendr nie. Google antwortet, ob der Link auf seiner Liste gefährlicher Webseiten steht (Phishing, Schadsoftware,
 unerwünschte Software). Steht er dort, behandelt Defendr den Link wie jeden anderen gefährlichen Link, und die
 Einstellungen des Servers entscheiden, was geschieht (zum Beispiel wird die Nachricht gelöscht); wie bei jedem anderen
 gefährlichen Link nennt der Eintrag dazu, was Defendr getan hat, den Link ohne den Teil nach „?“ oder „#“, unklickbar
-gemacht. Der Hinweis „Advisory provided by Google“ zeigt, woher die Warnung kommt. Defendr speichert die Antwort unter
+gemacht (beim Ziel eines Kurzlinks nur die Namen der beiden Webseiten, ebenfalls unklickbar gemacht). Der Hinweis „Advisory provided by Google“ zeigt, woher die Warnung kommt. Defendr speichert die Antwort unter
 einem Hashwert des Links, nie den Link selbst: einen Treffer so lange, wie Google angibt, höchstens 24 Stunden, eine
 Antwort ohne Treffer 1 Stunde. Für die Tagesgrenze zählt Defendr die Abfragen pro Server und insgesamt für den
 laufenden Tag und, nur im Arbeitsspeicher, die Abfragen pro Webseiten-Adresse unter einem Hashwert. Google Cloud EMEA
@@ -148,7 +149,8 @@ fragt den Kurzlink-Dienst nach dem Ziel (zuerst mit einer HEAD-Anfrage, wenn nö
 folgt höchstens fünf Weiterleitungen innerhalb dieser Dienste; das Ziel selbst ruft er nie auf. Der Dienst erhält den
 Kurzlink, wie er gepostet wurde, die IP-Adresse unseres Servers und den Programmnamen „DefendrBot/2“ mit der
 Adresse unserer Webseite; keine Cookies und keine Nutzer-, Server-, Kanal- oder Nachrichten-IDs. Der Dienst kann die
-Anfrage wie einen Klick zählen. Defendr prüft das Ziel gegen seine Listen; ein bekanntes gefährliches Ziel wird wie der
+Anfrage wie einen Klick zählen. Defendr prüft das Ziel gegen seine Listen und, auf Servern, die Web Risk nutzen, mit Google Web Risk
+(3.13); ein bekanntes gefährliches Ziel wird wie der
 gefährliche Link selbst behandelt, und warnt der Kurzlink-Dienst selbst vor dem Link (wie X), behandelt Defendr ihn für
 diese Nachricht genauso. Damit jeder Server das Ziel mit seinen eigenen Listen prüfen kann, behält Defendr das Ergebnis
 mit dem Ziel bis zu einer Stunde im Arbeitsspeicher, oder 10 Minuten, wenn der Dienst in dem Moment nicht antworten
@@ -203,19 +205,22 @@ Mitglieder des Defendr-Teams, die Meldungen prüfen, in Discord und auf der Webs
 Server-Moderatoren, andere Melder und die Öffentlichkeit sehen sie nicht, und Defendr gibt sie an niemanden weiter. Sie
 dienen nur der Prüfung der Meldung und dem Nachweis der Entscheidung, nicht für automatische Entscheidungen,
 Erkennungsregeln oder Profile. Defendr löscht sie 90 Tage nach der
-Entscheidung über die Meldung. Eine offene Meldung schließt Defendr spätestens nach
-90 Tagen, so dass Kopie und Bilder höchstens
-180 Tage nach der Meldung gelöscht sind. Länger bleiben sie nur, solange wir
+Entscheidung über die Meldung oder schon 180 Tage nach der Meldung, wenn
+dieser Tag früher kommt. Eine offene Meldung, auch eine, die das Team schon prüft, schließt Defendr nach
+90 Tagen. Die Löschung erledigt eine tägliche Aufgabe, höchstens einen Tag nach diesem
+Tag. Länger bleiben sie nur, solange wir
 sie wegen einer rechtlichen Pflicht oder für Rechtsansprüche aufbewahren müssen (etwa für die Anfrage einer Behörde),
 oder solange die Verarbeitung auf Verlangen eingeschränkt ist; in diesem Fall werden sie nicht mehr angezeigt.
 
 Deine Rechte dazu: Hast du die gemeldete Nachricht geschrieben, steht sie in deinem Export (/defendr › Meine Daten ›
 Exportieren), mit ihrem Inhalt und ihren Zeitpunkten, aber ohne Angaben zur Meldung (etwa wann oder wo gemeldet wurde),
-damit niemand, der meldet, dadurch erkennbar wird. Verlangst du die Löschung, prüft das Defendr-Team den Antrag: Ist
-über die Meldung schon entschieden, wird die Kopie gelöscht, sonst mit der Entscheidung. Hast du gemeldet, nennt dein
+damit niemand, der meldet, dadurch erkennbar wird. Verlangst du die Löschung, prüft das Defendr-Team den Antrag. Ist er
+bewilligt, wird die Kopie innerhalb eines Tages gelöscht, wenn über die Meldung schon entschieden ist, sonst innerhalb
+eines Tages nach der Entscheidung. Hast du gemeldet, nennt dein
 Export deine Meldungen und zu jedem angehängten Bild, ob es gespeichert wurde, mit Typ, Größe und Zeitpunkt; eine Kopie
 deiner gespeicherten Bilder schicken wir dir auf Anfrage an privacy@defendr.live. Verlangst du die Löschung deiner
-Daten, löscht Defendr deine Bilder sofort; die Kopie der gemeldeten Nachricht bleibt bis zu ihrer Frist, denn sie
+Daten, löscht Defendr deine Bilder sofort: Sie lassen sich nicht mehr öffnen, und ihre gespeicherten Dateien
+sind innerhalb von zwei Tagen entfernt. Die Kopie der gemeldeten Nachricht bleibt bis zu ihrer Frist, denn sie
 gehört zu den Daten der Person, die sie geschrieben hat. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
 
 <!-- anchor: word-filter -->
@@ -223,7 +228,8 @@ gehört zu den Daten der Person, die sie geschrieben hat. Rechtsgrundlage: Art. 
 3.17 Wortfilter: Auf Servern, die den Wortfilter eingeschaltet haben (für neue Server mit der Einstellung „Streng“ von
 Anfang an eingeschaltet; jeder Server kann ihn ein- und ausschalten), legt Defendr im Server eigene AutoMod-Regeln von
 Discord an („Defendr · …“). Sie enthalten Wörter aus den Bereichen, die der Server gewählt hat (Hassrede, sexuelle
-Inhalte, Schimpfwörter), und die eigenen Wörter des Servers. Die Prüfung selbst übernimmt Discord: Discord vergleicht
+Inhalte, Schimpfwörter), und die eigenen Wörter des Servers; ist Englisch eine der Sprachen des Filters, nutzt eine
+weitere Regel Discords eigene Wortlisten für diese Bereiche. Die Prüfung selbst übernimmt Discord: Discord vergleicht
 jede gesendete oder bearbeitete Nachricht mit diesen Regeln und hält eine passende Nachricht zurück, bevor jemand sie
 sieht. Discord verarbeitet die Nachricht dabei als Anbieter von AutoMod nach seiner eigenen Datenschutzerklärung.
 
@@ -232,7 +238,8 @@ Regel, dem passenden Wort der Regel und dem Text der Nachricht. Den von Discord 
 Defendr sofort. Den Text nutzt Defendr im Arbeitsspeicher, um eine Nachricht, die mehrere Regeln trifft, nur einmal zu
 zählen (als Hashwert, drei Sekunden lang). Gespeichert wird er nur, wenn der Server Auszüge eingeschaltet hat (3.1): dann
 als gekürzter, entschärfter Auszug von höchstens 300 Zeichen im Moderationsfall. Zu jeder zurückgehaltenen Nachricht
-legt Defendr einen Moderationsfall an (Nutzer-ID, Kanal, Grund-Code, Bereich, Wortliste und Sprache; das Wort der Regel
+legt Defendr einen Moderationsfall an (Nutzer-ID, Kanal, Grund-Code, Bereich, Wortliste und Sprache; bei einem Wort, das nur auf Discords
+eigener Wortliste steht, statt des Bereichs „ein Wort auf Discords eigener Liste“; das Wort der Regel
 nur entschärft und nur mit eingeschalteten Auszügen), gegen den das Mitglied Einspruch einlegen kann (/appeal). Hält
 Discord von derselben Person innerhalb von zehn Minuten drei Nachrichten zurück, schaltet Defendr sie für zehn Minuten
 stumm (Timeout), außer der Server hat das ausgeschaltet; dafür zählt Defendr die gespeicherten Fälle und merkt sich nur
@@ -336,8 +343,8 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Moderationsfälle (samt Ereignissen) | 1825 Tage (von Defendr festgelegt, in jedem Server gleich) |
 | Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall |
 | Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nur als neu erzeugte Bildkopie für das Defendr-Team gespeichert (nächste Zeile) |
-| Meldungen an das Defendr-Team: die versiegelte Kopie der gemeldeten Nachricht (Text, Links, Liste der Anhänge, Text von Einbettungen, Namen der Person, die sie geschrieben hat, zu diesem Zeitpunkt) und neu erzeugte Kopien der Bilder, die der Melder angehängt hat (WebP ohne Metadaten) | 90 Tage nach der Entscheidung; solange unentschieden höchstens 180 Tage nach der Meldung; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
-| Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen: automatisch geschlossen nach 90 Tagen |
+| Meldungen an das Defendr-Team: die versiegelte Kopie der gemeldeten Nachricht (Text, Links, Liste der Anhänge, Text von Einbettungen, Namen der Person, die sie geschrieben hat, zu diesem Zeitpunkt) und neu erzeugte Kopien der Bilder, die der Melder angehängt hat (WebP ohne Metadaten) | 90 Tage nach der Entscheidung oder 180 Tage nach der Meldung, wenn das früher ist; gelöscht durch eine tägliche Aufgabe, spätestens einen Tag später; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
+| Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen (auch während der Prüfung): automatisch geschlossen nach 90 Tagen |
 | Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung |
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage |
 | Prüfstimmen und Team-Threads | mit dem geprüften Eintrag |

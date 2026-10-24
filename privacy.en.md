@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-23 · effective 2026-10-23
+Version 2026-10-24 · effective 2026-10-24
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -120,12 +120,14 @@ details are in sections 11 and 12, cookies and browser storage in section 13.
 3.13 Checking links with Google Web Risk: on servers that use Web Risk (on by default in the "Recommended" and
 "Strict" setups; servers that already use one of these setups get it switched on with this update; any server can
 switch it off in its settings), Defendr asks Google Web Risk about a link in a message
-that Defendr's own lists do not know yet. For this, Defendr's server sends Google only the link without the part after
+that Defendr's own lists do not know yet. On servers that also resolve short links (3.14), this includes the destination
+a short link in the message leads to. For this, Defendr's server sends Google only the link without the part after
 "?" or "#" (scheme, address and path), and Google sees our server's IP address. Defendr never sends the message text,
 your user ID or the IDs of the server, the channel or the message. Google answers whether the link is on its list of
 dangerous websites (phishing, malware, unwanted software). If it is, Defendr handles the link like any other dangerous
 link and the server's settings decide what happens (for example, the message is deleted); like for any other dangerous
-link, the record of what Defendr did names the link without the part after "?" or "#", made unclickable. The note
+link, the record of what Defendr did names the link without the part after "?" or "#", made unclickable (for the
+destination of a short link only the names of the two websites, also made unclickable). The note
 "Advisory provided by Google" shows where the warning comes from. Defendr keeps the answer under a hash of the link,
 never the link itself: a match for as long as Google says, at most 24 hours, an answer without a match for 1 hour. For
 the daily limit it counts the checks per server and in total for the current day and, only in working memory, the
@@ -140,7 +142,7 @@ the destination (first with a HEAD request, then with a GET request if needed) a
 within these services; it never opens the destination itself. The service receives the short link as it was posted,
 our server's IP address and the program name "DefendrBot/2" with the address of our website; no cookies and no user,
 server, channel or message IDs. The service can count the request like a click. Defendr checks the destination against its
-lists; a known dangerous destination is handled like the dangerous link itself, and when the short-link service itself
+lists and, on servers that use Web Risk, with Google Web Risk (3.13); a known dangerous destination is handled like the dangerous link itself, and when the short-link service itself
 warns about the link (as X does), Defendr handles it the same way for this message. So that each server can check the
 destination against its own lists, Defendr keeps the result with the destination in working memory for up to one hour,
 or for 10 minutes when the service could not answer at that moment or answered with an error; in its database it keeps,
@@ -189,18 +191,20 @@ The copy and the images are stored encrypted, each image with a key of its own. 
 review reports can see them, in Discord and on the website; every view is recorded. Server moderators, other reporters
 and the public do not see them, and Defendr passes them on to no one. They serve only to review the report and to
 document the decision, not for automated decisions, detection rules or profiles. Defendr deletes them
-90 days after the decision on the report. Defendr closes an open report
-after at most 90 days, so the copy and the images are deleted at the latest
-180 days after the report. They stay longer only while we must keep them
+90 days after the decision on the report, or
+180 days after the report if that day comes first. Defendr closes an open
+report, also one the team is already reviewing, after 90 days. A daily task does the
+deletion, at most a day after that day. They stay longer only while we must keep them
 because of a legal duty or for legal claims (for example for a request from an authority), or while processing is
 restricted on request, in which case they are no longer shown.
 
 Your rights here: if you wrote the reported message, it is in your export (/defendr › My data › Export), with its
 content and times but without details of the report (such as when or where it was reported), so that nobody who reports
-can be recognised from it. If you ask for erasure, the Defendr team checks the request: if the report has already been
-decided, the copy is deleted, otherwise with the decision. If you reported, your export lists your reports and, for
+can be recognised from it. If you ask for erasure, the Defendr team checks the request. Once it is granted, the copy is
+deleted within a day if the report has already been decided, otherwise within a day after the decision. If you reported, your export lists your reports and, for
 each attached image, whether it was stored, with type, size and time; we send you a copy of your stored images on
-request to privacy@defendr.live. If you ask for erasure of your data, Defendr deletes your images at once; the copy
+request to privacy@defendr.live. If you ask for erasure of your data, Defendr deletes your images at once: they can no longer be
+opened, and their stored files are removed within two days. The copy
 of the reported message stays until its deadline, because it belongs to the data of the person who wrote it. Legal
 basis: Art. 6(1)(f) GDPR (section 4).
 
@@ -209,7 +213,8 @@ basis: Art. 6(1)(f) GDPR (section 4).
 3.17 Word filter: on servers that turned the word filter on (on from the start for new servers with the "Strict"
 setup; every server can turn it on and off), Defendr creates Discord AutoMod rules of its own in the server
 ("Defendr · …"). They hold words from the areas the server chose (hate speech, sexual content, profanity) and the
-server's own words. Discord does the checking itself: Discord compares every sent or edited message with these rules
+server's own words; where English is one of the filter's languages, one more rule uses Discord's own keyword lists for
+these areas. Discord does the checking itself: Discord compares every sent or edited message with these rules
 and holds back a matching message before anyone sees it. Discord processes the message as the provider of AutoMod under
 its own privacy policy.
 
@@ -218,7 +223,8 @@ matched word of the rule and the text of the message. Defendr discards the match
 uses the text in memory to count a message that hits several rules only once (as a hash value, for three seconds). It is
 stored only if the server turned excerpts on (3.1): then as a shortened, defanged excerpt of at most 300 characters in
 the moderation case. For every message held back, Defendr opens a moderation case (user ID, channel, reason code, area,
-word list and language; the word of the rule only defanged and only with excerpts on), which the member can appeal
+word list and language; for a word that is only on Discord's own keyword list, "a word on Discord's own list" instead
+of an area; the word of the rule only defanged and only with excerpts on), which the member can appeal
 (/appeal). When Discord holds back three messages of the same person within ten minutes, Defendr times them out for ten
 minutes, unless the server turned that off; for this Defendr counts the stored cases and remembers only in memory, for
 at most ten minutes, when it last did so. The cases are deleted like all moderation cases (section 7).
@@ -316,8 +322,8 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Moderation cases (+ events) | 1825 days (owner-set, identical in every server) |
 | Message excerpts (opt-in per server) | at most 1095 days, never longer than the case |
 | Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; what a member attaches is stored only as a re-encoded image copy for the Defendr team (next row) |
-| Reports to the Defendr team: the sealed copy of the reported message (text, links, attachment list, embed text, author's names at the time) and re-encoded images the reporter attached (WebP without metadata) | 90 days after the decision; while undecided at most 180 days after the report; legal hold suspends deletion |
-| Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; pending: auto-closed after 90 days |
+| Reports to the Defendr team: the sealed copy of the reported message (text, links, attachment list, embed text, author's names at the time) and re-encoded images the reporter attached (WebP without metadata) | 90 days after the decision, or 180 days after the report if that is earlier; deleted by a daily task, up to one day later; legal hold suspends deletion |
+| Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; open (also while under review): auto-closed after 90 days |
 | Reporter reputation | 1825 days after last report |
 | False-positive signals (moderator id, case) | 1095 days |
 | Review votes and staff threads | with the reviewed item |
