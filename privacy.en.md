@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-24 · effective 2026-10-24
+Version 2026-10-28 · effective 2026-10-28
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -40,9 +40,15 @@ erasure (see 3.11). A third exception applies only in Defendr's own support serv
 threads (private threads between you and Defendr's support team) are stored encrypted as the ticket's transcript, so
 that you and the team can also read and answer the ticket on the website (see section 11.4). A fourth exception: when
 someone reports a message to the Defendr team, Defendr keeps a sealed copy of that message so the team can review the
-report (see 3.16). With the word filter, Discord checks the messages itself (see 3.17).
+report (see 3.16). A fifth exception: when Defendr itself acts on a message (for example deletes it or times out the
+person who wrote it), it keeps a sealed copy of that message with the moderation case, so that the Defendr team can
+check the case and decide an appeal fairly (see 3.18). With the word filter, Discord checks the messages itself (see
+3.17).
 
-3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID.
+3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID. The card of a case in the
+server's log channel also shows the numbers of the rule that was broken, how old the member's account was and how long
+they had been on the server at the time of the case, and, only in a log channel that not everyone on the server can
+see, how many earlier actions against them still stand on that server.
 
 3.3 Joins: user ID, account creation date, avatar present yes/no, time-limited flags (for example "verification
 pending") – for raid detection, join rules and verification.
@@ -91,10 +97,14 @@ same settings Defendr uses to delete the data.
 action Defendr took on any server and per moderation, report and appeal event handled through Defendr — user, server and
 channel IDs, including the ID of the moderator or team member who acted, the names Discord showed for them at that
 moment (the server's name, the channel's name, the display or user name of the member and of the moderator or team
-member), the type of action or event, counts and times, and for a link or invite Defendr detected the listed threat
-value it matched (from a threat list, never what the member wrote); never the content of a message, a note, a report or
-an appeal, never who reported whom. It exists so the team can see what Defendr does across all servers and fix
-mistakes quickly (legitimate interest, section 4). It is kept until the team deletes it.
+member), the type of action or event, counts and times, for a detection also the numbers of the rule that was broken,
+the protection setting the server chose, how old the member's account was and how long they had been on the server at
+the time, how many earlier actions against them still stand on that server and the names of the threat lists a match
+came from, for a link or invite Defendr detected the listed threat value it matched (from a threat list, never what the
+member wrote), and a link to the sealed copy of section 3.18 on Defendr's website, which only the team can open; never
+the content of a message, a note, a report or an appeal, never who reported whom. It exists so the team can see what
+Defendr does across all servers and fix mistakes quickly (legitimate interest, section 4). It is kept until the team
+deletes it.
 
 3.10 Support tickets in the support server: user ID, topic, subject, description and form fields (encrypted), the
 private thread and the transcript of its messages (text encrypted; of attachments only the name, size, type, picture
@@ -234,6 +244,43 @@ settings, including the server's own words, are part of the server configuration
 filter's data serve only the filter: not network records or signals, and Defendr passes none of it on to
 anyone beyond Discord's AutoMod and the server itself.
 
+<!-- anchor: case-content -->
+
+3.18 Messages Defendr acted on: when Defendr itself acts on a message — it deletes it, or warns, times out, kicks or
+bans the person who wrote it, or gives them a role such as the quarantine role — it keeps a sealed copy of that message
+with the moderation case. This way the Defendr team can check later whether the action was right, for example when you
+appeal or a moderator reports a mistake. The copy holds the text (up to 4,000 characters, with mentions of other people
+and roles replaced by a neutral placeholder), the links in it, the list of attachments (name, type, size, picture
+dimensions and spoiler mark, not the files themselves), the text and attachment list of a forwarded message, the visible
+text of embeds and buttons sent by a bot, app or webhook (not the preview Discord makes of a linked page), sticker
+names, the text of a poll, the number of mentions (and whether everyone was mentioned), whether the message was a reply,
+forwarded or edited and whether a bot, app or webhook sent it, and the times and IDs of the message, the channel, the
+server and the person. Defendr takes the copy from the message it is checking at that moment and reads nothing extra. It
+keeps at most five messages per case. It keeps no copy when it only logs or only watches a message, none for messages
+Discord's AutoMod held back through the word filter (3.17), and none when a picture in the case matched a known image
+with sensitive content.
+
+The copy is stored encrypted. Only members of the Defendr team who review cases and
+appeals can open it, on Defendr's website; a team member who is not handling an appeal to Defendr about the case has to
+give a reason, and every view is recorded. Server moderators, other members and the public do not see it, and Defendr
+passes it on to no one. It serves only to review the case and decide appeals, not for automated decisions, detection
+rules or profiles.
+
+Defendr deletes the copy 90 days after the case is closed. A case is closed when
+Defendr has finished acting, a timeout when it runs out; if the case is undone, marked as a mistake or voided later, the
+90 days start then. If the case is appealed, the copy stays while the appeal is
+open, but no longer than 180 days after the appeal was filed, and is deleted
+90 days after the decision. A daily task does the deletion, at most a day later;
+copies in backups go when the backup rotates out (section 7). It stays longer only while we must keep it because of a
+legal duty or for legal claims, or while processing is restricted on request; then the team no longer sees it.
+
+Your rights here: the copy of your own message is in your export (/defendr › My data › Export), with the case number,
+for as long as Defendr keeps it. If a picture in the case matched a known image with sensitive content, the export names
+the copy without its content. If you ask for erasure, the Defendr team checks the request; once it is granted, the copy
+is deleted within a day. Legal basis: Art. 6(1)(f) GDPR (section 4). If a message happens to contain special categories of personal data (for example
+about health or beliefs), Defendr keeps it only for this review and relies on Art. 9(2)(f) GDPR (establishing,
+exercising or defending legal claims about the moderation decision and its appeal).
+
 ## 4. Purposes and legal bases
 
 <!-- anchor: purposes -->
@@ -277,6 +324,9 @@ anyone beyond Discord's AutoMod and the server itself.
   also when the message was edited or deleted in the meantime, and being able to document every decision.
 - The word filter (section 3.17): Art. 6(1)(f) GDPR. Our legitimate interest, and that of the server, is holding back
   hate speech, sexual content and profanity by the server's rules and keeping every action open to review.
+- The sealed copy of a message Defendr acted on (section 3.18): Art. 6(1)(f) GDPR. Our legitimate interest, and that
+  of the servers and their members, is security on the servers and a fair review of every case and appeal, also after
+  the message was deleted. If the message contains special categories of personal data: Art. 9(2)(f) GDPR.
 
 ## 5. Recipients
 
@@ -323,6 +373,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Message excerpts (opt-in per server) | at most 1095 days, never longer than the case |
 | Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; what a member attaches is stored only as a re-encoded image copy for the Defendr team (next row) |
 | Reports to the Defendr team: the sealed copy of the reported message (text, links, attachment list, embed text, author's names at the time) and re-encoded images the reporter attached (WebP without metadata) | 90 days after the decision, or 180 days after the report if that is earlier; deleted by a daily task, up to one day later; legal hold suspends deletion |
+| Case content: the sealed copy of a message Defendr acted on (text, links, attachment list, forwarded text, poll text, sticker names, mention counts; embed and component text only of bot, app and webhook messages) | 90 days after the case is closed (a timeout: after it ends) or after it is undone, marked as a mistake, voided or its appeal is decided; kept while an appeal is open, at most 180 days after it was filed; deleted by a daily task, up to one day later; legal hold suspends deletion |
 | Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; open (also while under review): auto-closed after 90 days |
 | Reporter reputation | 1825 days after last report |
 | False-positive signals (moderator id, case) | 1095 days |
@@ -351,7 +402,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Link check results (Web Risk and short links): a hash of the checked link, the answer and, for a short link, a hash of the destination's host name; no link, no user, message or server ID | at most 24 hours; a Web Risk answer without a match and a short link at most 1 hour; a short link the service could not answer at that moment or answered with an error 10 minutes |
 | Daily counters of the link checks (Web Risk checks per server and in total, short-link requests in total) | until the next day's count replaces it |
 | Application logs (no content) | 90 days |
-| Overview of Defendr's actions (section 3.9): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and team member ids included), the names Discord showed for the server, the channel, the member and the moderator or team member at that moment, and the listed threat value a link or invite Defendr detected matched; never message content | kept until the operator deletes it |
+| Overview of Defendr's actions (section 3.9): ids, action and event types, counts and times of Defendr's actions and of the moderation, report and appeal events handled through it (moderator and team member ids included), the names Discord showed for the server, the channel, the member and the moderator or team member at that moment, for a detection the numbers of the rule, the server's protection setting, the threat lists a match came from and the member's account age, time on the server and earlier actions that still stand at the time, the listed threat value a link or invite Defendr detected matched, and a link to the sealed copy of section 3.18; never message content | kept until the operator deletes it |
 | Error events (redacted) | 365 days |
 | Statistics aggregates (no user IDs): counts per day, server and metric, incl. per reason code and per detection family | indefinite |
 | Setup answer "Where did you find Defendr?" (per server, optional; not assigned to a person) | with the server's configuration: 90 days after Defendr leaves (or immediately if configured) |
@@ -380,7 +431,8 @@ in the personal area of the website or by e-mail to privacy@defendr.live.
 
 Support tickets (section 11) are part of the export together with their transcript and are deleted with an erasure;
 a ticket ban is kept (section 11.7). What applies to the copy of a reported message and to images in reports to the
-Defendr team is in section 3.16. An erasure of your data also ends all your website sessions.
+Defendr team is in section 3.16, and what applies to the copy of a message Defendr acted on is in section 3.18. An
+erasure of your data also ends all your website sessions.
 
 ## 9. Automated decisions
 
@@ -447,23 +499,24 @@ result appears only in the private thread; Defendr stores none of it.
 
 <!-- anchor: support-transcript -->
 
-11.4 Transcript. Defendr stores every message in the thread of your ticket encrypted as the ticket's transcript, so
-that you and the support team can also read and answer the ticket on the website. It stores the text, of attachments
-only the name, size, type, for pictures their width and height, and whether the attachment is marked as a spoiler (the
-files themselves stay in Discord and open there), who wrote the message (Discord user ID, display name, username and
-the profile picture identifier at that time), when it was written and last edited, whether it was written in Discord or
-on the website, which message it replies to, and how many embeds, stickers, polls and forwarded messages it contains
-(only the number, not their content). Of the posts Defendr itself puts into the thread (such as the summary of
-section 11.2 or a status line) it stores only their type. When a message is edited, the new version replaces the stored one.
-When it is deleted in Discord, Defendr deletes its content from the transcript too; only an empty placeholder stays in
-its place. This happens right away while Defendr is running. If a message is edited or deleted while Defendr is briefly
-not running (for example during an update), Defendr checks the newest 100 messages of every open ticket at its next
-start; for older messages and for closed tickets, the last stored version then stays in the transcript. Ticket threads that already existed when this feature started are copied once
-from Discord with their earlier messages; the same applies to them. Defendr does not store messages in the other
-channels of the support server. As on every server Defendr protects, all messages are also checked for threats in
-memory for a moment (section 3.1). Defendr closes a ticket automatically after seven days without activity (tickets of
-the data-access-or-deletion topic are exempt; a person closes them once the request has been answered). The team can
-reopen a ticket as long as the thread exists.
+11.4 Transcript. Defendr stores every message in the thread of your ticket encrypted as the ticket's transcript, so that
+you and the support team can also read and answer the ticket on the website. It stores the text, of attachments only the
+name, size, type, for pictures their width and height, and whether the attachment is marked as a spoiler (the files
+themselves stay in Discord and open there), who wrote the message (Discord user ID, display name, username and the
+profile picture identifier at that time), when it was written and last edited, whether it was written in Discord or on
+the website, which message it replies to, and how many embeds, stickers, polls and forwarded messages it contains (only
+the number, not their content). Of the posts Defendr itself puts into the thread (such as the summary of section 11.2 or
+a status line) it stores only their type. When a message is edited, the new version replaces the stored one. When it is
+deleted in Discord, Defendr deletes its content from the transcript too; only an empty placeholder stays in its place.
+This happens right away while Defendr is running. If a message is edited or deleted while Defendr is briefly not running
+(for example during an update), Defendr checks the newest 100 messages of every open ticket at its next start; for older
+messages and for closed tickets, the last stored version then stays in the transcript. Ticket threads that already
+existed when this feature started are copied once from Discord with their earlier messages; the same applies to them.
+Apart from the sealed copy of a message Defendr acts on (3.18), Defendr does not store messages in the other channels of
+the support server. As on every server Defendr protects, all messages are also checked for threats in memory for a
+moment (section 3.1). Defendr closes a ticket automatically after seven days without activity (tickets of the
+data-access-or-deletion topic are exempt; a person closes them once the request has been answered). The team can reopen
+a ticket as long as the thread exists.
 
 11.5 Reading and answering on the website. Under "My Defendr" you can read the transcript of your tickets and answer
 them. The website never shows you more than Discord: you see a ticket as long as you are on the support server; if the

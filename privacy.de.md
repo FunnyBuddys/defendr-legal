@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-24 · gültig ab 2026-10-24
+Version 2026-10-28 · gültig ab 2026-10-28
 
 ## 1. Verantwortlicher
 
@@ -38,10 +38,16 @@ oder bis zu deinem Löschantrag (siehe 3.11). Eine dritte Ausnahme gilt nur im S
 Nachrichten in Support-Ticket-Threads (private Threads zwischen dir und dem Support-Team von Defendr) werden
 verschlüsselt als Verlauf des Tickets gespeichert, damit du und das Team das Ticket auch auf der Webseite lesen und
 beantworten könnt (siehe Abschnitt 11.4). Eine vierte Ausnahme: Meldet jemand eine Nachricht an das Defendr-Team,
-speichert Defendr eine versiegelte Kopie dieser Nachricht, damit das Team die Meldung prüfen kann (siehe 3.16). Beim
-Wortfilter prüft Discord die Nachrichten selbst (siehe 3.17).
+speichert Defendr eine versiegelte Kopie dieser Nachricht, damit das Team die Meldung prüfen kann (siehe 3.16). Eine
+fünfte Ausnahme: Geht Defendr selbst gegen eine Nachricht vor (löscht sie zum Beispiel oder schaltet die Person, die
+sie geschrieben hat, stumm), bewahrt er eine versiegelte Kopie dieser Nachricht beim Moderationsfall auf, damit das
+Defendr-Team den Fall prüfen und über einen Einspruch fair entscheiden kann (siehe 3.18). Beim Wortfilter prüft
+Discord die Nachrichten selbst (siehe 3.17).
 
-3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID.
+3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID. Die Karte eines
+Falls im Log-Kanal des Servers zeigt außerdem die Zahlen der Regel, gegen die verstoßen wurde, wie alt das Konto des
+Mitglieds war und wie lange es zum Zeitpunkt des Falls schon auf dem Server war, und, nur in einem Log-Kanal, den nicht
+alle auf dem Server sehen können, wie viele frühere Maßnahmen gegen das Mitglied auf diesem Server noch bestehen.
 
 3.3 Beitritte: Nutzer-ID, Konto-Erstellungsdatum, Avatar vorhanden ja/nein, zeitlich begrenzte Markierungen
 (z. B. „Verifizierung ausstehend") – für Raid-Erkennung, Zugangsregeln und Verifizierung.
@@ -90,15 +96,20 @@ steht in Abschnitt 12.
 3.8 Die vollständige Liste aller Datenkategorien mit ihrer Speicherdauer steht in Abschnitt 7. Sie wird automatisch aus
 denselben Einstellungen erzeugt, nach denen Defendr die Daten löscht.
 
-3.9 Übersicht über die Aktionen von Defendr: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit einem Eintrag
-je Aktion, die Defendr auf irgendeinem Server ausgeführt hat, und je Moderations-, Melde- und Einspruchsvorgang, der über
-Defendr abgewickelt wurde — Nutzer-, Server- und Kanal-IDs, einschließlich der ID des Moderators oder Teammitglieds, das
-gehandelt hat, die Namen, die Discord in dem Moment dafür anzeigte (Servername, Kanalname, Anzeige- oder Nutzername des
-Mitglieds und des Moderators oder Teammitglieds), die Art der Aktion oder des Vorgangs, Zählwerte und Zeiten und den
-gelisteten Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat (aus einer
-Bedrohungsliste, nie was das Mitglied geschrieben hat); nie den Inhalt einer Nachricht, einer Notiz, einer Meldung oder
-eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team sieht, was Defendr über alle Server hinweg tut,
-und Fehler schnell beheben kann (berechtigtes Interesse, Abschnitt 4). Er wird aufbewahrt, bis das Team ihn löscht.
+3.9 Übersicht über die Aktionen von Defendr: Das Defendr-Team führt auf dem Defendr-Server einen privaten Kanal mit
+einem Eintrag je Aktion, die Defendr auf irgendeinem Server ausgeführt hat, und je Moderations-, Melde- und
+Einspruchsvorgang, der über Defendr abgewickelt wurde — Nutzer-, Server- und Kanal-IDs, einschließlich der ID des
+Moderators oder Teammitglieds, das gehandelt hat, die Namen, die Discord in dem Moment dafür anzeigte (Servername,
+Kanalname, Anzeige- oder Nutzername des Mitglieds und des Moderators oder Teammitglieds), die Art der Aktion oder des
+Vorgangs, Zählwerte und Zeiten, bei einer Erkennung außerdem die Zahlen der Regel, gegen die verstoßen wurde, die
+Schutzeinstellung, die der Server gewählt hat, wie alt das Konto des Mitglieds war und wie lange es zu dem Zeitpunkt
+schon auf dem Server war, wie viele frühere Maßnahmen gegen das Mitglied auf diesem Server noch bestehen und die Namen
+der Bedrohungslisten, aus denen ein Treffer stammt, den gelisteten Bedrohungswert, den ein erkannter Link oder eine
+erkannte Einladung getroffen hat (aus einer Bedrohungsliste, nie was das Mitglied geschrieben hat), und einen Link zur
+versiegelten Kopie aus Abschnitt 3.18 auf der Webseite von Defendr, die nur das Team öffnen kann; nie den Inhalt einer
+Nachricht, einer Notiz, einer Meldung oder eines Einspruchs, nie wer wen gemeldet hat. Er existiert, damit das Team
+sieht, was Defendr über alle Server hinweg tut, und Fehler schnell beheben kann (berechtigtes Interesse, Abschnitt 4).
+Er wird aufbewahrt, bis das Team ihn löscht.
 
 3.10 Support-Tickets im Support-Server: Nutzer-ID, Thema, Betreff, Beschreibung und Formularfelder (verschlüsselt),
 der private Thread und der Verlauf seiner Nachrichten (Text verschlüsselt; von Anhängen nur Name, Größe, Typ, Bildmaße
@@ -251,6 +262,49 @@ Einstellungen des Filters, auch die eigenen Wörter des Servers, gehören zur Se
 gelöscht. Die Daten des Wortfilters dienen nur ihm: nicht für Netzwerk-Einträge oder Signale, und Defendr gibt nichts
 davon weiter außer an AutoMod von Discord und an den Server selbst.
 
+<!-- anchor: case-content -->
+
+3.18 Nachrichten, gegen die Defendr vorgegangen ist: Geht Defendr selbst gegen eine Nachricht vor – löscht er sie,
+verwarnt er die Person, die sie geschrieben hat, schaltet sie stumm (Timeout), wirft sie hinaus (Kick), sperrt sie
+(Bann) oder gibt ihr eine Rolle wie die Quarantäne-Rolle –, bewahrt er eine versiegelte Kopie dieser Nachricht beim
+Moderationsfall auf. So kann das Defendr-Team später prüfen, ob die Maßnahme richtig war, etwa wenn du Einspruch
+einlegst oder ein Moderator einen Fehler meldet. Die Kopie enthält den Text (bis 4.000 Zeichen; Erwähnungen anderer
+Personen und Rollen sind durch einen neutralen Platzhalter ersetzt), die Links darin, die Liste der Anhänge (Name, Typ,
+Größe, Bildmaße und Spoiler-Markierung, nicht die Dateien selbst), Text und Anhangsliste einer weitergeleiteten
+Nachricht, den sichtbaren Text von Einbettungen und Schaltflächen, die ein Bot, eine App oder ein Webhook gesendet hat
+(nicht die Vorschau, die Discord von einer verlinkten Seite erzeugt), die Namen von Stickern, den Text einer Umfrage,
+die Zahl der Erwähnungen (und ob alle erwähnt wurden), ob die Nachricht eine Antwort, weitergeleitet oder bearbeitet
+war und ob ein Bot, eine App oder ein Webhook sie gesendet hat, sowie die Zeitpunkte und die IDs der Nachricht, des
+Kanals, des Servers und der Person. Defendr nimmt die Kopie aus der Nachricht, die er in diesem Moment prüft, und liest
+nichts nach. Er bewahrt höchstens fünf Nachrichten je Fall auf. Keine Kopie gibt es, wenn Defendr eine Nachricht nur
+protokolliert oder nur beobachtet, keine für Nachrichten, die Discords AutoMod über den Wortfilter zurückgehalten hat
+(3.17), und keine, wenn ein Bild im Fall einem bekannten Bild mit sensiblem Inhalt entsprach.
+
+Die Kopie ist verschlüsselt gespeichert. Öffnen können sie nur Mitglieder des
+Defendr-Teams, die Fälle und Einsprüche prüfen, auf der Webseite von Defendr; wer im Team nicht gerade einen Einspruch
+an Defendr zu diesem Fall bearbeitet, muss einen Grund angeben, und jede Ansicht wird festgehalten. Server-Moderatoren,
+andere Mitglieder und die Öffentlichkeit sehen sie nicht, und Defendr gibt sie an niemanden weiter. Sie dient nur der
+Prüfung des Falls und der Entscheidung über Einsprüche, nicht für automatische Entscheidungen, Erkennungsregeln oder
+Profile.
+
+Defendr löscht die Kopie 90 Tage, nachdem der Fall abgeschlossen ist. Ein Fall
+ist abgeschlossen, wenn Defendr seine Maßnahmen beendet hat, ein Timeout, wenn er abläuft; wird der Fall später
+zurückgenommen, als Fehler markiert oder für ungültig erklärt, beginnen die 90
+Tage dann. Legst du Einspruch ein, bleibt die Kopie, solange der Einspruch offen ist, aber höchstens
+180 Tage nach dem Einreichen des Einspruchs, und wird
+90 Tage nach der Entscheidung gelöscht. Die Löschung erledigt eine tägliche
+Aufgabe, höchstens einen Tag später; Kopien in Sicherungen verschwinden mit deren Rotation (Abschnitt 7). Länger bleibt
+sie nur, solange wir sie wegen einer rechtlichen Pflicht oder für Rechtsansprüche aufbewahren müssen, oder solange die
+Verarbeitung auf Verlangen eingeschränkt ist; dann sieht das Team sie nicht mehr.
+
+Deine Rechte dazu: Die Kopie deiner eigenen Nachricht steht mit der Fallnummer in deinem Export (/defendr › Meine
+Daten › Exportieren), solange Defendr sie aufbewahrt. Passte ein Bild im Fall zu einem bekannten Bild mit sensiblem
+Inhalt, nennt der Export die Kopie ohne ihren Inhalt. Verlangst du die Löschung, prüft das Defendr-Team den Antrag; ist er bewilligt, wird die Kopie
+innerhalb eines Tages gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4). Enthält eine Nachricht
+zufällig besondere Kategorien personenbezogener Daten (etwa zur Gesundheit oder zu Überzeugungen), bewahrt Defendr
+sie nur für diese Prüfung auf und stützt sich auf Art. 9 Abs. 2 lit. f DSGVO (Geltendmachung, Ausübung oder
+Verteidigung von Rechtsansprüchen zur Moderationsentscheidung und zum Einspruch).
+
 ## 4. Zwecke und Rechtsgrundlagen
 
 <!-- anchor: purposes -->
@@ -298,6 +352,10 @@ davon weiter außer an AutoMod von Discord und an den Server selbst.
 - Wortfilter (Abschnitt 3.17): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das des Servers ist,
   Hassrede, sexuelle Inhalte und Schimpfwörter nach den Regeln des Servers zurückzuhalten und jede Maßnahme
   überprüfbar zu machen.
+- Versiegelte Kopie einer Nachricht, gegen die Defendr vorgegangen ist (Abschnitt 3.18): Art. 6 Abs. 1 lit. f DSGVO.
+  Unser berechtigtes Interesse und das der Server und ihrer Mitglieder ist die Sicherheit auf den Servern und eine
+  faire Prüfung jedes Falls und jedes Einspruchs, auch wenn die Nachricht inzwischen gelöscht ist. Enthält die
+  Nachricht besondere Kategorien personenbezogener Daten: Art. 9 Abs. 2 lit. f DSGVO.
 
 ## 5. Empfänger
 
@@ -344,6 +402,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall |
 | Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nur als neu erzeugte Bildkopie für das Defendr-Team gespeichert (nächste Zeile) |
 | Meldungen an das Defendr-Team: die versiegelte Kopie der gemeldeten Nachricht (Text, Links, Liste der Anhänge, Text von Einbettungen, Namen der Person, die sie geschrieben hat, zu diesem Zeitpunkt) und neu erzeugte Kopien der Bilder, die der Melder angehängt hat (WebP ohne Metadaten) | 90 Tage nach der Entscheidung oder 180 Tage nach der Meldung, wenn das früher ist; gelöscht durch eine tägliche Aufgabe, spätestens einen Tag später; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
+| Fallinhalt: die versiegelte Kopie einer Nachricht, gegen die Defendr vorgegangen ist (Text, Links, Liste der Anhänge, weitergeleiteter Text, Text einer Umfrage, Namen von Stickern, Anzahl der Erwähnungen; Text von Einbettungen und Komponenten nur bei Nachrichten von Bots, Apps und Webhooks) | 90 Tage, nachdem der Fall abgeschlossen ist (bei einem Timeout: nachdem er endet) oder nachdem er zurückgenommen, als Fehler markiert, für ungültig erklärt oder über seinen Einspruch entschieden wurde; aufbewahrt, solange ein Einspruch offen ist, höchstens 180 Tage nachdem er eingereicht wurde; gelöscht durch eine tägliche Aufgabe, spätestens einen Tag später; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
 | Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen (auch während der Prüfung): automatisch geschlossen nach 90 Tagen |
 | Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung |
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage |
@@ -372,7 +431,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Ergebnisse der Linkprüfung (Web Risk und Kurzlinks): ein Hashwert des geprüften Links, die Antwort und bei einem Kurzlink ein Hashwert des Hostnamens des Ziels; kein Link, keine Nutzer-, Nachrichten- oder Server-ID | höchstens 24 Stunden; eine Antwort von Web Risk ohne Treffer und ein Kurzlink höchstens 1 Stunde; ein Kurzlink, auf den der Dienst in dem Moment nicht antworten konnte oder mit einem Fehler antwortete, 10 Minuten |
 | Tageszähler der Linkprüfung (Web-Risk-Abfragen pro Server und insgesamt, Kurzlink-Anfragen insgesamt) | bis der Zähler des nächsten Tages ihn ersetzt |
 | Anwendungsprotokolle (ohne Nachrichteninhalte) | 90 Tage |
-| Übersicht über die Aktionen von Defendr (Abschnitt 3.9): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs), die Namen, die Discord in dem Moment für den Server, den Kanal, das Mitglied und den Moderator oder das Teammitglied anzeigte, und der gelistete Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat; nie Nachrichteninhalte | bis der Betreiber sie löscht |
+| Übersicht über die Aktionen von Defendr (Abschnitt 3.9): IDs, Aktions- und Vorgangsarten, Zählwerte und Zeiten der Aktionen von Defendr und der darüber abgewickelten Moderations-, Melde- und Einspruchsvorgänge (einschließlich Moderator- und Team-IDs), die Namen, die Discord in dem Moment für den Server, den Kanal, das Mitglied und den Moderator oder das Teammitglied anzeigte, bei einer Erkennung die Zahlen der Regel, die Schutzeinstellung des Servers, die Bedrohungslisten, aus denen ein Treffer stammt, und das Alter des Kontos, die Zeit auf dem Server und die noch bestehenden früheren Maßnahmen gegen das Mitglied zu dem Zeitpunkt, der gelistete Bedrohungswert, den ein erkannter Link oder eine erkannte Einladung getroffen hat, und ein Link zur versiegelten Kopie aus Abschnitt 3.18; nie Nachrichteninhalte | bis der Betreiber sie löscht |
 | Fehlerereignisse (bereinigt) | 365 Tage |
 | Statistik-Kennzahlen (ohne Nutzer-IDs): Zählwerte pro Tag, Server und Kennzahl, auch je Begründungscode und je Erkennungsfamilie | unbegrenzt |
 | Setup-Antwort „Wo hast du Defendr gefunden?" (pro Server, freiwillig; keiner Person zugeordnet) | mit der Server-Konfiguration: 90 Tage nachdem Defendr den Server verlassen hat (oder sofort, wenn so eingestellt) |
@@ -404,7 +463,8 @@ persönlichen Bereich der Webseite oder per E-Mail an privacy@defendr.live.
 
 Support-Tickets (Abschnitt 11) sind samt ihrem Verlauf Teil des Exports und werden mit einer Löschung gelöscht; eine
 Ticket-Sperre bleibt bestehen (Abschnitt 11.7). Was für die Kopie einer gemeldeten Nachricht und für Bilder in Meldungen
-an das Defendr-Team gilt, steht in Abschnitt 3.16. Eine Löschung deiner Daten beendet auch alle deine Sitzungen auf der Webseite.
+an das Defendr-Team gilt, steht in Abschnitt 3.16, was für die Kopie einer Nachricht gilt, gegen die Defendr
+vorgegangen ist, in Abschnitt 3.18. Eine Löschung deiner Daten beendet auch alle deine Sitzungen auf der Webseite.
 
 ## 9. Automatisierte Entscheidungen
 
@@ -492,12 +552,13 @@ Discord gelöscht, löscht Defendr ihren Inhalt auch aus dem Verlauf; an ihrer S
 Das geschieht sofort, während Defendr läuft. Wird eine Nachricht bearbeitet oder gelöscht, während Defendr kurz nicht
 läuft (etwa während eines Updates), gleicht Defendr beim nächsten Start die neuesten 100 Nachrichten jedes offenen
 Tickets ab; bei älteren Nachrichten und bei geschlossenen Tickets bleibt in diesem Fall die zuletzt gespeicherte Fassung
-im Verlauf. Ticket-Threads, die es schon gab, als diese Funktion startete, übernimmt Defendr einmalig mit
-ihren bisherigen Nachrichten aus Discord; für sie gilt dasselbe. Nachrichten in anderen Kanälen des Support-Servers
-speichert Defendr nicht. Wie auf jedem Server, den Defendr schützt, werden alle Nachrichten außerdem kurz im
-Arbeitsspeicher auf Gefahren geprüft (Abschnitt 3.1). Ein Ticket ohne Aktivität schließt Defendr nach sieben Tagen
-automatisch (Tickets zum Thema Datenauskunft oder Löschung ausgenommen; sie schließt eine Person, sobald die Anfrage
-beantwortet ist). Das Team kann ein Ticket wieder öffnen, solange der Thread besteht.
+im Verlauf. Ticket-Threads, die es schon gab, als diese Funktion startete, übernimmt Defendr einmalig mit ihren
+bisherigen Nachrichten aus Discord; für sie gilt dasselbe. Nachrichten in anderen Kanälen des Support-Servers speichert
+Defendr nicht, außer der versiegelten Kopie einer Nachricht, gegen die Defendr vorgeht (3.18). Wie auf jedem Server, den
+Defendr schützt, werden alle Nachrichten außerdem kurz im Arbeitsspeicher auf Gefahren geprüft (Abschnitt 3.1). Ein
+Ticket ohne Aktivität schließt Defendr nach sieben Tagen automatisch (Tickets zum Thema Datenauskunft oder Löschung
+ausgenommen; sie schließt eine Person, sobald die Anfrage beantwortet ist). Das Team kann ein Ticket wieder öffnen,
+solange der Thread besteht.
 
 11.5 Lesen und Antworten auf der Webseite. Unter „Mein Defendr“ kannst du den Verlauf deiner Tickets lesen und darauf
 antworten. Die Webseite zeigt dir dabei nie mehr als Discord: Du siehst ein Ticket, solange du auf dem Support-Server
