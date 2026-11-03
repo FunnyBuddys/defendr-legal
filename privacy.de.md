@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-10-28 · gültig ab 2026-10-28
+Version 2026-11-03 · gültig ab 2026-11-03
 
 ## 1. Verantwortlicher
 
@@ -27,7 +27,8 @@ und keine Registrierung mit E-Mail-Adresse. Was die Webseite verarbeitet, steht 
 
 <!-- anchor: data -->
 
-3.1 Nachrichteninhalte (Text, Einbettungen, Anhänge, weitergeleitete Nachrichten, Umfragen) werden kurzzeitig im
+3.1 Nachrichteninhalte (Text, Einbettungen, Anhänge und ihre Beschreibungen, weitergeleitete Nachrichten,
+Umfragen) werden kurzzeitig im
 Arbeitsspeicher geprüft und nicht gespeichert. Eine Ausnahme gilt, wenn ein Server dies
 ausdrücklich einschaltet (standardmäßig aus): Bei Nachrichten, gegen die Defendr vorgeht, wird ein gekürzter,
 entschärfter Auszug gespeichert (verschlüsselt, Löschung spätestens nach 1095 Tagen,
@@ -42,7 +43,12 @@ speichert Defendr eine versiegelte Kopie dieser Nachricht, damit das Team die Me
 fünfte Ausnahme: Geht Defendr selbst gegen eine Nachricht vor (löscht sie zum Beispiel oder schaltet die Person, die
 sie geschrieben hat, stumm), bewahrt er eine versiegelte Kopie dieser Nachricht beim Moderationsfall auf, damit das
 Defendr-Team den Fall prüfen und über einen Einspruch fair entscheiden kann (siehe 3.18). Beim Wortfilter prüft
-Discord die Nachrichten selbst (siehe 3.17).
+Discord die Nachrichten selbst (siehe 3.17). Später kann Defendr die letzten Nachrichten eines Servers auch noch einmal
+prüfen, wenn das Defendr-Team eine Gefahr bestätigt oder Defendr ein übernommenes Konto stoppt (siehe 3.19). Defendr
+liest außerdem die Markierungen, die Discords eigene Bildprüfung an Bildern setzt, auch in Einbettungen wie
+Linkvorschauen (explizit, Gewaltdarstellung, Selbstverletzung). Es nutzt sie nur, wo ein
+Server das eingeschaltet hat. Eine Markierung als Selbstverletzung führt nur zu einem kurzen Hinweis an das Team des
+Servers in einem Log-Kanal, den nur das Team sieht; Defendr speichert sie nicht.
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID. Die Karte eines
 Falls im Log-Kanal des Servers zeigt außerdem die Zahlen der Regel, gegen die verstoßen wurde, wie alt das Konto des
@@ -81,7 +87,9 @@ hast (wie viele, als was Discord sie ausgibt und wie groß), damit die bearbeite
 die Moderatoren eines Servers, bei Einsprüchen und bei Anfragen zu deinen Rechten speichert Defendr keine Bilder.
 
 3.6 Server-Einstellungen: Rollen- und Kanal-IDs, IDs der Admins und Moderatoren, die Einstellungen ändern oder
-Entscheidungen treffen. Beantwortet ein Admin in `/setup` die freiwillige Frage „Wo hast du Defendr gefunden?", wird
+Entscheidungen treffen. Meldet jemand einen Raid an Discord, erklärt ihn zum Fehlalarm oder schaltet Discords
+Sicherheitsmaßnahmen ein oder aus, während der Raid-Modus von Defendr läuft, vermerkt Defendr beim Raid-Vorgang des
+Servers, wer das wann getan hat. Beantwortet ein Admin in `/setup` die freiwillige Frage „Wo hast du Defendr gefunden?", wird
 eine von sechs festen Antworten (zum Beispiel „top.gg" oder „Freunde oder Bekannte") für den Server gespeichert und
 keiner Person zugeordnet. Sie dient nur dazu, zu verstehen, wie Server Defendr finden, wird dem Defendr-Team nur als
 Anzahl über alle Server gezeigt und zusammen mit der Server-Konfiguration gelöscht.
@@ -278,7 +286,10 @@ war und ob ein Bot, eine App oder ein Webhook sie gesendet hat, sowie die Zeitpu
 Kanals, des Servers und der Person. Defendr nimmt die Kopie aus der Nachricht, die er in diesem Moment prüft, und liest
 nichts nach. Er bewahrt höchstens fünf Nachrichten je Fall auf. Keine Kopie gibt es, wenn Defendr eine Nachricht nur
 protokolliert oder nur beobachtet, keine für Nachrichten, die Discords AutoMod über den Wortfilter zurückgehalten hat
-(3.17), und keine, wenn ein Bild im Fall einem bekannten Bild mit sensiblem Inhalt entsprach.
+(3.17), und keine, wenn ein Bild im Fall einem bekannten Bild mit sensiblem Inhalt entsprach. Auf Servern, die das
+nutzen, kann Defendr bei einem verdächtigen Link die Linkvorschau der Nachricht eines Mitglieds ausblenden, statt die
+Nachricht zu löschen: Die Nachricht bleibt, Defendr bewahrt keine Kopie davon auf, und der Fall vermerkt nur die IDs
+des Kanals und der Nachricht.
 
 Die Kopie ist verschlüsselt gespeichert. Öffnen können sie nur Mitglieder des
 Defendr-Teams, die Fälle und Einsprüche prüfen, auf der Webseite von Defendr; wer im Team nicht gerade einen Einspruch
@@ -304,6 +315,34 @@ innerhalb eines Tages gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Ab
 zufällig besondere Kategorien personenbezogener Daten (etwa zur Gesundheit oder zu Überzeugungen), bewahrt Defendr
 sie nur für diese Prüfung auf und stützt sich auf Art. 9 Abs. 2 lit. f DSGVO (Geltendmachung, Ausübung oder
 Verteidigung von Rechtsansprüchen zur Moderationsentscheidung und zum Einspruch).
+
+<!-- anchor: earlier-messages -->
+
+3.19 Prüfung älterer Nachrichten: Bestätigt das Defendr-Team eine Gefahr, zum
+Beispiel eine Scam-Website oder ein Scam-Bild, kann Defendr die letzten Nachrichten eines Servers darauf prüfen, wenn
+der Server das eingeschaltet hat (es ist aus, bis ein Server es wählt): die letzten 24 Stunden, 3 Tage oder 7 Tage,
+wie der Server es gewählt hat. Defendr nutzt dafür die Nachrichtensuche von Discord und prüft, was es findet, im
+Arbeitsspeicher mit denselben Erkennungsregeln wie bei einer neuen Nachricht. Passt eine Nachricht, hält Defendr die
+Erkennung fest (3.2) und meldet sie dem Team des Servers im Log-Kanal, oder, wenn der Server Entfernen gewählt hat und
+Defendr auch eine neue Nachricht mit dieser Gefahr löschen würde, löscht es sie, zeigt den üblichen Hinweis und
+eröffnet einen Moderationsfall, gegen den man Einspruch einlegen kann (mit der Kopie aus 3.18). Nachrichten der
+eigenen Moderatoren des Servers und Nachrichten, deren Verfasser Defendr in dem Moment nicht nachschlagen kann,
+bleiben, wie sie sind; Nachrichten von Bots, Webhooks und Apps sowie Adressen, die ohne Link geschrieben sind, werden
+nur gemeldet.
+
+Stoppt Defendr ein übernommenes Konto, durchsucht es auch die Nachrichten, die dieses Konto auf dem Server ab zehn
+Minuten vor seiner ersten Kopie des Scams bis zu seiner letzten geschrieben hat, nach weiteren Kopien desselben Scams.
+Es vergleicht sie mit den Kopien, die es schon entfernt hat, anhand von Hashwerten des Textes und der Bilder und der
+verlinkten Domains, die es höchstens eine Stunde im Arbeitsspeicher hält, und entfernt die passenden Kopien mit
+demselben Fall, auch wenn das Konto einem Moderator gehört. Ein Server kann das abschalten.
+
+Diese Prüfungen geben niemandem einen Timeout, werfen niemanden hinaus, bannen
+niemanden, vergeben keine Rolle und schicken keine Direktnachrichten. Zu jeder Prüfung behält Defendr eine kurze
+Arbeitsnotiz: den Server, den Fall oder die Gefahr, um die es ging, den Zeitraum, wie weit die Prüfung kam, die Zahlen
+und, wenn ein Moderator Defendr gebeten hat, die gemeldeten Nachrichten zu entfernen, wer darum gebeten hat; die Fälle
+einer solchen Entfernung nennen diesen Moderator ebenfalls. Die Notiz enthält keinen Nachrichteninhalt und wird
+30 Tage nach dem Ende der Prüfung gelöscht oder mit den Daten des Servers.
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
 
 ## 4. Zwecke und Rechtsgrundlagen
 
@@ -356,6 +395,17 @@ Verteidigung von Rechtsansprüchen zur Moderationsentscheidung und zum Einspruch
   Unser berechtigtes Interesse und das der Server und ihrer Mitglieder ist die Sicherheit auf den Servern und eine
   faire Prüfung jedes Falls und jedes Einspruchs, auch wenn die Nachricht inzwischen gelöscht ist. Enthält die
   Nachricht besondere Kategorien personenbezogener Daten: Art. 9 Abs. 2 lit. f DSGVO.
+- Prüfung älterer Nachrichten auf bestätigte Gefahren und Entfernen früherer Kopien eines übernommenen Kontos
+  (Abschnitt 3.19): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das der Server und ihrer Mitglieder
+  ist, einen Scam zu entfernen, der gepostet wurde, bevor er bekannt war, und die früheren Kopien eines übernommenen
+  Kontos, bevor weitere Menschen darauf hereinfallen.
+- Umsetzen der eigenen Regel eines Servers zu expliziten und drastischen Bildern außerhalb seiner NSFW-Kanäle anhand
+  der Markierungen von Discords Bildprüfung (Abschnitt 3.1): Art. 6 Abs. 1 lit. f DSGVO (Interesse des Servers und
+  seiner Mitglieder an einer Gemeinschaft, die solche Bilder in markierten Kanälen hält).
+- Der Hinweis an das Team eines Servers, wenn ein Bild Selbstverletzung zeigen könnte (Abschnitt 3.1): Art. 6 Abs. 1
+  lit. f i. V. m. Art. 9 Abs. 2 lit. e DSGVO (das Mitglied hat das Bild mit den Mitgliedern dieses Servers geteilt;
+  der Hinweis zeigt kein Bild und nennt niemanden, sein Link öffnet die Nachricht nur für die, die sie dort sehen
+  dürfen). Defendr selbst speichert davon nichts; der Hinweis bleibt im Log-Kanal des Servers, bis das Team ihn löscht.
 
 ## 5. Empfänger
 
@@ -417,6 +467,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Mitglieds-Markierungen: übernommenes Konto / Raid-Gruppe / Hinweis angezeigt | 72 Stunden / 7 Tage / 30 Tage |
 | Mitglieds-Markierung: Verifizierung ausstehend | mindestens 24 Stunden, so lange wie die Kick-Frist des Servers + 1 Stunde |
 | Mitglieds-Markierungen: Quarantäne-Rolle der Zugangsregeln / von Defendr vergebene Verdachtsrolle | solange die Rolle besteht; 30 Tage nach dem Verlassen |
+| Arbeitsnotizen der Prüfung älterer Nachrichten (kein Nachrichteninhalt) | 30 Tage nach dem Ende der Prüfung |
 | Raid-Gruppen (nur Metadaten) | 365 Tage |
 | Vorfälle | 1825 Tage |
 | Anti-Nuke: entzogene Rollen / Strukturabbilder / gelöschte Objekte (2.1) | 30 / 7 / 14 Tage |
@@ -473,7 +524,7 @@ Maßnahmen nach der Verlässlichkeit des Nachweises (z. B. nie Bann allein aufgr
 
 Netzwerkweite Einträge lösen nie eine automatische Maßnahme aus: Einträge aus externen
 Listen und auch alle anderen Netzwerk-Einträge zeigen Moderatoren nur eine Warnung, und die Moderatoren entscheiden
-selbst, ob sie etwas unternehmen. Jede Entscheidung kann mit /appeal überprüft
+selbst, ob sie etwas unternehmen. Jede Entscheidung über dich kann mit /appeal überprüft
 werden: Über Fälle eines Servers entscheiden dessen Moderatoren, über netzwerkweite Einträge das Defendr-Team.
 
 Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft, wenn du selbst einen
@@ -495,6 +546,10 @@ Beim Wortfilter (Abschnitt 3.17) hält Discord Nachrichten nach den Regeln zurü
 den Timeout von zehn Minuten nach drei zurückgehaltenen Nachrichten führt Defendr automatisch aus, wenn der Server ihn
 nicht ausgeschaltet hat. Gegen jeden dieser Fälle kannst du Einspruch einlegen (/appeal); wird ein Timeout aufgehoben,
 endet er sofort.
+
+Wo ein Server es eingeschaltet hat, entfernt Defendr eine Nachricht, deren Bild Discords Bildprüfung außerhalb der
+NSFW-Kanäle des Servers als explizit oder drastisch markiert hat. Das ist nie eine Strafe (kein Timeout, Kick oder
+Bann). War es ein Bild, das du gepostet oder weitergeleitet hast, kannst du die Entfernung mit /appeal anfechten.
 
 Die Webseite trifft keine eigenen Entscheidungen: Jede Aktion dort prüft Defendr nach denselben Regeln wie in Discord.
 

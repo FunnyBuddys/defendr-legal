@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-10-28 · effective 2026-10-28
+Version 2026-11-03 · effective 2026-11-03
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -29,7 +29,8 @@ e-mail address. What the website processes is in sections 12 and 13.
 
 <!-- anchor: data -->
 
-3.1 Message content (text, embeds, attachments, forwarded messages, polls) is checked in memory for a moment and not
+3.1 Message content (text, embeds, attachments and their descriptions, forwarded messages, polls) is checked in memory
+for a moment and not
 stored. One exception applies when a server explicitly turns it on (off by default): for
 messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, deleted after at
 most 1095 days, earlier together with the moderation case). A second exception: what
@@ -43,7 +44,11 @@ someone reports a message to the Defendr team, Defendr keeps a sealed copy of th
 report (see 3.16). A fifth exception: when Defendr itself acts on a message (for example deletes it or times out the
 person who wrote it), it keeps a sealed copy of that message with the moderation case, so that the Defendr team can
 check the case and decide an appeal fairly (see 3.18). With the word filter, Discord checks the messages itself (see
-3.17).
+3.17). Defendr can also check a server's recent messages again later, when the Defendr team confirms a threat or when
+Defendr stops a hijacked account (see 3.19). Defendr also reads the marks Discord's own image check puts on pictures,
+also in embeds such as link previews (explicit, graphic violence, self-harm). It uses
+them only where a server turned this on. A self-harm mark only leads to a short note to the server's team in a log
+channel only the team can see; Defendr does not store it.
 
 3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID. The card of a case in the
 server's log channel also shows the numbers of the rule that was broken, how old the member's account was and how long
@@ -79,7 +84,8 @@ declared and how large) so that the person handling your case can ask you for it
 requests about your rights, Defendr stores no images.
 
 3.6 Server settings: role and channel IDs, IDs of the admins and moderators who change settings or take decisions.
-If an admin answers the optional question "Where did you find Defendr?" in `/setup`, one of six fixed answers (for
+When someone reports a raid to Discord, calls it a false alarm or turns Discord's security actions on or off while
+Defendr's raid mode runs, Defendr notes who did it and when on the server's raid record. If an admin answers the optional question "Where did you find Defendr?" in `/setup`, one of six fixed answers (for
 example "top.gg" or "A friend") is stored for the server and not assigned to any person. It is used only to understand
 how servers find Defendr, is shown to the Defendr team only as a count across all servers, and is deleted together
 with the server's configuration.
@@ -258,7 +264,9 @@ forwarded or edited and whether a bot, app or webhook sent it, and the times and
 server and the person. Defendr takes the copy from the message it is checking at that moment and reads nothing extra. It
 keeps at most five messages per case. It keeps no copy when it only logs or only watches a message, none for messages
 Discord's AutoMod held back through the word filter (3.17), and none when a picture in the case matched a known image
-with sensitive content.
+with sensitive content. On servers that use it, Defendr can hide the link preview of a member's message with a
+suspicious link instead of deleting the message: the message stays, Defendr keeps no copy of it, and the case notes
+only the IDs of the channel and the message.
 
 The copy is stored encrypted. Only members of the Defendr team who review cases and
 appeals can open it, on Defendr's website; a team member who is not handling an appeal to Defendr about the case has to
@@ -280,6 +288,31 @@ the copy without its content. If you ask for erasure, the Defendr team checks th
 is deleted within a day. Legal basis: Art. 6(1)(f) GDPR (section 4). If a message happens to contain special categories of personal data (for example
 about health or beliefs), Defendr keeps it only for this review and relies on Art. 9(2)(f) GDPR (establishing,
 exercising or defending legal claims about the moderation decision and its appeal).
+
+<!-- anchor: earlier-messages -->
+
+3.19 Checking earlier messages: when the Defendr team confirms a threat, for example a
+scam website or a scam picture, Defendr can check a server's recent messages for it, if the server turned this on (it
+is off until a server chooses it): the last 24 hours, 3 days or 7 days, as the server chose. Defendr uses Discord's
+message search for this and checks what it finds in memory with the same detection rules as for a new message. When a
+message matches, Defendr records the detection (3.2) and reports it to the server's team in the log channel, or, if the
+server chose removal and Defendr would also delete a new message with this threat, deletes it, shows the usual notice
+and opens a moderation case that can be appealed (with the copy of 3.18). Messages from the server's own moderators,
+and messages whose author Defendr cannot look up at that moment, stay as they are; messages from bots, webhooks and
+apps, and addresses written without a link, are only reported.
+
+When Defendr stops a hijacked account, it also searches that account's messages on the server from ten minutes before
+its first copy of the scam up to its last one for further copies of the same scam. It compares them with the copies it
+already removed, by hash values of the text and the pictures and by the linked domains, which it holds in memory for
+at most one hour, and removes the matching copies with the same case, also when the account belongs to a moderator. A
+server can turn this off.
+
+These checks never time out, kick or ban anyone, give no role and send no direct
+messages. For each check Defendr keeps a short work note: the server, the case or the threat it was about, the time
+range, how far the check got, the counts, and, if a moderator asked Defendr to remove the reported messages, who asked;
+the cases of such a removal also name that moderator. The note holds no message content and is deleted
+30 days after the check ends, or with the server's data. Legal basis: Art. 6(1)(f) GDPR
+(section 4).
 
 ## 4. Purposes and legal bases
 
@@ -327,6 +360,16 @@ exercising or defending legal claims about the moderation decision and its appea
 - The sealed copy of a message Defendr acted on (section 3.18): Art. 6(1)(f) GDPR. Our legitimate interest, and that
   of the servers and their members, is security on the servers and a fair review of every case and appeal, also after
   the message was deleted. If the message contains special categories of personal data: Art. 9(2)(f) GDPR.
+- Checking earlier messages for confirmed threats and removing a hijacked account's earlier copies (section 3.19):
+  Art. 6(1)(f) GDPR. Our legitimate interest, and that of the servers and their members, is removing a scam that was
+  posted before it was known, and the earlier copies a hijacked account posted, before more people fall for them.
+- Carrying out a server's own rule about explicit and graphic pictures outside its NSFW channels, using the marks
+  Discord's image check sets (section 3.1): Art. 6(1)(f) GDPR (the server's and its members' interest in a community
+  that keeps such pictures in marked channels).
+- The note to a server's team when a picture may show self-harm (section 3.1): Art. 6(1)(f) together with Art. 9(2)(e)
+  GDPR (the member shared the picture with that server's members; the note shows no picture and names no one, and its
+  link opens the message only for those who can see it there). Defendr itself keeps nothing about it; the note stays in
+  the server's log channel until the team deletes it.
 
 ## 5. Recipients
 
@@ -388,6 +431,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Member flags: hijacked account / raid cohort / network hint shown | 72 hours / 7 days / 30 days |
 | Member flag: pending verification | at least 24 hours, as long as the server's kick-unverified delay + 1 hour |
 | Member flags: join-gate quarantine role / suspect role applied by Defendr | while the role is held; 30 days after leaving |
+| Work notes of the earlier-messages check (no message content) | 30 days after the check ends |
 | Raid cohorts (metadata only) | 365 days |
 | Incidents | 1825 days |
 | Anti-nuke role strips / structure snapshots / deleted entities (2.1) | 30 / 7 / 14 days |
@@ -440,7 +484,7 @@ Server operators decide how Defendr reacts to a detected threat. Defendr limits 
 how reliable the evidence is (for example, never a ban on an external list alone).
 
 Network records never trigger an automated action: entries from external lists and all
-other network records only show moderators a warning, and the moderators decide themselves whether to act. Every decision can be reviewed with /appeal: a server's moderators decide about its own
+other network records only show moderators a warning, and the moderators decide themselves whether to act. Every decision about you can be reviewed with /appeal: a server's moderators decide about its own
 cases, the Defendr team about network-wide records.
 
 Defendr only sends a direct message when an action concerns you, when you started a flow yourself
@@ -459,6 +503,10 @@ at Defendr decides. Your data subject rights against Defendr (/defendr › My da
 With the word filter (section 3.17), Discord holds back messages by the rules the server turned on; Defendr carries out
 the ten-minute timeout after three held-back messages automatically, unless the server turned it off. You can appeal
 every one of these cases (/appeal); a timeout that is lifted ends at once.
+
+Where a server turned it on, Defendr removes a message whose picture Discord's image check marked as explicit or
+graphic, outside the server's NSFW channels. That is never a penalty (no timeout, kick or ban). If it was a picture you
+posted or forwarded, you can appeal the removal with /appeal.
 
 The website makes no decisions of its own: Defendr checks every action there by the same rules as in Discord.
 
