@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-11-03 · gültig ab 2026-11-03
+Version 2026-11-05 · gültig ab 2026-11-05
 
 ## 1. Verantwortlicher
 
@@ -29,7 +29,9 @@ und keine Registrierung mit E-Mail-Adresse. Was die Webseite verarbeitet, steht 
 
 3.1 Nachrichteninhalte (Text, Einbettungen, Anhänge und ihre Beschreibungen, weitergeleitete Nachrichten,
 Umfragen) werden kurzzeitig im
-Arbeitsspeicher geprüft und nicht gespeichert. Eine Ausnahme gilt, wenn ein Server dies
+Arbeitsspeicher geprüft und nicht gespeichert. Bilder bleiben nach der Prüfung höchstens fünf Minuten im
+Arbeitsspeicher, damit die Kopie einer Nachricht, gegen die Defendr vorgeht, sie aufbewahren kann (3.18); danach
+werden sie verworfen. Eine Ausnahme gilt, wenn ein Server dies
 ausdrücklich einschaltet (standardmäßig aus): Bei Nachrichten, gegen die Defendr vorgeht, wird ein gekürzter,
 entschärfter Auszug gespeichert (verschlüsselt, Löschung spätestens nach 1095 Tagen,
 früher mit dem Moderationsfall). Eine zweite Ausnahme: Was du Defendr per Direktnachricht schreibst (Text, Dateinamen
@@ -46,9 +48,11 @@ Defendr-Team den Fall prüfen und über einen Einspruch fair entscheiden kann (s
 Discord die Nachrichten selbst (siehe 3.17). Später kann Defendr die letzten Nachrichten eines Servers auch noch einmal
 prüfen, wenn das Defendr-Team eine Gefahr bestätigt oder Defendr ein übernommenes Konto stoppt (siehe 3.19). Defendr
 liest außerdem die Markierungen, die Discords eigene Bildprüfung an Bildern setzt, auch in Einbettungen wie
-Linkvorschauen (explizit, Gewaltdarstellung, Selbstverletzung). Es nutzt sie nur, wo ein
-Server das eingeschaltet hat. Eine Markierung als Selbstverletzung führt nur zu einem kurzen Hinweis an das Team des
-Servers in einem Log-Kanal, den nur das Team sieht; Defendr speichert sie nicht.
+Linkvorschauen (explizit, Gewaltdarstellung, Selbstverletzung). Es handelt danach nur,
+wo ein Server das eingeschaltet hat; auf jedem Server nutzt es sie außerdem, um von einer markierten Nachricht keine
+Bilder mit der Fallkopie aufzubewahren (3.18): Die Kopie vermerkt dann nur, dass ein Bild wegen einer Markierung nicht
+aufbewahrt wurde, nicht welche. Sonst führt eine Markierung als Selbstverletzung nur zu einem kurzen Hinweis an das
+Team des Servers in einem Log-Kanal, den nur das Team sieht; darüber hinaus speichert Defendr sie nicht.
 
 3.2 Moderationsfälle und Erkennungen: Discord-Nutzer-ID, Grund-Code, Maßnahme, Zeitpunkt, Server-ID. Die Karte eines
 Falls im Log-Kanal des Servers zeigt außerdem die Zahlen der Regel, gegen die verstoßen wurde, wie alt das Konto des
@@ -278,7 +282,7 @@ verwarnt er die Person, die sie geschrieben hat, schaltet sie stumm (Timeout), w
 Moderationsfall auf. So kann das Defendr-Team später prüfen, ob die Maßnahme richtig war, etwa wenn du Einspruch
 einlegst oder ein Moderator einen Fehler meldet. Die Kopie enthält den Text (bis 4.000 Zeichen; Erwähnungen anderer
 Personen und Rollen sind durch einen neutralen Platzhalter ersetzt), die Links darin, die Liste der Anhänge (Name, Typ,
-Größe, Bildmaße und Spoiler-Markierung, nicht die Dateien selbst), Text und Anhangsliste einer weitergeleiteten
+Größe, Bildmaße und Spoiler-Markierung; von den Dateien selbst nur die unten beschriebenen Bilder), Text und Anhangsliste einer weitergeleiteten
 Nachricht, den sichtbaren Text von Einbettungen und Schaltflächen, die ein Bot, eine App oder ein Webhook gesendet hat
 (nicht die Vorschau, die Discord von einer verlinkten Seite erzeugt), die Namen von Stickern, den Text einer Umfrage,
 die Zahl der Erwähnungen (und ob alle erwähnt wurden), ob die Nachricht eine Antwort, weitergeleitet oder bearbeitet
@@ -291,9 +295,24 @@ nutzen, kann Defendr bei einem verdächtigen Link die Linkvorschau der Nachricht
 Nachricht zu löschen: Die Nachricht bleibt, Defendr bewahrt keine Kopie davon auf, und der Fall vermerkt nur die IDs
 des Kanals und der Nachricht.
 
+<!-- anchor: case-pictures -->
+
+Bilder der Nachricht: Mit der Kopie bewahrt Defendr auch die Bilder auf, die an diese Nachricht oder an eine von ihr
+weitergeleitete Nachricht angehängt sind – höchstens drei je Nachricht und zehn je Fall –, als eigene, neu erzeugte
+Kopien (WebP, höchstens 1.600 Pixel, ohne Metadaten wie Standort- oder Kameradaten), jeweils mit einem Fingerabdruck,
+der nur dem Abgleich mit bekannten Bildern mit sensiblem Inhalt dient. Er erzeugt sie nur aus dem, was seine
+Bildprüfung für diese Nachricht bereits geladen hat, und lädt dafür nichts nach. Er bewahrt kein Bild auf, das einem
+bekannten Bild mit sensiblem Inhalt entspricht, keines aus einer Nachricht, die Discord als sensibel markiert hat, und
+keines, solange die Verarbeitung deiner Daten eingeschränkt ist; zeigt sich ein solcher Treffer später, werden die
+Bilder des Falls gelöscht, und schickt Discord seine Markierung erst, nachdem die Bilder aufbewahrt wurden, werden die
+Bilder dieser Nachricht gelöscht. Die Bilder sehen dieselben Personen wie die Kopie, jede Ansicht wird protokolliert,
+und sie werden zusammen mit der Kopie nach denselben Regeln gelöscht.
+
 Die Kopie ist verschlüsselt gespeichert. Öffnen können sie nur Mitglieder des
-Defendr-Teams, die Fälle und Einsprüche prüfen, auf der Webseite von Defendr; wer im Team nicht gerade einen Einspruch
-an Defendr zu diesem Fall bearbeitet, muss einen Grund angeben, und jede Ansicht wird festgehalten. Server-Moderatoren,
+Defendr-Teams, die Fälle und Einsprüche prüfen, auf der Webseite von Defendr; ein Teammitglied kann ein Bild auch in
+Discord öffnen, auf der Karte eines Einspruchs an das Defendr-Team, in einer Nachricht, die nur es selbst sieht; wer
+im Team nicht gerade einen Einspruch an Defendr zu diesem Fall bearbeitet, muss einen Grund angeben, und jede Ansicht
+wird festgehalten. Server-Moderatoren,
 andere Mitglieder und die Öffentlichkeit sehen sie nicht, und Defendr gibt sie an niemanden weiter. Sie dient nur der
 Prüfung des Falls und der Entscheidung über Einsprüche, nicht für automatische Entscheidungen, Erkennungsregeln oder
 Profile.
@@ -308,11 +327,13 @@ Aufgabe, höchstens einen Tag später; Kopien in Sicherungen verschwinden mit de
 sie nur, solange wir sie wegen einer rechtlichen Pflicht oder für Rechtsansprüche aufbewahren müssen, oder solange die
 Verarbeitung auf Verlangen eingeschränkt ist; dann sieht das Team sie nicht mehr.
 
-Deine Rechte dazu: Die Kopie deiner eigenen Nachricht steht mit der Fallnummer in deinem Export (/defendr › Meine
-Daten › Exportieren), solange Defendr sie aufbewahrt. Passte ein Bild im Fall zu einem bekannten Bild mit sensiblem
-Inhalt, nennt der Export die Kopie ohne ihren Inhalt. Verlangst du die Löschung, prüft das Defendr-Team den Antrag; ist er bewilligt, wird die Kopie
+Deine Rechte dazu: Die Kopie deiner eigenen Nachricht steht mit der Fallnummer und einer Liste der mit ihr
+aufbewahrten Bilder (Typ, Größe und Zeitpunkt der Aufbewahrung, nicht die Bilder selbst) in deinem Export (/defendr ›
+Meine Daten › Exportieren), solange Defendr die Kopie aufbewahrt. Passte ein Bild im Fall zu einem bekannten Bild mit
+sensiblem Inhalt, nennt der Export die Kopie ohne ihren Inhalt und listet keine Bilder, weil sie gelöscht sind; nur
+Bilder, die eine rechtliche Pflicht hält, stehen weiter darin. Verlangst du die Löschung, prüft das Defendr-Team den Antrag; ist er bewilligt, wird die Kopie
 innerhalb eines Tages gelöscht. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4). Enthält eine Nachricht
-zufällig besondere Kategorien personenbezogener Daten (etwa zur Gesundheit oder zu Überzeugungen), bewahrt Defendr
+oder eines ihrer Bilder zufällig besondere Kategorien personenbezogener Daten (etwa zur Gesundheit oder zu Überzeugungen), bewahrt Defendr
 sie nur für diese Prüfung auf und stützt sich auf Art. 9 Abs. 2 lit. f DSGVO (Geltendmachung, Ausübung oder
 Verteidigung von Rechtsansprüchen zur Moderationsentscheidung und zum Einspruch).
 
@@ -391,10 +412,11 @@ Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
 - Wortfilter (Abschnitt 3.17): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das des Servers ist,
   Hassrede, sexuelle Inhalte und Schimpfwörter nach den Regeln des Servers zurückzuhalten und jede Maßnahme
   überprüfbar zu machen.
-- Versiegelte Kopie einer Nachricht, gegen die Defendr vorgegangen ist (Abschnitt 3.18): Art. 6 Abs. 1 lit. f DSGVO.
-  Unser berechtigtes Interesse und das der Server und ihrer Mitglieder ist die Sicherheit auf den Servern und eine
-  faire Prüfung jedes Falls und jedes Einspruchs, auch wenn die Nachricht inzwischen gelöscht ist. Enthält die
-  Nachricht besondere Kategorien personenbezogener Daten: Art. 9 Abs. 2 lit. f DSGVO.
+- Versiegelte Kopie einer Nachricht, gegen die Defendr vorgegangen ist, und die mit ihr aufbewahrten Bilder
+  (Abschnitt 3.18): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das der Server und ihrer Mitglieder
+  ist die Sicherheit auf den Servern und eine faire Prüfung jedes Falls und jedes Einspruchs, auch wenn die Nachricht
+  inzwischen gelöscht ist. Enthält die Nachricht oder eines ihrer Bilder besondere Kategorien personenbezogener Daten:
+  Art. 9 Abs. 2 lit. f DSGVO.
 - Prüfung älterer Nachrichten auf bestätigte Gefahren und Entfernen früherer Kopien eines übernommenen Kontos
   (Abschnitt 3.19): Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse und das der Server und ihrer Mitglieder
   ist, einen Scam zu entfernen, der gepostet wurde, bevor er bekannt war, und die früheren Kopien eines übernommenen
@@ -452,7 +474,7 @@ Discord (USA) – die Nutzung von Discord unterliegt Discords eigener Datenschut
 | Nachrichtenauszüge (pro Server ausdrücklich eingeschaltet) | höchstens 1095 Tage, nie länger als der Fall |
 | Hochgeladene Nachweise (vom Team zu Sicherheitseinträgen und Fällen hinterlegt) | 1095 Tage; Nachweise zu Sicherheitseinträgen mit dem Eintrag; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus; was ein Mitglied mitschickt, wird nur als neu erzeugte Bildkopie für das Defendr-Team gespeichert (nächste Zeile) |
 | Meldungen an das Defendr-Team: die versiegelte Kopie der gemeldeten Nachricht (Text, Links, Liste der Anhänge, Text von Einbettungen, Namen der Person, die sie geschrieben hat, zu diesem Zeitpunkt) und neu erzeugte Kopien der Bilder, die der Melder angehängt hat (WebP ohne Metadaten) | 90 Tage nach der Entscheidung oder 180 Tage nach der Meldung, wenn das früher ist; gelöscht durch eine tägliche Aufgabe, spätestens einen Tag später; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
-| Fallinhalt: die versiegelte Kopie einer Nachricht, gegen die Defendr vorgegangen ist (Text, Links, Liste der Anhänge, weitergeleiteter Text, Text einer Umfrage, Namen von Stickern, Anzahl der Erwähnungen; Text von Einbettungen und Komponenten nur bei Nachrichten von Bots, Apps und Webhooks) | 90 Tage, nachdem der Fall abgeschlossen ist (bei einem Timeout: nachdem er endet) oder nachdem er zurückgenommen, als Fehler markiert, für ungültig erklärt oder über seinen Einspruch entschieden wurde; aufbewahrt, solange ein Einspruch offen ist, höchstens 180 Tage nachdem er eingereicht wurde; gelöscht durch eine tägliche Aufgabe, spätestens einen Tag später; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
+| Fallinhalt: die versiegelte Kopie einer Nachricht, gegen die Defendr vorgegangen ist (Text, Links, Liste der Anhänge, weitergeleiteter Text, Text einer Umfrage, Namen von Stickern, Anzahl der Erwähnungen; Text von Einbettungen und Komponenten nur bei Nachrichten von Bots, Apps und Webhooks) und neu erzeugte Kopien ihrer Bilder (WebP ohne Metadaten, mit einem Fingerabdruck für die Prüfung auf sensible Bilder) | 90 Tage, nachdem der Fall abgeschlossen ist (bei einem Timeout: nachdem er endet) oder nachdem er zurückgenommen, als Fehler markiert, für ungültig erklärt oder über seinen Einspruch entschieden wurde; aufbewahrt, solange ein Einspruch offen ist, höchstens 180 Tage nachdem er eingereicht wurde; gelöscht durch eine tägliche Aufgabe, spätestens einen Tag später; eine rechtliche Aufbewahrungspflicht setzt die Löschung aus |
 | Meldungen und Mitmeldende | angenommen: 1825 Tage nach der Entscheidung; abgelehnt/Spam: 365 Tage; offen (auch während der Prüfung): automatisch geschlossen nach 90 Tagen |
 | Verlässlichkeit meldender Personen | 1825 Tage nach der letzten Meldung |
 | Fehlalarm-Signale (Moderator-ID, Fall) | 1095 Tage |

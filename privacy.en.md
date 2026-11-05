@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-11-03 · effective 2026-11-03
+Version 2026-11-05 · effective 2026-11-05
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -31,7 +31,8 @@ e-mail address. What the website processes is in sections 12 and 13.
 
 3.1 Message content (text, embeds, attachments and their descriptions, forwarded messages, polls) is checked in memory
 for a moment and not
-stored. One exception applies when a server explicitly turns it on (off by default): for
+stored. Pictures stay in memory for at most five minutes after the check, so that the copy of a message Defendr acts
+on can keep them (3.18); then they are discarded. One exception applies when a server explicitly turns it on (off by default): for
 messages Defendr acts on, a shortened, defanged excerpt is stored (encrypted, deleted after at
 most 1095 days, earlier together with the moderation case). A second exception: what
 you write to Defendr in a direct message (text, file names and links) is kept in a private channel of the Defendr
@@ -46,9 +47,11 @@ person who wrote it), it keeps a sealed copy of that message with the moderation
 check the case and decide an appeal fairly (see 3.18). With the word filter, Discord checks the messages itself (see
 3.17). Defendr can also check a server's recent messages again later, when the Defendr team confirms a threat or when
 Defendr stops a hijacked account (see 3.19). Defendr also reads the marks Discord's own image check puts on pictures,
-also in embeds such as link previews (explicit, graphic violence, self-harm). It uses
-them only where a server turned this on. A self-harm mark only leads to a short note to the server's team in a log
-channel only the team can see; Defendr does not store it.
+also in embeds such as link previews (explicit, graphic violence, self-harm). It acts on
+them only where a server turned this on; on every server, it also uses them to keep no pictures of a marked message
+with a case copy (3.18): the copy then only notes that a picture was not kept because of a mark, not which mark.
+Otherwise a self-harm mark only leads to a short note to the server's team in a log channel only the team can see;
+beyond that, Defendr does not store it.
 
 3.2 Moderation cases and detections: Discord user ID, reason code, action, time, server ID. The card of a case in the
 server's log channel also shows the numbers of the rule that was broken, how old the member's account was and how long
@@ -257,7 +260,7 @@ bans the person who wrote it, or gives them a role such as the quarantine role �
 with the moderation case. This way the Defendr team can check later whether the action was right, for example when you
 appeal or a moderator reports a mistake. The copy holds the text (up to 4,000 characters, with mentions of other people
 and roles replaced by a neutral placeholder), the links in it, the list of attachments (name, type, size, picture
-dimensions and spoiler mark, not the files themselves), the text and attachment list of a forwarded message, the visible
+dimensions and spoiler mark; of the files themselves only the pictures described below), the text and attachment list of a forwarded message, the visible
 text of embeds and buttons sent by a bot, app or webhook (not the preview Discord makes of a linked page), sticker
 names, the text of a poll, the number of mentions (and whether everyone was mentioned), whether the message was a reply,
 forwarded or edited and whether a bot, app or webhook sent it, and the times and IDs of the message, the channel, the
@@ -268,9 +271,22 @@ with sensitive content. On servers that use it, Defendr can hide the link previe
 suspicious link instead of deleting the message: the message stays, Defendr keeps no copy of it, and the case notes
 only the IDs of the channel and the message.
 
+<!-- anchor: case-pictures -->
+
+Pictures of the message: with the copy, Defendr also keeps the pictures attached to that message or to a message it
+forwards — at most three per message and ten per case — as new copies it makes itself (WebP, at most 1,600 pixels,
+without metadata such as location or camera data), each with a fingerprint used only to check it against known images
+with sensitive content. It makes them only from what its image check already loaded for that message and downloads
+nothing for them. It keeps no picture that matches a known image with sensitive content, none of a message that
+Discord marked as sensitive, and none while the processing of your data is restricted; if such a match shows up
+later, the pictures of the case are deleted, and if Discord sends its mark only after the pictures were kept, the
+pictures of that message are deleted. The same people see the pictures as the copy, every view is logged, and they
+are deleted together with the copy under the same rules.
+
 The copy is stored encrypted. Only members of the Defendr team who review cases and
-appeals can open it, on Defendr's website; a team member who is not handling an appeal to Defendr about the case has to
-give a reason, and every view is recorded. Server moderators, other members and the public do not see it, and Defendr
+appeals can open it, on Defendr's website; a team member can also open a picture in Discord, on the card of an appeal
+to the Defendr team, in a message only that team member sees; a team member who is not handling an appeal to Defendr
+about the case has to give a reason, and every view is recorded. Server moderators, other members and the public do not see it, and Defendr
 passes it on to no one. It serves only to review the case and decide appeals, not for automated decisions, detection
 rules or profiles.
 
@@ -282,10 +298,13 @@ open, but no longer than 180 days after the appeal was filed, and is deleted
 copies in backups go when the backup rotates out (section 7). It stays longer only while we must keep it because of a
 legal duty or for legal claims, or while processing is restricted on request; then the team no longer sees it.
 
-Your rights here: the copy of your own message is in your export (/defendr › My data › Export), with the case number,
-for as long as Defendr keeps it. If a picture in the case matched a known image with sensitive content, the export names
-the copy without its content. If you ask for erasure, the Defendr team checks the request; once it is granted, the copy
-is deleted within a day. Legal basis: Art. 6(1)(f) GDPR (section 4). If a message happens to contain special categories of personal data (for example
+Your rights here: the copy of your own message is in your export (/defendr › My data › Export), with the case number
+and a list of the pictures kept with it (type, size and when each was kept, not the pictures themselves), for as long
+as Defendr keeps the copy. If a picture in the case matched a known image with sensitive content, the export names the
+copy without its content and lists no pictures, because they are deleted; only pictures that a legal duty keeps are
+still listed. If you ask for erasure, the Defendr team checks the request; once it is granted, the copy
+is deleted within a day. Legal basis: Art. 6(1)(f) GDPR (section 4). If a message or one of its pictures happens to
+contain special categories of personal data (for example
 about health or beliefs), Defendr keeps it only for this review and relies on Art. 9(2)(f) GDPR (establishing,
 exercising or defending legal claims about the moderation decision and its appeal).
 
@@ -357,9 +376,10 @@ the cases of such a removal also name that moderator. The note holds no message 
   also when the message was edited or deleted in the meantime, and being able to document every decision.
 - The word filter (section 3.17): Art. 6(1)(f) GDPR. Our legitimate interest, and that of the server, is holding back
   hate speech, sexual content and profanity by the server's rules and keeping every action open to review.
-- The sealed copy of a message Defendr acted on (section 3.18): Art. 6(1)(f) GDPR. Our legitimate interest, and that
-  of the servers and their members, is security on the servers and a fair review of every case and appeal, also after
-  the message was deleted. If the message contains special categories of personal data: Art. 9(2)(f) GDPR.
+- The sealed copy of a message Defendr acted on and the pictures kept with it (section 3.18): Art. 6(1)(f) GDPR. Our
+  legitimate interest, and that of the servers and their members, is security on the servers and a fair review of
+  every case and appeal, also after the message was deleted. If the message or one of its pictures contains special
+  categories of personal data: Art. 9(2)(f) GDPR.
 - Checking earlier messages for confirmed threats and removing a hijacked account's earlier copies (section 3.19):
   Art. 6(1)(f) GDPR. Our legitimate interest, and that of the servers and their members, is removing a scam that was
   posted before it was known, and the earlier copies a hijacked account posted, before more people fall for them.
@@ -416,7 +436,7 @@ Discord (USA) – using Discord is subject to Discord's own privacy policy. Disc
 | Message excerpts (opt-in per server) | at most 1095 days, never longer than the case |
 | Uploaded evidence (staff uploads on Safety Records and cases) | 1095 days; record evidence with the record; legal hold suspends deletion; what a member attaches is stored only as a re-encoded image copy for the Defendr team (next row) |
 | Reports to the Defendr team: the sealed copy of the reported message (text, links, attachment list, embed text, author's names at the time) and re-encoded images the reporter attached (WebP without metadata) | 90 days after the decision, or 180 days after the report if that is earlier; deleted by a daily task, up to one day later; legal hold suspends deletion |
-| Case content: the sealed copy of a message Defendr acted on (text, links, attachment list, forwarded text, poll text, sticker names, mention counts; embed and component text only of bot, app and webhook messages) | 90 days after the case is closed (a timeout: after it ends) or after it is undone, marked as a mistake, voided or its appeal is decided; kept while an appeal is open, at most 180 days after it was filed; deleted by a daily task, up to one day later; legal hold suspends deletion |
+| Case content: the sealed copy of a message Defendr acted on (text, links, attachment list, forwarded text, poll text, sticker names, mention counts; embed and component text only of bot, app and webhook messages) and re-encoded copies of its pictures (WebP without metadata, with a fingerprint for the sensitive-image check) | 90 days after the case is closed (a timeout: after it ends) or after it is undone, marked as a mistake, voided or its appeal is decided; kept while an appeal is open, at most 180 days after it was filed; deleted by a daily task, up to one day later; legal hold suspends deletion |
 | Reports and co-reporter links | accepted: 1825 days after decision; rejected/spam: 365 days; open (also while under review): auto-closed after 90 days |
 | Reporter reputation | 1825 days after last report |
 | False-positive signals (moderator id, case) | 1095 days |
