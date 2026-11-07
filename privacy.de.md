@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-11-05 · gültig ab 2026-11-05
+Version 2026-11-08 · gültig ab 2026-11-08
 
 ## 1. Verantwortlicher
 
@@ -523,9 +523,13 @@ Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschun
 Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). In Discord nutzt du sie auf der Seite
 Meine Daten von /defendr (Exportieren, Meine Daten löschen, Widersprechen, Berichtigen, Einschränken; direkt: /defendr
 page:mydata), auf der Webseite im persönlichen Bereich unter „Mein Defendr“ mit denselben Funktionen, oder per E-Mail an
-privacy@defendr.live. Der Export ist maschinenlesbar. Entscheidungen kannst du überprüfen lassen (/appeal, auf der
-Webseite unter „Mein Defendr“). Du kannst dich außerdem bei einer Aufsichtsbehörde beschweren (Der Landesbeauftragte für den Datenschutz Niedersachsen,
-Prinzenstraße 5, 30159 Hannover, Deutschland).
+privacy@defendr.live. Der Export hat zwei Teile: eine Textdatei, die deine Daten in einfachen Worten und in deiner
+Sprache erklärt (was jeder Teil bedeutet, warum wir ihn speichern, woher er kommt und wie lange wir ihn aufbewahren),
+und dieselben Daten als maschinenlesbare JSON-Datei, die du zu einem anderen Dienst mitnehmen kannst. Auf der Webseite
+bekommst du beide in einer ZIP-Datei. Die Kopie nennt, was sie zum Schutz anderer Personen weglässt, und warum. In
+Discord und auf der Webseite kannst du alle 24 Stunden eine neue Kopie erstellen; per E-Mail kannst du jederzeit eine
+Kopie verlangen. Entscheidungen kannst du überprüfen lassen (/appeal, auf der Webseite unter „Mein Defendr“). Du
+kannst dich außerdem bei einer Aufsichtsbehörde beschweren (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
 **Widerspruchsrecht (Art. 21 DSGVO):** Soweit wir deine Daten aufgrund berechtigter Interessen verarbeiten (Art. 6
 Abs. 1 lit. f DSGVO), kannst du aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit widersprechen.
@@ -804,8 +808,9 @@ DSGVO), wird 1825 Tage aufbewahrt, ist Teil deines Exports und bleibt bei einer 
 Daten bestehen. Änderungen, die du über die Webseite an einem Server vornimmst,
 stehen wie in Discord mit deiner Nutzer-ID im Verlauf und im Log-Kanal des Servers, dort mit dem Hinweis „über die
 Webseite“. Ein Link, den du im Link-Prüfer eingibst, wird wie mit /check in Discord geprüft und nicht gespeichert.
-Einen Export, den du über die Webseite anforderst, kannst du nur in derselben Sitzung und nur einmal herunterladen,
-höchstens 15 Minuten lang; die verschlüsselte Kopie wird danach gelöscht.
+Einen Export, den du über die Webseite anforderst (eine ZIP-Datei), kannst du nur in derselben Sitzung und nur einmal
+herunterladen, höchstens 15 Minuten lang; die verschlüsselte Kopie wird danach
+gelöscht.
 
 12.7 Statusseite. status.defendr.live zeigt nur den Betriebszustand von Defendr und der Webseite. Sie läuft bei
 Cloudflare (Cloudflare Workers), nicht auf unserem Server, setzt keine Cookies und speichert keine Daten über dich;

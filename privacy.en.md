@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-11-05 · effective 2026-11-05
+Version 2026-11-08 · effective 2026-11-08
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -483,7 +483,11 @@ Deletion inside backups happens through their rotation; the maximum backup reten
 You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing
 (Art. 18), data portability (Art. 20) and objection (Art. 21). In Discord you use them on the My data page of /defendr
 (Export, Delete my data, Object, Correct, Restrict; directly: /defendr page:mydata), on the website in the personal
-area "My Defendr" with the same functions, or by e-mail to privacy@defendr.live. The export is machine-readable.
+area "My Defendr" with the same functions, or by e-mail to privacy@defendr.live. The export has two parts: a text
+file that explains your data in plain words in your language (what each part means, why we keep it, where it comes
+from and how long we keep it), and the same data as a machine-readable JSON file that you can take to another service.
+On the website you get both in one ZIP file. The copy names what it leaves out to protect other people, and why. In
+Discord and on the website you can make a new copy every 24 hours; by e-mail you can ask for a copy at any time.
 You can have a decision reviewed (/appeal, on the website under "My Defendr"). You can also lodge a complaint with a
 supervisory authority (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
@@ -740,8 +744,8 @@ staff answer or act on the website, this is recorded in the action log in the sa
 kept for 1825 days, is part of your export and is kept when your data is erased. Changes
 you make to a server through the website appear, as in Discord, with your user ID in the server's history and log
 channel, there with the note "via the website". A link you enter in the link checker is checked as with /check in
-Discord and not stored. An export you request on the website can be downloaded only in the same session and only once,
-for at most 15 minutes; the encrypted copy is deleted afterwards.
+Discord and not stored. An export you request on the website (one ZIP file) can be downloaded only in the same session
+and only once, for at most 15 minutes; the encrypted copy is deleted afterwards.
 
 12.7 Status page. status.defendr.live shows only the operating state of Defendr and the website. It runs at Cloudflare
 (Cloudflare Workers), not on our server, sets no cookies and stores no data about you; opening it is covered by
