@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-11-10 · gültig ab 2026-11-10
+Version 2026-11-11 · gültig ab 2026-11-11
 
 ## 1. Verantwortlicher
 
@@ -263,7 +263,8 @@ zählen (als Hashwert, drei Sekunden lang). Gespeichert wird er nur, wenn der Se
 als gekürzter, entschärfter Auszug von höchstens 300 Zeichen im Moderationsfall. Zu jeder zurückgehaltenen Nachricht
 legt Defendr einen Moderationsfall an (Nutzer-ID, Kanal, Grund-Code, Bereich, Wortliste und Sprache; bei einem Wort, das nur auf Discords
 eigener Wortliste steht, statt des Bereichs „ein Wort auf Discords eigener Liste“; das Wort der Regel
-nur entschärft und nur mit eingeschalteten Auszügen), gegen den das Mitglied Einspruch einlegen kann (/appeal). Hält
+nur entschärft und nur mit eingeschalteten Auszügen), gegen den das Mitglied Einspruch einlegen kann (/appeal), wenn
+der Server Einsprüche anbietet und Defendr noch dort ist. Hält
 Discord von derselben Person innerhalb von zehn Minuten drei Nachrichten zurück, schaltet Defendr sie für zehn Minuten
 stumm (Timeout), außer der Server hat das ausgeschaltet; dafür zählt Defendr die gespeicherten Fälle und merkt sich nur
 im Arbeitsspeicher und höchstens zehn Minuten, wann es zuletzt so gehandelt hat. Die Fälle werden wie alle
@@ -560,7 +561,8 @@ Sprache erklärt (was jeder Teil bedeutet, warum wir ihn speichern, woher er kom
 und dieselben Daten als maschinenlesbare JSON-Datei, die du zu einem anderen Dienst mitnehmen kannst. Auf der Webseite
 bekommst du beide in einer ZIP-Datei. Die Kopie nennt, was sie zum Schutz anderer Personen weglässt, und warum. In
 Discord und auf der Webseite kannst du alle 24 Stunden eine neue Kopie erstellen; per E-Mail kannst du jederzeit eine
-Kopie verlangen. Entscheidungen kannst du überprüfen lassen (/appeal, auf der Webseite unter „Mein Defendr“). Du
+Kopie verlangen. Entscheidungen kannst du überprüfen lassen (/appeal, auf der Webseite unter „Mein Defendr“; welche,
+steht in Abschnitt 9). Du
 kannst dich außerdem bei einer Aufsichtsbehörde beschweren (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
 **Widerspruchsrecht (Art. 21 DSGVO):** Soweit wir deine Daten aufgrund berechtigter Interessen verarbeiten (Art. 6
@@ -582,8 +584,14 @@ Maßnahmen nach der Verlässlichkeit des Nachweises (z. B. nie Bann allein aufgr
 
 Netzwerkweite Einträge lösen nie eine automatische Maßnahme aus: Einträge aus externen
 Listen und auch alle anderen Netzwerk-Einträge zeigen Moderatoren nur eine Warnung, und die Moderatoren entscheiden
-selbst, ob sie etwas unternehmen. Jede Entscheidung über dich kann mit /appeal überprüft
-werden: Über Fälle eines Servers entscheiden dessen Moderatoren, über netzwerkweite Einträge das Defendr-Team.
+selbst, ob sie etwas unternehmen. Mit /appeal kannst du eine Entscheidung über dich überprüfen lassen. Über
+netzwerkweite Einträge entscheidet das Defendr-Team (zu einem Eintrag, der nur auf der ScammerAlert-Liste beruht, siehe
+unten). Über die Fälle eines Servers entscheiden dessen Moderatoren, wenn der Server Einsprüche anbietet und Defendr
+noch dort ist; ein Server bietet sie an, solange er sie nicht ausschaltet. Bietet ein Server keine Einsprüche an oder
+ist Defendr nicht mehr dort, kannst du trotzdem Einspruch gegen einen Fall einlegen, der auf einem Link, einer
+Einladung oder einem Bild beruht, wenn Defendrs eigene Listen oder Google Web Risk diesen Link, diese Einladung oder
+dieses Bild als gefährlich kennen: Das Defendr-Team sieht sich den Fall an; solange Defendr noch auf dem Server ist,
+kann es dem Server empfehlen, ihn rückgängig zu machen.
 
 Direktnachrichten schickt Defendr nur, wenn eine Maßnahme dich betrifft, wenn du selbst einen
 Vorgang gestartet hast (Einspruch, Meldung, Betroffenenanfrage), wenn du Defendr geschrieben hast und das Defendr-Team
@@ -602,12 +610,13 @@ entscheidet. Deine Betroffenenrechte gegenüber Defendr (/defendr › Meine Date
 
 Beim Wortfilter (Abschnitt 3.17) hält Discord Nachrichten nach den Regeln zurück, die der Server eingeschaltet hat;
 den Timeout von zehn Minuten nach drei zurückgehaltenen Nachrichten führt Defendr automatisch aus, wenn der Server ihn
-nicht ausgeschaltet hat. Gegen jeden dieser Fälle kannst du Einspruch einlegen (/appeal); wird ein Timeout aufgehoben,
-endet er sofort.
+nicht ausgeschaltet hat. Bietet der Server Einsprüche an und ist Defendr noch dort, kannst du gegen jeden dieser Fälle
+Einspruch einlegen (/appeal); wird ein Timeout aufgehoben, endet er sofort.
 
 Wo ein Server es eingeschaltet hat, entfernt Defendr eine Nachricht, deren Bild Discords Bildprüfung außerhalb der
 NSFW-Kanäle des Servers als explizit oder drastisch markiert hat. Das ist nie eine Strafe (kein Timeout, Kick oder
-Bann). War es ein Bild, das du gepostet oder weitergeleitet hast, kannst du die Entfernung mit /appeal anfechten.
+Bann). War es ein Bild, das du gepostet oder weitergeleitet hast, kannst du die Entfernung mit /appeal anfechten, wenn
+der Server Einsprüche anbietet und Defendr noch dort ist.
 
 Die Webseite trifft keine eigenen Entscheidungen: Jede Aktion dort prüft Defendr nach denselben Regeln wie in Discord.
 

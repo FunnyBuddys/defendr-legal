@@ -1,6 +1,6 @@
 # Nutzungsbedingungen für Defendr
 
-Version 2026-10-15 · gültig ab 2026-10-15
+Version 2026-11-11 · gültig ab 2026-11-12
 
 ## 1. Geltungsbereich
 
@@ -54,7 +54,14 @@ Einträge, die Defendr automatisch aus den ScammerAlert-Community-Listen überni
 sind mit ihrer Quelle gekennzeichnet und enden, wenn ScammerAlert sie zurückzieht oder löscht.
 
 Einträge aus externen Listen und Einträge, die noch auf ihre Prüfung warten, lösen nie eine
-automatische Maßnahme aus; sie zeigen Moderatoren nur eine Warnung. Jede Entscheidung kann mit /appeal oder auf der Webseite unter „Mein Defendr“ überprüft werden.
+automatische Maßnahme aus; sie zeigen Moderatoren nur eine Warnung. Mit /appeal oder auf der Webseite unter „Mein
+Defendr“ kannst du netzwerkweite Einträge beim Defendr-Team anfechten (gegen einen Eintrag, der nur auf der
+ScammerAlert-Liste beruht, legst du Einspruch bei ScammerAlert ein; solange er aktiv ist, mit /appeal auch beim
+Defendr-Team; Datenschutzerklärung, Abschnitt 9) und die Fälle eines Servers, wenn der Server Einsprüche anbietet und
+Defendr noch dort ist (ein Server bietet sie an, solange er sie nicht ausschaltet). Sonst kannst du einen Fall, der auf
+einem Link, einer Einladung oder einem Bild beruht, trotzdem anfechten, wenn Defendrs eigene Listen oder Google Web Risk
+diesen Link, diese Einladung oder dieses Bild als gefährlich kennen; solange Defendr noch auf dem Server ist, kann das
+Defendr-Team dem Server dann empfehlen, den Fall rückgängig zu machen.
 
 ## 8. Haftung
 

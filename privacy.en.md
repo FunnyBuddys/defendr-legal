@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-11-10 · effective 2026-11-10
+Version 2026-11-11 · effective 2026-11-11
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -244,8 +244,8 @@ stored only if the server turned excerpts on (3.1): then as a shortened, defange
 the moderation case. For every message held back, Defendr opens a moderation case (user ID, channel, reason code, area,
 word list and language; for a word that is only on Discord's own keyword list, "a word on Discord's own list" instead
 of an area; the word of the rule only defanged and only with excerpts on), which the member can appeal
-(/appeal). When Discord holds back three messages of the same person within ten minutes, Defendr times them out for ten
-minutes, unless the server turned that off; for this Defendr counts the stored cases and remembers only in memory, for
+(/appeal) where the server offers appeals and Defendr is still on it. When Discord holds back three messages of the
+same person within ten minutes, Defendr times them out for ten minutes, unless the server turned that off; for this Defendr counts the stored cases and remembers only in memory, for
 at most ten minutes, when it last did so. The cases are deleted like all moderation cases (section 7).
 
 For its rules Defendr keeps per server only their ID, their state and check values, no user data. The filter's
@@ -518,7 +518,8 @@ file that explains your data in plain words in your language (what each part mea
 from and how long we keep it), and the same data as a machine-readable JSON file that you can take to another service.
 On the website you get both in one ZIP file. The copy names what it leaves out to protect other people, and why. In
 Discord and on the website you can make a new copy every 24 hours; by e-mail you can ask for a copy at any time.
-You can have a decision reviewed (/appeal, on the website under "My Defendr"). You can also lodge a complaint with a
+You can have a decision reviewed (/appeal, on the website under "My Defendr"; section 9 says which). You can also
+lodge a complaint with a
 supervisory authority (Der Landesbeauftragte für den Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, Deutschland).
 
 **Right to object (Art. 21 GDPR):** where we process your data on the basis of legitimate interests (Art. 6(1)(f)
@@ -538,8 +539,13 @@ Server operators decide how Defendr reacts to a detected threat. Defendr limits 
 how reliable the evidence is (for example, never a ban on an external list alone).
 
 Network records never trigger an automated action: entries from external lists and all
-other network records only show moderators a warning, and the moderators decide themselves whether to act. Every decision about you can be reviewed with /appeal: a server's moderators decide about its own
-cases, the Defendr team about network-wide records.
+other network records only show moderators a warning, and the moderators decide themselves whether to act. With
+/appeal you can have a decision about you reviewed. The Defendr team decides about network-wide records (a record that
+rests only on the ScammerAlert list: see below). A server's moderators decide about its own cases where the server
+offers appeals and Defendr is still on it; a server offers them unless it turns them off. Where a server does not offer
+appeals, or Defendr is no longer on it, you can still appeal a case that rests on a link, an invite or a picture that
+Defendr's own lists or Google Web Risk know as dangerous: the Defendr team looks at it; while Defendr is still on the
+server, it can recommend that the server undo it.
 
 Defendr only sends a direct message when an action concerns you, when you started a flow yourself
 (appeal, report, data subject request), when you wrote to Defendr and the Defendr team answers you, or – if you own a
@@ -555,12 +561,14 @@ appealed at ScammerAlert; while it is active you can also appeal it to the Defen
 at Defendr decides. Your data subject rights against Defendr (/defendr › My data) remain.
 
 With the word filter (section 3.17), Discord holds back messages by the rules the server turned on; Defendr carries out
-the ten-minute timeout after three held-back messages automatically, unless the server turned it off. You can appeal
-every one of these cases (/appeal); a timeout that is lifted ends at once.
+the ten-minute timeout after three held-back messages automatically, unless the server turned it off. Where the server
+offers appeals and Defendr is still on it, you can appeal every one of these cases (/appeal); a timeout that is lifted
+ends at once.
 
 Where a server turned it on, Defendr removes a message whose picture Discord's image check marked as explicit or
 graphic, outside the server's NSFW channels. That is never a penalty (no timeout, kick or ban). If it was a picture you
-posted or forwarded, you can appeal the removal with /appeal.
+posted or forwarded, you can appeal the removal with /appeal where the server offers appeals and Defendr is still on
+it.
 
 The website makes no decisions of its own: Defendr checks every action there by the same rules as in Discord.
 

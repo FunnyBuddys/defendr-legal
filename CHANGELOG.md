@@ -2,6 +2,18 @@
 
 Document versions and effective dates of the published legal copies.
 
+## legal-2026-11-11
+
+- `privacy.de.md` — version 2026-11-11, effective 2026-11-11, sha256:80c3ddc19cb73754625e2e64796db870278b3a6df0351b4fff4c38d8bb99272e
+- `privacy.en.md` — version 2026-11-11, effective 2026-11-11, sha256:de016c2cc319b3fe37276181bc54bda0dfcb51109c052feb94de6f8964dcb0ca
+- `terms.de.md` — version 2026-11-11, effective 2026-11-12, sha256:e386ac2fb2aaeacd2bee8d833140a8310ae852f2c3cd8f057c887882673680d6
+- `terms.en.md` — version 2026-11-11, effective 2026-11-12, sha256:24ef26378163ae90cb917162856084dc41895b92c99c429bb3944721f784eb27
+- `impressum.de.md` — version 2026-10-14, effective 2026-10-14, sha256:a85c9780cf8dc39a5de19512b10b8ba5d17cc308105b0072d47fc5eceb7f7155
+- `accessibility.de.md` — version 2026-10-14, effective 2026-10-14, sha256:b6a0bda6b363c029707e1001cfcea1510695992e220f14be84c97d164dfd10e4
+- `accessibility.en.md` — version 2026-10-14, effective 2026-10-14, sha256:e7789d07ffd7f17166dea1278cabe37c67efe16c697b8bf1892dea9e1e7a1bb8
+- `security.de.md` — version 2026-10-14, effective 2026-10-14, sha256:e2bdb2efbd5ff90a64d1dfb45ca1dabe2237c3bed3be1bc66ce3778432f7063b
+- `security.en.md` — version 2026-10-14, effective 2026-10-14, sha256:be60096d56809bb5f6a1ae5906d0cad75fa29e56e9c04c062f147e864a76800b
+
 ## legal-2026-11-10
 
 - `privacy.de.md` — version 2026-11-10, effective 2026-11-10, sha256:706031d1527b78e46b32430f210986039443ada6efe0a6c2c91afff23dd54497

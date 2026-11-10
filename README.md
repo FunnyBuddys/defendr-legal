@@ -14,10 +14,10 @@ The German version of each document is legally binding; the English file is a tr
 
 | Document | Version | Effective | SHA-256 |
 | --- | --- | --- | --- |
-| [privacy.de.md](privacy.de.md) | 2026-11-10 | 2026-11-10 | `sha256:706031d1527b78e4` |
-| [privacy.en.md](privacy.en.md) | 2026-11-10 | 2026-11-10 | `sha256:a4441b3e42487562` |
-| [terms.de.md](terms.de.md) | 2026-10-15 | 2026-10-15 | `sha256:0a417de9659929c3` |
-| [terms.en.md](terms.en.md) | 2026-10-15 | 2026-10-15 | `sha256:8148f5d521d0ed9a` |
+| [privacy.de.md](privacy.de.md) | 2026-11-11 | 2026-11-11 | `sha256:80c3ddc19cb73754` |
+| [privacy.en.md](privacy.en.md) | 2026-11-11 | 2026-11-11 | `sha256:de016c2cc319b3fe` |
+| [terms.de.md](terms.de.md) | 2026-11-11 | 2026-11-12 | `sha256:e386ac2fb2aaeacd` |
+| [terms.en.md](terms.en.md) | 2026-11-11 | 2026-11-12 | `sha256:24ef26378163ae90` |
 | [impressum.de.md](impressum.de.md) | 2026-10-14 | 2026-10-14 | `sha256:a85c9780cf8dc39a` |
 | [accessibility.de.md](accessibility.de.md) | 2026-10-14 | 2026-10-14 | `sha256:b6a0bda6b363c029` |
 | [accessibility.en.md](accessibility.en.md) | 2026-10-14 | 2026-10-14 | `sha256:e7789d07ffd7f171` |

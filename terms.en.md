@@ -1,6 +1,6 @@
 # Terms of Service for Defendr
 
-Version 2026-10-15 · effective 2026-10-15
+Version 2026-11-11 · effective 2026-11-12
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/terms
 
@@ -56,7 +56,12 @@ ScammerAlert withdraws or deletes them.
 
 Records from external lists, and records still awaiting review, never trigger an automated
 action; they only show moderators a warning.
-Every decision can be reviewed with /appeal or on the website under "My Defendr".
+With /appeal or on the website under "My Defendr" you can appeal network-wide records to the Defendr team (a record that
+rests only on the ScammerAlert list is appealed at ScammerAlert; while it is active, also to the Defendr team with
+/appeal; privacy policy, section 9), and a server's own cases where the server offers appeals and Defendr is still on it
+(a server offers them unless it turns them off). Otherwise a case that rests on a link, invite or picture that
+Defendr's own lists or Google Web Risk know as dangerous can still be appealed; while Defendr is still on the server, the
+Defendr team can then recommend that the server undo it.
 
 ## 8. Liability
 
