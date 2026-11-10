@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-11-08 · effective 2026-11-08
+Version 2026-11-10 · effective 2026-11-10
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -333,6 +333,34 @@ the cases of such a removal also name that moderator. The note holds no message 
 30 days after the check ends, or with the server's data. Legal basis: Art. 6(1)(f) GDPR
 (section 4).
 
+<!-- anchor: imitation-guard -->
+
+3.20 Look-alike names: scammers often join a server under the name or picture of someone people
+trust and then write to members directly. On servers that turned this check on, Defendr compares your username, display
+name and nickname on that server, the short marker Discord gives your profile pictures and, where Discord sends it, the
+text of a small server tag from another server next to your name with the same details of the server's owner and team,
+with a short list of official names (such as Discord Support and Defendr Support) and with names the server added. It
+does so when you join and when one of your names or pictures changes. If Defendr cannot tell whether something changed,
+it compares as well; that comparison can lead to a note for the team, never to a role. Defendr does not download or look at the pictures. The comparison happens in memory; if
+nothing matches, Defendr keeps nothing. If it looks like a match, Defendr tells the server's team in its log channel:
+the name, who it looks like and why. This note stays in the server's log channel until the team deletes it. Defendr
+stores one record with your user ID, the server, who was imitated by kind (the owner, the team, an official name or a
+name from the server's list), which signs matched, how old your account was, whether it happened when you joined or on
+a change and a protected code for this pair, without any name, picture marker or tag and without the server behind the
+tag. It is
+deleted like all detections (section 7). A server can choose a role that Defendr then gives you, after its team has been
+told; that opens a moderation case you can appeal with /appeal where the server offers appeals.
+Because of this check Defendr never times out, kicks or bans you and sends you no message.
+The team can mark a match as fine; Defendr then does not ask about it again, and that mark is kept with the record. To
+compare, Defendr keeps the names, picture markers, tags and role IDs of a server's owner and team in memory only, until
+the next restart and at most 14 days after it last saw them, never in its database.
+A server can also use a rule in Discord's AutoMod that blocks official-looking names
+("Defendr · Profile names"). It holds only a short list of official names and names the server typed in. Discord does
+the checking as the provider of AutoMod and limits what a matching member can do until the name is changed. Discord
+tells Defendr when this happens, with your user ID, the rule, the matched word and the text it checked. Defendr keeps a
+count and may post the server's usual AutoMod log card, which shows the matched word only if the server turned excerpts
+on. Defendr does not store that text.
+
 ## 4. Purposes and legal bases
 
 <!-- anchor: purposes -->
@@ -390,6 +418,8 @@ the cases of such a removal also name that moderator. The note holds no message 
   GDPR (the member shared the picture with that server's members; the note shows no picture and names no one, and its
   link opens the message only for those who can see it there). Defendr itself keeps nothing about it; the note stays in
   the server's log channel until the team deletes it.
+- Warning a server's team about accounts that copy the team, Discord or Defendr, by the server's choice (3.20): Art.
+  6(1)(f) GDPR.
 
 ## 5. Recipients
 
@@ -533,6 +563,10 @@ graphic, outside the server's NSFW channels. That is never a penalty (no timeout
 posted or forwarded, you can appeal the removal with /appeal.
 
 The website makes no decisions of its own: Defendr checks every action there by the same rules as in Discord.
+
+If a server chose a role for look-alike names (section 3.20), Defendr gives that role automatically. Where the server
+offers appeals you can appeal it (/appeal), and the team can take it away at once. The AutoMod rule for profile names is
+carried out by Discord.
 
 ## 10. Security
 

@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-11-08 · gültig ab 2026-11-08
+Version 2026-11-10 · gültig ab 2026-11-10
 
 ## 1. Verantwortlicher
 
@@ -365,6 +365,36 @@ einer solchen Entfernung nennen diesen Moderator ebenfalls. Die Notiz enthält k
 30 Tage nach dem Ende der Prüfung gelöscht oder mit den Daten des Servers.
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
 
+<!-- anchor: imitation-guard -->
+
+3.20 Doppelgänger-Namen: Betrüger treten einem Server oft mit dem Namen oder Bild einer vertrauten
+Person bei und schreiben Mitglieder dann direkt an. Auf Servern, die diese Prüfung eingeschaltet haben, vergleicht
+Defendr deinen Benutzernamen, Anzeigenamen und Spitznamen auf dem Server, das kurze Kennzeichen, das Discord deinen
+Profilbildern gibt, und, wenn Discord ihn mitschickt, den Text eines kleinen Server-Tags von einem anderen Server neben
+deinem Namen mit denselben Angaben des Serverinhabers und des Teams, mit einer kurzen Liste offizieller Namen (etwa
+Discord Support und Defendr Support) und mit Namen, die der Server eingetragen hat. Das geschieht, wenn du beitrittst
+und wenn sich einer deiner Namen oder eines deiner Bilder ändert. Kann Defendr nicht erkennen, ob sich etwas geändert
+hat, vergleicht es ebenfalls; daraus kann ein Hinweis an das Team entstehen, nie eine Rolle. Defendr lädt die Bilder nicht herunter und sieht sie nicht an.
+Der Vergleich läuft im Arbeitsspeicher; passt nichts, speichert Defendr nichts. Sieht es nach einem Treffer aus,
+informiert Defendr das Team des Servers in dessen Log-Kanal: den Namen, wem er ähnelt und warum. Dieser Hinweis bleibt im
+Log-Kanal des Servers, bis das Team ihn löscht. Gespeichert wird ein Eintrag mit deiner Nutzer-ID, dem Server, der Art
+der nachgeahmten Stelle (Serverinhaber, Team, offizieller Name oder Name aus der Liste des Servers), den passenden
+Anzeichen, dem Alter deines Kontos, der Angabe, ob es beim Beitritt oder bei einer Änderung geschah, und einem
+geschützten Code für dieses Paar, ohne Namen, Bildkennzeichen oder Tag und ohne den Server hinter dem Tag. Er wird wie alle Erkennungen gelöscht
+(Abschnitt 7). Ein Server kann eine Rolle wählen, die Defendr dir gibt, nachdem sein Team informiert wurde; dafür wird
+ein Moderationsfall angelegt, gegen den du mit /appeal Einspruch einlegen kannst, wenn der Server Einsprüche anbietet.
+Wegen dieser Prüfung wirst du von Defendr nie stummgeschaltet, gekickt oder gebannt, und du
+bekommst keine Nachricht. Das Team kann einen Treffer als in Ordnung markieren; Defendr fragt dann nicht noch einmal,
+und die Markierung bleibt beim Eintrag. Für den Vergleich hält Defendr die Namen, Bildkennzeichen, Tags und Rollen-IDs
+des Serverinhabers und des Teams eines Servers nur im Arbeitsspeicher, bis zum nächsten Neustart und höchstens 14 Tage,
+nachdem es sie zuletzt gesehen hat, nie in seiner Datenbank. Ein Server kann außerdem
+eine Regel in Discords AutoMod nutzen, die offiziell klingende Namen sperrt („Defendr · Profilnamen“). Sie enthält nur
+eine kurze Liste offizieller Namen und Namen, die der Server eingetragen hat. Die Prüfung nimmt Discord als Anbieter von
+AutoMod vor und schränkt ein, was ein betroffenes Mitglied tun kann, bis der Name geändert ist. Discord teilt Defendr
+das mit, und zwar mit deiner Nutzer-ID, der Regel, dem getroffenen Wort und dem geprüften Text. Defendr führt einen
+Zähler und kann die übliche AutoMod-Logkarte des Servers posten, die das getroffene Wort nur zeigt, wenn der Server
+Auszüge eingeschaltet hat. Den Text speichert Defendr nicht.
+
 ## 4. Zwecke und Rechtsgrundlagen
 
 <!-- anchor: purposes -->
@@ -428,6 +458,8 @@ Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (Abschnitt 4).
   lit. f i. V. m. Art. 9 Abs. 2 lit. e DSGVO (das Mitglied hat das Bild mit den Mitgliedern dieses Servers geteilt;
   der Hinweis zeigt kein Bild und nennt niemanden, sein Link öffnet die Nachricht nur für die, die sie dort sehen
   dürfen). Defendr selbst speichert davon nichts; der Hinweis bleibt im Log-Kanal des Servers, bis das Team ihn löscht.
+- Warnung des Teams eines Servers vor Konten, die das Team, Discord oder Defendr nachahmen, nach Wahl des Servers
+  (3.20): Art. 6 Abs. 1 lit. f DSGVO.
 
 ## 5. Empfänger
 
@@ -578,6 +610,10 @@ NSFW-Kanäle des Servers als explizit oder drastisch markiert hat. Das ist nie e
 Bann). War es ein Bild, das du gepostet oder weitergeleitet hast, kannst du die Entfernung mit /appeal anfechten.
 
 Die Webseite trifft keine eigenen Entscheidungen: Jede Aktion dort prüft Defendr nach denselben Regeln wie in Discord.
+
+Hat ein Server eine Rolle für Doppelgänger-Namen gewählt (Abschnitt 3.20), vergibt Defendr sie automatisch. Bietet der
+Server Einsprüche an, kannst du mit /appeal Einspruch einlegen, und das Team kann die Rolle jederzeit wieder entfernen.
+Die AutoMod-Regel für Profilnamen führt Discord aus.
 
 ## 10. Sicherheit
 
