@@ -14,8 +14,8 @@ The German version of each document is legally binding; the English file is a tr
 
 | Document | Version | Effective | SHA-256 |
 | --- | --- | --- | --- |
-| [privacy.de.md](privacy.de.md) | 2026-11-11 | 2026-11-11 | `sha256:80c3ddc19cb73754` |
-| [privacy.en.md](privacy.en.md) | 2026-11-11 | 2026-11-11 | `sha256:de016c2cc319b3fe` |
+| [privacy.de.md](privacy.de.md) | 2026-11-12 | 2026-11-12 | `sha256:cd83a030b62a0f6f` |
+| [privacy.en.md](privacy.en.md) | 2026-11-12 | 2026-11-12 | `sha256:d7488dd798942eda` |
 | [terms.de.md](terms.de.md) | 2026-11-11 | 2026-11-12 | `sha256:e386ac2fb2aaeacd` |
 | [terms.en.md](terms.en.md) | 2026-11-11 | 2026-11-12 | `sha256:24ef26378163ae90` |
 | [impressum.de.md](impressum.de.md) | 2026-10-14 | 2026-10-14 | `sha256:a85c9780cf8dc39a` |

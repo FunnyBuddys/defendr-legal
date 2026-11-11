@@ -1,6 +1,6 @@
 # Datenschutzerklärung für Defendr
 
-Version 2026-11-11 · gültig ab 2026-11-11
+Version 2026-11-12 · gültig ab 2026-11-12
 
 ## 1. Verantwortlicher
 
@@ -93,10 +93,17 @@ die Moderatoren eines Servers, bei Einsprüchen und bei Anfragen zu deinen Recht
 3.6 Server-Einstellungen: Rollen- und Kanal-IDs, IDs der Admins und Moderatoren, die Einstellungen ändern oder
 Entscheidungen treffen. Meldet jemand einen Raid an Discord, erklärt ihn zum Fehlalarm oder schaltet Discords
 Sicherheitsmaßnahmen ein oder aus, während der Raid-Modus von Defendr läuft, vermerkt Defendr beim Raid-Vorgang des
-Servers, wer das wann getan hat. Beantwortet ein Admin in `/setup` die freiwillige Frage „Wo hast du Defendr gefunden?", wird
-eine von sechs festen Antworten (zum Beispiel „top.gg" oder „Freunde oder Bekannte") für den Server gespeichert und
-keiner Person zugeordnet. Sie dient nur dazu, zu verstehen, wie Server Defendr finden, wird dem Defendr-Team nur als
-Anzahl über alle Server gezeigt und zusammen mit der Server-Konfiguration gelöscht.
+Servers, wer das wann getan hat.
+
+<!-- anchor: growth-source -->
+
+Beantwortet ein Admin bei der Einrichtung (in Discord oder auf der Website) die freiwillige Frage „Wo hast du Defendr
+gefunden?", wird eine Antwort aus einer kurzen festen Liste (zum Beispiel „top.gg" oder „Freunde oder Bekannte") für
+den Server gespeichert und keiner Person zugeordnet. Sie dient nur dazu, zu verstehen, wie Server Defendr finden und
+wie viele davon die Einrichtung abschließen und bleiben, wird dem Defendr-Team nur als Anzahl gezeigt (je Antwort und
+Beitrittswoche, nie mit dem Namen eines Servers) und zusammen mit der Server-Konfiguration gelöscht. Wird die Frage
+auf der Website beantwortet, vermerkt das Aktionsprotokoll aus Abschnitt 12.6, dass und von wem eine Antwort
+gespeichert wurde, nicht welche.
 
 3.7 Defendr speichert keine IP-Adressen in seiner Datenbank, erstellt keine Gerätefingerabdrücke
 und keine verhaltensbezogenen Profile und trainiert keine KI-Modelle. Beim Aufruf der Webseite wird deine IP-Adresse
@@ -403,9 +410,9 @@ Auszüge eingeschaltet hat. Den Text speichert Defendr nicht.
 - Schutz von Discord-Communities vor Betrug, Schadsoftware und Missbrauch: Art. 6 Abs. 1 lit. f DSGVO.
 - Bearbeitung von Einsprüchen und Betroffenenanfragen: Art. 6 Abs. 1 lit. c und f DSGVO.
 - Netzwerkweite Sicherheitseinträge: Art. 6 Abs. 1 lit. f DSGVO; Interessenabwägung verfügbar auf Anfrage.
-- Verstehen, wie Server Defendr finden (die freiwillige Setup-Antwort „Wo hast du Defendr gefunden?", pro Server
-  gespeichert und keiner Person zugeordnet): Art. 6 Abs. 1 lit. f DSGVO; die Antwort ist freiwillig und kann
-  ausgelassen werden.
+- Verstehen, wie Server Defendr finden und wie viele davon die Einrichtung abschließen und bleiben (die freiwillige
+  Setup-Antwort „Wo hast du Defendr gefunden?", pro Server gespeichert und keiner Person zugeordnet): Art. 6 Abs. 1
+  lit. f DSGVO; die Antwort ist freiwillig und kann ausgelassen werden.
 - Übersicht über die Aktionen von Defendr und über die darüber abgewickelten Moderations-, Melde- und
   Einspruchsvorgänge (Abschnitt 3.9): Art. 6 Abs. 1 lit. f DSGVO.
 - Bearbeitung von Support-Tickets im Support-Server, mit dem gespeicherten Verlauf und den Antworten über die Webseite
@@ -753,6 +760,12 @@ eine Browserprüfung zeigen; besteht dein Browser sie, setzt Cloudflare dafür e
 (`cf_clearance`, Abschnitt 13). Darüber hinaus verarbeitet Cloudflare Verbindungsdaten nur, soweit es für den Betrieb
 und die Sicherheit ihres Netzwerks nötig ist, nach dem Vertrag zur Auftragsverarbeitung. Rechtsgrundlage: Art. 6
 Abs. 1 lit. f DSGVO (sichere und erreichbare Webseite).
+
+Gezählte Links. Manche Links zu uns, zum Beispiel auf einer Bot-Liste, haben die Form `/invite/<Name>` und führen
+direkt auf dieselbe Discord-Seite wie die Auswahl „Standard" auf unserer Einladen-Seite. Wird ein solcher Link
+geöffnet, erhöhen wir eine Tageszahl für diesen Link um eins. Die Zahl sagt nur, wie oft dieser Link an diesem Tag
+geöffnet wurde. Wir halten nichts darüber fest, wer ihn geöffnet hat: keine IP-Adresse, keine Browser-Angaben, kein
+Cookie. Wie jeder Seitenaufruf wird die Anfrage selbst so behandelt, wie oben in diesem Abschnitt beschrieben.
 
 12.2 Protokolle auf unserem Server. Unser Webserver führt ein Zugriffsprotokoll. Ein Eintrag darin enthält nur
 Zeitpunkt, Pfadvorlage, HTTP-Status, Dauer und eine zufällige Anfrage-ID. Diese Zugriffsprotokolle enthalten keine

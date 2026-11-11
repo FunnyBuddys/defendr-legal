@@ -1,6 +1,6 @@
 # Privacy Policy for Defendr
 
-Version 2026-11-11 · effective 2026-11-11
+Version 2026-11-12 · effective 2026-11-12
 
 The German version is legally binding. This English translation is provided for convenience: https://defendr.live/de/privacy
 
@@ -88,10 +88,16 @@ requests about your rights, Defendr stores no images.
 
 3.6 Server settings: role and channel IDs, IDs of the admins and moderators who change settings or take decisions.
 When someone reports a raid to Discord, calls it a false alarm or turns Discord's security actions on or off while
-Defendr's raid mode runs, Defendr notes who did it and when on the server's raid record. If an admin answers the optional question "Where did you find Defendr?" in `/setup`, one of six fixed answers (for
-example "top.gg" or "A friend") is stored for the server and not assigned to any person. It is used only to understand
-how servers find Defendr, is shown to the Defendr team only as a count across all servers, and is deleted together
-with the server's configuration.
+Defendr's raid mode runs, Defendr notes who did it and when on the server's raid record.
+
+<!-- anchor: growth-source -->
+
+If an admin answers the optional question "Where did you find Defendr?" during setup (in Discord or on the website),
+one answer from a short fixed list (for example "top.gg" or "A friend") is stored for the server and not assigned to
+any person. It is used only to understand how servers find Defendr and how many of them complete the setup and stay,
+is shown to the Defendr team only as counts (per answer and week of joining, never with a server's name), and is
+deleted together with the server's configuration. If the question is answered on the website, the action log of
+section 12.6 notes that an answer was saved and by whom, not which one.
 
 3.7 Defendr stores no IP addresses in its database, builds no device fingerprints and no
 behavioural profiles, and trains no AI models. When you open the website your IP address is processed for the
@@ -368,8 +374,9 @@ on. Defendr does not store that text.
 - Protecting Discord communities against fraud, malware and abuse: Art. 6(1)(f) GDPR.
 - Handling appeals and data subject requests: Art. 6(1)(c) and (f) GDPR.
 - Network-wide Safety Records: Art. 6(1)(f) GDPR; the legitimate interest assessment is available on request.
-- Understanding how servers find Defendr (the optional setup answer "Where did you find Defendr?", stored per server
-  and not assigned to any person): Art. 6(1)(f) GDPR; the answer is voluntary and can be left out.
+- Understanding how servers find Defendr and how many of them complete the setup and stay (the optional setup answer
+  "Where did you find Defendr?", stored per server and not assigned to any person): Art. 6(1)(f) GDPR; the answer is
+  voluntary and can be left out.
 - The overview of Defendr's actions and of the moderation, report and appeal events handled through it
   (section 3.9): Art. 6(1)(f) GDPR.
 - Handling support tickets in the support server, with the stored transcript and the replies from the website
@@ -694,6 +701,12 @@ it suspects an attack, Cloudflare can show a browser check before a page; if you
 technically necessary cookie for it (`cf_clearance`, section 13). Beyond that, Cloudflare processes connection data
 only as far as needed to operate and secure its network, under the data processing agreement. Legal basis:
 Art. 6(1)(f) GDPR (a secure and available website).
+
+Counted links. Some links to us, for example on a bot list, have the form `/invite/<name>` and lead straight to the
+same Discord page as the choice "Standard" on our invite page. When such a link is opened, we add one to a daily number
+for that link. The number only says how often that link was opened on that day. We keep nothing about who opened it:
+no IP address, no browser details, no cookie. Like every page request, the request itself is handled as described
+above in this section.
 
 12.2 Logs on our server. Our web server keeps an access log. An entry in it holds only the time, a path template, the
 HTTP status, the duration and a random request ID. These access logs contain no IP addresses or IP hashes, no URL
